@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="GUI\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +77,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -92,6 +96,36 @@
     <Folder Include="BUS\" />
     <Folder Include="Dao\" />
     <Folder Include="DTO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-name-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fitness Gym Dumbbell Abstract Logo Design Icon Vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0af3c9613761d2d2394d99312aeba397.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0af3c9613761d2d2394d99312aeba3-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fitness Gym Dumbbell Abstract Logo Design Icon Vector1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fitness Gym Dumbbell Abstract Logo Design Icon Vector2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-unscreen.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
