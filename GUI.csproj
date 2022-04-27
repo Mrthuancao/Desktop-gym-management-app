@@ -46,14 +46,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomTextBox.Designer.cs">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="fTableManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTableManager.Designer.cs">
+      <DependentUpon>fTableManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomTextBox.resx">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTableManager.resx">
+      <DependentUpon>fTableManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +86,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -85,6 +110,39 @@
       <Project>{cdb15b3c-aee2-43f7-ad2c-dffb46abbe89}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32624b7d0be7d6fdf0881569d6382d03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fitness Gym Dumbbell Abstract Logo Design Icon Vector2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-name-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01009732-f42c-4934-80b5-812508736dc9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5f95c1c8-37b9-4910-875d-025dff262787.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4c20b95f-1349-4f2f-b224-93aacbb1473f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4c20b95f-1349-4f2f-b224-93aacbb1473f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixlr-bg-result %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NO PAIN NO GAIN.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
