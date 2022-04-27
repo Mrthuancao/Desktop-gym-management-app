@@ -10,6 +10,15 @@ namespace DAO
 {
     public class DBConnect
     {
+        private static DBConnect instance; // Ctrl + R + E
+
+        public static DBConnect Instance
+        {
+            get { if (instance == null) instance = new DBConnect(); return DBConnect.instance; }
+            private set { DBConnect.instance = value; }
+        }
+
+        private DBConnect() { }
         private string connectionSTR = "Data Source=.\\sqlexpress;Initial Catalog=QuanLyQuanCafe;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)

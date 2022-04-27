@@ -27,5 +27,18 @@ namespace DTO
         public char Mahang { get => mahang; set => mahang = value; }
         public char Maltb { get => maltb; set => maltb = value; }
         public int Soluong { get => soluong; set => soluong = value; }
+
+        public THIETBI(char tenthietbi, char matb, char ngmua, char ngsd, char hanbaotri, int gia, char mahang, char maltb, int soluong)
+        {
+            this.Tenthietbi = tenthietbi;
+            this.Matb = matb;
+            this.Ngmua = ngmua;
+            this.Ngsd = ngsd;
+            this.Hanbaotri = hanbaotri;
+            this.Gia = gia;
+            this.Mahang = mahang; 
+            this.Maltb = maltb;
+            this.Soluong = soluong;
+        }
     }
 }
