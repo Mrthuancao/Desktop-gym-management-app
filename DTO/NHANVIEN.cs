@@ -24,5 +24,22 @@ namespace DTO
         public char Phai { get => phai; set => phai = value; }
         public char Ngsinh { get => ngsinh; set => ngsinh = value; }
         public int Luong { get => luong; set => luong = value; }
+        public char Ngvaolam { get => ngvaolam; set => ngvaolam = value; }
+        public char Sdt { get => sdt; set => sdt = value; }
+        public char Email { get => email; set => email = value; }
+        public char Malnv { get => malnv; set => malnv = value; }
+
+        public NHANVIEN(char manv, char hoten, char phai, char ngsinh, int luong, char ngvaolam, char sdt, char email, char malnv)
+        {
+            this.Manv = manv;
+            this.Hoten = hoten;
+            this.Phai = phai;
+            this.Ngsinh = ngsinh;
+            this.Luong = luong;
+            this.Ngvaolam = ngvaolam;
+            this.Sdt = sdt;
+            this.Email = email;
+            this.Malnv = malnv;
+        }
     }
 }
