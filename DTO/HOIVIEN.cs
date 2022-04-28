@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,10 @@ namespace DTO
             this.Ngdangki = ngdangki;
             this.Sdt = sdt;
             this.Nvquanli = nvquanli;
+        }
+        public HOIVIEN(DataRow row)
+        {
+            this.Mahv = (char)row["mahv"];
         }
     }
 }
