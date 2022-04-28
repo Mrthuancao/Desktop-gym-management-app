@@ -34,6 +34,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1040, 546);
+            this.Controls.Add(this.pn_destop);
+            this.Controls.Add(this.pn_titlebar);
+            this.Controls.Add(this.pn_menu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(1040, 585);
             this.ClientSize = new System.Drawing.Size(812, 554);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
