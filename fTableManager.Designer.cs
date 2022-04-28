@@ -363,7 +363,7 @@
             this.Controls.Add(this.pn_titlebar);
             this.Controls.Add(this.pn_menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1040, 585)
+            this.MinimumSize = new System.Drawing.Size(1040, 585);
             this.Name = "fTableManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
