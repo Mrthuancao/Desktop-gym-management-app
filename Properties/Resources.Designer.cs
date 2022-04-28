@@ -123,6 +123,16 @@ namespace Gym_Management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fitness_Gym_Dumbbell_Abstract_Logo_Design_Icon_Vector21 {
+            get {
+                object obj = ResourceManager.GetObject("Fitness Gym Dumbbell Abstract Logo Design Icon Vector21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NO_PAIN_NO_GAIN {
             get {
                 object obj = ResourceManager.GetObject("NO PAIN NO GAIN", resourceCulture);
