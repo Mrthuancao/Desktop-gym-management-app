@@ -117,41 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="user-name-login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-name-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5f95c1c8-37b9-4910-875d-025dff262787" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5f95c1c8-37b9-4910-875d-025dff262787.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="32624b7d0be7d6fdf0881569d6382d03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\32624b7d0be7d6fdf0881569d6382d03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="01009732-f42c-4934-80b5-812508736dc9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\01009732-f42c-4934-80b5-812508736dc9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fitness Gym Dumbbell Abstract Logo Design Icon Vector2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fitness Gym Dumbbell Abstract Logo Design Icon Vector2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NO PAIN NO GAIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NO PAIN NO GAIN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4c20b95f-1349-4f2f-b224-93aacbb1473f1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4c20b95f-1349-4f2f-b224-93aacbb1473f1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pixlr-bg-result (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pixlr-bg-result (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pixlr-bg-result (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pixlr-bg-result (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4c20b95f-1349-4f2f-b224-93aacbb1473f" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4c20b95f-1349-4f2f-b224-93aacbb1473f.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="password-login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fitness Gym Dumbbell Abstract Logo Design Icon Vector21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fitness Gym Dumbbell Abstract Logo Design Icon Vector21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="matb.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tentb.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="loai.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="soluong.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="hang.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="gia.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
