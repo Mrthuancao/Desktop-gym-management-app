@@ -34,8 +34,8 @@
             this.bt_login = new Gym_Management.CustomButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.customTextBox3 = new Gym_Management.CustomTextBox();
-            this.customTextBox1 = new Gym_Management.CustomTextBox();
+            this.tb_password = new Gym_Management.CustomTextBox();
+            this.tb_username = new Gym_Management.CustomTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -53,8 +53,8 @@
             this.pn_loginr.Controls.Add(this.bt_login);
             this.pn_loginr.Controls.Add(this.pictureBox4);
             this.pn_loginr.Controls.Add(this.pictureBox3);
-            this.pn_loginr.Controls.Add(this.customTextBox3);
-            this.pn_loginr.Controls.Add(this.customTextBox1);
+            this.pn_loginr.Controls.Add(this.tb_password);
+            this.pn_loginr.Controls.Add(this.tb_username);
             this.pn_loginr.Controls.Add(this.pictureBox2);
             this.pn_loginr.Dock = System.Windows.Forms.DockStyle.Right;
             this.pn_loginr.Location = new System.Drawing.Point(365, 0);
@@ -118,49 +118,49 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // customTextBox3
+            // tb_password
             // 
-            this.customTextBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.customTextBox3.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.customTextBox3.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.customTextBox3.BorderRadius = 5;
-            this.customTextBox3.Bordersize = 2;
-            this.customTextBox3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.customTextBox3.Location = new System.Drawing.Point(111, 313);
-            this.customTextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.customTextBox3.Multiline = false;
-            this.customTextBox3.Name = "customTextBox3";
-            this.customTextBox3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.customTextBox3.PasswordChar = true;
-            this.customTextBox3.PlaceholderColor = System.Drawing.Color.Brown;
-            this.customTextBox3.PlaceholderText = "Password";
-            this.customTextBox3.Size = new System.Drawing.Size(232, 33);
-            this.customTextBox3.TabIndex = 3;
-            this.customTextBox3.Texts = "";
-            this.customTextBox3.UnderlinedStyle = false;
+            this.tb_password.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_password.BorderColor = System.Drawing.Color.Black;
+            this.tb_password.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_password.BorderRadius = 5;
+            this.tb_password.Bordersize = 2;
+            this.tb_password.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_password.ForeColor = System.Drawing.Color.Black;
+            this.tb_password.Location = new System.Drawing.Point(111, 313);
+            this.tb_password.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_password.Multiline = false;
+            this.tb_password.Name = "tb_password";
+            this.tb_password.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_password.PasswordChar = true;
+            this.tb_password.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_password.PlaceholderText = "Password";
+            this.tb_password.Size = new System.Drawing.Size(232, 33);
+            this.tb_password.TabIndex = 3;
+            this.tb_password.Texts = "";
+            this.tb_password.UnderlinedStyle = false;
             // 
-            // customTextBox1
+            // tb_username
             // 
-            this.customTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.customTextBox1.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.customTextBox1.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.customTextBox1.BorderRadius = 5;
-            this.customTextBox1.Bordersize = 2;
-            this.customTextBox1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.customTextBox1.Location = new System.Drawing.Point(111, 242);
-            this.customTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.customTextBox1.Multiline = false;
-            this.customTextBox1.Name = "customTextBox1";
-            this.customTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.customTextBox1.PasswordChar = false;
-            this.customTextBox1.PlaceholderColor = System.Drawing.Color.Brown;
-            this.customTextBox1.PlaceholderText = "User name";
-            this.customTextBox1.Size = new System.Drawing.Size(232, 33);
-            this.customTextBox1.TabIndex = 1;
-            this.customTextBox1.Texts = "";
-            this.customTextBox1.UnderlinedStyle = false;
+            this.tb_username.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_username.BorderColor = System.Drawing.Color.Black;
+            this.tb_username.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_username.BorderRadius = 5;
+            this.tb_username.Bordersize = 2;
+            this.tb_username.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_username.ForeColor = System.Drawing.Color.Black;
+            this.tb_username.Location = new System.Drawing.Point(111, 242);
+            this.tb_username.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_username.Multiline = false;
+            this.tb_username.Name = "tb_username";
+            this.tb_username.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_username.PasswordChar = false;
+            this.tb_username.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_username.PlaceholderText = "User name";
+            this.tb_username.Size = new System.Drawing.Size(232, 33);
+            this.tb_username.TabIndex = 1;
+            this.tb_username.Texts = "";
+            this.tb_username.UnderlinedStyle = false;
             // 
             // pictureBox2
             // 
@@ -227,8 +227,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private CustomTextBox customTextBox3;
-        private CustomTextBox customTextBox1;
+        private CustomTextBox tb_password;
+        private CustomTextBox tb_username;
         private CustomButton bt_login;
         private System.Windows.Forms.Label lb_exit;
         private System.Windows.Forms.PictureBox pictureBox1;
