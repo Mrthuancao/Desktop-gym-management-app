@@ -1,34 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class THIETBI
+    public class THIETBI
     {
-        private char tenthietbi;
-        private char matb;
-        private char ngmua;
-        private char ngsd;
-        private char hanbaotri;
+        private string tenthietbi;
+        private string matb;
+        private string ngmua;
+        private string ngsd;
+        private string hanbaotri;
         private int gia;
-        private char mahang;
-        private char maltb;
+        private string mahang;
+        private string maltb;
         private int soluong;
 
-        public char Tenthietbi { get => tenthietbi; set => tenthietbi = value; }
-        public char Matb { get => matb; set => matb = value; }
-        public char Ngmua { get => ngmua; set => ngmua = value; }
-        public char Ngsd { get => ngsd; set => ngsd = value; }
-        public char Hanbaotri { get => hanbaotri; set => hanbaotri = value; }
+        public string Tenthietbi { get => tenthietbi; set => tenthietbi = value; }
+        public string Matb { get => matb; set => matb = value; }
+        public string Ngmua { get => ngmua; set => ngmua = value; }
+        public string Ngsd { get => ngsd; set => ngsd = value; }
+        public string Hanbaotri { get => hanbaotri; set => hanbaotri = value; }
         public int Gia { get => gia; set => gia = value; }
-        public char Mahang { get => mahang; set => mahang = value; }
-        public char Maltb { get => maltb; set => maltb = value; }
+        public string Mahang { get => mahang; set => mahang = value; }
+        public string Maltb { get => maltb; set => maltb = value; }
         public int Soluong { get => soluong; set => soluong = value; }
 
-        public THIETBI(char tenthietbi, char matb, char ngmua, char ngsd, char hanbaotri, int gia, char mahang, char maltb, int soluong)
+        public THIETBI(string tenthietbi, string matb, string ngmua, string ngsd, string hanbaotri, int gia, string mahang, string maltb, int soluong)
         {
             this.Tenthietbi = tenthietbi;
             this.Matb = matb;
@@ -39,6 +40,18 @@ namespace DTO
             this.Mahang = mahang; 
             this.Maltb = maltb;
             this.Soluong = soluong;
+        }
+        public THIETBI(DataRow row)
+        {
+            this.Tenthietbi = row["tenthietbi"].ToString();
+            this.Matb = row["matb"].ToString();
+            this.Ngmua = row["ngmua"].ToString();
+            this.Ngsd = row["ngsd"].ToString();
+            this.Hanbaotri = row["hanbaotri"].ToString();
+            this.Gia = (int)row["gia"];
+            this.Mahang = row["mahang"].ToString();
+            this.Maltb = row["maltb"].ToString();
+            this.Soluong = (int)row["soluong"];
         }
     }
 }
