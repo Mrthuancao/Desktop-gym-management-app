@@ -19,6 +19,7 @@ namespace Gym_Management
         private Size formSize;
         private IconButton currentBtn;
         private Panel leftBorderBtn;
+        private Form currentChildForm;
 
         //Constructor
         public fTableManager()
@@ -60,6 +61,10 @@ namespace Gym_Management
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
+                //Current Child Form Icon
+                ic_currentChildform.IconChar = currentBtn.IconChar;
+                ic_currentChildform.IconColor = Color.Purple;
+
             }
         }
         private void DisableButton()
@@ -78,6 +83,24 @@ namespace Gym_Management
 
 
             }
+        }
+        private void OpenChildForm(Form childForm)
+        {
+            //open only form
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            //End
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pn_destop.Controls.Add(childForm);
+            pn_destop.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            lb_titleCharform.Text = childForm.Text;
         }
 
 
@@ -290,46 +313,59 @@ namespace Gym_Management
         private void bt_khachhang_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new HoiVien());
         }
 
         private void bt_nhanvien_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new NhanVien());
         }
 
         private void bt_goitap_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new SanPham());
         }
 
         private void bt_thietbi_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new ThietBi());
         }
 
         private void bt_thongtin_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new ThongTin());
         }
 
         private void bt_doanhthu_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new DoanhThu());
         }
 
         private void bt_captaikhoan_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            CapTaiKhoan f = new CapTaiKhoan();
+            f.ShowDialog();
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            currentChildForm.Close();
             Reset();
         }
         private void Reset()
         {
             DisableButton();
             leftBorderBtn.Visible = false;
+            ic_currentChildform.IconChar = IconChar.Home;
+            ic_currentChildform.IconColor = Color.Purple;
+            lb_titleCharform.Text = "Home";
         }
     }
 }
