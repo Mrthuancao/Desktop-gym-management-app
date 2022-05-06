@@ -367,5 +367,10 @@ namespace Gym_Management
             ic_currentChildform.IconColor = Color.Purple;
             lb_titleCharform.Text = "Home";
         }
+
+        private void fTableManager_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
