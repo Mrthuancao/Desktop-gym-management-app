@@ -11,56 +11,56 @@ using DTO;
 
 namespace DAO
 {
-    public class ThietBiDAO
+    public class NhanVienDAO
     {
-        public DataTable getAllEquipments()
+        public DataTable getAllEmployees()
         {
-            string query = "SELECT * FROM THIETBI";
+            string query = "SELECT * FROM NHANVIEN";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;
         }
 
-        public THIETBI getEquipmentByName(string name)
+        public NHANVIEN getEmployeeByName(string name)
         {
-            string query = "select * from THIETBI where tenthietbi = @name";
+            string query = "select * from NHANVIEN where hoten = @name";
             object[] value = new object[] { name };
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query, value);
-            THIETBI account = new THIETBI(dt.Rows[0]);
-            return account;
+            NHANVIEN nhanVien = new NHANVIEN(dt.Rows[0]);
+            return nhanVien;
         }
 
-        public THIETBI getEquipmentByID(string ID)
+        public NHANVIEN getEmployeeByID(string ID)
         {
-            string query = "select * from THIETBI where matb = @ID";
+            string query = "select * from NHANVIEN where manv = @ID";
             object[] value = new object[] { ID };
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query, value);
-            THIETBI account = new THIETBI(dt.Rows[0]);
-            return account;
+            NHANVIEN nhanVien = new NHANVIEN(dt.Rows[0]);
+            return nhanVien;
         }
 
-        public bool insertEquipment(string tenThietBi, string maThietBi, DateTime ngayMua, DateTime ngaySuDung, DateTime hanBaoTri, int money, string maHang, string maLoaiThietBi, int soLuong)
+        public bool insertEmployee(string hoTen, string maNhanVien, bool phai, DateTime ngaySinh, DateTime ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
         {
-            string query = "insert into THIETBI(tenthietbi, matb, ngmua, ngsd, hanbaotri, gia, mahang, maltb, soluong) values(@tenThietBi, @maThietBi, @ngayMua, @ngaySuDung, @hanBaoTri, @money, @maHang, @maLoaiThietBi, @soLuong)";
-            object[] value = new object[] { tenThietBi, maThietBi, ngayMua, ngaySuDung, hanBaoTri, money, maHang, maLoaiThietBi, soLuong };
+            string query = "insert into NHANVIEN( hoten, manv, phai, ngsinh, ngvaolam, sdt, email, luong, malnv ) values(@hoTen, @maNhanVien, @phai, @ngaySinh, @ngayVaoLam, @soDienThoai, @email, @luong, @maLoaiNhanVien )";
+            object[] value = new object[] { hoTen, maNhanVien, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
 
-        public bool deleteEquipment(string tenThietBi)
+        public bool deleteEmployee(string name)
         {
-            string query = "delete from THIETBI where tenthietbi = @tenThietBi";
-            object[] value = new object[] { tenThietBi };
+            string query = "delete from NHANVIEN where hoten = @name";
+            object[] value = new object[] { name };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
 
-        public bool updateEquipment(string tenThietBi, string maThietBi, DateTime ngayMua, DateTime ngaySuDung, DateTime hanBaoTri, int money, string maHang, string maLoaiThietBi, int soLuong)
+        public bool updateEmployee (string hoTen, string maNhanVien, bool phai, DateTime ngaySinh, DateTime ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
         {
-            string query = "update Account set tentb = @tenThietBi, ngmua = @ngayMua, ngsd = @ngaySuDung, hanbaotri = @hanBaoTri, gia = @money, mahang = @maHang, maltb = @maLoaiThietBi, soluong = @soLuong where matb = @maThietBi";
-            object[] value = new object[] { tenThietBi, maThietBi, ngayMua, ngaySuDung, hanBaoTri, money, maHang, maLoaiThietBi, soLuong };
+            string query = "update NHANVIEN set hoten = @hoTen, phai = @phai, ngsinh = @ngaySinh, ngvaolam = @ngayVaoLam, sdt = @soDienThoai, email = @email, luong = @luong, malnv = @maLoaiNhanVien where manv = @maNhanVien";
+            object[] value = new object[] { hoTen, maNhanVien, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }

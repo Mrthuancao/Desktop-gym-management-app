@@ -10,25 +10,25 @@ using DTO;
 
 namespace BUS
 {
-    public class ThietBiBUS
+    public class NhanVienBUS
     {
-        ThietBiDAO ThietBiDAO = new ThietBiDAO();
-        public List<THIETBI> GetThietBiList()
+        NhanVienDAO NhanVienDAO = new NhanVienDAO();
+        public List<NHANVIEN> GetEmployeesList()
         {
-            List<THIETBI> listThietBi = new List<THIETBI>();
-            DataTable dt = ThietBiDAO.getAllEquipments();
+            List<NHANVIEN> listNhanVien = new List<NHANVIEN>();
+            DataTable dt = NhanVienDAO.getAllEmployees();
             foreach (DataRow row in dt.Rows)
             {
-                THIETBI ThietBi = new THIETBI(row);
-                listThietBi.Add(ThietBi);
+                NHANVIEN nhanVien = new NHANVIEN(row);
+                listNhanVien.Add(nhanVien);
             }
-            return listThietBi;
+            return listNhanVien;
         }
 
         //public bool logIn(string username, string password)
         //{
         //    string Username = "";
-        //    DataTable dt = ThietBiDAO.getLoginThietBi(username, getHashMD5(password).ToString());
+        //    DataTable dt = NhanVienDAO.getLoginNhanVien(username, getHashMD5(password).ToString());
         //    if (dt != null)
         //    {
         //        foreach (DataRow row in dt.Rows)
@@ -41,17 +41,17 @@ namespace BUS
         //    return false;
         //}
 
-        public THIETBI getEquipmentByName(string username)
+        public NHANVIEN getEmployeeByName(string name)
         {
-            THIETBI ThietBi = ThietBiDAO.getEquipmentByName(username);
-            return ThietBi;
+            NHANVIEN NhanVien = NhanVienDAO.getEmployeeByName(name);
+            return NhanVien;
         }
 
 
-        public THIETBI getEquipmentByID(string ID)
+        public NHANVIEN getEmployeeByID(string id)
         {
-            THIETBI ThietBi = ThietBiDAO.getEquipmentByID(ID);
-            return ThietBi;
+            NHANVIEN NhanVien = NhanVienDAO.getEmployeeByID(id);
+            return NhanVien;
         }
 
 
@@ -59,7 +59,7 @@ namespace BUS
         //{
         //    try
         //    {
-        //        ThietBiDAO.updatePassword(username, getHashMD5(new_password).ToString());
+        //        NhanVienDAO.updatePassword(username, getHashMD5(new_password).ToString());
         //        return true;
         //    }
         //    catch (Exception)
@@ -68,11 +68,11 @@ namespace BUS
         //    }
         //}
 
-        public bool insertEquipment(string tenThietBi, string maThietBi, DateTime ngayMua, DateTime ngaySuDung, DateTime hanBaoTri, int money, string maHang, string maLoaiThietBi, int soLuong)
+        public bool insertEmployee(string hoTen, string maNhanVien, bool phai, DateTime ngaySinh, DateTime ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
         {
             try
             {
-                ThietBiDAO.insertEquipment(tenThietBi, maThietBi, ngayMua, ngaySuDung, hanBaoTri, money, maHang, maLoaiThietBi, soLuong);
+                NhanVienDAO.insertEmployee(hoTen, maNhanVien, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien);
                 return true;
             }
             catch (Exception)
@@ -82,11 +82,11 @@ namespace BUS
 
         }
 
-        public bool deleteEquipment(string username)
+        public bool deleteEmployee(string username)
         {
             try
             {
-                if (ThietBiDAO.deleteEquipment(username))
+                if (NhanVienDAO.deleteEmployee(username))
                     return true;
                 else
                     return false;
@@ -97,11 +97,11 @@ namespace BUS
             }
         }
 
-        public bool updateEquipment(string tenThietBi, string maThietBi, DateTime ngayMua, DateTime ngaySuDung, DateTime hanBaoTri, int money, string maHang, string maLoaiThietBi, int soLuong)
+        public bool updateEmployee(string hoTen, string maNhanVien, bool phai, DateTime ngaySinh, DateTime ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
         {
             try
             {
-                return (ThietBiDAO.updateEquipment(tenThietBi, maThietBi, ngayMua, ngaySuDung, hanBaoTri, money, maHang, maLoaiThietBi, soLuong));
+                return (NhanVienDAO.updateEmployee(hoTen, maNhanVien, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien));
 
             }
             catch (Exception)
