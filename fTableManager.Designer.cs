@@ -66,10 +66,10 @@
             this.pn_titlebar.Controls.Add(this.bt_close);
             this.pn_titlebar.Controls.Add(this.bt_maximize);
             this.pn_titlebar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_titlebar.Location = new System.Drawing.Point(267, 0);
-            this.pn_titlebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pn_titlebar.Location = new System.Drawing.Point(200, 0);
+            this.pn_titlebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_titlebar.Name = "pn_titlebar";
-            this.pn_titlebar.Size = new System.Drawing.Size(865, 34);
+            this.pn_titlebar.Size = new System.Drawing.Size(934, 28);
             this.pn_titlebar.TabIndex = 1;
             this.pn_titlebar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_titlebar_MouseDown);
             // 
@@ -78,10 +78,9 @@
             this.lb_titleCharform.AutoSize = true;
             this.lb_titleCharform.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_titleCharform.ForeColor = System.Drawing.Color.BlueViolet;
-            this.lb_titleCharform.Location = new System.Drawing.Point(61, 5);
-            this.lb_titleCharform.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_titleCharform.Location = new System.Drawing.Point(46, 4);
             this.lb_titleCharform.Name = "lb_titleCharform";
-            this.lb_titleCharform.Size = new System.Drawing.Size(68, 25);
+            this.lb_titleCharform.Size = new System.Drawing.Size(56, 20);
             this.lb_titleCharform.TabIndex = 4;
             this.lb_titleCharform.Text = "Home";
             // 
@@ -93,11 +92,10 @@
             this.ic_currentChildform.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.ic_currentChildform.IconColor = System.Drawing.Color.Purple;
             this.ic_currentChildform.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ic_currentChildform.IconSize = 34;
-            this.ic_currentChildform.Location = new System.Drawing.Point(15, 0);
-            this.ic_currentChildform.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ic_currentChildform.IconSize = 28;
+            this.ic_currentChildform.Location = new System.Drawing.Point(11, 0);
             this.ic_currentChildform.Name = "ic_currentChildform";
-            this.ic_currentChildform.Size = new System.Drawing.Size(43, 34);
+            this.ic_currentChildform.Size = new System.Drawing.Size(32, 28);
             this.ic_currentChildform.TabIndex = 0;
             this.ic_currentChildform.TabStop = false;
             // 
@@ -111,10 +109,10 @@
             this.bt_minimize.IconColor = System.Drawing.Color.White;
             this.bt_minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_minimize.IconSize = 20;
-            this.bt_minimize.Location = new System.Drawing.Point(729, 0);
-            this.bt_minimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_minimize.Location = new System.Drawing.Point(832, 0);
+            this.bt_minimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_minimize.Name = "bt_minimize";
-            this.bt_minimize.Size = new System.Drawing.Size(45, 34);
+            this.bt_minimize.Size = new System.Drawing.Size(34, 28);
             this.bt_minimize.TabIndex = 3;
             this.bt_minimize.UseVisualStyleBackColor = false;
             this.bt_minimize.Click += new System.EventHandler(this.bt_minimize_Click);
@@ -129,10 +127,10 @@
             this.bt_close.IconColor = System.Drawing.Color.White;
             this.bt_close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_close.IconSize = 20;
-            this.bt_close.Location = new System.Drawing.Point(820, 0);
-            this.bt_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_close.Location = new System.Drawing.Point(900, 0);
+            this.bt_close.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_close.Name = "bt_close";
-            this.bt_close.Size = new System.Drawing.Size(45, 34);
+            this.bt_close.Size = new System.Drawing.Size(34, 28);
             this.bt_close.TabIndex = 1;
             this.bt_close.UseVisualStyleBackColor = false;
             this.bt_close.Click += new System.EventHandler(this.bt_close_Click);
@@ -147,10 +145,10 @@
             this.bt_maximize.IconColor = System.Drawing.Color.White;
             this.bt_maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_maximize.IconSize = 20;
-            this.bt_maximize.Location = new System.Drawing.Point(775, 0);
-            this.bt_maximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_maximize.Location = new System.Drawing.Point(866, 0);
+            this.bt_maximize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_maximize.Name = "bt_maximize";
-            this.bt_maximize.Size = new System.Drawing.Size(45, 34);
+            this.bt_maximize.Size = new System.Drawing.Size(34, 28);
             this.bt_maximize.TabIndex = 2;
             this.bt_maximize.UseVisualStyleBackColor = false;
             this.bt_maximize.Click += new System.EventHandler(this.bt_maximize_Click);
@@ -159,10 +157,10 @@
             // 
             this.pn_destop.BackColor = System.Drawing.Color.White;
             this.pn_destop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_destop.Location = new System.Drawing.Point(267, 34);
-            this.pn_destop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pn_destop.Location = new System.Drawing.Point(200, 28);
+            this.pn_destop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_destop.Name = "pn_destop";
-            this.pn_destop.Size = new System.Drawing.Size(865, 619);
+            this.pn_destop.Size = new System.Drawing.Size(934, 633);
             this.pn_destop.TabIndex = 2;
             // 
             // fileSystemWatcher1
@@ -176,9 +174,9 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 91);
+            this.panel1.Size = new System.Drawing.Size(200, 74);
             this.panel1.TabIndex = 0;
             // 
             // bt_menu
@@ -189,10 +187,10 @@
             this.bt_menu.IconColor = System.Drawing.Color.Black;
             this.bt_menu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_menu.IconSize = 30;
-            this.bt_menu.Location = new System.Drawing.Point(207, 0);
-            this.bt_menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_menu.Location = new System.Drawing.Point(155, 0);
+            this.bt_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_menu.Name = "bt_menu";
-            this.bt_menu.Size = new System.Drawing.Size(60, 91);
+            this.bt_menu.Size = new System.Drawing.Size(45, 74);
             this.bt_menu.TabIndex = 0;
             this.bt_menu.UseVisualStyleBackColor = true;
             this.bt_menu.Click += new System.EventHandler(this.bt_menu_Click);
@@ -200,10 +198,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Gym_Management.Properties.Resources.Fitness_Gym_Dumbbell_Abstract_Logo_Design_Icon_Vector21;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(25, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(124, 84);
+            this.pictureBox1.Size = new System.Drawing.Size(93, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -223,9 +221,9 @@
             this.pn_menu.Controls.Add(this.panel1);
             this.pn_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_menu.Location = new System.Drawing.Point(0, 0);
-            this.pn_menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pn_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_menu.Name = "pn_menu";
-            this.pn_menu.Size = new System.Drawing.Size(267, 653);
+            this.pn_menu.Size = new System.Drawing.Size(200, 661);
             this.pn_menu.TabIndex = 0;
             // 
             // bt_exit
@@ -238,11 +236,11 @@
             this.bt_exit.IconColor = System.Drawing.Color.Black;
             this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_exit.IconSize = 30;
-            this.bt_exit.Location = new System.Drawing.Point(0, 600);
-            this.bt_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_exit.Location = new System.Drawing.Point(0, 618);
+            this.bt_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_exit.Name = "bt_exit";
-            this.bt_exit.Padding = new System.Windows.Forms.Padding(11, 0, 0, 10);
-            this.bt_exit.Size = new System.Drawing.Size(267, 53);
+            this.bt_exit.Padding = new System.Windows.Forms.Padding(8, 0, 0, 8);
+            this.bt_exit.Size = new System.Drawing.Size(200, 43);
             this.bt_exit.TabIndex = 7;
             this.bt_exit.Tag = "Đăng xuất";
             this.bt_exit.Text = "   Đăng xuất";
@@ -260,11 +258,11 @@
             this.bt_captaikhoan.IconColor = System.Drawing.Color.Black;
             this.bt_captaikhoan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_captaikhoan.IconSize = 30;
-            this.bt_captaikhoan.Location = new System.Drawing.Point(0, 409);
-            this.bt_captaikhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_captaikhoan.Location = new System.Drawing.Point(0, 332);
+            this.bt_captaikhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_captaikhoan.Name = "bt_captaikhoan";
-            this.bt_captaikhoan.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.bt_captaikhoan.Size = new System.Drawing.Size(267, 53);
+            this.bt_captaikhoan.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bt_captaikhoan.Size = new System.Drawing.Size(200, 43);
             this.bt_captaikhoan.TabIndex = 6;
             this.bt_captaikhoan.Tag = "Cấp tài khoản";
             this.bt_captaikhoan.Text = "   Cấp tài khoản";
@@ -282,11 +280,11 @@
             this.bt_doanhthu.IconColor = System.Drawing.Color.Black;
             this.bt_doanhthu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_doanhthu.IconSize = 30;
-            this.bt_doanhthu.Location = new System.Drawing.Point(0, 356);
-            this.bt_doanhthu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_doanhthu.Location = new System.Drawing.Point(0, 289);
+            this.bt_doanhthu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_doanhthu.Name = "bt_doanhthu";
-            this.bt_doanhthu.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.bt_doanhthu.Size = new System.Drawing.Size(267, 53);
+            this.bt_doanhthu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bt_doanhthu.Size = new System.Drawing.Size(200, 43);
             this.bt_doanhthu.TabIndex = 5;
             this.bt_doanhthu.Tag = "Doanh thu";
             this.bt_doanhthu.Text = "   Doanh thu";
@@ -304,11 +302,11 @@
             this.bt_thongtin.IconColor = System.Drawing.Color.Black;
             this.bt_thongtin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_thongtin.IconSize = 30;
-            this.bt_thongtin.Location = new System.Drawing.Point(0, 303);
-            this.bt_thongtin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_thongtin.Location = new System.Drawing.Point(0, 246);
+            this.bt_thongtin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_thongtin.Name = "bt_thongtin";
-            this.bt_thongtin.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.bt_thongtin.Size = new System.Drawing.Size(267, 53);
+            this.bt_thongtin.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bt_thongtin.Size = new System.Drawing.Size(200, 43);
             this.bt_thongtin.TabIndex = 4;
             this.bt_thongtin.Tag = "Thông tin";
             this.bt_thongtin.Text = "   Thông tin";
@@ -326,11 +324,11 @@
             this.bt_thietbi.IconColor = System.Drawing.Color.Black;
             this.bt_thietbi.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_thietbi.IconSize = 30;
-            this.bt_thietbi.Location = new System.Drawing.Point(0, 250);
-            this.bt_thietbi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_thietbi.Location = new System.Drawing.Point(0, 203);
+            this.bt_thietbi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_thietbi.Name = "bt_thietbi";
-            this.bt_thietbi.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.bt_thietbi.Size = new System.Drawing.Size(267, 53);
+            this.bt_thietbi.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bt_thietbi.Size = new System.Drawing.Size(200, 43);
             this.bt_thietbi.TabIndex = 3;
             this.bt_thietbi.Tag = "Thiết bị";
             this.bt_thietbi.Text = "   Thiết bị";
@@ -348,11 +346,11 @@
             this.bt_sanpham.IconColor = System.Drawing.Color.Black;
             this.bt_sanpham.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_sanpham.IconSize = 30;
-            this.bt_sanpham.Location = new System.Drawing.Point(0, 197);
-            this.bt_sanpham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_sanpham.Location = new System.Drawing.Point(0, 160);
+            this.bt_sanpham.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_sanpham.Name = "bt_sanpham";
-            this.bt_sanpham.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.bt_sanpham.Size = new System.Drawing.Size(267, 53);
+            this.bt_sanpham.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bt_sanpham.Size = new System.Drawing.Size(200, 43);
             this.bt_sanpham.TabIndex = 2;
             this.bt_sanpham.Tag = "Sản phẩm";
             this.bt_sanpham.Text = "   Sản phẩm";
@@ -370,11 +368,11 @@
             this.bt_nhanvien.IconColor = System.Drawing.Color.Black;
             this.bt_nhanvien.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_nhanvien.IconSize = 30;
-            this.bt_nhanvien.Location = new System.Drawing.Point(0, 144);
-            this.bt_nhanvien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_nhanvien.Location = new System.Drawing.Point(0, 117);
+            this.bt_nhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_nhanvien.Name = "bt_nhanvien";
-            this.bt_nhanvien.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.bt_nhanvien.Size = new System.Drawing.Size(267, 53);
+            this.bt_nhanvien.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bt_nhanvien.Size = new System.Drawing.Size(200, 43);
             this.bt_nhanvien.TabIndex = 1;
             this.bt_nhanvien.Tag = "Nhân viên";
             this.bt_nhanvien.Text = "   Nhân viên";
@@ -392,11 +390,11 @@
             this.bt_khachhang.IconColor = System.Drawing.Color.Black;
             this.bt_khachhang.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_khachhang.IconSize = 30;
-            this.bt_khachhang.Location = new System.Drawing.Point(0, 91);
-            this.bt_khachhang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_khachhang.Location = new System.Drawing.Point(0, 74);
+            this.bt_khachhang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_khachhang.Name = "bt_khachhang";
-            this.bt_khachhang.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.bt_khachhang.Size = new System.Drawing.Size(267, 53);
+            this.bt_khachhang.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bt_khachhang.Size = new System.Drawing.Size(200, 43);
             this.bt_khachhang.TabIndex = 0;
             this.bt_khachhang.Tag = "Hội viên";
             this.bt_khachhang.Text = "   Hội viên";
@@ -406,14 +404,14 @@
             // 
             // fTableManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 653);
+            this.ClientSize = new System.Drawing.Size(1134, 661);
             this.Controls.Add(this.pn_destop);
             this.Controls.Add(this.pn_titlebar);
             this.Controls.Add(this.pn_menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MinimumSize = new System.Drawing.Size(1150, 700);
             this.Name = "fTableManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

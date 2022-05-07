@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -36,18 +39,21 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pn_doanhthu = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.customButton3 = new Gym_Management.CustomButton();
             this.customButton2 = new Gym_Management.CustomButton();
             this.customButton1 = new Gym_Management.CustomButton();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.dtg_Sptk = new System.Windows.Forms.DataGridView();
+            this.helo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wew = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label12 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.lb_Sltb = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.lb_Slsp = new System.Windows.Forms.Label();
@@ -73,15 +79,13 @@
             this.lb_doanhthu = new System.Windows.Forms.Label();
             this.dt_ketthuc = new System.Windows.Forms.DateTimePicker();
             this.dt_batdau = new System.Windows.Forms.DateTimePicker();
-            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
-            this.dtg_Sptk = new System.Windows.Forms.DataGridView();
-            this.helo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wew = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_doanhthu.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_Sptk)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Top5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Doanhthu)).BeginInit();
             this.panel4.SuspendLayout();
@@ -90,10 +94,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_Sptk)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_doanhthu
@@ -208,12 +208,60 @@
             this.panel6.Size = new System.Drawing.Size(337, 157);
             this.panel6.TabIndex = 46;
             // 
+            // dtg_Sptk
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dtg_Sptk.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtg_Sptk.BackgroundColor = System.Drawing.Color.DimGray;
+            this.dtg_Sptk.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtg_Sptk.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
+            this.dtg_Sptk.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_Sptk.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtg_Sptk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_Sptk.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.helo,
+            this.wew});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtg_Sptk.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dtg_Sptk.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtg_Sptk.EnableHeadersVisualStyles = false;
+            this.dtg_Sptk.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dtg_Sptk.Location = new System.Drawing.Point(0, 41);
+            this.dtg_Sptk.Name = "dtg_Sptk";
+            this.dtg_Sptk.Size = new System.Drawing.Size(337, 116);
+            this.dtg_Sptk.TabIndex = 47;
+            // 
+            // helo
+            // 
+            this.helo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.helo.HeaderText = "Mã nhân viên";
+            this.helo.Name = "helo";
+            // 
+            // wew
+            // 
+            this.wew.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.wew.HeaderText = "Tên nhân viên";
+            this.wew.Name = "wew";
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(0, 0);
+            this.label12.Location = new System.Drawing.Point(79, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(171, 25);
             this.label12.TabIndex = 46;
@@ -251,6 +299,45 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(209, 157);
             this.panel5.TabIndex = 45;
+            // 
+            // iconPictureBox6
+            // 
+            this.iconPictureBox6.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox6.ForeColor = System.Drawing.Color.Red;
+            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.ListUl;
+            this.iconPictureBox6.IconColor = System.Drawing.Color.Red;
+            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox6.Location = new System.Drawing.Point(23, 104);
+            this.iconPictureBox6.Name = "iconPictureBox6";
+            this.iconPictureBox6.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox6.TabIndex = 52;
+            this.iconPictureBox6.TabStop = false;
+            // 
+            // iconPictureBox5
+            // 
+            this.iconPictureBox5.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox5.ForeColor = System.Drawing.Color.Red;
+            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.ListUl;
+            this.iconPictureBox5.IconColor = System.Drawing.Color.Red;
+            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox5.Location = new System.Drawing.Point(23, 66);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox5.TabIndex = 51;
+            this.iconPictureBox5.TabStop = false;
+            // 
+            // iconPictureBox4
+            // 
+            this.iconPictureBox4.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox4.ForeColor = System.Drawing.Color.Red;
+            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.ListUl;
+            this.iconPictureBox4.IconColor = System.Drawing.Color.Red;
+            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox4.Location = new System.Drawing.Point(23, 28);
+            this.iconPictureBox4.Name = "iconPictureBox4";
+            this.iconPictureBox4.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox4.TabIndex = 48;
+            this.iconPictureBox4.TabStop = false;
             // 
             // lb_Sltb
             // 
@@ -299,7 +386,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Location = new System.Drawing.Point(26, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(138, 25);
             this.label6.TabIndex = 46;
@@ -554,6 +641,7 @@
             // 
             this.lb_doanhthu1.AutoSize = true;
             this.lb_doanhthu1.Font = new System.Drawing.Font("Segoe UI Light", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_doanhthu1.ForeColor = System.Drawing.Color.Black;
             this.lb_doanhthu1.Location = new System.Drawing.Point(3, 43);
             this.lb_doanhthu1.Name = "lb_doanhthu1";
             this.lb_doanhthu1.Size = new System.Drawing.Size(64, 20);
@@ -564,6 +652,7 @@
             // 
             this.lb_doanhthu.AutoSize = true;
             this.lb_doanhthu.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.lb_doanhthu.ForeColor = System.Drawing.Color.Black;
             this.lb_doanhthu.Location = new System.Drawing.Point(171, 9);
             this.lb_doanhthu.Name = "lb_doanhthu";
             this.lb_doanhthu.Size = new System.Drawing.Size(256, 28);
@@ -594,93 +683,6 @@
             this.dt_batdau.Size = new System.Drawing.Size(232, 26);
             this.dt_batdau.TabIndex = 30;
             // 
-            // iconPictureBox4
-            // 
-            this.iconPictureBox4.BackColor = System.Drawing.Color.White;
-            this.iconPictureBox4.ForeColor = System.Drawing.Color.Red;
-            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.ListUl;
-            this.iconPictureBox4.IconColor = System.Drawing.Color.Red;
-            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.Location = new System.Drawing.Point(23, 28);
-            this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox4.TabIndex = 48;
-            this.iconPictureBox4.TabStop = false;
-            // 
-            // iconPictureBox5
-            // 
-            this.iconPictureBox5.BackColor = System.Drawing.Color.White;
-            this.iconPictureBox5.ForeColor = System.Drawing.Color.Red;
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.ListUl;
-            this.iconPictureBox5.IconColor = System.Drawing.Color.Red;
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.Location = new System.Drawing.Point(23, 66);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox5.TabIndex = 51;
-            this.iconPictureBox5.TabStop = false;
-            // 
-            // iconPictureBox6
-            // 
-            this.iconPictureBox6.BackColor = System.Drawing.Color.White;
-            this.iconPictureBox6.ForeColor = System.Drawing.Color.Red;
-            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.ListUl;
-            this.iconPictureBox6.IconColor = System.Drawing.Color.Red;
-            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox6.Location = new System.Drawing.Point(23, 104);
-            this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox6.TabIndex = 52;
-            this.iconPictureBox6.TabStop = false;
-            // 
-            // dtg_Sptk
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
-            this.dtg_Sptk.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtg_Sptk.BackgroundColor = System.Drawing.Color.DimGray;
-            this.dtg_Sptk.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtg_Sptk.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
-            this.dtg_Sptk.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_Sptk.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtg_Sptk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_Sptk.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.helo,
-            this.wew});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg_Sptk.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtg_Sptk.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtg_Sptk.EnableHeadersVisualStyles = false;
-            this.dtg_Sptk.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dtg_Sptk.Location = new System.Drawing.Point(0, 41);
-            this.dtg_Sptk.Name = "dtg_Sptk";
-            this.dtg_Sptk.Size = new System.Drawing.Size(337, 116);
-            this.dtg_Sptk.TabIndex = 47;
-            // 
-            // helo
-            // 
-            this.helo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.helo.HeaderText = "Mã nhân viên";
-            this.helo.Name = "helo";
-            // 
-            // wew
-            // 
-            this.wew.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.wew.HeaderText = "Tên nhân viên";
-            this.wew.Name = "wew";
-            // 
             // DoanhThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -694,8 +696,12 @@
             this.pn_doanhthu.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_Sptk)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Top5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Doanhthu)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -707,10 +713,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_Sptk)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gym_Management
 {
-    public partial class ThongTin : Form
+    public partial class ThemSp : Form
     {
-        public ThongTin()
+        public ThemSp()
         {
             InitializeComponent();
         }
