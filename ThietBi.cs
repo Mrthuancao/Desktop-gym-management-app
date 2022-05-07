@@ -16,5 +16,17 @@ namespace Gym_Management
         {
             InitializeComponent();
         }
+
+        private void bt_Them_Click(object sender, EventArgs e)
+        {
+            ThemTb f = new ThemTb();
+            f.ShowDialog();
+        }
+
+        private void bt_sua_Click(object sender, EventArgs e)
+        {
+            SuaTb f =   new SuaTb();
+            f.ShowDialog();
+        }
     }
 }

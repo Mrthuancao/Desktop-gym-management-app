@@ -337,7 +337,8 @@ namespace Gym_Management
         private void bt_thongtin_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new ThongTin());
+            ThongTinTk f = new ThongTinTk();
+            f.ShowDialog();
         }
 
         private void bt_doanhthu_Click(object sender, EventArgs e)

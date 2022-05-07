@@ -34,38 +34,43 @@
             this.pn_thietbi = new System.Windows.Forms.Panel();
             this.lb_danhsach = new System.Windows.Forms.Label();
             this.lb_thongtin = new System.Windows.Forms.Label();
-            this.tb_giatb = new Gym_Management.CustomTextBox();
-            this.tb_soluongtb = new Gym_Management.CustomTextBox();
             this.lb_giatb = new System.Windows.Forms.Label();
             this.lb_hangtb = new System.Windows.Forms.Label();
-            this.bt_search = new FontAwesome.Sharp.IconButton();
-            this.tb_Search = new Gym_Management.CustomTextBox();
             this.gb_chucnang = new System.Windows.Forms.GroupBox();
-            this.bt_sua = new Gym_Management.CustomButton();
-            this.bt_xoa = new Gym_Management.CustomButton();
-            this.bt_Them = new Gym_Management.CustomButton();
             this.lb_sltb = new System.Windows.Forms.Label();
             this.lb_loaitb = new System.Windows.Forms.Label();
             this.lb_tentb = new System.Windows.Forms.Label();
+            this.dtg_TB = new System.Windows.Forms.DataGridView();
+            this.tb_giatb = new Gym_Management.CustomTextBox();
+            this.tb_soluongtb = new Gym_Management.CustomTextBox();
+            this.tb_Search = new Gym_Management.CustomTextBox();
+            this.bt_sua = new Gym_Management.CustomButton();
+            this.bt_xoa = new Gym_Management.CustomButton();
+            this.bt_Them = new Gym_Management.CustomButton();
             this.tb_loaitb = new Gym_Management.CustomTextBox();
             this.tb_hangtb = new Gym_Management.CustomTextBox();
             this.tb_tentb = new Gym_Management.CustomTextBox();
-            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
-            this.dtg_TB = new System.Windows.Forms.DataGridView();
             this.matb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tentb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lb_tinhtrang = new System.Windows.Forms.Label();
+            this.bt_search = new FontAwesome.Sharp.IconButton();
+            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.pn_thietbi.SuspendLayout();
             this.gb_chucnang.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_TB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_thietbi
             // 
+            this.pn_thietbi.Controls.Add(this.label1);
+            this.pn_thietbi.Controls.Add(this.lb_tinhtrang);
             this.pn_thietbi.Controls.Add(this.lb_danhsach);
             this.pn_thietbi.Controls.Add(this.lb_thongtin);
             this.pn_thietbi.Controls.Add(this.tb_giatb);
@@ -93,7 +98,7 @@
             // 
             this.lb_danhsach.AutoSize = true;
             this.lb_danhsach.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.lb_danhsach.Location = new System.Drawing.Point(334, 313);
+            this.lb_danhsach.Location = new System.Drawing.Point(334, 315);
             this.lb_danhsach.Name = "lb_danhsach";
             this.lb_danhsach.Size = new System.Drawing.Size(185, 28);
             this.lb_danhsach.TabIndex = 61;
@@ -108,6 +113,110 @@
             this.lb_thongtin.Size = new System.Drawing.Size(179, 28);
             this.lb_thongtin.TabIndex = 60;
             this.lb_thongtin.Text = "Thông tin thiết bị";
+            // 
+            // lb_giatb
+            // 
+            this.lb_giatb.AutoSize = true;
+            this.lb_giatb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_giatb.Location = new System.Drawing.Point(288, 243);
+            this.lb_giatb.Name = "lb_giatb";
+            this.lb_giatb.Size = new System.Drawing.Size(33, 16);
+            this.lb_giatb.TabIndex = 57;
+            this.lb_giatb.Text = "Giá:";
+            // 
+            // lb_hangtb
+            // 
+            this.lb_hangtb.AutoSize = true;
+            this.lb_hangtb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_hangtb.Location = new System.Drawing.Point(288, 202);
+            this.lb_hangtb.Name = "lb_hangtb";
+            this.lb_hangtb.Size = new System.Drawing.Size(108, 16);
+            this.lb_hangtb.TabIndex = 56;
+            this.lb_hangtb.Text = "Hãng sản xuất:";
+            // 
+            // gb_chucnang
+            // 
+            this.gb_chucnang.Controls.Add(this.bt_sua);
+            this.gb_chucnang.Controls.Add(this.bt_xoa);
+            this.gb_chucnang.Controls.Add(this.bt_Them);
+            this.gb_chucnang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.gb_chucnang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gb_chucnang.Location = new System.Drawing.Point(664, 79);
+            this.gb_chucnang.Name = "gb_chucnang";
+            this.gb_chucnang.Size = new System.Drawing.Size(181, 198);
+            this.gb_chucnang.TabIndex = 53;
+            this.gb_chucnang.TabStop = false;
+            this.gb_chucnang.Text = "Chức năng";
+            // 
+            // lb_sltb
+            // 
+            this.lb_sltb.AutoSize = true;
+            this.lb_sltb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_sltb.Location = new System.Drawing.Point(288, 161);
+            this.lb_sltb.Name = "lb_sltb";
+            this.lb_sltb.Size = new System.Drawing.Size(71, 16);
+            this.lb_sltb.TabIndex = 25;
+            this.lb_sltb.Text = "Số lượng:";
+            // 
+            // lb_loaitb
+            // 
+            this.lb_loaitb.AutoSize = true;
+            this.lb_loaitb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_loaitb.Location = new System.Drawing.Point(288, 120);
+            this.lb_loaitb.Name = "lb_loaitb";
+            this.lb_loaitb.Size = new System.Drawing.Size(39, 16);
+            this.lb_loaitb.TabIndex = 24;
+            this.lb_loaitb.Text = "Loại:";
+            // 
+            // lb_tentb
+            // 
+            this.lb_tentb.AutoSize = true;
+            this.lb_tentb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tentb.Location = new System.Drawing.Point(288, 79);
+            this.lb_tentb.Name = "lb_tentb";
+            this.lb_tentb.Size = new System.Drawing.Size(38, 16);
+            this.lb_tentb.TabIndex = 23;
+            this.lb_tentb.Text = "Tên:";
+            // 
+            // dtg_TB
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dtg_TB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtg_TB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtg_TB.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
+            this.dtg_TB.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_TB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtg_TB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_TB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.matb,
+            this.tentb,
+            this.loai,
+            this.soluong,
+            this.hang,
+            this.ngnhap,
+            this.gia});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtg_TB.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dtg_TB.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtg_TB.EnableHeadersVisualStyles = false;
+            this.dtg_TB.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dtg_TB.Location = new System.Drawing.Point(0, 357);
+            this.dtg_TB.Name = "dtg_TB";
+            this.dtg_TB.Size = new System.Drawing.Size(884, 284);
+            this.dtg_TB.TabIndex = 1;
             // 
             // tb_giatb
             // 
@@ -153,42 +262,6 @@
             this.tb_soluongtb.Texts = "";
             this.tb_soluongtb.UnderlinedStyle = false;
             // 
-            // lb_giatb
-            // 
-            this.lb_giatb.AutoSize = true;
-            this.lb_giatb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_giatb.Location = new System.Drawing.Point(288, 243);
-            this.lb_giatb.Name = "lb_giatb";
-            this.lb_giatb.Size = new System.Drawing.Size(33, 16);
-            this.lb_giatb.TabIndex = 57;
-            this.lb_giatb.Text = "Giá:";
-            // 
-            // lb_hangtb
-            // 
-            this.lb_hangtb.AutoSize = true;
-            this.lb_hangtb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_hangtb.Location = new System.Drawing.Point(288, 202);
-            this.lb_hangtb.Name = "lb_hangtb";
-            this.lb_hangtb.Size = new System.Drawing.Size(108, 16);
-            this.lb_hangtb.TabIndex = 56;
-            this.lb_hangtb.Text = "Hãng sản xuất:";
-            // 
-            // bt_search
-            // 
-            this.bt_search.BackColor = System.Drawing.Color.Transparent;
-            this.bt_search.FlatAppearance.BorderSize = 0;
-            this.bt_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_search.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.bt_search.IconColor = System.Drawing.Color.Black;
-            this.bt_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_search.IconSize = 30;
-            this.bt_search.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bt_search.Location = new System.Drawing.Point(848, 31);
-            this.bt_search.Name = "bt_search";
-            this.bt_search.Size = new System.Drawing.Size(33, 33);
-            this.bt_search.TabIndex = 55;
-            this.bt_search.UseVisualStyleBackColor = false;
-            // 
             // tb_Search
             // 
             this.tb_Search.BackColor = System.Drawing.SystemColors.Window;
@@ -211,20 +284,6 @@
             this.tb_Search.Texts = "";
             this.tb_Search.UnderlinedStyle = false;
             // 
-            // gb_chucnang
-            // 
-            this.gb_chucnang.Controls.Add(this.bt_sua);
-            this.gb_chucnang.Controls.Add(this.bt_xoa);
-            this.gb_chucnang.Controls.Add(this.bt_Them);
-            this.gb_chucnang.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.gb_chucnang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_chucnang.Location = new System.Drawing.Point(664, 79);
-            this.gb_chucnang.Name = "gb_chucnang";
-            this.gb_chucnang.Size = new System.Drawing.Size(181, 198);
-            this.gb_chucnang.TabIndex = 53;
-            this.gb_chucnang.TabStop = false;
-            this.gb_chucnang.Text = "Chức năng";
-            // 
             // bt_sua
             // 
             this.bt_sua.BackColor = System.Drawing.Color.DarkOrange;
@@ -245,6 +304,7 @@
             this.bt_sua.Text = "Sửa";
             this.bt_sua.TextColor = System.Drawing.Color.Transparent;
             this.bt_sua.UseVisualStyleBackColor = false;
+            this.bt_sua.Click += new System.EventHandler(this.bt_sua_Click);
             // 
             // bt_xoa
             // 
@@ -287,36 +347,7 @@
             this.bt_Them.Text = "Thêm";
             this.bt_Them.TextColor = System.Drawing.Color.Transparent;
             this.bt_Them.UseVisualStyleBackColor = false;
-            // 
-            // lb_sltb
-            // 
-            this.lb_sltb.AutoSize = true;
-            this.lb_sltb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_sltb.Location = new System.Drawing.Point(288, 161);
-            this.lb_sltb.Name = "lb_sltb";
-            this.lb_sltb.Size = new System.Drawing.Size(71, 16);
-            this.lb_sltb.TabIndex = 25;
-            this.lb_sltb.Text = "Số lượng:";
-            // 
-            // lb_loaitb
-            // 
-            this.lb_loaitb.AutoSize = true;
-            this.lb_loaitb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_loaitb.Location = new System.Drawing.Point(288, 120);
-            this.lb_loaitb.Name = "lb_loaitb";
-            this.lb_loaitb.Size = new System.Drawing.Size(39, 16);
-            this.lb_loaitb.TabIndex = 24;
-            this.lb_loaitb.Text = "Loại:";
-            // 
-            // lb_tentb
-            // 
-            this.lb_tentb.AutoSize = true;
-            this.lb_tentb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tentb.Location = new System.Drawing.Point(288, 79);
-            this.lb_tentb.Name = "lb_tentb";
-            this.lb_tentb.Size = new System.Drawing.Size(38, 16);
-            this.lb_tentb.TabIndex = 23;
-            this.lb_tentb.Text = "Tên:";
+            this.bt_Them.Click += new System.EventHandler(this.bt_Them_Click);
             // 
             // tb_loaitb
             // 
@@ -384,61 +415,6 @@
             this.tb_tentb.Texts = "";
             this.tb_tentb.UnderlinedStyle = false;
             // 
-            // pb_anh
-            // 
-            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pb_anh.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.pb_anh.IconColor = System.Drawing.SystemColors.ControlText;
-            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pb_anh.IconSize = 202;
-            this.pb_anh.Location = new System.Drawing.Point(12, 58);
-            this.pb_anh.Name = "pb_anh";
-            this.pb_anh.Size = new System.Drawing.Size(269, 202);
-            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_anh.TabIndex = 12;
-            this.pb_anh.TabStop = false;
-            // 
-            // dtg_TB
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
-            this.dtg_TB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtg_TB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtg_TB.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
-            this.dtg_TB.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_TB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dtg_TB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_TB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.matb,
-            this.tentb,
-            this.loai,
-            this.soluong,
-            this.hang,
-            this.gia});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg_TB.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtg_TB.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dtg_TB.EnableHeadersVisualStyles = false;
-            this.dtg_TB.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dtg_TB.Location = new System.Drawing.Point(0, 357);
-            this.dtg_TB.Name = "dtg_TB";
-            this.dtg_TB.Size = new System.Drawing.Size(884, 284);
-            this.dtg_TB.TabIndex = 1;
-            // 
             // matb
             // 
             this.matb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -469,11 +445,70 @@
             this.hang.HeaderText = "Hãng sản xuất";
             this.hang.Name = "hang";
             // 
+            // ngnhap
+            // 
+            this.ngnhap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ngnhap.HeaderText = "Ngày nhập";
+            this.ngnhap.Name = "ngnhap";
+            // 
             // gia
             // 
             this.gia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.gia.HeaderText = "Giá";
             this.gia.Name = "gia";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(398, 276);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 28);
+            this.label1.TabIndex = 64;
+            this.label1.Text = "Còn hàng";
+            // 
+            // lb_tinhtrang
+            // 
+            this.lb_tinhtrang.AutoSize = true;
+            this.lb_tinhtrang.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tinhtrang.Location = new System.Drawing.Point(288, 288);
+            this.lb_tinhtrang.Name = "lb_tinhtrang";
+            this.lb_tinhtrang.Size = new System.Drawing.Size(81, 16);
+            this.lb_tinhtrang.TabIndex = 63;
+            this.lb_tinhtrang.Text = "Tình trạng:";
+            // 
+            // bt_search
+            // 
+            this.bt_search.BackColor = System.Drawing.Color.Transparent;
+            this.bt_search.FlatAppearance.BorderSize = 0;
+            this.bt_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_search.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.bt_search.IconColor = System.Drawing.Color.Black;
+            this.bt_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_search.IconSize = 30;
+            this.bt_search.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bt_search.Location = new System.Drawing.Point(848, 31);
+            this.bt_search.Name = "bt_search";
+            this.bt_search.Size = new System.Drawing.Size(33, 33);
+            this.bt_search.TabIndex = 55;
+            this.bt_search.UseVisualStyleBackColor = false;
+            // 
+            // pb_anh
+            // 
+            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pb_anh.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.pb_anh.IconColor = System.Drawing.SystemColors.ControlText;
+            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pb_anh.IconSize = 202;
+            this.pb_anh.Location = new System.Drawing.Point(12, 58);
+            this.pb_anh.Name = "pb_anh";
+            this.pb_anh.Size = new System.Drawing.Size(269, 202);
+            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_anh.TabIndex = 12;
+            this.pb_anh.TabStop = false;
             // 
             // ThietBi
             // 
@@ -487,8 +522,8 @@
             this.pn_thietbi.ResumeLayout(false);
             this.pn_thietbi.PerformLayout();
             this.gb_chucnang.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_TB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -497,12 +532,6 @@
 
         private System.Windows.Forms.Panel pn_thietbi;
         private System.Windows.Forms.DataGridView dtg_TB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn matb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tentb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn loai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gia;
         private FontAwesome.Sharp.IconPictureBox pb_anh;
         private System.Windows.Forms.GroupBox gb_chucnang;
         private System.Windows.Forms.Label lb_sltb;
@@ -522,5 +551,14 @@
         private System.Windows.Forms.Label lb_hangtb;
         private System.Windows.Forms.Label lb_thongtin;
         private System.Windows.Forms.Label lb_danhsach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn matb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tentb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngnhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gia;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_tinhtrang;
     }
 }
