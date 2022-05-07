@@ -390,9 +390,9 @@
             this.lb_phai.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_phai.Location = new System.Drawing.Point(30, 345);
             this.lb_phai.Name = "lb_phai";
-            this.lb_phai.Size = new System.Drawing.Size(40, 16);
+            this.lb_phai.Size = new System.Drawing.Size(66, 16);
             this.lb_phai.TabIndex = 19;
-            this.lb_phai.Text = "Phái:";
+            this.lb_phai.Text = "Giới tính:";
             // 
             // lb_tenhv
             // 

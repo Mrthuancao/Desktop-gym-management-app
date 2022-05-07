@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.gb_themhv = new System.Windows.Forms.GroupBox();
-            this.bt_xoahet = new Gym_Management.CustomButton();
-            this.bt_Luu = new Gym_Management.CustomButton();
             this.tb_maPt = new Gym_Management.CustomTextBox();
             this.lb_maPt = new System.Windows.Forms.Label();
             this.dt_ngaydk = new System.Windows.Forms.DateTimePicker();
@@ -48,6 +46,8 @@
             this.tb_Phai = new Gym_Management.CustomTextBox();
             this.tb_MaHV = new Gym_Management.CustomTextBox();
             this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
+            this.bt_xoahet = new Gym_Management.CustomButton();
+            this.bt_Luu = new Gym_Management.CustomButton();
             this.gb_themhv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
             this.SuspendLayout();
@@ -82,48 +82,6 @@
             this.gb_themhv.TabIndex = 2;
             this.gb_themhv.TabStop = false;
             this.gb_themhv.Text = "THÊM HỘI VIÊN";
-            // 
-            // bt_xoahet
-            // 
-            this.bt_xoahet.BackColor = System.Drawing.Color.DarkOrange;
-            this.bt_xoahet.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.bt_xoahet.BorderColor = System.Drawing.SystemColors.Control;
-            this.bt_xoahet.BorderRadius = 15;
-            this.bt_xoahet.BorderSize = 0;
-            this.bt_xoahet.FlatAppearance.BorderSize = 0;
-            this.bt_xoahet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_xoahet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bt_xoahet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_xoahet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_xoahet.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoahet.Location = new System.Drawing.Point(270, 582);
-            this.bt_xoahet.Name = "bt_xoahet";
-            this.bt_xoahet.Size = new System.Drawing.Size(70, 27);
-            this.bt_xoahet.TabIndex = 51;
-            this.bt_xoahet.Text = "Xóa hết";
-            this.bt_xoahet.TextColor = System.Drawing.Color.Transparent;
-            this.bt_xoahet.UseVisualStyleBackColor = false;
-            // 
-            // bt_Luu
-            // 
-            this.bt_Luu.BackColor = System.Drawing.Color.DarkOrange;
-            this.bt_Luu.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.bt_Luu.BorderColor = System.Drawing.SystemColors.Control;
-            this.bt_Luu.BorderRadius = 15;
-            this.bt_Luu.BorderSize = 0;
-            this.bt_Luu.FlatAppearance.BorderSize = 0;
-            this.bt_Luu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_Luu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Luu.Location = new System.Drawing.Point(171, 582);
-            this.bt_Luu.Name = "bt_Luu";
-            this.bt_Luu.Size = new System.Drawing.Size(70, 27);
-            this.bt_Luu.TabIndex = 50;
-            this.bt_Luu.Text = "Lưu";
-            this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
-            this.bt_Luu.UseVisualStyleBackColor = false;
             // 
             // tb_maPt
             // 
@@ -249,9 +207,9 @@
             this.lb_phai.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_phai.Location = new System.Drawing.Point(36, 329);
             this.lb_phai.Name = "lb_phai";
-            this.lb_phai.Size = new System.Drawing.Size(40, 16);
+            this.lb_phai.Size = new System.Drawing.Size(66, 16);
             this.lb_phai.TabIndex = 59;
-            this.lb_phai.Text = "Phái:";
+            this.lb_phai.Text = "Giới tính:";
             // 
             // lb_tenhv
             // 
@@ -376,6 +334,48 @@
             this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_anh.TabIndex = 52;
             this.pb_anh.TabStop = false;
+            // 
+            // bt_xoahet
+            // 
+            this.bt_xoahet.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoahet.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoahet.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_xoahet.BorderRadius = 15;
+            this.bt_xoahet.BorderSize = 0;
+            this.bt_xoahet.FlatAppearance.BorderSize = 0;
+            this.bt_xoahet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_xoahet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_xoahet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_xoahet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_xoahet.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_xoahet.Location = new System.Drawing.Point(270, 582);
+            this.bt_xoahet.Name = "bt_xoahet";
+            this.bt_xoahet.Size = new System.Drawing.Size(70, 27);
+            this.bt_xoahet.TabIndex = 51;
+            this.bt_xoahet.Text = "Xóa hết";
+            this.bt_xoahet.TextColor = System.Drawing.Color.Transparent;
+            this.bt_xoahet.UseVisualStyleBackColor = false;
+            // 
+            // bt_Luu
+            // 
+            this.bt_Luu.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_Luu.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_Luu.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_Luu.BorderRadius = 15;
+            this.bt_Luu.BorderSize = 0;
+            this.bt_Luu.FlatAppearance.BorderSize = 0;
+            this.bt_Luu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_Luu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_Luu.Location = new System.Drawing.Point(171, 582);
+            this.bt_Luu.Name = "bt_Luu";
+            this.bt_Luu.Size = new System.Drawing.Size(70, 27);
+            this.bt_Luu.TabIndex = 50;
+            this.bt_Luu.Text = "Lưu";
+            this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
+            this.bt_Luu.UseVisualStyleBackColor = false;
             // 
             // ThemHv
             // 

@@ -133,6 +133,26 @@ namespace Gym_Management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images1 {
+            get {
+                object obj = ResourceManager.GetObject("images1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NO_PAIN_NO_GAIN {
             get {
                 object obj = ResourceManager.GetObject("NO PAIN NO GAIN", resourceCulture);
@@ -166,6 +186,36 @@ namespace Gym_Management.Properties {
         internal static System.Drawing.Bitmap pixlr_bg_result__2_1 {
             get {
                 object obj = ResourceManager.GetObject("pixlr-bg-result (2)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pixlr_bg_result__3_ {
+            get {
+                object obj = ResourceManager.GetObject("pixlr-bg-result (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tải_xuống {
+            get {
+                object obj = ResourceManager.GetObject("tải xuống", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tải_xuống__1_ {
+            get {
+                object obj = ResourceManager.GetObject("tải xuống (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
