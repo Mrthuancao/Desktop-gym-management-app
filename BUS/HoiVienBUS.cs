@@ -28,9 +28,9 @@ namespace BUS
             return hvDAL.GetAllHoivienDetailed();
         }
 
-        public bool InsertDrink(string mahv, string hoten, string phai, string ngsinh, string ngdangki, string sdt, string nvquanli)
+        public bool InsertDrink(string mahv, string hoten, string phai, float cannang, float chieucao, string ngsinh, string ngdangki, string sdt, string nvquanli)
         {
-            return hvDAL.InsertHoivien(mahv, hoten, phai, ngsinh, ngdangki, sdt, nvquanli);
+            return hvDAL.InsertHoivien(mahv, hoten, phai, cannang, chieucao, ngsinh, ngdangki, sdt, nvquanli);
         }
 
         public bool DeleteDrink(string mahv)
@@ -38,9 +38,9 @@ namespace BUS
             return hvDAL.DeleteHoivien(mahv);
         }
 
-        public bool UpdateDrink(string mahv, string hoten, string phai, string ngsinh, string ngdangki, string sdt, string nvquanli)
+        public bool UpdateDrink(string mahv, string hoten, string phai, float cannang, float chieucao, string ngsinh, string ngdangki, string sdt, string nvquanli)
         {
-            return hvDAL.UpdateHoivien(mahv, hoten, phai, ngsinh, ngdangki, sdt, nvquanli);
+            return hvDAL.UpdateHoivien(mahv, hoten, phai, cannang, chieucao, ngsinh, ngdangki, sdt, nvquanli);
         }
     }
 }
