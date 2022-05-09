@@ -30,20 +30,20 @@
         {
             this.gb_themhv = new System.Windows.Forms.GroupBox();
             this.pb_ctk = new FontAwesome.Sharp.IconPictureBox();
-            this.tb_sdt = new Gym_Management.CustomTextBox();
             this.lb_maPt = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tb_email = new Gym_Management.CustomTextBox();
             this.lb_tengoi = new System.Windows.Forms.Label();
             this.lb_phai = new System.Windows.Forms.Label();
             this.lb_username = new System.Windows.Forms.Label();
             this.lb_tennv = new System.Windows.Forms.Label();
+            this.bt_xoa = new Gym_Management.CustomButton();
+            this.tb_sdt = new Gym_Management.CustomTextBox();
+            this.tb_email = new Gym_Management.CustomTextBox();
             this.tb_nhaplai = new Gym_Management.CustomTextBox();
             this.tb_username = new Gym_Management.CustomTextBox();
             this.tb_matkhau = new Gym_Management.CustomTextBox();
             this.tb_tennv = new Gym_Management.CustomTextBox();
             this.bt_Tao = new Gym_Management.CustomButton();
-            this.bt_xoa = new Gym_Management.CustomButton();
             this.gb_themhv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_ctk)).BeginInit();
             this.SuspendLayout();
@@ -90,6 +90,93 @@
             this.pb_ctk.TabIndex = 69;
             this.pb_ctk.TabStop = false;
             // 
+            // lb_maPt
+            // 
+            this.lb_maPt.AutoSize = true;
+            this.lb_maPt.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_maPt.ForeColor = System.Drawing.Color.Black;
+            this.lb_maPt.Location = new System.Drawing.Point(15, 446);
+            this.lb_maPt.Name = "lb_maPt";
+            this.lb_maPt.Size = new System.Drawing.Size(100, 16);
+            this.lb_maPt.TabIndex = 67;
+            this.lb_maPt.Text = "Số điện thoại:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(15, 344);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 16);
+            this.label1.TabIndex = 64;
+            this.label1.Text = "Nhập lại mật khẩu:";
+            // 
+            // lb_tengoi
+            // 
+            this.lb_tengoi.AutoSize = true;
+            this.lb_tengoi.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tengoi.ForeColor = System.Drawing.Color.Black;
+            this.lb_tengoi.Location = new System.Drawing.Point(15, 394);
+            this.lb_tengoi.Name = "lb_tengoi";
+            this.lb_tengoi.Size = new System.Drawing.Size(46, 16);
+            this.lb_tengoi.TabIndex = 62;
+            this.lb_tengoi.Text = "Email:";
+            // 
+            // lb_phai
+            // 
+            this.lb_phai.AutoSize = true;
+            this.lb_phai.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_phai.ForeColor = System.Drawing.Color.Black;
+            this.lb_phai.Location = new System.Drawing.Point(15, 287);
+            this.lb_phai.Name = "lb_phai";
+            this.lb_phai.Size = new System.Drawing.Size(74, 16);
+            this.lb_phai.TabIndex = 59;
+            this.lb_phai.Text = "Mật khẩu:";
+            // 
+            // lb_username
+            // 
+            this.lb_username.AutoSize = true;
+            this.lb_username.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_username.ForeColor = System.Drawing.Color.Black;
+            this.lb_username.Location = new System.Drawing.Point(15, 227);
+            this.lb_username.Name = "lb_username";
+            this.lb_username.Size = new System.Drawing.Size(83, 16);
+            this.lb_username.TabIndex = 58;
+            this.lb_username.Text = "User Name:";
+            // 
+            // lb_tennv
+            // 
+            this.lb_tennv.AutoSize = true;
+            this.lb_tennv.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tennv.ForeColor = System.Drawing.Color.Black;
+            this.lb_tennv.Location = new System.Drawing.Point(15, 171);
+            this.lb_tennv.Name = "lb_tennv";
+            this.lb_tennv.Size = new System.Drawing.Size(107, 16);
+            this.lb_tennv.TabIndex = 57;
+            this.lb_tennv.Text = "Tên nhân viên:";
+            // 
+            // bt_xoa
+            // 
+            this.bt_xoa.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoa.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_xoa.BorderRadius = 15;
+            this.bt_xoa.BorderSize = 0;
+            this.bt_xoa.FlatAppearance.BorderSize = 0;
+            this.bt_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_xoa.Location = new System.Drawing.Point(277, 474);
+            this.bt_xoa.Name = "bt_xoa";
+            this.bt_xoa.Size = new System.Drawing.Size(102, 37);
+            this.bt_xoa.TabIndex = 70;
+            this.bt_xoa.Text = "Xóa";
+            this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
+            this.bt_xoa.UseVisualStyleBackColor = false;
+            // 
             // tb_sdt
             // 
             this.tb_sdt.BackColor = System.Drawing.SystemColors.Window;
@@ -112,28 +199,6 @@
             this.tb_sdt.Texts = "";
             this.tb_sdt.UnderlinedStyle = false;
             // 
-            // lb_maPt
-            // 
-            this.lb_maPt.AutoSize = true;
-            this.lb_maPt.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_maPt.ForeColor = System.Drawing.Color.Black;
-            this.lb_maPt.Location = new System.Drawing.Point(15, 451);
-            this.lb_maPt.Name = "lb_maPt";
-            this.lb_maPt.Size = new System.Drawing.Size(100, 16);
-            this.lb_maPt.TabIndex = 67;
-            this.lb_maPt.Text = "Số điện thoại:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(15, 349);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 16);
-            this.label1.TabIndex = 64;
-            this.label1.Text = "Nhập lại mật khẩu:";
-            // 
             // tb_email
             // 
             this.tb_email.BackColor = System.Drawing.SystemColors.Window;
@@ -155,50 +220,6 @@
             this.tb_email.TabIndex = 63;
             this.tb_email.Texts = "";
             this.tb_email.UnderlinedStyle = false;
-            // 
-            // lb_tengoi
-            // 
-            this.lb_tengoi.AutoSize = true;
-            this.lb_tengoi.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tengoi.ForeColor = System.Drawing.Color.Black;
-            this.lb_tengoi.Location = new System.Drawing.Point(15, 399);
-            this.lb_tengoi.Name = "lb_tengoi";
-            this.lb_tengoi.Size = new System.Drawing.Size(46, 16);
-            this.lb_tengoi.TabIndex = 62;
-            this.lb_tengoi.Text = "Email:";
-            // 
-            // lb_phai
-            // 
-            this.lb_phai.AutoSize = true;
-            this.lb_phai.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_phai.ForeColor = System.Drawing.Color.Black;
-            this.lb_phai.Location = new System.Drawing.Point(15, 292);
-            this.lb_phai.Name = "lb_phai";
-            this.lb_phai.Size = new System.Drawing.Size(74, 16);
-            this.lb_phai.TabIndex = 59;
-            this.lb_phai.Text = "Mật khẩu:";
-            // 
-            // lb_username
-            // 
-            this.lb_username.AutoSize = true;
-            this.lb_username.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_username.ForeColor = System.Drawing.Color.Black;
-            this.lb_username.Location = new System.Drawing.Point(15, 232);
-            this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(83, 16);
-            this.lb_username.TabIndex = 58;
-            this.lb_username.Text = "User Name:";
-            // 
-            // lb_tennv
-            // 
-            this.lb_tennv.AutoSize = true;
-            this.lb_tennv.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tennv.ForeColor = System.Drawing.Color.Black;
-            this.lb_tennv.Location = new System.Drawing.Point(15, 176);
-            this.lb_tennv.Name = "lb_tennv";
-            this.lb_tennv.Size = new System.Drawing.Size(107, 16);
-            this.lb_tennv.TabIndex = 57;
-            this.lb_tennv.Text = "Tên nhân viên:";
             // 
             // tb_nhaplai
             // 
@@ -284,7 +305,7 @@
             this.tb_tennv.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_tennv.PlaceholderText = "";
             this.tb_tennv.Size = new System.Drawing.Size(232, 33);
-            this.tb_tennv.TabIndex = 53;
+            this.tb_tennv.TabIndex = 1;
             this.tb_tennv.Texts = "";
             this.tb_tennv.UnderlinedStyle = false;
             // 
@@ -308,27 +329,6 @@
             this.bt_Tao.Text = "Tạo tài khoản";
             this.bt_Tao.TextColor = System.Drawing.Color.Transparent;
             this.bt_Tao.UseVisualStyleBackColor = false;
-            // 
-            // bt_xoa
-            // 
-            this.bt_xoa.BackColor = System.Drawing.Color.DarkOrange;
-            this.bt_xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.bt_xoa.BorderColor = System.Drawing.SystemColors.Control;
-            this.bt_xoa.BorderRadius = 15;
-            this.bt_xoa.BorderSize = 0;
-            this.bt_xoa.FlatAppearance.BorderSize = 0;
-            this.bt_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoa.Location = new System.Drawing.Point(277, 474);
-            this.bt_xoa.Name = "bt_xoa";
-            this.bt_xoa.Size = new System.Drawing.Size(102, 37);
-            this.bt_xoa.TabIndex = 70;
-            this.bt_xoa.Text = "Xóa";
-            this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
-            this.bt_xoa.UseVisualStyleBackColor = false;
             // 
             // CapTaiKhoan
             // 
