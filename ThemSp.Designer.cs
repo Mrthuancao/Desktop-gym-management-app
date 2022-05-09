@@ -41,11 +41,13 @@
             this.lb_tsp = new System.Windows.Forms.Label();
             this.tb_Sl = new Gym_Management.CustomTextBox();
             this.tb_tensp = new Gym_Management.CustomTextBox();
+            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.bt_xoahet = new Gym_Management.CustomButton();
             this.bt_Luu = new Gym_Management.CustomButton();
-            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.gb_themsp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb_themsp
@@ -68,7 +70,7 @@
             this.gb_themsp.Controls.Add(this.bt_Luu);
             this.gb_themsp.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_themsp.ForeColor = System.Drawing.Color.Red;
-            this.gb_themsp.Location = new System.Drawing.Point(12, 12);
+            this.gb_themsp.Location = new System.Drawing.Point(12, 11);
             this.gb_themsp.Name = "gb_themsp";
             this.gb_themsp.Size = new System.Drawing.Size(409, 585);
             this.gb_themsp.TabIndex = 3;
@@ -87,7 +89,7 @@
             this.cb_loai.Location = new System.Drawing.Point(149, 284);
             this.cb_loai.Name = "cb_loai";
             this.cb_loai.Size = new System.Drawing.Size(232, 26);
-            this.cb_loai.TabIndex = 69;
+            this.cb_loai.TabIndex = 2;
             // 
             // tb_hang
             // 
@@ -107,7 +109,7 @@
             this.tb_hang.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_hang.PlaceholderText = "";
             this.tb_hang.Size = new System.Drawing.Size(232, 33);
-            this.tb_hang.TabIndex = 68;
+            this.tb_hang.TabIndex = 6;
             this.tb_hang.Texts = "";
             this.tb_hang.UnderlinedStyle = false;
             // 
@@ -121,7 +123,7 @@
             this.dt_ngnhap.Location = new System.Drawing.Point(149, 329);
             this.dt_ngnhap.Name = "dt_ngnhap";
             this.dt_ngnhap.Size = new System.Drawing.Size(232, 26);
-            this.dt_ngnhap.TabIndex = 65;
+            this.dt_ngnhap.TabIndex = 3;
             // 
             // lb_hang
             // 
@@ -152,7 +154,7 @@
             this.tb_dongia.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_dongia.PlaceholderText = "";
             this.tb_dongia.Size = new System.Drawing.Size(232, 33);
-            this.tb_dongia.TabIndex = 63;
+            this.tb_dongia.TabIndex = 5;
             this.tb_dongia.Texts = "";
             this.tb_dongia.UnderlinedStyle = false;
             // 
@@ -229,7 +231,7 @@
             this.tb_Sl.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Sl.PlaceholderText = "";
             this.tb_Sl.Size = new System.Drawing.Size(232, 33);
-            this.tb_Sl.TabIndex = 56;
+            this.tb_Sl.TabIndex = 4;
             this.tb_Sl.Texts = "";
             this.tb_Sl.UnderlinedStyle = false;
             // 
@@ -251,9 +253,25 @@
             this.tb_tensp.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_tensp.PlaceholderText = "";
             this.tb_tensp.Size = new System.Drawing.Size(232, 33);
-            this.tb_tensp.TabIndex = 53;
+            this.tb_tensp.TabIndex = 1;
             this.tb_tensp.Texts = "";
             this.tb_tensp.UnderlinedStyle = false;
+            // 
+            // pb_anh
+            // 
+            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pb_anh.ForeColor = System.Drawing.Color.Black;
+            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.pb_anh.IconColor = System.Drawing.Color.Black;
+            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pb_anh.IconSize = 176;
+            this.pb_anh.Location = new System.Drawing.Point(94, 38);
+            this.pb_anh.Name = "pb_anh";
+            this.pb_anh.Size = new System.Drawing.Size(269, 176);
+            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_anh.TabIndex = 52;
+            this.pb_anh.TabStop = false;
             // 
             // bt_xoahet
             // 
@@ -271,7 +289,7 @@
             this.bt_xoahet.Location = new System.Drawing.Point(275, 532);
             this.bt_xoahet.Name = "bt_xoahet";
             this.bt_xoahet.Size = new System.Drawing.Size(70, 27);
-            this.bt_xoahet.TabIndex = 51;
+            this.bt_xoahet.TabIndex = 8;
             this.bt_xoahet.Text = "Xóa hết";
             this.bt_xoahet.TextColor = System.Drawing.Color.Transparent;
             this.bt_xoahet.UseVisualStyleBackColor = false;
@@ -292,33 +310,26 @@
             this.bt_Luu.Location = new System.Drawing.Point(172, 532);
             this.bt_Luu.Name = "bt_Luu";
             this.bt_Luu.Size = new System.Drawing.Size(70, 27);
-            this.bt_Luu.TabIndex = 50;
+            this.bt_Luu.TabIndex = 7;
             this.bt_Luu.Text = "Lưu";
             this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
             this.bt_Luu.UseVisualStyleBackColor = false;
             // 
-            // pb_anh
+            // panel1
             // 
-            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pb_anh.ForeColor = System.Drawing.Color.Black;
-            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.pb_anh.IconColor = System.Drawing.Color.Black;
-            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pb_anh.IconSize = 176;
-            this.pb_anh.Location = new System.Drawing.Point(94, 38);
-            this.pb_anh.Name = "pb_anh";
-            this.pb_anh.Size = new System.Drawing.Size(269, 176);
-            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_anh.TabIndex = 52;
-            this.pb_anh.TabStop = false;
+            this.panel1.Controls.Add(this.gb_themsp);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(433, 608);
+            this.panel1.TabIndex = 4;
             // 
             // ThemSp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(433, 608);
-            this.Controls.Add(this.gb_themsp);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ThemSp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -326,6 +337,7 @@
             this.gb_themsp.ResumeLayout(false);
             this.gb_themsp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -348,5 +360,6 @@
         private FontAwesome.Sharp.IconPictureBox pb_anh;
         private CustomButton bt_xoahet;
         private CustomButton bt_Luu;
+        private System.Windows.Forms.Panel panel1;
     }
 }

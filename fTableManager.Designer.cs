@@ -31,35 +31,37 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fTableManager));
             this.pn_titlebar = new System.Windows.Forms.Panel();
             this.lb_titleCharform = new System.Windows.Forms.Label();
+            this.pn_destop = new System.Windows.Forms.Panel();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pn_menu = new System.Windows.Forms.Panel();
+            this.bt_thongtin = new FontAwesome.Sharp.IconButton();
             this.ic_currentChildform = new FontAwesome.Sharp.IconPictureBox();
             this.bt_minimize = new FontAwesome.Sharp.IconButton();
             this.bt_close = new FontAwesome.Sharp.IconButton();
             this.bt_maximize = new FontAwesome.Sharp.IconButton();
-            this.pn_destop = new System.Windows.Forms.Panel();
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bt_menu = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pn_menu = new System.Windows.Forms.Panel();
+            this.bt_Captaikhoan = new FontAwesome.Sharp.IconButton();
             this.bt_exit = new FontAwesome.Sharp.IconButton();
-            this.bt_captaikhoan = new FontAwesome.Sharp.IconButton();
             this.bt_doanhthu = new FontAwesome.Sharp.IconButton();
-            this.bt_thongtin = new FontAwesome.Sharp.IconButton();
+            this.bt_goitap = new FontAwesome.Sharp.IconButton();
             this.bt_thietbi = new FontAwesome.Sharp.IconButton();
             this.bt_sanpham = new FontAwesome.Sharp.IconButton();
             this.bt_nhanvien = new FontAwesome.Sharp.IconButton();
             this.bt_khachhang = new FontAwesome.Sharp.IconButton();
+            this.bt_menu = new FontAwesome.Sharp.IconButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pn_titlebar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ic_currentChildform)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pn_menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ic_currentChildform)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_titlebar
             // 
             this.pn_titlebar.BackColor = System.Drawing.Color.Gainsboro;
+            this.pn_titlebar.Controls.Add(this.bt_thongtin);
             this.pn_titlebar.Controls.Add(this.lb_titleCharform);
             this.pn_titlebar.Controls.Add(this.ic_currentChildform);
             this.pn_titlebar.Controls.Add(this.bt_minimize);
@@ -67,7 +69,7 @@
             this.pn_titlebar.Controls.Add(this.bt_maximize);
             this.pn_titlebar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_titlebar.Location = new System.Drawing.Point(200, 0);
-            this.pn_titlebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_titlebar.Margin = new System.Windows.Forms.Padding(2);
             this.pn_titlebar.Name = "pn_titlebar";
             this.pn_titlebar.Size = new System.Drawing.Size(934, 28);
             this.pn_titlebar.TabIndex = 1;
@@ -83,6 +85,73 @@
             this.lb_titleCharform.Size = new System.Drawing.Size(56, 20);
             this.lb_titleCharform.TabIndex = 4;
             this.lb_titleCharform.Text = "Home";
+            // 
+            // pn_destop
+            // 
+            this.pn_destop.BackColor = System.Drawing.Color.White;
+            this.pn_destop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pn_destop.Location = new System.Drawing.Point(200, 28);
+            this.pn_destop.Margin = new System.Windows.Forms.Padding(2);
+            this.pn_destop.Name = "pn_destop";
+            this.pn_destop.Size = new System.Drawing.Size(934, 633);
+            this.pn_destop.TabIndex = 2;
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bt_menu);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 74);
+            this.panel1.TabIndex = 0;
+            // 
+            // pn_menu
+            // 
+            this.pn_menu.BackColor = System.Drawing.Color.Gainsboro;
+            this.pn_menu.Controls.Add(this.bt_Captaikhoan);
+            this.pn_menu.Controls.Add(this.bt_exit);
+            this.pn_menu.Controls.Add(this.bt_doanhthu);
+            this.pn_menu.Controls.Add(this.bt_goitap);
+            this.pn_menu.Controls.Add(this.bt_thietbi);
+            this.pn_menu.Controls.Add(this.bt_sanpham);
+            this.pn_menu.Controls.Add(this.bt_nhanvien);
+            this.pn_menu.Controls.Add(this.bt_khachhang);
+            this.pn_menu.Controls.Add(this.panel1);
+            this.pn_menu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pn_menu.Location = new System.Drawing.Point(0, 0);
+            this.pn_menu.Margin = new System.Windows.Forms.Padding(2);
+            this.pn_menu.Name = "pn_menu";
+            this.pn_menu.Size = new System.Drawing.Size(200, 661);
+            this.pn_menu.TabIndex = 0;
+            // 
+            // bt_thongtin
+            // 
+            this.bt_thongtin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_thongtin.FlatAppearance.BorderSize = 0;
+            this.bt_thongtin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SlateGray;
+            this.bt_thongtin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
+            this.bt_thongtin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_thongtin.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_thongtin.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
+            this.bt_thongtin.IconColor = System.Drawing.Color.Indigo;
+            this.bt_thongtin.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_thongtin.IconSize = 30;
+            this.bt_thongtin.Location = new System.Drawing.Point(725, 0);
+            this.bt_thongtin.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_thongtin.Name = "bt_thongtin";
+            this.bt_thongtin.Size = new System.Drawing.Size(104, 28);
+            this.bt_thongtin.TabIndex = 4;
+            this.bt_thongtin.Tag = "";
+            this.bt_thongtin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bt_thongtin.UseVisualStyleBackColor = true;
+            this.bt_thongtin.Click += new System.EventHandler(this.bt_thongtin_Click);
             // 
             // ic_currentChildform
             // 
@@ -110,7 +179,7 @@
             this.bt_minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_minimize.IconSize = 20;
             this.bt_minimize.Location = new System.Drawing.Point(832, 0);
-            this.bt_minimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_minimize.Margin = new System.Windows.Forms.Padding(2);
             this.bt_minimize.Name = "bt_minimize";
             this.bt_minimize.Size = new System.Drawing.Size(34, 28);
             this.bt_minimize.TabIndex = 3;
@@ -128,7 +197,7 @@
             this.bt_close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_close.IconSize = 20;
             this.bt_close.Location = new System.Drawing.Point(900, 0);
-            this.bt_close.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_close.Margin = new System.Windows.Forms.Padding(2);
             this.bt_close.Name = "bt_close";
             this.bt_close.Size = new System.Drawing.Size(34, 28);
             this.bt_close.TabIndex = 1;
@@ -146,85 +215,34 @@
             this.bt_maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_maximize.IconSize = 20;
             this.bt_maximize.Location = new System.Drawing.Point(866, 0);
-            this.bt_maximize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_maximize.Margin = new System.Windows.Forms.Padding(2);
             this.bt_maximize.Name = "bt_maximize";
             this.bt_maximize.Size = new System.Drawing.Size(34, 28);
             this.bt_maximize.TabIndex = 2;
             this.bt_maximize.UseVisualStyleBackColor = false;
             this.bt_maximize.Click += new System.EventHandler(this.bt_maximize_Click);
             // 
-            // pn_destop
+            // bt_Captaikhoan
             // 
-            this.pn_destop.BackColor = System.Drawing.Color.White;
-            this.pn_destop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_destop.Location = new System.Drawing.Point(200, 28);
-            this.pn_destop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pn_destop.Name = "pn_destop";
-            this.pn_destop.Size = new System.Drawing.Size(934, 633);
-            this.pn_destop.TabIndex = 2;
-            // 
-            // fileSystemWatcher1
-            // 
-            this.fileSystemWatcher1.EnableRaisingEvents = true;
-            this.fileSystemWatcher1.SynchronizingObject = this;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.bt_menu);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 74);
-            this.panel1.TabIndex = 0;
-            // 
-            // bt_menu
-            // 
-            this.bt_menu.FlatAppearance.BorderSize = 0;
-            this.bt_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_menu.IconChar = FontAwesome.Sharp.IconChar.Bars;
-            this.bt_menu.IconColor = System.Drawing.Color.Black;
-            this.bt_menu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_menu.IconSize = 30;
-            this.bt_menu.Location = new System.Drawing.Point(155, 0);
-            this.bt_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bt_menu.Name = "bt_menu";
-            this.bt_menu.Size = new System.Drawing.Size(45, 74);
-            this.bt_menu.TabIndex = 0;
-            this.bt_menu.UseVisualStyleBackColor = true;
-            this.bt_menu.Click += new System.EventHandler(this.bt_menu_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Gym_Management.Properties.Resources.Fitness_Gym_Dumbbell_Abstract_Logo_Design_Icon_Vector21;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pn_menu
-            // 
-            this.pn_menu.BackColor = System.Drawing.Color.Gainsboro;
-            this.pn_menu.Controls.Add(this.bt_exit);
-            this.pn_menu.Controls.Add(this.bt_captaikhoan);
-            this.pn_menu.Controls.Add(this.bt_doanhthu);
-            this.pn_menu.Controls.Add(this.bt_thongtin);
-            this.pn_menu.Controls.Add(this.bt_thietbi);
-            this.pn_menu.Controls.Add(this.bt_sanpham);
-            this.pn_menu.Controls.Add(this.bt_nhanvien);
-            this.pn_menu.Controls.Add(this.bt_khachhang);
-            this.pn_menu.Controls.Add(this.panel1);
-            this.pn_menu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_menu.Location = new System.Drawing.Point(0, 0);
-            this.pn_menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pn_menu.Name = "pn_menu";
-            this.pn_menu.Size = new System.Drawing.Size(200, 661);
-            this.pn_menu.TabIndex = 0;
+            this.bt_Captaikhoan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bt_Captaikhoan.FlatAppearance.BorderSize = 0;
+            this.bt_Captaikhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Captaikhoan.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Captaikhoan.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
+            this.bt_Captaikhoan.IconColor = System.Drawing.Color.Black;
+            this.bt_Captaikhoan.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_Captaikhoan.IconSize = 30;
+            this.bt_Captaikhoan.Location = new System.Drawing.Point(0, 332);
+            this.bt_Captaikhoan.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_Captaikhoan.Name = "bt_Captaikhoan";
+            this.bt_Captaikhoan.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bt_Captaikhoan.Size = new System.Drawing.Size(200, 43);
+            this.bt_Captaikhoan.TabIndex = 8;
+            this.bt_Captaikhoan.Tag = "Cấp tài khoản";
+            this.bt_Captaikhoan.Text = "   Cấp tài khoản";
+            this.bt_Captaikhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_Captaikhoan.UseVisualStyleBackColor = true;
+            this.bt_Captaikhoan.Click += new System.EventHandler(this.bt_Captaikhoan_Click_1);
             // 
             // bt_exit
             // 
@@ -237,7 +255,7 @@
             this.bt_exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_exit.IconSize = 30;
             this.bt_exit.Location = new System.Drawing.Point(0, 618);
-            this.bt_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_exit.Margin = new System.Windows.Forms.Padding(2);
             this.bt_exit.Name = "bt_exit";
             this.bt_exit.Padding = new System.Windows.Forms.Padding(8, 0, 0, 8);
             this.bt_exit.Size = new System.Drawing.Size(200, 43);
@@ -248,71 +266,49 @@
             this.bt_exit.UseVisualStyleBackColor = true;
             this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
-            // bt_captaikhoan
-            // 
-            this.bt_captaikhoan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bt_captaikhoan.FlatAppearance.BorderSize = 0;
-            this.bt_captaikhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_captaikhoan.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_captaikhoan.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
-            this.bt_captaikhoan.IconColor = System.Drawing.Color.Black;
-            this.bt_captaikhoan.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_captaikhoan.IconSize = 30;
-            this.bt_captaikhoan.Location = new System.Drawing.Point(0, 332);
-            this.bt_captaikhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bt_captaikhoan.Name = "bt_captaikhoan";
-            this.bt_captaikhoan.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.bt_captaikhoan.Size = new System.Drawing.Size(200, 43);
-            this.bt_captaikhoan.TabIndex = 6;
-            this.bt_captaikhoan.Tag = "Cấp tài khoản";
-            this.bt_captaikhoan.Text = "   Cấp tài khoản";
-            this.bt_captaikhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_captaikhoan.UseVisualStyleBackColor = true;
-            this.bt_captaikhoan.Click += new System.EventHandler(this.bt_captaikhoan_Click);
-            // 
             // bt_doanhthu
             // 
             this.bt_doanhthu.Dock = System.Windows.Forms.DockStyle.Top;
             this.bt_doanhthu.FlatAppearance.BorderSize = 0;
             this.bt_doanhthu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_doanhthu.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_doanhthu.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
+            this.bt_doanhthu.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
             this.bt_doanhthu.IconColor = System.Drawing.Color.Black;
             this.bt_doanhthu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_doanhthu.IconSize = 30;
             this.bt_doanhthu.Location = new System.Drawing.Point(0, 289);
-            this.bt_doanhthu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_doanhthu.Margin = new System.Windows.Forms.Padding(2);
             this.bt_doanhthu.Name = "bt_doanhthu";
             this.bt_doanhthu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.bt_doanhthu.Size = new System.Drawing.Size(200, 43);
-            this.bt_doanhthu.TabIndex = 5;
+            this.bt_doanhthu.TabIndex = 6;
             this.bt_doanhthu.Tag = "Doanh thu";
             this.bt_doanhthu.Text = "   Doanh thu";
             this.bt_doanhthu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_doanhthu.UseVisualStyleBackColor = true;
-            this.bt_doanhthu.Click += new System.EventHandler(this.bt_doanhthu_Click);
+            this.bt_doanhthu.Click += new System.EventHandler(this.bt_captaikhoan_Click);
             // 
-            // bt_thongtin
+            // bt_goitap
             // 
-            this.bt_thongtin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bt_thongtin.FlatAppearance.BorderSize = 0;
-            this.bt_thongtin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_thongtin.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_thongtin.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
-            this.bt_thongtin.IconColor = System.Drawing.Color.Black;
-            this.bt_thongtin.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_thongtin.IconSize = 30;
-            this.bt_thongtin.Location = new System.Drawing.Point(0, 246);
-            this.bt_thongtin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bt_thongtin.Name = "bt_thongtin";
-            this.bt_thongtin.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.bt_thongtin.Size = new System.Drawing.Size(200, 43);
-            this.bt_thongtin.TabIndex = 4;
-            this.bt_thongtin.Tag = "Thông tin";
-            this.bt_thongtin.Text = "   Thông tin";
-            this.bt_thongtin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_thongtin.UseVisualStyleBackColor = true;
-            this.bt_thongtin.Click += new System.EventHandler(this.bt_thongtin_Click);
+            this.bt_goitap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bt_goitap.FlatAppearance.BorderSize = 0;
+            this.bt_goitap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_goitap.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_goitap.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
+            this.bt_goitap.IconColor = System.Drawing.Color.Black;
+            this.bt_goitap.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_goitap.IconSize = 30;
+            this.bt_goitap.Location = new System.Drawing.Point(0, 246);
+            this.bt_goitap.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_goitap.Name = "bt_goitap";
+            this.bt_goitap.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bt_goitap.Size = new System.Drawing.Size(200, 43);
+            this.bt_goitap.TabIndex = 5;
+            this.bt_goitap.Tag = "Gói tập";
+            this.bt_goitap.Text = "   Gói tập";
+            this.bt_goitap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_goitap.UseVisualStyleBackColor = true;
+            this.bt_goitap.Click += new System.EventHandler(this.bt_doanhthu_Click);
             // 
             // bt_thietbi
             // 
@@ -325,7 +321,7 @@
             this.bt_thietbi.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_thietbi.IconSize = 30;
             this.bt_thietbi.Location = new System.Drawing.Point(0, 203);
-            this.bt_thietbi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_thietbi.Margin = new System.Windows.Forms.Padding(2);
             this.bt_thietbi.Name = "bt_thietbi";
             this.bt_thietbi.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.bt_thietbi.Size = new System.Drawing.Size(200, 43);
@@ -347,7 +343,7 @@
             this.bt_sanpham.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_sanpham.IconSize = 30;
             this.bt_sanpham.Location = new System.Drawing.Point(0, 160);
-            this.bt_sanpham.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_sanpham.Margin = new System.Windows.Forms.Padding(2);
             this.bt_sanpham.Name = "bt_sanpham";
             this.bt_sanpham.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.bt_sanpham.Size = new System.Drawing.Size(200, 43);
@@ -369,7 +365,7 @@
             this.bt_nhanvien.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_nhanvien.IconSize = 30;
             this.bt_nhanvien.Location = new System.Drawing.Point(0, 117);
-            this.bt_nhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_nhanvien.Margin = new System.Windows.Forms.Padding(2);
             this.bt_nhanvien.Name = "bt_nhanvien";
             this.bt_nhanvien.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.bt_nhanvien.Size = new System.Drawing.Size(200, 43);
@@ -391,7 +387,7 @@
             this.bt_khachhang.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_khachhang.IconSize = 30;
             this.bt_khachhang.Location = new System.Drawing.Point(0, 74);
-            this.bt_khachhang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_khachhang.Margin = new System.Windows.Forms.Padding(2);
             this.bt_khachhang.Name = "bt_khachhang";
             this.bt_khachhang.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.bt_khachhang.Size = new System.Drawing.Size(200, 43);
@@ -402,6 +398,34 @@
             this.bt_khachhang.UseVisualStyleBackColor = true;
             this.bt_khachhang.Click += new System.EventHandler(this.bt_khachhang_Click);
             // 
+            // bt_menu
+            // 
+            this.bt_menu.FlatAppearance.BorderSize = 0;
+            this.bt_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_menu.IconChar = FontAwesome.Sharp.IconChar.Bars;
+            this.bt_menu.IconColor = System.Drawing.Color.Black;
+            this.bt_menu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_menu.IconSize = 30;
+            this.bt_menu.Location = new System.Drawing.Point(155, 0);
+            this.bt_menu.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_menu.Name = "bt_menu";
+            this.bt_menu.Size = new System.Drawing.Size(45, 74);
+            this.bt_menu.TabIndex = 0;
+            this.bt_menu.UseVisualStyleBackColor = true;
+            this.bt_menu.Click += new System.EventHandler(this.bt_menu_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Gym_Management.Properties.Resources.Fitness_Gym_Dumbbell_Abstract_Logo_Design_Icon_Vector21;
+            this.pictureBox1.Location = new System.Drawing.Point(25, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(93, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // fTableManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -411,7 +435,7 @@
             this.Controls.Add(this.pn_titlebar);
             this.Controls.Add(this.pn_menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(1150, 700);
             this.Name = "fTableManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -421,11 +445,11 @@
             this.Resize += new System.EventHandler(this.fTableManager_Resize);
             this.pn_titlebar.ResumeLayout(false);
             this.pn_titlebar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ic_currentChildform)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pn_menu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ic_currentChildform)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -439,8 +463,8 @@
         private FontAwesome.Sharp.IconButton bt_maximize;
         private System.Windows.Forms.Panel pn_menu;
         private FontAwesome.Sharp.IconButton bt_exit;
-        private FontAwesome.Sharp.IconButton bt_captaikhoan;
         private FontAwesome.Sharp.IconButton bt_doanhthu;
+        private FontAwesome.Sharp.IconButton bt_goitap;
         private FontAwesome.Sharp.IconButton bt_thongtin;
         private FontAwesome.Sharp.IconButton bt_thietbi;
         private FontAwesome.Sharp.IconButton bt_sanpham;
@@ -451,5 +475,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private FontAwesome.Sharp.IconPictureBox ic_currentChildform;
         private System.Windows.Forms.Label lb_titleCharform;
+        private FontAwesome.Sharp.IconButton bt_Captaikhoan;
     }
 }

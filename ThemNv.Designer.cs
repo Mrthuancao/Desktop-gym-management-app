@@ -48,8 +48,10 @@
             this.tb_Sdt = new Gym_Management.CustomTextBox();
             this.tb_TenNv = new Gym_Management.CustomTextBox();
             this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.gb_themhv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb_themhv
@@ -78,7 +80,7 @@
             this.gb_themhv.ForeColor = System.Drawing.Color.Red;
             this.gb_themhv.Location = new System.Drawing.Point(12, 12);
             this.gb_themhv.Name = "gb_themhv";
-            this.gb_themhv.Size = new System.Drawing.Size(409, 647);
+            this.gb_themhv.Size = new System.Drawing.Size(409, 636);
             this.gb_themhv.TabIndex = 1;
             this.gb_themhv.TabStop = false;
             this.gb_themhv.Text = "THÊM HỘI VIÊN";
@@ -375,13 +377,22 @@
             this.pb_anh.TabIndex = 31;
             this.pb_anh.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.gb_themhv);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(433, 656);
+            this.panel1.TabIndex = 2;
+            // 
             // ThemNv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(433, 671);
-            this.Controls.Add(this.gb_themhv);
+            this.ClientSize = new System.Drawing.Size(433, 656);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ThemNv";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -389,6 +400,7 @@
             this.gb_themhv.ResumeLayout(false);
             this.gb_themhv.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -415,5 +427,6 @@
         private CustomButton bt_xoahet;
         private CustomButton bt_Luu;
         private System.Windows.Forms.ComboBox cb_gioitinh;
+        private System.Windows.Forms.Panel panel1;
     }
 }
