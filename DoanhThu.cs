@@ -24,12 +24,12 @@ namespace Gym_Management
         {
             var btn = (Button)button;
             //hightlight bt
-            btn.BackColor = customButton1.FlatAppearance.BorderColor;
-            btn.ForeColor = Color.White;
+            btn.BackColor = Color.OrangeRed;
+            btn.ForeColor = Color.Black;
             //unhightlight bt
             if (currentButton != null & currentButton!=btn)
             {
-                currentButton.BackColor = this.BackColor;
+                currentButton.BackColor = Color.DarkOrange;
                 currentButton.ForeColor = Color.FromArgb(255, 255, 255);
             }
             currentButton = btn; //Set current button

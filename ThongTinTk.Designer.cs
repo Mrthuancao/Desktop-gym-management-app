@@ -258,7 +258,7 @@
             this.tb_mtk.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_mtk.PlaceholderText = "";
             this.tb_mtk.Size = new System.Drawing.Size(232, 33);
-            this.tb_mtk.TabIndex = 64;
+            this.tb_mtk.TabIndex = 1;
             this.tb_mtk.Texts = "";
             this.tb_mtk.UnderlinedStyle = false;
             // 
