@@ -52,7 +52,7 @@ namespace Gym_Management
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
-                if (this.pn_menu.Width > 200)
+                if (this.pn_menu.Width >= 200)
                     currentBtn.ImageAlign = ContentAlignment.MiddleRight;
                 else
                     currentBtn.ImageAlign = ContentAlignment.MiddleCenter;
@@ -76,7 +76,7 @@ namespace Gym_Management
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.Black;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-                if (this.pn_menu.Width > 200)
+                if (this.pn_menu.Width >= 200)
                     currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
                 else
                     currentBtn.ImageAlign = ContentAlignment.MiddleCenter;
@@ -269,7 +269,7 @@ namespace Gym_Management
         }
         private void CollapseMenu()
         {
-            if (this.pn_menu.Width > 200) //Collapse menu
+            if (this.pn_menu.Width >= 200) //Collapse menu
             {
                 pn_menu.Width = 100;
                 pictureBox1.Visible = false;
@@ -284,7 +284,7 @@ namespace Gym_Management
             }
             else
             { //Expand menu
-                pn_menu.Width = 230;
+                pn_menu.Width = 200;
                 pictureBox1.Visible = true;
                 bt_menu.Dock = DockStyle.None;
                 foreach (Button menuButton in pn_menu.Controls.OfType<Button>())
@@ -336,7 +336,6 @@ namespace Gym_Management
 
         private void bt_thongtin_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
             ThongTinTk f = new ThongTinTk();
             f.ShowDialog();
         }
@@ -344,14 +343,13 @@ namespace Gym_Management
         private void bt_doanhthu_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new DoanhThu());
+            OpenChildForm(new GoiTap());
         }
 
         private void bt_captaikhoan_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            CapTaiKhoan f = new CapTaiKhoan();
-            f.ShowDialog();
+            OpenChildForm(new DoanhThu());
 
         }
 
@@ -372,6 +370,13 @@ namespace Gym_Management
         private void fTableManager_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bt_Captaikhoan_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            CapTaiKhoan f = new CapTaiKhoan();
+            f.ShowDialog();
         }
     }
 }
