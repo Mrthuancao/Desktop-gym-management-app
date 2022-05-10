@@ -9,10 +9,10 @@ using System.Data;
 
 namespace BUS
 {
-    public class DrinkBUS
+    public class HoiVienBUS
     {
         HoiVienDAO hvDAL = new HoiVienDAO();
-        public List<HOIVIEN> GetDrinkList()
+        public List<HOIVIEN> GetHoiVienList()
         {
             List<HOIVIEN> listDrink = new List<HOIVIEN>();
             DataTable dt = hvDAL.GetAllHoiVien();
