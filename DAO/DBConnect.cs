@@ -14,12 +14,12 @@ namespace DAO
         private SqlConnection connection;
         public DBConnect()
         {
-            //connection = new SqlConnection(@"Data Source=DESKTOP-JSEKHS1;Initial Catalog=QUANLYTRASUA;Integrated Security=True");
-            connection = new SqlConnection(@"Data Source = .\sqlexpress;Initial catalog = QuanLyTraSua;Integrated Security = True");
+            connection = new SqlConnection("Data Source=DESKTOP-2PMMREO;Initial Catalog=Gym_Management;Integrated Security=True");
         }
 
         public DataTable ExecuteQuery(string query, object[] parameterValue = null)
         {
+            DataTable dt = new DataTable();
             Open();
             //Tách tên parameter từ query
             Regex regex = new Regex("@[a-z]+", RegexOptions.IgnoreCase);
@@ -36,7 +36,6 @@ namespace DAO
                 command.Parameters.AddWithValue(parameterName[i], parameterValue[i]);
             }
             SqlDataAdapter da = new SqlDataAdapter(command);
-            DataTable dt = new DataTable();
             da.Fill(dt);
             Close();
             return dt;
