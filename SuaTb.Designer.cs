@@ -43,9 +43,9 @@
             this.lb_tsp = new System.Windows.Forms.Label();
             this.tb_Sl = new Gym_Management.CustomTextBox();
             this.tb_tentb = new Gym_Management.CustomTextBox();
+            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.bt_xoahet = new Gym_Management.CustomButton();
             this.bt_Luu = new Gym_Management.CustomButton();
-            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.gb_suatb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
             this.SuspendLayout();
@@ -70,11 +70,12 @@
             this.gb_suatb.Controls.Add(this.pb_anh);
             this.gb_suatb.Controls.Add(this.bt_xoahet);
             this.gb_suatb.Controls.Add(this.bt_Luu);
+            this.gb_suatb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gb_suatb.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_suatb.ForeColor = System.Drawing.Color.Red;
-            this.gb_suatb.Location = new System.Drawing.Point(12, 12);
+            this.gb_suatb.Location = new System.Drawing.Point(0, 0);
             this.gb_suatb.Name = "gb_suatb";
-            this.gb_suatb.Size = new System.Drawing.Size(409, 621);
+            this.gb_suatb.Size = new System.Drawing.Size(433, 613);
             this.gb_suatb.TabIndex = 6;
             this.gb_suatb.TabStop = false;
             this.gb_suatb.Text = "SỬA THIẾT BỊ";
@@ -284,6 +285,22 @@
             this.tb_tentb.Texts = "";
             this.tb_tentb.UnderlinedStyle = false;
             // 
+            // pb_anh
+            // 
+            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pb_anh.ForeColor = System.Drawing.Color.Red;
+            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.pb_anh.IconColor = System.Drawing.Color.Red;
+            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pb_anh.IconSize = 176;
+            this.pb_anh.Location = new System.Drawing.Point(94, 38);
+            this.pb_anh.Name = "pb_anh";
+            this.pb_anh.Size = new System.Drawing.Size(269, 176);
+            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_anh.TabIndex = 52;
+            this.pb_anh.TabStop = false;
+            // 
             // bt_xoahet
             // 
             this.bt_xoahet.BackColor = System.Drawing.Color.DarkOrange;
@@ -326,27 +343,11 @@
             this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
             this.bt_Luu.UseVisualStyleBackColor = false;
             // 
-            // pb_anh
-            // 
-            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pb_anh.ForeColor = System.Drawing.Color.Red;
-            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.pb_anh.IconColor = System.Drawing.Color.Red;
-            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pb_anh.IconSize = 176;
-            this.pb_anh.Location = new System.Drawing.Point(94, 38);
-            this.pb_anh.Name = "pb_anh";
-            this.pb_anh.Size = new System.Drawing.Size(269, 176);
-            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_anh.TabIndex = 52;
-            this.pb_anh.TabStop = false;
-            // 
             // SuaTb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 645);
+            this.ClientSize = new System.Drawing.Size(433, 613);
             this.Controls.Add(this.gb_suatb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SuaTb";

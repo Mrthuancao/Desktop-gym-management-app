@@ -28,16 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pn_thietbi = new System.Windows.Forms.Panel();
             this.pn_tttb = new System.Windows.Forms.Panel();
             this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.tb_tentb = new Gym_Management.CustomTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tb_hangtb = new Gym_Management.CustomTextBox();
-            this.lb_tinhtrang = new System.Windows.Forms.Label();
             this.tb_loaitb = new Gym_Management.CustomTextBox();
             this.lb_thongtin = new System.Windows.Forms.Label();
             this.lb_tentb = new System.Windows.Forms.Label();
@@ -83,11 +81,10 @@
             // 
             // pn_tttb
             // 
+            this.pn_tttb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pn_tttb.Controls.Add(this.pb_anh);
             this.pn_tttb.Controls.Add(this.tb_tentb);
-            this.pn_tttb.Controls.Add(this.label1);
             this.pn_tttb.Controls.Add(this.tb_hangtb);
-            this.pn_tttb.Controls.Add(this.lb_tinhtrang);
             this.pn_tttb.Controls.Add(this.tb_loaitb);
             this.pn_tttb.Controls.Add(this.lb_thongtin);
             this.pn_tttb.Controls.Add(this.lb_tentb);
@@ -100,7 +97,6 @@
             this.pn_tttb.Controls.Add(this.lb_hangtb);
             this.pn_tttb.Controls.Add(this.tb_Search);
             this.pn_tttb.Controls.Add(this.bt_search);
-            this.pn_tttb.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_tttb.Location = new System.Drawing.Point(0, 0);
             this.pn_tttb.Name = "pn_tttb";
             this.pn_tttb.Size = new System.Drawing.Size(934, 317);
@@ -144,17 +140,6 @@
             this.tb_tentb.Texts = "";
             this.tb_tentb.UnderlinedStyle = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(430, 276);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 28);
-            this.label1.TabIndex = 64;
-            this.label1.Text = "Còn hàng";
-            // 
             // tb_hangtb
             // 
             this.tb_hangtb.BackColor = System.Drawing.SystemColors.Window;
@@ -176,16 +161,6 @@
             this.tb_hangtb.TabIndex = 22;
             this.tb_hangtb.Texts = "";
             this.tb_hangtb.UnderlinedStyle = false;
-            // 
-            // lb_tinhtrang
-            // 
-            this.lb_tinhtrang.AutoSize = true;
-            this.lb_tinhtrang.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tinhtrang.Location = new System.Drawing.Point(320, 284);
-            this.lb_tinhtrang.Name = "lb_tinhtrang";
-            this.lb_tinhtrang.Size = new System.Drawing.Size(81, 16);
-            this.lb_tinhtrang.TabIndex = 63;
-            this.lb_tinhtrang.Text = "Tình trạng:";
             // 
             // tb_loaitb
             // 
@@ -432,9 +407,10 @@
             // 
             // pn_dtgdstb
             // 
+            this.pn_dtgdstb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_dtgdstb.Controls.Add(this.dtg_TB);
             this.pn_dtgdstb.Controls.Add(this.lb_danhsach);
-            this.pn_dtgdstb.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pn_dtgdstb.Location = new System.Drawing.Point(0, 317);
             this.pn_dtgdstb.Name = "pn_dtgdstb";
             this.pn_dtgdstb.Size = new System.Drawing.Size(934, 316);
@@ -442,19 +418,21 @@
             // 
             // dtg_TB
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
-            this.dtg_TB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dtg_TB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dtg_TB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtg_TB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg_TB.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.dtg_TB.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_TB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_TB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dtg_TB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_TB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.matb,
@@ -464,15 +442,14 @@
             this.hang,
             this.ngnhap,
             this.gia});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg_TB.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtg_TB.Dock = System.Windows.Forms.DockStyle.Bottom;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtg_TB.DefaultCellStyle = dataGridViewCellStyle9;
             this.dtg_TB.EnableHeadersVisualStyles = false;
             this.dtg_TB.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dtg_TB.Location = new System.Drawing.Point(0, 60);
@@ -524,6 +501,7 @@
             // 
             // lb_danhsach
             // 
+            this.lb_danhsach.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_danhsach.AutoSize = true;
             this.lb_danhsach.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.lb_danhsach.Location = new System.Drawing.Point(366, 17);
@@ -583,8 +561,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn hang;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngnhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn gia;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lb_tinhtrang;
         private System.Windows.Forms.Panel pn_dtgdstb;
         private System.Windows.Forms.Panel pn_tttb;
     }

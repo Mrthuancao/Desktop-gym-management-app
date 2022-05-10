@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.gb_suasp = new System.Windows.Forms.GroupBox();
+            this.cb_tinhtrang = new System.Windows.Forms.ComboBox();
+            this.lb_tinhtrang = new System.Windows.Forms.Label();
             this.cb_loai = new System.Windows.Forms.ComboBox();
             this.tb_hang = new Gym_Management.CustomTextBox();
             this.dt_ngnhap = new System.Windows.Forms.DateTimePicker();
@@ -44,8 +46,8 @@
             this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.bt_xoahet = new Gym_Management.CustomButton();
             this.bt_Luu = new Gym_Management.CustomButton();
-            this.lb_tinhtrang = new System.Windows.Forms.Label();
-            this.cb_tinhtrang = new System.Windows.Forms.ComboBox();
+            this.lb_gianhap = new System.Windows.Forms.Label();
+            this.tb_gianhap = new Gym_Management.CustomTextBox();
             this.gb_suasp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +55,8 @@
             // gb_suasp
             // 
             this.gb_suasp.BackColor = System.Drawing.Color.Gainsboro;
+            this.gb_suasp.Controls.Add(this.tb_gianhap);
+            this.gb_suasp.Controls.Add(this.lb_gianhap);
             this.gb_suasp.Controls.Add(this.cb_tinhtrang);
             this.gb_suasp.Controls.Add(this.lb_tinhtrang);
             this.gb_suasp.Controls.Add(this.cb_loai);
@@ -70,14 +74,40 @@
             this.gb_suasp.Controls.Add(this.pb_anh);
             this.gb_suasp.Controls.Add(this.bt_xoahet);
             this.gb_suasp.Controls.Add(this.bt_Luu);
+            this.gb_suasp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gb_suasp.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_suasp.ForeColor = System.Drawing.Color.Red;
-            this.gb_suasp.Location = new System.Drawing.Point(12, 12);
+            this.gb_suasp.Location = new System.Drawing.Point(0, 0);
             this.gb_suasp.Name = "gb_suasp";
-            this.gb_suasp.Size = new System.Drawing.Size(409, 603);
+            this.gb_suasp.Size = new System.Drawing.Size(433, 666);
             this.gb_suasp.TabIndex = 4;
             this.gb_suasp.TabStop = false;
             this.gb_suasp.Text = "SỬA SẢN PHẨM";
+            // 
+            // cb_tinhtrang
+            // 
+            this.cb_tinhtrang.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
+            this.cb_tinhtrang.FormattingEnabled = true;
+            this.cb_tinhtrang.IntegralHeight = false;
+            this.cb_tinhtrang.ItemHeight = 18;
+            this.cb_tinhtrang.Items.AddRange(new object[] {
+            "Còn hàng",
+            "Hết hàng"});
+            this.cb_tinhtrang.Location = new System.Drawing.Point(149, 584);
+            this.cb_tinhtrang.Name = "cb_tinhtrang";
+            this.cb_tinhtrang.Size = new System.Drawing.Size(232, 26);
+            this.cb_tinhtrang.TabIndex = 8;
+            // 
+            // lb_tinhtrang
+            // 
+            this.lb_tinhtrang.AutoSize = true;
+            this.lb_tinhtrang.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tinhtrang.ForeColor = System.Drawing.Color.Black;
+            this.lb_tinhtrang.Location = new System.Drawing.Point(36, 591);
+            this.lb_tinhtrang.Name = "lb_tinhtrang";
+            this.lb_tinhtrang.Size = new System.Drawing.Size(81, 16);
+            this.lb_tinhtrang.TabIndex = 70;
+            this.lb_tinhtrang.Text = "Tình trạng:";
             // 
             // cb_loai
             // 
@@ -91,7 +121,7 @@
             this.cb_loai.Location = new System.Drawing.Point(149, 284);
             this.cb_loai.Name = "cb_loai";
             this.cb_loai.Size = new System.Drawing.Size(232, 26);
-            this.cb_loai.TabIndex = 69;
+            this.cb_loai.TabIndex = 2;
             // 
             // tb_hang
             // 
@@ -102,7 +132,7 @@
             this.tb_hang.Bordersize = 2;
             this.tb_hang.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_hang.ForeColor = System.Drawing.Color.Black;
-            this.tb_hang.Location = new System.Drawing.Point(149, 471);
+            this.tb_hang.Location = new System.Drawing.Point(149, 533);
             this.tb_hang.Margin = new System.Windows.Forms.Padding(4);
             this.tb_hang.Multiline = false;
             this.tb_hang.Name = "tb_hang";
@@ -111,7 +141,7 @@
             this.tb_hang.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_hang.PlaceholderText = "";
             this.tb_hang.Size = new System.Drawing.Size(232, 33);
-            this.tb_hang.TabIndex = 68;
+            this.tb_hang.TabIndex = 7;
             this.tb_hang.Texts = "";
             this.tb_hang.UnderlinedStyle = false;
             // 
@@ -125,14 +155,14 @@
             this.dt_ngnhap.Location = new System.Drawing.Point(149, 329);
             this.dt_ngnhap.Name = "dt_ngnhap";
             this.dt_ngnhap.Size = new System.Drawing.Size(232, 26);
-            this.dt_ngnhap.TabIndex = 65;
+            this.dt_ngnhap.TabIndex = 3;
             // 
             // lb_hang
             // 
             this.lb_hang.AutoSize = true;
             this.lb_hang.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_hang.ForeColor = System.Drawing.Color.Black;
-            this.lb_hang.Location = new System.Drawing.Point(36, 488);
+            this.lb_hang.Location = new System.Drawing.Point(36, 545);
             this.lb_hang.Name = "lb_hang";
             this.lb_hang.Size = new System.Drawing.Size(46, 16);
             this.lb_hang.TabIndex = 64;
@@ -156,7 +186,7 @@
             this.tb_dongia.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_dongia.PlaceholderText = "";
             this.tb_dongia.Size = new System.Drawing.Size(232, 33);
-            this.tb_dongia.TabIndex = 63;
+            this.tb_dongia.TabIndex = 5;
             this.tb_dongia.Texts = "";
             this.tb_dongia.UnderlinedStyle = false;
             // 
@@ -165,7 +195,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(36, 437);
+            this.label4.Location = new System.Drawing.Point(36, 432);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 16);
             this.label4.TabIndex = 61;
@@ -176,7 +206,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(36, 387);
+            this.label3.Location = new System.Drawing.Point(36, 382);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 16);
             this.label3.TabIndex = 60;
@@ -198,7 +228,7 @@
             this.lb_loai.AutoSize = true;
             this.lb_loai.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_loai.ForeColor = System.Drawing.Color.Black;
-            this.lb_loai.Location = new System.Drawing.Point(36, 288);
+            this.lb_loai.Location = new System.Drawing.Point(36, 287);
             this.lb_loai.Name = "lb_loai";
             this.lb_loai.Size = new System.Drawing.Size(39, 16);
             this.lb_loai.TabIndex = 58;
@@ -209,7 +239,7 @@
             this.lb_tsp.AutoSize = true;
             this.lb_tsp.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_tsp.ForeColor = System.Drawing.Color.Black;
-            this.lb_tsp.Location = new System.Drawing.Point(36, 247);
+            this.lb_tsp.Location = new System.Drawing.Point(36, 242);
             this.lb_tsp.Name = "lb_tsp";
             this.lb_tsp.Size = new System.Drawing.Size(106, 16);
             this.lb_tsp.TabIndex = 57;
@@ -233,7 +263,7 @@
             this.tb_Sl.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Sl.PlaceholderText = "";
             this.tb_Sl.Size = new System.Drawing.Size(232, 33);
-            this.tb_Sl.TabIndex = 56;
+            this.tb_Sl.TabIndex = 4;
             this.tb_Sl.Texts = "";
             this.tb_Sl.UnderlinedStyle = false;
             // 
@@ -255,7 +285,7 @@
             this.tb_tensp.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_tensp.PlaceholderText = "";
             this.tb_tensp.Size = new System.Drawing.Size(232, 33);
-            this.tb_tensp.TabIndex = 53;
+            this.tb_tensp.TabIndex = 1;
             this.tb_tensp.Texts = "";
             this.tb_tensp.UnderlinedStyle = false;
             // 
@@ -288,10 +318,10 @@
             this.bt_xoahet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_xoahet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_xoahet.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoahet.Location = new System.Drawing.Point(267, 570);
+            this.bt_xoahet.Location = new System.Drawing.Point(271, 627);
             this.bt_xoahet.Name = "bt_xoahet";
             this.bt_xoahet.Size = new System.Drawing.Size(70, 27);
-            this.bt_xoahet.TabIndex = 51;
+            this.bt_xoahet.TabIndex = 10;
             this.bt_xoahet.Text = "Xóa hết";
             this.bt_xoahet.TextColor = System.Drawing.Color.Transparent;
             this.bt_xoahet.UseVisualStyleBackColor = false;
@@ -309,44 +339,52 @@
             this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Luu.Location = new System.Drawing.Point(164, 570);
+            this.bt_Luu.Location = new System.Drawing.Point(166, 627);
             this.bt_Luu.Name = "bt_Luu";
             this.bt_Luu.Size = new System.Drawing.Size(70, 27);
-            this.bt_Luu.TabIndex = 50;
+            this.bt_Luu.TabIndex = 9;
             this.bt_Luu.Text = "Lưu";
             this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
             this.bt_Luu.UseVisualStyleBackColor = false;
             // 
-            // lb_tinhtrang
+            // lb_gianhap
             // 
-            this.lb_tinhtrang.AutoSize = true;
-            this.lb_tinhtrang.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tinhtrang.ForeColor = System.Drawing.Color.Black;
-            this.lb_tinhtrang.Location = new System.Drawing.Point(36, 529);
-            this.lb_tinhtrang.Name = "lb_tinhtrang";
-            this.lb_tinhtrang.Size = new System.Drawing.Size(81, 16);
-            this.lb_tinhtrang.TabIndex = 70;
-            this.lb_tinhtrang.Text = "Tình trạng:";
+            this.lb_gianhap.AutoSize = true;
+            this.lb_gianhap.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_gianhap.ForeColor = System.Drawing.Color.Black;
+            this.lb_gianhap.Location = new System.Drawing.Point(36, 487);
+            this.lb_gianhap.Name = "lb_gianhap";
+            this.lb_gianhap.Size = new System.Drawing.Size(70, 16);
+            this.lb_gianhap.TabIndex = 72;
+            this.lb_gianhap.Text = "Giá nhập:";
             // 
-            // cb_tinhtrang
+            // tb_gianhap
             // 
-            this.cb_tinhtrang.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
-            this.cb_tinhtrang.FormattingEnabled = true;
-            this.cb_tinhtrang.IntegralHeight = false;
-            this.cb_tinhtrang.ItemHeight = 18;
-            this.cb_tinhtrang.Items.AddRange(new object[] {
-            "Còn hàng",
-            "Hết hàng"});
-            this.cb_tinhtrang.Location = new System.Drawing.Point(149, 522);
-            this.cb_tinhtrang.Name = "cb_tinhtrang";
-            this.cb_tinhtrang.Size = new System.Drawing.Size(232, 26);
-            this.cb_tinhtrang.TabIndex = 71;
+            this.tb_gianhap.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_gianhap.BorderColor = System.Drawing.Color.Black;
+            this.tb_gianhap.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_gianhap.BorderRadius = 5;
+            this.tb_gianhap.Bordersize = 2;
+            this.tb_gianhap.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_gianhap.ForeColor = System.Drawing.Color.Black;
+            this.tb_gianhap.Location = new System.Drawing.Point(149, 475);
+            this.tb_gianhap.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_gianhap.Multiline = false;
+            this.tb_gianhap.Name = "tb_gianhap";
+            this.tb_gianhap.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_gianhap.PasswordChar = false;
+            this.tb_gianhap.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_gianhap.PlaceholderText = "";
+            this.tb_gianhap.Size = new System.Drawing.Size(232, 33);
+            this.tb_gianhap.TabIndex = 6;
+            this.tb_gianhap.Texts = "";
+            this.tb_gianhap.UnderlinedStyle = false;
             // 
             // SuaSp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 627);
+            this.ClientSize = new System.Drawing.Size(433, 666);
             this.Controls.Add(this.gb_suasp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SuaSp";
@@ -379,5 +417,7 @@
         private CustomButton bt_Luu;
         private System.Windows.Forms.ComboBox cb_tinhtrang;
         private System.Windows.Forms.Label lb_tinhtrang;
+        private CustomTextBox tb_gianhap;
+        private System.Windows.Forms.Label lb_gianhap;
     }
 }

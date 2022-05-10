@@ -46,10 +46,8 @@
             this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.bt_xoahet = new Gym_Management.CustomButton();
             this.bt_Luu = new Gym_Management.CustomButton();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.gb_themtb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb_themtb
@@ -72,12 +70,13 @@
             this.gb_themtb.Controls.Add(this.pb_anh);
             this.gb_themtb.Controls.Add(this.bt_xoahet);
             this.gb_themtb.Controls.Add(this.bt_Luu);
+            this.gb_themtb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gb_themtb.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_themtb.ForeColor = System.Drawing.Color.Red;
-            this.gb_themtb.Location = new System.Drawing.Point(12, 12);
+            this.gb_themtb.Location = new System.Drawing.Point(0, 0);
             this.gb_themtb.Name = "gb_themtb";
-            this.gb_themtb.Size = new System.Drawing.Size(409, 621);
-            this.gb_themtb.TabIndex = 5;
+            this.gb_themtb.Size = new System.Drawing.Size(433, 618);
+            this.gb_themtb.TabIndex = 6;
             this.gb_themtb.TabStop = false;
             this.gb_themtb.Text = "THÊM THIẾT BỊ";
             // 
@@ -344,21 +343,12 @@
             this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
             this.bt_Luu.UseVisualStyleBackColor = false;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.gb_themtb);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(433, 645);
-            this.panel1.TabIndex = 6;
-            // 
             // ThemTb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 645);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(433, 618);
+            this.Controls.Add(this.gb_themtb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ThemTb";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -366,7 +356,6 @@
             this.gb_themtb.ResumeLayout(false);
             this.gb_themtb.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -374,6 +363,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gb_themtb;
+        public System.Windows.Forms.DateTimePicker dt_ngnhap;
+        private System.Windows.Forms.Label lb_ngaynhao;
         private System.Windows.Forms.ComboBox cb_tinhtrang;
         private System.Windows.Forms.Label lb_tinhtrang;
         private System.Windows.Forms.ComboBox cb_loai;
@@ -389,8 +380,5 @@
         private FontAwesome.Sharp.IconPictureBox pb_anh;
         private CustomButton bt_xoahet;
         private CustomButton bt_Luu;
-        public System.Windows.Forms.DateTimePicker dt_ngnhap;
-        private System.Windows.Forms.Label lb_ngaynhao;
-        private System.Windows.Forms.Panel panel1;
     }
 }

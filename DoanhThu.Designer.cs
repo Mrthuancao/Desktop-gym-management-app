@@ -52,17 +52,6 @@
             this.rw = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label12 = new System.Windows.Forms.Label();
             this.bt_done = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.lb_Sltb = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lb_Slsp = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lb_Slkh = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.chart_Top5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart_Doanhthu = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -85,10 +74,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bt_custom)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Sptk)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Top5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Doanhthu)).BeginInit();
             this.panel4.SuspendLayout();
@@ -109,7 +94,6 @@
             this.pn_doanhthu.Controls.Add(this.customButton1);
             this.pn_doanhthu.Controls.Add(this.panel6);
             this.pn_doanhthu.Controls.Add(this.bt_done);
-            this.pn_doanhthu.Controls.Add(this.panel5);
             this.pn_doanhthu.Controls.Add(this.chart_Top5);
             this.pn_doanhthu.Controls.Add(this.chart_Doanhthu);
             this.pn_doanhthu.Controls.Add(this.panel4);
@@ -162,7 +146,7 @@
             this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton3.ForeColor = System.Drawing.Color.White;
-            this.customButton3.Location = new System.Drawing.Point(714, 40);
+            this.customButton3.Location = new System.Drawing.Point(759, 40);
             this.customButton3.Name = "customButton3";
             this.customButton3.Size = new System.Drawing.Size(83, 26);
             this.customButton3.TabIndex = 60;
@@ -183,7 +167,7 @@
             this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton2.ForeColor = System.Drawing.Color.White;
-            this.customButton2.Location = new System.Drawing.Point(798, 40);
+            this.customButton2.Location = new System.Drawing.Point(848, 40);
             this.customButton2.Name = "customButton2";
             this.customButton2.Size = new System.Drawing.Size(83, 26);
             this.customButton2.TabIndex = 59;
@@ -204,7 +188,7 @@
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(630, 40);
+            this.customButton1.Location = new System.Drawing.Point(670, 40);
             this.customButton1.Name = "customButton1";
             this.customButton1.Size = new System.Drawing.Size(83, 26);
             this.customButton1.TabIndex = 58;
@@ -219,9 +203,9 @@
             this.panel6.Controls.Add(this.dtg_Sptk);
             this.panel6.Controls.Add(this.label12);
             this.panel6.ForeColor = System.Drawing.Color.Black;
-            this.panel6.Location = new System.Drawing.Point(227, 472);
+            this.panel6.Location = new System.Drawing.Point(12, 472);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(337, 157);
+            this.panel6.Size = new System.Drawing.Size(552, 157);
             this.panel6.TabIndex = 46;
             // 
             // dtg_Sptk
@@ -258,7 +242,7 @@
             this.dtg_Sptk.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dtg_Sptk.Location = new System.Drawing.Point(0, 41);
             this.dtg_Sptk.Name = "dtg_Sptk";
-            this.dtg_Sptk.Size = new System.Drawing.Size(337, 116);
+            this.dtg_Sptk.Size = new System.Drawing.Size(552, 116);
             this.dtg_Sptk.TabIndex = 47;
             // 
             // helo
@@ -283,7 +267,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Yellow;
-            this.label12.Location = new System.Drawing.Point(79, 0);
+            this.label12.Location = new System.Drawing.Point(191, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(171, 25);
             this.label12.TabIndex = 46;
@@ -303,137 +287,6 @@
             this.bt_done.Size = new System.Drawing.Size(32, 26);
             this.bt_done.TabIndex = 35;
             this.bt_done.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DimGray;
-            this.panel5.Controls.Add(this.iconPictureBox6);
-            this.panel5.Controls.Add(this.iconPictureBox5);
-            this.panel5.Controls.Add(this.iconPictureBox4);
-            this.panel5.Controls.Add(this.lb_Sltb);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.lb_Slsp);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.lb_Slkh);
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(12, 472);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(209, 157);
-            this.panel5.TabIndex = 45;
-            // 
-            // iconPictureBox6
-            // 
-            this.iconPictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox6.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.ListUl;
-            this.iconPictureBox6.IconColor = System.Drawing.Color.DarkTurquoise;
-            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox6.Location = new System.Drawing.Point(23, 104);
-            this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox6.TabIndex = 52;
-            this.iconPictureBox6.TabStop = false;
-            // 
-            // iconPictureBox5
-            // 
-            this.iconPictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox5.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.ListUl;
-            this.iconPictureBox5.IconColor = System.Drawing.Color.DarkTurquoise;
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.Location = new System.Drawing.Point(23, 66);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox5.TabIndex = 51;
-            this.iconPictureBox5.TabStop = false;
-            // 
-            // iconPictureBox4
-            // 
-            this.iconPictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox4.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.ListUl;
-            this.iconPictureBox4.IconColor = System.Drawing.Color.DarkTurquoise;
-            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.Location = new System.Drawing.Point(23, 28);
-            this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox4.TabIndex = 48;
-            this.iconPictureBox4.TabStop = false;
-            // 
-            // lb_Sltb
-            // 
-            this.lb_Sltb.AutoSize = true;
-            this.lb_Sltb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Sltb.ForeColor = System.Drawing.Color.White;
-            this.lb_Sltb.Location = new System.Drawing.Point(79, 117);
-            this.lb_Sltb.Name = "lb_Sltb";
-            this.lb_Sltb.Size = new System.Drawing.Size(78, 25);
-            this.lb_Sltb.TabIndex = 50;
-            this.lb_Sltb.Text = "100000";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.BurlyWood;
-            this.label9.Location = new System.Drawing.Point(81, 104);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 13);
-            this.label9.TabIndex = 49;
-            this.label9.Text = "Số lượng thiết bị";
-            // 
-            // lb_Slsp
-            // 
-            this.lb_Slsp.AutoSize = true;
-            this.lb_Slsp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Slsp.ForeColor = System.Drawing.Color.White;
-            this.lb_Slsp.Location = new System.Drawing.Point(79, 79);
-            this.lb_Slsp.Name = "lb_Slsp";
-            this.lb_Slsp.Size = new System.Drawing.Size(78, 25);
-            this.lb_Slsp.TabIndex = 48;
-            this.lb_Slsp.Text = "100000";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.BurlyWood;
-            this.label7.Location = new System.Drawing.Point(81, 66);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 13);
-            this.label7.TabIndex = 47;
-            this.label7.Text = "Số lượng sản phẩm";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Yellow;
-            this.label6.Location = new System.Drawing.Point(26, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 25);
-            this.label6.TabIndex = 46;
-            this.label6.Text = "Số lượng quầy";
-            // 
-            // lb_Slkh
-            // 
-            this.lb_Slkh.AutoSize = true;
-            this.lb_Slkh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Slkh.ForeColor = System.Drawing.Color.White;
-            this.lb_Slkh.Location = new System.Drawing.Point(79, 41);
-            this.lb_Slkh.Name = "lb_Slkh";
-            this.lb_Slkh.Size = new System.Drawing.Size(78, 25);
-            this.lb_Slkh.TabIndex = 42;
-            this.lb_Slkh.Text = "100000";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.BurlyWood;
-            this.label4.Location = new System.Drawing.Point(81, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 13);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "Số lượng khách hàng";
             // 
             // chart_Top5
             // 
@@ -463,7 +316,7 @@
             series1.Name = "Series1";
             series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
             this.chart_Top5.Series.Add(series1);
-            this.chart_Top5.Size = new System.Drawing.Size(311, 463);
+            this.chart_Top5.Size = new System.Drawing.Size(361, 463);
             this.chart_Top5.TabIndex = 44;
             this.chart_Top5.Text = "chartTop5";
             title1.Alignment = System.Drawing.ContentAlignment.TopLeft;
@@ -526,9 +379,9 @@
             this.panel4.Controls.Add(this.iconPictureBox3);
             this.panel4.Controls.Add(this.lb_Tongln);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(536, 86);
+            this.panel4.Location = new System.Drawing.Point(605, 86);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(345, 74);
+            this.panel4.Size = new System.Drawing.Size(326, 74);
             this.panel4.TabIndex = 42;
             // 
             // iconPictureBox3
@@ -573,7 +426,7 @@
             this.panel3.Controls.Add(this.iconPictureBox2);
             this.panel3.Controls.Add(this.lb_Tongdt);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(227, 86);
+            this.panel3.Location = new System.Drawing.Point(296, 86);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(303, 74);
             this.panel3.TabIndex = 41;
@@ -622,7 +475,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(12, 86);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(209, 74);
+            this.panel2.Size = new System.Drawing.Size(278, 74);
             this.panel2.TabIndex = 40;
             // 
             // iconPictureBox1
@@ -659,7 +512,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 16);
             this.label1.TabIndex = 41;
-            this.label1.Text = "Số lượng đơn hàng";
+            this.label1.Text = "Số lượng giao dịch";
             // 
             // lb_doanhthu1
             // 
@@ -722,11 +575,6 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Sptk)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Top5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Doanhthu)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -749,14 +597,6 @@
         private System.Windows.Forms.Button bt_done;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lb_Sltb;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lb_Slsp;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lb_Slkh;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_Top5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_Doanhthu;
         private System.Windows.Forms.Panel panel4;
@@ -778,9 +618,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
         private System.Windows.Forms.DataGridView dtg_Sptk;
         private FontAwesome.Sharp.IconPictureBox bt_custom;
         private System.Windows.Forms.DataGridViewTextBoxColumn helo;
