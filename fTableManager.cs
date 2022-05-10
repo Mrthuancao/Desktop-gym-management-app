@@ -26,11 +26,12 @@ namespace Gym_Management
         {
             InitializeComponent();
             CollapseMenu();
-            this.Padding = new Padding(borderSize);//Border size
-            this.BackColor = Color.FromArgb(98, 102, 244);//Border color
+            //this.Padding = new Padding(borderSize);//Border size
+            //this.BackColor = Color.FromArgb(98, 102, 244);//Border color
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 43);
             pn_menu.Controls.Add(leftBorderBtn);
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         //Structs
@@ -131,7 +132,7 @@ namespace Gym_Management
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
         //Overridden methods
-        protected override void WndProc(ref Message m)
+        /*protected override void WndProc(ref Message m)
         {
             const int WM_NCCALCSIZE = 0x0083;//Standar Title Bar - Snap Window
             const int WM_SYSCOMMAND = 0x0112;
@@ -218,11 +219,11 @@ namespace Gym_Management
                     this.Size = formSize;
             }
             base.WndProc(ref m);
-        }
+        }*/
         //Event methods
         private void fTableManager_Resize(object sender, EventArgs e)
         {
-            AdjustForm();
+            //AdjustForm();
         }
 
         private void AdjustForm()
