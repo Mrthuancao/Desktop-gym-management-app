@@ -16,5 +16,10 @@ namespace Gym_Management
         {
             InitializeComponent();
         }
+
+        private void bt_Luu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
