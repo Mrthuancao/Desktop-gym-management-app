@@ -32,26 +32,20 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pn_sanpham = new System.Windows.Forms.Panel();
+            this.pn_ttsp = new System.Windows.Forms.Panel();
+            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lb_danhsachsp = new System.Windows.Forms.Label();
             this.lb_thongtin = new System.Windows.Forms.Label();
+            this.lb_tensp = new System.Windows.Forms.Label();
             this.lb_tinhtrang = new System.Windows.Forms.Label();
+            this.lb_loaisp = new System.Windows.Forms.Label();
             this.lb_gia = new System.Windows.Forms.Label();
+            this.lb_sl = new System.Windows.Forms.Label();
             this.bt_search = new FontAwesome.Sharp.IconButton();
             this.gb_chucnang = new System.Windows.Forms.GroupBox();
-            this.lb_sl = new System.Windows.Forms.Label();
-            this.lb_loaisp = new System.Windows.Forms.Label();
-            this.lb_tensp = new System.Windows.Forms.Label();
-            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
-            this.dtg_SP = new System.Windows.Forms.DataGridView();
-            this.masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tensp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaynhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_dtgsp = new System.Windows.Forms.Panel();
-            this.pn_ttsp = new System.Windows.Forms.Panel();
+            this.dtg_SP = new System.Windows.Forms.DataGridView();
+            this.lb_danhsachsp = new System.Windows.Forms.Label();
             this.tb_msp = new Gym_Management.CustomTextBox();
             this.tb_hang = new Gym_Management.CustomTextBox();
             this.tb_loaisp = new Gym_Management.CustomTextBox();
@@ -60,12 +54,19 @@
             this.bt_xoa = new Gym_Management.CustomButton();
             this.bt_Them = new Gym_Management.CustomButton();
             this.tb_Search = new Gym_Management.CustomTextBox();
+            this.masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tensp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaynhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dsdd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_sanpham.SuspendLayout();
-            this.gb_chucnang.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_SP)).BeginInit();
-            this.pn_dtgsp.SuspendLayout();
             this.pn_ttsp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
+            this.gb_chucnang.SuspendLayout();
+            this.pn_dtgsp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_SP)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_sanpham
@@ -78,6 +79,45 @@
             this.pn_sanpham.Size = new System.Drawing.Size(934, 633);
             this.pn_sanpham.TabIndex = 1;
             // 
+            // pn_ttsp
+            // 
+            this.pn_ttsp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pn_ttsp.Controls.Add(this.pb_anh);
+            this.pn_ttsp.Controls.Add(this.tb_msp);
+            this.pn_ttsp.Controls.Add(this.label1);
+            this.pn_ttsp.Controls.Add(this.tb_hang);
+            this.pn_ttsp.Controls.Add(this.lb_thongtin);
+            this.pn_ttsp.Controls.Add(this.tb_loaisp);
+            this.pn_ttsp.Controls.Add(this.tb_soluongsp);
+            this.pn_ttsp.Controls.Add(this.lb_tensp);
+            this.pn_ttsp.Controls.Add(this.lb_tinhtrang);
+            this.pn_ttsp.Controls.Add(this.lb_loaisp);
+            this.pn_ttsp.Controls.Add(this.lb_gia);
+            this.pn_ttsp.Controls.Add(this.lb_sl);
+            this.pn_ttsp.Controls.Add(this.bt_search);
+            this.pn_ttsp.Controls.Add(this.gb_chucnang);
+            this.pn_ttsp.Controls.Add(this.tb_Search);
+            this.pn_ttsp.Location = new System.Drawing.Point(0, 0);
+            this.pn_ttsp.Name = "pn_ttsp";
+            this.pn_ttsp.Size = new System.Drawing.Size(934, 317);
+            this.pn_ttsp.TabIndex = 64;
+            // 
+            // pb_anh
+            // 
+            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pb_anh.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.pb_anh.IconColor = System.Drawing.SystemColors.ControlText;
+            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pb_anh.IconSize = 202;
+            this.pb_anh.Location = new System.Drawing.Point(12, 58);
+            this.pb_anh.Name = "pb_anh";
+            this.pb_anh.Size = new System.Drawing.Size(269, 202);
+            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_anh.TabIndex = 12;
+            this.pb_anh.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -89,16 +129,6 @@
             this.label1.TabIndex = 62;
             this.label1.Text = "Còn hàng";
             // 
-            // lb_danhsachsp
-            // 
-            this.lb_danhsachsp.AutoSize = true;
-            this.lb_danhsachsp.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.lb_danhsachsp.Location = new System.Drawing.Point(366, 17);
-            this.lb_danhsachsp.Name = "lb_danhsachsp";
-            this.lb_danhsachsp.Size = new System.Drawing.Size(207, 28);
-            this.lb_danhsachsp.TabIndex = 61;
-            this.lb_danhsachsp.Text = "Danh sách sản phẩm";
-            // 
             // lb_thongtin
             // 
             this.lb_thongtin.AutoSize = true;
@@ -108,6 +138,16 @@
             this.lb_thongtin.Size = new System.Drawing.Size(201, 28);
             this.lb_thongtin.TabIndex = 60;
             this.lb_thongtin.Text = "Thông tin sản phẩm";
+            // 
+            // lb_tensp
+            // 
+            this.lb_tensp.AutoSize = true;
+            this.lb_tensp.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tensp.Location = new System.Drawing.Point(288, 79);
+            this.lb_tensp.Name = "lb_tensp";
+            this.lb_tensp.Size = new System.Drawing.Size(38, 16);
+            this.lb_tensp.TabIndex = 23;
+            this.lb_tensp.Text = "Tên:";
             // 
             // lb_tinhtrang
             // 
@@ -119,6 +159,16 @@
             this.lb_tinhtrang.TabIndex = 57;
             this.lb_tinhtrang.Text = "Tình trạng:";
             // 
+            // lb_loaisp
+            // 
+            this.lb_loaisp.AutoSize = true;
+            this.lb_loaisp.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_loaisp.Location = new System.Drawing.Point(288, 120);
+            this.lb_loaisp.Name = "lb_loaisp";
+            this.lb_loaisp.Size = new System.Drawing.Size(39, 16);
+            this.lb_loaisp.TabIndex = 24;
+            this.lb_loaisp.Text = "Loại:";
+            // 
             // lb_gia
             // 
             this.lb_gia.AutoSize = true;
@@ -128,6 +178,16 @@
             this.lb_gia.Size = new System.Drawing.Size(33, 16);
             this.lb_gia.TabIndex = 56;
             this.lb_gia.Text = "Giá:";
+            // 
+            // lb_sl
+            // 
+            this.lb_sl.AutoSize = true;
+            this.lb_sl.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_sl.Location = new System.Drawing.Point(288, 161);
+            this.lb_sl.Name = "lb_sl";
+            this.lb_sl.Size = new System.Drawing.Size(71, 16);
+            this.lb_sl.TabIndex = 25;
+            this.lb_sl.Text = "Số lượng:";
             // 
             // bt_search
             // 
@@ -159,56 +219,23 @@
             this.gb_chucnang.TabStop = false;
             this.gb_chucnang.Text = "Chức năng";
             // 
-            // lb_sl
+            // pn_dtgsp
             // 
-            this.lb_sl.AutoSize = true;
-            this.lb_sl.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_sl.Location = new System.Drawing.Point(288, 161);
-            this.lb_sl.Name = "lb_sl";
-            this.lb_sl.Size = new System.Drawing.Size(71, 16);
-            this.lb_sl.TabIndex = 25;
-            this.lb_sl.Text = "Số lượng:";
-            // 
-            // lb_loaisp
-            // 
-            this.lb_loaisp.AutoSize = true;
-            this.lb_loaisp.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_loaisp.Location = new System.Drawing.Point(288, 120);
-            this.lb_loaisp.Name = "lb_loaisp";
-            this.lb_loaisp.Size = new System.Drawing.Size(39, 16);
-            this.lb_loaisp.TabIndex = 24;
-            this.lb_loaisp.Text = "Loại:";
-            // 
-            // lb_tensp
-            // 
-            this.lb_tensp.AutoSize = true;
-            this.lb_tensp.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tensp.Location = new System.Drawing.Point(288, 79);
-            this.lb_tensp.Name = "lb_tensp";
-            this.lb_tensp.Size = new System.Drawing.Size(38, 16);
-            this.lb_tensp.TabIndex = 23;
-            this.lb_tensp.Text = "Tên:";
-            // 
-            // pb_anh
-            // 
-            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pb_anh.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.pb_anh.IconColor = System.Drawing.SystemColors.ControlText;
-            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pb_anh.IconSize = 202;
-            this.pb_anh.Location = new System.Drawing.Point(12, 58);
-            this.pb_anh.Name = "pb_anh";
-            this.pb_anh.Size = new System.Drawing.Size(269, 202);
-            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_anh.TabIndex = 12;
-            this.pb_anh.TabStop = false;
+            this.pn_dtgsp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pn_dtgsp.Controls.Add(this.dtg_SP);
+            this.pn_dtgsp.Controls.Add(this.lb_danhsachsp);
+            this.pn_dtgsp.Location = new System.Drawing.Point(0, 317);
+            this.pn_dtgsp.Name = "pn_dtgsp";
+            this.pn_dtgsp.Size = new System.Drawing.Size(934, 316);
+            this.pn_dtgsp.TabIndex = 63;
             // 
             // dtg_SP
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dtg_SP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtg_SP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtg_SP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg_SP.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.dtg_SP.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -227,6 +254,7 @@
             this.loai,
             this.soluong,
             this.ngaynhap,
+            this.dsdd,
             this.gia});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
@@ -236,7 +264,6 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtg_SP.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtg_SP.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dtg_SP.EnableHeadersVisualStyles = false;
             this.dtg_SP.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dtg_SP.Location = new System.Drawing.Point(0, 60);
@@ -244,74 +271,16 @@
             this.dtg_SP.Size = new System.Drawing.Size(934, 256);
             this.dtg_SP.TabIndex = 1;
             // 
-            // masp
+            // lb_danhsachsp
             // 
-            this.masp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.masp.HeaderText = "Mã sản phẩm";
-            this.masp.Name = "masp";
-            // 
-            // tensp
-            // 
-            this.tensp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tensp.HeaderText = "Tên sản phẩm";
-            this.tensp.Name = "tensp";
-            // 
-            // loai
-            // 
-            this.loai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.loai.HeaderText = "Loại sản phẩm";
-            this.loai.Name = "loai";
-            // 
-            // soluong
-            // 
-            this.soluong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.soluong.HeaderText = "Số lượng";
-            this.soluong.Name = "soluong";
-            // 
-            // ngaynhap
-            // 
-            this.ngaynhap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ngaynhap.HeaderText = "Ngày nhập";
-            this.ngaynhap.Name = "ngaynhap";
-            // 
-            // gia
-            // 
-            this.gia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.gia.HeaderText = "Đơn giá";
-            this.gia.Name = "gia";
-            // 
-            // pn_dtgsp
-            // 
-            this.pn_dtgsp.Controls.Add(this.dtg_SP);
-            this.pn_dtgsp.Controls.Add(this.lb_danhsachsp);
-            this.pn_dtgsp.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pn_dtgsp.Location = new System.Drawing.Point(0, 317);
-            this.pn_dtgsp.Name = "pn_dtgsp";
-            this.pn_dtgsp.Size = new System.Drawing.Size(934, 316);
-            this.pn_dtgsp.TabIndex = 63;
-            // 
-            // pn_ttsp
-            // 
-            this.pn_ttsp.Controls.Add(this.pb_anh);
-            this.pn_ttsp.Controls.Add(this.tb_msp);
-            this.pn_ttsp.Controls.Add(this.label1);
-            this.pn_ttsp.Controls.Add(this.tb_hang);
-            this.pn_ttsp.Controls.Add(this.lb_thongtin);
-            this.pn_ttsp.Controls.Add(this.tb_loaisp);
-            this.pn_ttsp.Controls.Add(this.tb_soluongsp);
-            this.pn_ttsp.Controls.Add(this.lb_tensp);
-            this.pn_ttsp.Controls.Add(this.lb_tinhtrang);
-            this.pn_ttsp.Controls.Add(this.lb_loaisp);
-            this.pn_ttsp.Controls.Add(this.lb_gia);
-            this.pn_ttsp.Controls.Add(this.lb_sl);
-            this.pn_ttsp.Controls.Add(this.bt_search);
-            this.pn_ttsp.Controls.Add(this.gb_chucnang);
-            this.pn_ttsp.Controls.Add(this.tb_Search);
-            this.pn_ttsp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_ttsp.Location = new System.Drawing.Point(0, 0);
-            this.pn_ttsp.Name = "pn_ttsp";
-            this.pn_ttsp.Size = new System.Drawing.Size(934, 317);
-            this.pn_ttsp.TabIndex = 64;
+            this.lb_danhsachsp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_danhsachsp.AutoSize = true;
+            this.lb_danhsachsp.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.lb_danhsachsp.Location = new System.Drawing.Point(366, 17);
+            this.lb_danhsachsp.Name = "lb_danhsachsp";
+            this.lb_danhsachsp.Size = new System.Drawing.Size(207, 28);
+            this.lb_danhsachsp.TabIndex = 61;
+            this.lb_danhsachsp.Text = "Danh sách sản phẩm";
             // 
             // tb_msp
             // 
@@ -488,6 +457,47 @@
             this.tb_Search.Texts = "";
             this.tb_Search.UnderlinedStyle = false;
             // 
+            // masp
+            // 
+            this.masp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.masp.HeaderText = "Mã sản phẩm";
+            this.masp.Name = "masp";
+            // 
+            // tensp
+            // 
+            this.tensp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tensp.HeaderText = "Tên sản phẩm";
+            this.tensp.Name = "tensp";
+            // 
+            // loai
+            // 
+            this.loai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.loai.HeaderText = "Loại sản phẩm";
+            this.loai.Name = "loai";
+            // 
+            // soluong
+            // 
+            this.soluong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.Name = "soluong";
+            // 
+            // ngaynhap
+            // 
+            this.ngaynhap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ngaynhap.HeaderText = "Ngày nhập";
+            this.ngaynhap.Name = "ngaynhap";
+            // 
+            // dsdd
+            // 
+            this.dsdd.HeaderText = "Giá nhập";
+            this.dsdd.Name = "dsdd";
+            // 
+            // gia
+            // 
+            this.gia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.gia.HeaderText = "Đơn giá";
+            this.gia.Name = "gia";
+            // 
             // SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -498,13 +508,13 @@
             this.Name = "SanPham";
             this.Text = "Sản phẩm";
             this.pn_sanpham.ResumeLayout(false);
-            this.gb_chucnang.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_SP)).EndInit();
-            this.pn_dtgsp.ResumeLayout(false);
-            this.pn_dtgsp.PerformLayout();
             this.pn_ttsp.ResumeLayout(false);
             this.pn_ttsp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).EndInit();
+            this.gb_chucnang.ResumeLayout(false);
+            this.pn_dtgsp.ResumeLayout(false);
+            this.pn_dtgsp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_SP)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -531,14 +541,15 @@
         private CustomTextBox tb_msp;
         private FontAwesome.Sharp.IconPictureBox pb_anh;
         private System.Windows.Forms.DataGridView dtg_SP;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pn_dtgsp;
+        private System.Windows.Forms.Panel pn_ttsp;
         private System.Windows.Forms.DataGridViewTextBoxColumn masp;
         private System.Windows.Forms.DataGridViewTextBoxColumn tensp;
         private System.Windows.Forms.DataGridViewTextBoxColumn loai;
         private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaynhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dsdd;
         private System.Windows.Forms.DataGridViewTextBoxColumn gia;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel pn_dtgsp;
-        private System.Windows.Forms.Panel pn_ttsp;
     }
 }
