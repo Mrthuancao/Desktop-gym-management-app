@@ -29,7 +29,7 @@ namespace Gym_Management
             //this.Padding = new Padding(borderSize);//Border size
             //this.BackColor = Color.FromArgb(98, 102, 244);//Border color
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 43);
+            leftBorderBtn.Size = new Size(7, 50);
             pn_menu.Controls.Add(leftBorderBtn);
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
