@@ -40,6 +40,10 @@
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pn_doanhthu = new System.Windows.Forms.Panel();
+            this.pn_slhvm = new System.Windows.Forms.Panel();
+            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.bt_custom = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.customButton3 = new Gym_Management.CustomButton();
@@ -71,6 +75,8 @@
             this.dt_ketthuc = new System.Windows.Forms.DateTimePicker();
             this.dt_batdau = new System.Windows.Forms.DateTimePicker();
             this.pn_doanhthu.SuspendLayout();
+            this.pn_slhvm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_custom)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_Sptk)).BeginInit();
@@ -86,7 +92,9 @@
             // 
             // pn_doanhthu
             // 
+            this.pn_doanhthu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pn_doanhthu.BackColor = System.Drawing.SystemColors.Control;
+            this.pn_doanhthu.Controls.Add(this.pn_slhvm);
             this.pn_doanhthu.Controls.Add(this.bt_custom);
             this.pn_doanhthu.Controls.Add(this.label2);
             this.pn_doanhthu.Controls.Add(this.customButton3);
@@ -103,15 +111,63 @@
             this.pn_doanhthu.Controls.Add(this.lb_doanhthu);
             this.pn_doanhthu.Controls.Add(this.dt_ketthuc);
             this.pn_doanhthu.Controls.Add(this.dt_batdau);
-            this.pn_doanhthu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_doanhthu.ForeColor = System.Drawing.Color.Red;
             this.pn_doanhthu.Location = new System.Drawing.Point(0, 0);
             this.pn_doanhthu.Name = "pn_doanhthu";
-            this.pn_doanhthu.Size = new System.Drawing.Size(934, 633);
+            this.pn_doanhthu.Size = new System.Drawing.Size(1055, 719);
             this.pn_doanhthu.TabIndex = 0;
+            // 
+            // pn_slhvm
+            // 
+            this.pn_slhvm.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pn_slhvm.BackColor = System.Drawing.Color.DimGray;
+            this.pn_slhvm.Controls.Add(this.iconPictureBox4);
+            this.pn_slhvm.Controls.Add(this.label4);
+            this.pn_slhvm.Controls.Add(this.label6);
+            this.pn_slhvm.Location = new System.Drawing.Point(241, 86);
+            this.pn_slhvm.Name = "pn_slhvm";
+            this.pn_slhvm.Size = new System.Drawing.Size(223, 74);
+            this.pn_slhvm.TabIndex = 63;
+            // 
+            // iconPictureBox4
+            // 
+            this.iconPictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox4.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.AccessibleIcon;
+            this.iconPictureBox4.IconColor = System.Drawing.Color.DarkTurquoise;
+            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox4.IconSize = 63;
+            this.iconPictureBox4.Location = new System.Drawing.Point(5, 3);
+            this.iconPictureBox4.Name = "iconPictureBox4";
+            this.iconPictureBox4.Size = new System.Drawing.Size(63, 68);
+            this.iconPictureBox4.TabIndex = 45;
+            this.iconPictureBox4.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(63, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 25);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "100000";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Yellow;
+            this.label6.Location = new System.Drawing.Point(65, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(155, 16);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "Số lượng hội viên mới";
             // 
             // bt_custom
             // 
+            this.bt_custom.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bt_custom.BackColor = System.Drawing.Color.White;
             this.bt_custom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bt_custom.ForeColor = System.Drawing.Color.Red;
@@ -127,6 +183,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(308, 47);
             this.label2.Name = "label2";
@@ -136,6 +193,7 @@
             // 
             // customButton3
             // 
+            this.customButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.customButton3.BackColor = System.Drawing.Color.DarkOrange;
             this.customButton3.BackgroundColor = System.Drawing.Color.DarkOrange;
             this.customButton3.BorderColor = System.Drawing.Color.Black;
@@ -146,9 +204,9 @@
             this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton3.ForeColor = System.Drawing.Color.White;
-            this.customButton3.Location = new System.Drawing.Point(759, 40);
+            this.customButton3.Location = new System.Drawing.Point(825, 43);
             this.customButton3.Name = "customButton3";
-            this.customButton3.Size = new System.Drawing.Size(83, 26);
+            this.customButton3.Size = new System.Drawing.Size(105, 26);
             this.customButton3.TabIndex = 60;
             this.customButton3.Text = "Hôm nay";
             this.customButton3.TextColor = System.Drawing.Color.White;
@@ -157,6 +215,7 @@
             // 
             // customButton2
             // 
+            this.customButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.customButton2.BackColor = System.Drawing.Color.DarkOrange;
             this.customButton2.BackgroundColor = System.Drawing.Color.DarkOrange;
             this.customButton2.BorderColor = System.Drawing.Color.Black;
@@ -167,9 +226,9 @@
             this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton2.ForeColor = System.Drawing.Color.White;
-            this.customButton2.Location = new System.Drawing.Point(848, 40);
+            this.customButton2.Location = new System.Drawing.Point(936, 43);
             this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(83, 26);
+            this.customButton2.Size = new System.Drawing.Size(105, 26);
             this.customButton2.TabIndex = 59;
             this.customButton2.Text = "Tháng này";
             this.customButton2.TextColor = System.Drawing.Color.White;
@@ -178,6 +237,7 @@
             // 
             // customButton1
             // 
+            this.customButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.customButton1.BackColor = System.Drawing.Color.DarkOrange;
             this.customButton1.BackgroundColor = System.Drawing.Color.DarkOrange;
             this.customButton1.BorderColor = System.Drawing.Color.Black;
@@ -188,9 +248,9 @@
             this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(670, 40);
+            this.customButton1.Location = new System.Drawing.Point(714, 43);
             this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(83, 26);
+            this.customButton1.Size = new System.Drawing.Size(105, 26);
             this.customButton1.TabIndex = 58;
             this.customButton1.Text = "7 ngày gần đây";
             this.customButton1.TextColor = System.Drawing.Color.White;
@@ -199,19 +259,21 @@
             // 
             // panel6
             // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel6.BackColor = System.Drawing.Color.DimGray;
             this.panel6.Controls.Add(this.dtg_Sptk);
             this.panel6.Controls.Add(this.label12);
             this.panel6.ForeColor = System.Drawing.Color.Black;
-            this.panel6.Location = new System.Drawing.Point(12, 472);
+            this.panel6.Location = new System.Drawing.Point(12, 550);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(552, 157);
+            this.panel6.Size = new System.Drawing.Size(659, 157);
             this.panel6.TabIndex = 46;
             // 
             // dtg_Sptk
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
             this.dtg_Sptk.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtg_Sptk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtg_Sptk.BackgroundColor = System.Drawing.Color.DimGray;
             this.dtg_Sptk.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg_Sptk.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
@@ -237,12 +299,11 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtg_Sptk.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtg_Sptk.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dtg_Sptk.EnableHeadersVisualStyles = false;
             this.dtg_Sptk.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dtg_Sptk.Location = new System.Drawing.Point(0, 41);
             this.dtg_Sptk.Name = "dtg_Sptk";
-            this.dtg_Sptk.Size = new System.Drawing.Size(552, 116);
+            this.dtg_Sptk.Size = new System.Drawing.Size(659, 116);
             this.dtg_Sptk.TabIndex = 47;
             // 
             // helo
@@ -264,10 +325,11 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Yellow;
-            this.label12.Location = new System.Drawing.Point(191, 0);
+            this.label12.Location = new System.Drawing.Point(244, 13);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(171, 25);
             this.label12.TabIndex = 46;
@@ -275,6 +337,7 @@
             // 
             // bt_done
             // 
+            this.bt_done.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bt_done.BackColor = System.Drawing.Color.White;
             this.bt_done.BackgroundImage = global::Gym_Management.Properties.Resources.images1;
             this.bt_done.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -290,6 +353,7 @@
             // 
             // chart_Top5
             // 
+            this.chart_Top5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chart_Top5.BackColor = System.Drawing.Color.DimGray;
             chartArea1.BackColor = System.Drawing.Color.DimGray;
             chartArea1.BorderColor = System.Drawing.Color.DimGray;
@@ -300,7 +364,7 @@
             legend1.ForeColor = System.Drawing.Color.Gainsboro;
             legend1.Name = "Legend1";
             this.chart_Top5.Legends.Add(legend1);
-            this.chart_Top5.Location = new System.Drawing.Point(570, 166);
+            this.chart_Top5.Location = new System.Drawing.Point(680, 166);
             this.chart_Top5.Name = "chart_Top5";
             series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             series1.BackSecondaryColor = System.Drawing.Color.Salmon;
@@ -316,7 +380,7 @@
             series1.Name = "Series1";
             series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
             this.chart_Top5.Series.Add(series1);
-            this.chart_Top5.Size = new System.Drawing.Size(361, 463);
+            this.chart_Top5.Size = new System.Drawing.Size(361, 541);
             this.chart_Top5.TabIndex = 44;
             this.chart_Top5.Text = "chartTop5";
             title1.Alignment = System.Drawing.ContentAlignment.TopLeft;
@@ -328,6 +392,7 @@
             // 
             // chart_Doanhthu
             // 
+            this.chart_Doanhthu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chart_Doanhthu.BackColor = System.Drawing.Color.DimGray;
             chartArea2.AxisX.IsMarginVisible = false;
             chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Silver;
@@ -363,7 +428,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart_Doanhthu.Series.Add(series2);
-            this.chart_Doanhthu.Size = new System.Drawing.Size(552, 300);
+            this.chart_Doanhthu.Size = new System.Drawing.Size(659, 378);
             this.chart_Doanhthu.TabIndex = 43;
             this.chart_Doanhthu.Text = "chartDoanhThu";
             title2.Alignment = System.Drawing.ContentAlignment.TopLeft;
@@ -375,13 +440,14 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.DimGray;
             this.panel4.Controls.Add(this.iconPictureBox3);
             this.panel4.Controls.Add(this.lb_Tongln);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(605, 86);
+            this.panel4.Location = new System.Drawing.Point(742, 86);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(326, 74);
+            this.panel4.Size = new System.Drawing.Size(299, 74);
             this.panel4.TabIndex = 42;
             // 
             // iconPictureBox3
@@ -422,13 +488,14 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.DimGray;
             this.panel3.Controls.Add(this.iconPictureBox2);
             this.panel3.Controls.Add(this.lb_Tongdt);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(296, 86);
+            this.panel3.Location = new System.Drawing.Point(470, 86);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(303, 74);
+            this.panel3.Size = new System.Drawing.Size(266, 74);
             this.panel3.TabIndex = 41;
             // 
             // iconPictureBox2
@@ -469,13 +536,14 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.Controls.Add(this.iconPictureBox1);
             this.panel2.Controls.Add(this.lb_Sldon);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(12, 86);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(278, 74);
+            this.panel2.Size = new System.Drawing.Size(223, 74);
             this.panel2.TabIndex = 40;
             // 
             // iconPictureBox1
@@ -516,6 +584,7 @@
             // 
             // lb_doanhthu1
             // 
+            this.lb_doanhthu1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_doanhthu1.AutoSize = true;
             this.lb_doanhthu1.Font = new System.Drawing.Font("Segoe UI Light", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_doanhthu1.ForeColor = System.Drawing.Color.Black;
@@ -527,6 +596,7 @@
             // 
             // lb_doanhthu
             // 
+            this.lb_doanhthu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_doanhthu.AutoSize = true;
             this.lb_doanhthu.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.lb_doanhthu.ForeColor = System.Drawing.Color.Black;
@@ -538,6 +608,7 @@
             // 
             // dt_ketthuc
             // 
+            this.dt_ketthuc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dt_ketthuc.CalendarFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_ketthuc.CalendarForeColor = System.Drawing.Color.Black;
             this.dt_ketthuc.CalendarTitleBackColor = System.Drawing.Color.Goldenrod;
@@ -550,6 +621,7 @@
             // 
             // dt_batdau
             // 
+            this.dt_batdau.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dt_batdau.CalendarFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_batdau.CalendarForeColor = System.Drawing.Color.Black;
             this.dt_batdau.CalendarTitleBackColor = System.Drawing.Color.Goldenrod;
@@ -564,13 +636,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 633);
+            this.ClientSize = new System.Drawing.Size(1055, 719);
             this.Controls.Add(this.pn_doanhthu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DoanhThu";
             this.Text = "Doanh thu";
             this.pn_doanhthu.ResumeLayout(false);
             this.pn_doanhthu.PerformLayout();
+            this.pn_slhvm.ResumeLayout(false);
+            this.pn_slhvm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_custom)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -623,5 +698,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn helo;
         private System.Windows.Forms.DataGridViewTextBoxColumn wew;
         private System.Windows.Forms.DataGridViewTextBoxColumn rw;
+        private System.Windows.Forms.Panel pn_slhvm;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
     }
 }
