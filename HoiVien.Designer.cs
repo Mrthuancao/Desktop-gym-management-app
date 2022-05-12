@@ -45,7 +45,6 @@
             this.pn_thongtin = new System.Windows.Forms.Panel();
             this.tb_maPT = new Gym_Management.CustomTextBox();
             this.tb_gioitinh = new Gym_Management.CustomTextBox();
-            this.cb_goitap = new System.Windows.Forms.ComboBox();
             this.lb_chieucao = new System.Windows.Forms.Label();
             this.lb_cannang = new System.Windows.Forms.Label();
             this.tb_chieucao = new Gym_Management.CustomTextBox();
@@ -54,7 +53,6 @@
             this.dt_ngaydk = new System.Windows.Forms.DateTimePicker();
             this.dt_ngsinh = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.lb_tengoi = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lb_phai = new System.Windows.Forms.Label();
@@ -289,7 +287,6 @@
             this.pn_thongtin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pn_thongtin.Controls.Add(this.tb_maPT);
             this.pn_thongtin.Controls.Add(this.tb_gioitinh);
-            this.pn_thongtin.Controls.Add(this.cb_goitap);
             this.pn_thongtin.Controls.Add(this.lb_chieucao);
             this.pn_thongtin.Controls.Add(this.lb_cannang);
             this.pn_thongtin.Controls.Add(this.tb_chieucao);
@@ -298,7 +295,6 @@
             this.pn_thongtin.Controls.Add(this.dt_ngaydk);
             this.pn_thongtin.Controls.Add(this.dt_ngsinh);
             this.pn_thongtin.Controls.Add(this.label1);
-            this.pn_thongtin.Controls.Add(this.lb_tengoi);
             this.pn_thongtin.Controls.Add(this.label4);
             this.pn_thongtin.Controls.Add(this.label3);
             this.pn_thongtin.Controls.Add(this.lb_phai);
@@ -323,7 +319,7 @@
             this.tb_maPT.Bordersize = 2;
             this.tb_maPT.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_maPT.ForeColor = System.Drawing.Color.Black;
-            this.tb_maPT.Location = new System.Drawing.Point(216, 670);
+            this.tb_maPT.Location = new System.Drawing.Point(216, 630);
             this.tb_maPT.Margin = new System.Windows.Forms.Padding(4);
             this.tb_maPT.Multiline = false;
             this.tb_maPT.Name = "tb_maPT";
@@ -357,21 +353,6 @@
             this.tb_gioitinh.TabIndex = 38;
             this.tb_gioitinh.Texts = "";
             this.tb_gioitinh.UnderlinedStyle = false;
-            // 
-            // cb_goitap
-            // 
-            this.cb_goitap.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
-            this.cb_goitap.FormattingEnabled = true;
-            this.cb_goitap.IntegralHeight = false;
-            this.cb_goitap.ItemHeight = 18;
-            this.cb_goitap.Items.AddRange(new object[] {
-            "Gói 1 tuần",
-            "Gói 1 tháng",
-            "Gói 2 tháng"});
-            this.cb_goitap.Location = new System.Drawing.Point(216, 626);
-            this.cb_goitap.Name = "cb_goitap";
-            this.cb_goitap.Size = new System.Drawing.Size(232, 26);
-            this.cb_goitap.TabIndex = 9;
             // 
             // lb_chieucao
             // 
@@ -441,7 +422,7 @@
             // 
             this.lb_maPt.AutoSize = true;
             this.lb_maPt.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_maPt.Location = new System.Drawing.Point(31, 683);
+            this.lb_maPt.Location = new System.Drawing.Point(31, 643);
             this.lb_maPt.Name = "lb_maPt";
             this.lb_maPt.Size = new System.Drawing.Size(112, 16);
             this.lb_maPt.TabIndex = 32;
@@ -480,16 +461,6 @@
             this.label1.Size = new System.Drawing.Size(100, 16);
             this.label1.TabIndex = 24;
             this.label1.Text = "Số điện thoại:";
-            // 
-            // lb_tengoi
-            // 
-            this.lb_tengoi.AutoSize = true;
-            this.lb_tengoi.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tengoi.Location = new System.Drawing.Point(31, 636);
-            this.lb_tengoi.Name = "lb_tengoi";
-            this.lb_tengoi.Size = new System.Drawing.Size(89, 16);
-            this.lb_tengoi.TabIndex = 22;
-            this.lb_tengoi.Text = "Tên gói tập:";
             // 
             // label4
             // 
@@ -669,7 +640,6 @@
         private CustomTextBox tb_TenHV;
         private FontAwesome.Sharp.IconButton bt_search;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lb_tengoi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lb_phai;
@@ -683,7 +653,6 @@
         private System.Windows.Forms.Label lb_cannang;
         private CustomTextBox tb_chieucao;
         private CustomTextBox tb_cannang;
-        private System.Windows.Forms.ComboBox cb_goitap;
         private System.Windows.Forms.DataGridViewTextBoxColumn mahv;
         private System.Windows.Forms.DataGridViewTextBoxColumn hoten;
         private CustomTextBox tb_MaHV;

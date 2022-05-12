@@ -30,7 +30,6 @@
         {
             this.gb_themhv = new System.Windows.Forms.GroupBox();
             this.tb_maPt = new Gym_Management.CustomTextBox();
-            this.cb_goitap = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lb_cannang = new System.Windows.Forms.Label();
             this.tb_chieucao = new Gym_Management.CustomTextBox();
@@ -40,7 +39,6 @@
             this.dt_ngaydk = new System.Windows.Forms.DateTimePicker();
             this.dt_ngsinh = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.lb_tengoi = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lb_phai = new System.Windows.Forms.Label();
@@ -58,7 +56,6 @@
             // 
             this.gb_themhv.BackColor = System.Drawing.Color.Gainsboro;
             this.gb_themhv.Controls.Add(this.tb_maPt);
-            this.gb_themhv.Controls.Add(this.cb_goitap);
             this.gb_themhv.Controls.Add(this.label5);
             this.gb_themhv.Controls.Add(this.lb_cannang);
             this.gb_themhv.Controls.Add(this.tb_chieucao);
@@ -68,7 +65,6 @@
             this.gb_themhv.Controls.Add(this.dt_ngaydk);
             this.gb_themhv.Controls.Add(this.dt_ngsinh);
             this.gb_themhv.Controls.Add(this.label1);
-            this.gb_themhv.Controls.Add(this.lb_tengoi);
             this.gb_themhv.Controls.Add(this.label4);
             this.gb_themhv.Controls.Add(this.label3);
             this.gb_themhv.Controls.Add(this.lb_phai);
@@ -83,7 +79,7 @@
             this.gb_themhv.ForeColor = System.Drawing.Color.Red;
             this.gb_themhv.Location = new System.Drawing.Point(0, 0);
             this.gb_themhv.Name = "gb_themhv";
-            this.gb_themhv.Size = new System.Drawing.Size(486, 714);
+            this.gb_themhv.Size = new System.Drawing.Size(486, 686);
             this.gb_themhv.TabIndex = 3;
             this.gb_themhv.TabStop = false;
             this.gb_themhv.Text = "THÊM HỘI VIÊN";
@@ -97,7 +93,7 @@
             this.tb_maPt.Bordersize = 2;
             this.tb_maPt.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_maPt.ForeColor = System.Drawing.Color.Black;
-            this.tb_maPt.Location = new System.Drawing.Point(209, 611);
+            this.tb_maPt.Location = new System.Drawing.Point(209, 574);
             this.tb_maPt.Margin = new System.Windows.Forms.Padding(4);
             this.tb_maPt.Multiline = false;
             this.tb_maPt.Name = "tb_maPt";
@@ -109,20 +105,6 @@
             this.tb_maPt.TabIndex = 74;
             this.tb_maPt.Texts = "";
             this.tb_maPt.UnderlinedStyle = false;
-            // 
-            // cb_goitap
-            // 
-            this.cb_goitap.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
-            this.cb_goitap.FormattingEnabled = true;
-            this.cb_goitap.IntegralHeight = false;
-            this.cb_goitap.ItemHeight = 18;
-            this.cb_goitap.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.cb_goitap.Location = new System.Drawing.Point(209, 572);
-            this.cb_goitap.Name = "cb_goitap";
-            this.cb_goitap.Size = new System.Drawing.Size(232, 26);
-            this.cb_goitap.TabIndex = 8;
             // 
             // label5
             // 
@@ -209,7 +191,7 @@
             this.lb_maPt.AutoSize = true;
             this.lb_maPt.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_maPt.ForeColor = System.Drawing.Color.Black;
-            this.lb_maPt.Location = new System.Drawing.Point(29, 623);
+            this.lb_maPt.Location = new System.Drawing.Point(29, 591);
             this.lb_maPt.Name = "lb_maPt";
             this.lb_maPt.Size = new System.Drawing.Size(54, 16);
             this.lb_maPt.TabIndex = 67;
@@ -249,17 +231,6 @@
             this.label1.Size = new System.Drawing.Size(100, 16);
             this.label1.TabIndex = 64;
             this.label1.Text = "Số điện thoại:";
-            // 
-            // lb_tengoi
-            // 
-            this.lb_tengoi.AutoSize = true;
-            this.lb_tengoi.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tengoi.ForeColor = System.Drawing.Color.Black;
-            this.lb_tengoi.Location = new System.Drawing.Point(29, 582);
-            this.lb_tengoi.Name = "lb_tengoi";
-            this.lb_tengoi.Size = new System.Drawing.Size(89, 16);
-            this.lb_tengoi.TabIndex = 62;
-            this.lb_tengoi.Text = "Tên gói tập:";
             // 
             // label4
             // 
@@ -378,7 +349,7 @@
             this.bt_xoahet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_xoahet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_xoahet.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoahet.Location = new System.Drawing.Point(354, 675);
+            this.bt_xoahet.Location = new System.Drawing.Point(354, 637);
             this.bt_xoahet.Name = "bt_xoahet";
             this.bt_xoahet.Size = new System.Drawing.Size(70, 27);
             this.bt_xoahet.TabIndex = 11;
@@ -399,7 +370,7 @@
             this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Luu.Location = new System.Drawing.Point(225, 675);
+            this.bt_Luu.Location = new System.Drawing.Point(230, 637);
             this.bt_Luu.Name = "bt_Luu";
             this.bt_Luu.Size = new System.Drawing.Size(70, 27);
             this.bt_Luu.TabIndex = 10;
@@ -412,7 +383,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(486, 714);
+            this.ClientSize = new System.Drawing.Size(486, 686);
             this.Controls.Add(this.gb_themhv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ThemHv";
@@ -429,7 +400,6 @@
 
         private System.Windows.Forms.GroupBox gb_themhv;
         private CustomTextBox tb_maPt;
-        private System.Windows.Forms.ComboBox cb_goitap;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lb_cannang;
         private CustomTextBox tb_chieucao;
@@ -439,7 +409,6 @@
         public System.Windows.Forms.DateTimePicker dt_ngaydk;
         public System.Windows.Forms.DateTimePicker dt_ngsinh;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lb_tengoi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lb_phai;
