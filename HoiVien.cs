@@ -22,7 +22,7 @@ namespace Gym_Management
             InitializeComponent();
             LoadHoiVienList();
             AddHoiVienBinding();
-            LoadGoiTapIntoCombobox(cb_goitap);
+            //LoadGoiTapIntoCombobox(cb_goitap);
         }
 
         private void bt_Them_Click(object sender, EventArgs e)
