@@ -32,15 +32,24 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pn_HV = new System.Windows.Forms.Panel();
+            this.bt_Luu = new Gym_Management.CustomButton();
             this.bt_search = new FontAwesome.Sharp.IconButton();
+            this.tb_Search = new Gym_Management.CustomTextBox();
+            this.bt_xoa = new Gym_Management.CustomButton();
+            this.bt_sua = new Gym_Management.CustomButton();
+            this.bt_Them = new Gym_Management.CustomButton();
             this.lb_danhsach = new System.Windows.Forms.Label();
             this.dtg_HV = new System.Windows.Forms.DataGridView();
             this.mahv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_thongtin = new System.Windows.Forms.Panel();
+            this.tb_maPT = new Gym_Management.CustomTextBox();
+            this.tb_gioitinh = new Gym_Management.CustomTextBox();
             this.cb_goitap = new System.Windows.Forms.ComboBox();
             this.lb_chieucao = new System.Windows.Forms.Label();
             this.lb_cannang = new System.Windows.Forms.Label();
+            this.tb_chieucao = new Gym_Management.CustomTextBox();
+            this.tb_cannang = new Gym_Management.CustomTextBox();
             this.lb_maPt = new System.Windows.Forms.Label();
             this.dt_ngaydk = new System.Windows.Forms.DateTimePicker();
             this.dt_ngsinh = new System.Windows.Forms.DateTimePicker();
@@ -51,20 +60,11 @@
             this.lb_phai = new System.Windows.Forms.Label();
             this.lb_tenhv = new System.Windows.Forms.Label();
             this.lb_mhv = new System.Windows.Forms.Label();
-            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
-            this.lb_thongtin = new System.Windows.Forms.Label();
-            this.bt_Luu = new Gym_Management.CustomButton();
-            this.tb_Search = new Gym_Management.CustomTextBox();
-            this.bt_xoa = new Gym_Management.CustomButton();
-            this.bt_sua = new Gym_Management.CustomButton();
-            this.bt_Them = new Gym_Management.CustomButton();
-            this.tb_maPT = new Gym_Management.CustomTextBox();
-            this.tb_gioitinh = new Gym_Management.CustomTextBox();
-            this.tb_chieucao = new Gym_Management.CustomTextBox();
-            this.tb_cannang = new Gym_Management.CustomTextBox();
             this.tb_Sdt = new Gym_Management.CustomTextBox();
             this.tb_TenHV = new Gym_Management.CustomTextBox();
             this.tb_MaHV = new Gym_Management.CustomTextBox();
+            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
+            this.lb_thongtin = new System.Windows.Forms.Label();
             this.pn_HV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_HV)).BeginInit();
             this.pn_thongtin.SuspendLayout();
@@ -88,6 +88,29 @@
             this.pn_HV.Size = new System.Drawing.Size(1055, 719);
             this.pn_HV.TabIndex = 0;
             // 
+            // bt_Luu
+            // 
+            this.bt_Luu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_Luu.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_Luu.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_Luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bt_Luu.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_Luu.BorderRadius = 15;
+            this.bt_Luu.BorderSize = 0;
+            this.bt_Luu.FlatAppearance.BorderSize = 0;
+            this.bt_Luu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_Luu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_Luu.Location = new System.Drawing.Point(417, 387);
+            this.bt_Luu.Name = "bt_Luu";
+            this.bt_Luu.Size = new System.Drawing.Size(102, 34);
+            this.bt_Luu.TabIndex = 9;
+            this.bt_Luu.Text = "Lưu";
+            this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
+            this.bt_Luu.UseVisualStyleBackColor = false;
+            // 
             // bt_search
             // 
             this.bt_search.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -104,6 +127,96 @@
             this.bt_search.Size = new System.Drawing.Size(33, 33);
             this.bt_search.TabIndex = 13;
             this.bt_search.UseVisualStyleBackColor = false;
+            // 
+            // tb_Search
+            // 
+            this.tb_Search.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_Search.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_Search.BorderColor = System.Drawing.Color.Black;
+            this.tb_Search.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_Search.BorderRadius = 5;
+            this.tb_Search.Bordersize = 2;
+            this.tb_Search.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Search.ForeColor = System.Drawing.Color.Black;
+            this.tb_Search.Location = new System.Drawing.Point(116, 68);
+            this.tb_Search.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Search.Multiline = false;
+            this.tb_Search.Name = "tb_Search";
+            this.tb_Search.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_Search.PasswordChar = false;
+            this.tb_Search.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_Search.PlaceholderText = "Search...";
+            this.tb_Search.Size = new System.Drawing.Size(232, 33);
+            this.tb_Search.TabIndex = 12;
+            this.tb_Search.Texts = "";
+            this.tb_Search.UnderlinedStyle = false;
+            // 
+            // bt_xoa
+            // 
+            this.bt_xoa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_xoa.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoa.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_xoa.BorderRadius = 15;
+            this.bt_xoa.BorderSize = 0;
+            this.bt_xoa.FlatAppearance.BorderSize = 0;
+            this.bt_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_xoa.Location = new System.Drawing.Point(417, 249);
+            this.bt_xoa.Name = "bt_xoa";
+            this.bt_xoa.Size = new System.Drawing.Size(102, 34);
+            this.bt_xoa.TabIndex = 11;
+            this.bt_xoa.Text = "Xóa";
+            this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
+            this.bt_xoa.UseVisualStyleBackColor = false;
+            // 
+            // bt_sua
+            // 
+            this.bt_sua.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_sua.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_sua.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_sua.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_sua.BorderRadius = 15;
+            this.bt_sua.BorderSize = 0;
+            this.bt_sua.FlatAppearance.BorderSize = 0;
+            this.bt_sua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_sua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_sua.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_sua.Location = new System.Drawing.Point(417, 325);
+            this.bt_sua.Name = "bt_sua";
+            this.bt_sua.Size = new System.Drawing.Size(102, 34);
+            this.bt_sua.TabIndex = 10;
+            this.bt_sua.Text = "Sửa";
+            this.bt_sua.TextColor = System.Drawing.Color.Transparent;
+            this.bt_sua.UseVisualStyleBackColor = false;
+            // 
+            // bt_Them
+            // 
+            this.bt_Them.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_Them.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_Them.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_Them.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_Them.BorderRadius = 15;
+            this.bt_Them.BorderSize = 0;
+            this.bt_Them.FlatAppearance.BorderSize = 0;
+            this.bt_Them.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_Them.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Them.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_Them.Location = new System.Drawing.Point(417, 180);
+            this.bt_Them.Name = "bt_Them";
+            this.bt_Them.Size = new System.Drawing.Size(102, 34);
+            this.bt_Them.TabIndex = 7;
+            this.bt_Them.Text = "Thêm";
+            this.bt_Them.TextColor = System.Drawing.Color.Transparent;
+            this.bt_Them.UseVisualStyleBackColor = false;
+            this.bt_Them.Click += new System.EventHandler(this.bt_Them_Click);
             // 
             // lb_danhsach
             // 
@@ -201,6 +314,50 @@
             this.pn_thongtin.Size = new System.Drawing.Size(504, 711);
             this.pn_thongtin.TabIndex = 8;
             // 
+            // tb_maPT
+            // 
+            this.tb_maPT.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_maPT.BorderColor = System.Drawing.Color.Black;
+            this.tb_maPT.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_maPT.BorderRadius = 5;
+            this.tb_maPT.Bordersize = 2;
+            this.tb_maPT.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_maPT.ForeColor = System.Drawing.Color.Black;
+            this.tb_maPT.Location = new System.Drawing.Point(216, 670);
+            this.tb_maPT.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_maPT.Multiline = false;
+            this.tb_maPT.Name = "tb_maPT";
+            this.tb_maPT.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_maPT.PasswordChar = false;
+            this.tb_maPT.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_maPT.PlaceholderText = "";
+            this.tb_maPT.Size = new System.Drawing.Size(232, 33);
+            this.tb_maPT.TabIndex = 39;
+            this.tb_maPT.Texts = "";
+            this.tb_maPT.UnderlinedStyle = false;
+            // 
+            // tb_gioitinh
+            // 
+            this.tb_gioitinh.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_gioitinh.BorderColor = System.Drawing.Color.Black;
+            this.tb_gioitinh.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_gioitinh.BorderRadius = 5;
+            this.tb_gioitinh.Bordersize = 2;
+            this.tb_gioitinh.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_gioitinh.ForeColor = System.Drawing.Color.Black;
+            this.tb_gioitinh.Location = new System.Drawing.Point(216, 335);
+            this.tb_gioitinh.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_gioitinh.Multiline = false;
+            this.tb_gioitinh.Name = "tb_gioitinh";
+            this.tb_gioitinh.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_gioitinh.PasswordChar = false;
+            this.tb_gioitinh.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_gioitinh.PlaceholderText = "";
+            this.tb_gioitinh.Size = new System.Drawing.Size(232, 33);
+            this.tb_gioitinh.TabIndex = 38;
+            this.tb_gioitinh.Texts = "";
+            this.tb_gioitinh.UnderlinedStyle = false;
+            // 
             // cb_goitap
             // 
             this.cb_goitap.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
@@ -235,6 +392,50 @@
             this.lb_cannang.Size = new System.Drawing.Size(75, 16);
             this.lb_cannang.TabIndex = 36;
             this.lb_cannang.Text = "Cân nặng:";
+            // 
+            // tb_chieucao
+            // 
+            this.tb_chieucao.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_chieucao.BorderColor = System.Drawing.Color.Black;
+            this.tb_chieucao.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_chieucao.BorderRadius = 5;
+            this.tb_chieucao.Bordersize = 2;
+            this.tb_chieucao.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_chieucao.ForeColor = System.Drawing.Color.Black;
+            this.tb_chieucao.Location = new System.Drawing.Point(216, 434);
+            this.tb_chieucao.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_chieucao.Multiline = false;
+            this.tb_chieucao.Name = "tb_chieucao";
+            this.tb_chieucao.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_chieucao.PasswordChar = false;
+            this.tb_chieucao.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_chieucao.PlaceholderText = "";
+            this.tb_chieucao.Size = new System.Drawing.Size(232, 33);
+            this.tb_chieucao.TabIndex = 5;
+            this.tb_chieucao.Texts = "";
+            this.tb_chieucao.UnderlinedStyle = false;
+            // 
+            // tb_cannang
+            // 
+            this.tb_cannang.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_cannang.BorderColor = System.Drawing.Color.Black;
+            this.tb_cannang.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_cannang.BorderRadius = 5;
+            this.tb_cannang.Bordersize = 2;
+            this.tb_cannang.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_cannang.ForeColor = System.Drawing.Color.Black;
+            this.tb_cannang.Location = new System.Drawing.Point(216, 381);
+            this.tb_cannang.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_cannang.Multiline = false;
+            this.tb_cannang.Name = "tb_cannang";
+            this.tb_cannang.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_cannang.PasswordChar = false;
+            this.tb_cannang.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_cannang.PlaceholderText = "";
+            this.tb_cannang.Size = new System.Drawing.Size(232, 33);
+            this.tb_cannang.TabIndex = 4;
+            this.tb_cannang.Texts = "";
+            this.tb_cannang.UnderlinedStyle = false;
             // 
             // lb_maPt
             // 
@@ -340,233 +541,6 @@
             this.lb_mhv.TabIndex = 17;
             this.lb_mhv.Text = "Mã hội viên:";
             // 
-            // pb_anh
-            // 
-            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pb_anh.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.pb_anh.IconColor = System.Drawing.SystemColors.ControlText;
-            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pb_anh.IconSize = 146;
-            this.pb_anh.Location = new System.Drawing.Point(149, 61);
-            this.pb_anh.Name = "pb_anh";
-            this.pb_anh.Size = new System.Drawing.Size(266, 146);
-            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_anh.TabIndex = 11;
-            this.pb_anh.TabStop = false;
-            // 
-            // lb_thongtin
-            // 
-            this.lb_thongtin.AutoSize = true;
-            this.lb_thongtin.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.lb_thongtin.Location = new System.Drawing.Point(190, 17);
-            this.lb_thongtin.Name = "lb_thongtin";
-            this.lb_thongtin.Size = new System.Drawing.Size(186, 28);
-            this.lb_thongtin.TabIndex = 10;
-            this.lb_thongtin.Text = "Thông tin hội viên";
-            // 
-            // bt_Luu
-            // 
-            this.bt_Luu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bt_Luu.BackColor = System.Drawing.Color.DarkOrange;
-            this.bt_Luu.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.bt_Luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bt_Luu.BorderColor = System.Drawing.SystemColors.Control;
-            this.bt_Luu.BorderRadius = 15;
-            this.bt_Luu.BorderSize = 0;
-            this.bt_Luu.FlatAppearance.BorderSize = 0;
-            this.bt_Luu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_Luu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Luu.Location = new System.Drawing.Point(417, 387);
-            this.bt_Luu.Name = "bt_Luu";
-            this.bt_Luu.Size = new System.Drawing.Size(102, 34);
-            this.bt_Luu.TabIndex = 9;
-            this.bt_Luu.Text = "Lưu";
-            this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
-            this.bt_Luu.UseVisualStyleBackColor = false;
-            // 
-            // tb_Search
-            // 
-            this.tb_Search.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tb_Search.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_Search.BorderColor = System.Drawing.Color.Black;
-            this.tb_Search.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_Search.BorderRadius = 5;
-            this.tb_Search.Bordersize = 2;
-            this.tb_Search.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Search.ForeColor = System.Drawing.Color.Black;
-            this.tb_Search.Location = new System.Drawing.Point(116, 68);
-            this.tb_Search.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_Search.Multiline = false;
-            this.tb_Search.Name = "tb_Search";
-            this.tb_Search.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_Search.PasswordChar = false;
-            this.tb_Search.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_Search.PlaceholderText = "Search...";
-            this.tb_Search.Size = new System.Drawing.Size(232, 33);
-            this.tb_Search.TabIndex = 12;
-            this.tb_Search.Texts = "";
-            this.tb_Search.UnderlinedStyle = false;
-            // 
-            // bt_xoa
-            // 
-            this.bt_xoa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bt_xoa.BackColor = System.Drawing.Color.DarkOrange;
-            this.bt_xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.bt_xoa.BorderColor = System.Drawing.SystemColors.Control;
-            this.bt_xoa.BorderRadius = 15;
-            this.bt_xoa.BorderSize = 0;
-            this.bt_xoa.FlatAppearance.BorderSize = 0;
-            this.bt_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoa.Location = new System.Drawing.Point(417, 249);
-            this.bt_xoa.Name = "bt_xoa";
-            this.bt_xoa.Size = new System.Drawing.Size(102, 34);
-            this.bt_xoa.TabIndex = 11;
-            this.bt_xoa.Text = "Xóa";
-            this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
-            this.bt_xoa.UseVisualStyleBackColor = false;
-            // 
-            // bt_sua
-            // 
-            this.bt_sua.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bt_sua.BackColor = System.Drawing.Color.DarkOrange;
-            this.bt_sua.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.bt_sua.BorderColor = System.Drawing.SystemColors.Control;
-            this.bt_sua.BorderRadius = 15;
-            this.bt_sua.BorderSize = 0;
-            this.bt_sua.FlatAppearance.BorderSize = 0;
-            this.bt_sua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_sua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bt_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_sua.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_sua.Location = new System.Drawing.Point(417, 325);
-            this.bt_sua.Name = "bt_sua";
-            this.bt_sua.Size = new System.Drawing.Size(102, 34);
-            this.bt_sua.TabIndex = 10;
-            this.bt_sua.Text = "Sửa";
-            this.bt_sua.TextColor = System.Drawing.Color.Transparent;
-            this.bt_sua.UseVisualStyleBackColor = false;
-            // 
-            // bt_Them
-            // 
-            this.bt_Them.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bt_Them.BackColor = System.Drawing.Color.DarkOrange;
-            this.bt_Them.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.bt_Them.BorderColor = System.Drawing.SystemColors.Control;
-            this.bt_Them.BorderRadius = 15;
-            this.bt_Them.BorderSize = 0;
-            this.bt_Them.FlatAppearance.BorderSize = 0;
-            this.bt_Them.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_Them.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bt_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Them.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Them.Location = new System.Drawing.Point(417, 180);
-            this.bt_Them.Name = "bt_Them";
-            this.bt_Them.Size = new System.Drawing.Size(102, 34);
-            this.bt_Them.TabIndex = 7;
-            this.bt_Them.Text = "Thêm";
-            this.bt_Them.TextColor = System.Drawing.Color.Transparent;
-            this.bt_Them.UseVisualStyleBackColor = false;
-            this.bt_Them.Click += new System.EventHandler(this.bt_Them_Click);
-            // 
-            // tb_maPT
-            // 
-            this.tb_maPT.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_maPT.BorderColor = System.Drawing.Color.Black;
-            this.tb_maPT.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_maPT.BorderRadius = 5;
-            this.tb_maPT.Bordersize = 2;
-            this.tb_maPT.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_maPT.ForeColor = System.Drawing.Color.Black;
-            this.tb_maPT.Location = new System.Drawing.Point(216, 670);
-            this.tb_maPT.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_maPT.Multiline = false;
-            this.tb_maPT.Name = "tb_maPT";
-            this.tb_maPT.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_maPT.PasswordChar = false;
-            this.tb_maPT.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_maPT.PlaceholderText = "";
-            this.tb_maPT.Size = new System.Drawing.Size(232, 33);
-            this.tb_maPT.TabIndex = 39;
-            this.tb_maPT.Texts = "";
-            this.tb_maPT.UnderlinedStyle = false;
-            // 
-            // tb_gioitinh
-            // 
-            this.tb_gioitinh.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_gioitinh.BorderColor = System.Drawing.Color.Black;
-            this.tb_gioitinh.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_gioitinh.BorderRadius = 5;
-            this.tb_gioitinh.Bordersize = 2;
-            this.tb_gioitinh.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_gioitinh.ForeColor = System.Drawing.Color.Black;
-            this.tb_gioitinh.Location = new System.Drawing.Point(216, 335);
-            this.tb_gioitinh.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_gioitinh.Multiline = false;
-            this.tb_gioitinh.Name = "tb_gioitinh";
-            this.tb_gioitinh.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_gioitinh.PasswordChar = false;
-            this.tb_gioitinh.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_gioitinh.PlaceholderText = "";
-            this.tb_gioitinh.Size = new System.Drawing.Size(232, 33);
-            this.tb_gioitinh.TabIndex = 38;
-            this.tb_gioitinh.Texts = "";
-            this.tb_gioitinh.UnderlinedStyle = false;
-            // 
-            // tb_chieucao
-            // 
-            this.tb_chieucao.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_chieucao.BorderColor = System.Drawing.Color.Black;
-            this.tb_chieucao.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_chieucao.BorderRadius = 5;
-            this.tb_chieucao.Bordersize = 2;
-            this.tb_chieucao.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_chieucao.ForeColor = System.Drawing.Color.Black;
-            this.tb_chieucao.Location = new System.Drawing.Point(216, 434);
-            this.tb_chieucao.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_chieucao.Multiline = false;
-            this.tb_chieucao.Name = "tb_chieucao";
-            this.tb_chieucao.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_chieucao.PasswordChar = false;
-            this.tb_chieucao.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_chieucao.PlaceholderText = "";
-            this.tb_chieucao.Size = new System.Drawing.Size(232, 33);
-            this.tb_chieucao.TabIndex = 5;
-            this.tb_chieucao.Texts = "";
-            this.tb_chieucao.UnderlinedStyle = false;
-            // 
-            // tb_cannang
-            // 
-            this.tb_cannang.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_cannang.BorderColor = System.Drawing.Color.Black;
-            this.tb_cannang.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_cannang.BorderRadius = 5;
-            this.tb_cannang.Bordersize = 2;
-            this.tb_cannang.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_cannang.ForeColor = System.Drawing.Color.Black;
-            this.tb_cannang.Location = new System.Drawing.Point(216, 381);
-            this.tb_cannang.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_cannang.Multiline = false;
-            this.tb_cannang.Name = "tb_cannang";
-            this.tb_cannang.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_cannang.PasswordChar = false;
-            this.tb_cannang.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_cannang.PlaceholderText = "";
-            this.tb_cannang.Size = new System.Drawing.Size(232, 33);
-            this.tb_cannang.TabIndex = 4;
-            this.tb_cannang.Texts = "";
-            this.tb_cannang.UnderlinedStyle = false;
-            // 
             // tb_Sdt
             // 
             this.tb_Sdt.BackColor = System.Drawing.SystemColors.Window;
@@ -632,6 +606,33 @@
             this.tb_MaHV.TabIndex = 1;
             this.tb_MaHV.Texts = "";
             this.tb_MaHV.UnderlinedStyle = false;
+            // 
+            // pb_anh
+            // 
+            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pb_anh.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.pb_anh.IconColor = System.Drawing.SystemColors.ControlText;
+            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pb_anh.IconSize = 146;
+            this.pb_anh.Location = new System.Drawing.Point(149, 61);
+            this.pb_anh.Name = "pb_anh";
+            this.pb_anh.Size = new System.Drawing.Size(266, 146);
+            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_anh.TabIndex = 11;
+            this.pb_anh.TabStop = false;
+            // 
+            // lb_thongtin
+            // 
+            this.lb_thongtin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_thongtin.AutoSize = true;
+            this.lb_thongtin.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.lb_thongtin.Location = new System.Drawing.Point(190, 17);
+            this.lb_thongtin.Name = "lb_thongtin";
+            this.lb_thongtin.Size = new System.Drawing.Size(186, 28);
+            this.lb_thongtin.TabIndex = 10;
+            this.lb_thongtin.Text = "Thông tin hội viên";
             // 
             // HoiVien
             // 
