@@ -28,7 +28,7 @@ namespace DAO
         }
         public DataTable getLoginAccount(string username, string pass)
         {
-            string query = "select * from ACCOUNT where username = @username and pass = @pass";
+            string query = "select * from TAIKHOAN where username = @username and pass = @pass";
             object[] value = new object[] { username, pass };
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query, value);

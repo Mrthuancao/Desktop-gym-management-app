@@ -35,7 +35,7 @@ namespace Gym_Management
         }
 
         private void bt_login_Click(object sender, EventArgs e)
-        {   /*if (accountBus.logIn(tb_username.Text, tb_password.Text))
+        {   if (accountBus.logIn(tb_username.Text, tb_password.Text))
             {
                 this.Hide();
                 currentUser = accountBus.getAccountByUsername(tb_username.Text);
@@ -43,11 +43,11 @@ namespace Gym_Management
                 fTable.ShowDialog();
                 this.Show();
                 //--
-                currentUser = null;
+                /*currentUser = null;
                 tb_username.Text = "Username";
                 tb_password.Text = "Password";
                 tb_password.PasswordChar = default;
-                tb_username.Focus();
+                tb_username.Focus();*/
             }
             else
             {
@@ -66,11 +66,12 @@ namespace Gym_Management
             tb_password.Text = "Password";
             tb_password.PasswordChar = default;
             tb_username.Focus();
-            */
-            fTableManager fTable = new fTableManager();
+            
+            
+            /*fTableManager fTable = new fTableManager();
             this.Hide();
             fTable.ShowDialog();
-            this.Show();
+            this.Show();*/
 
         }
     }
