@@ -28,7 +28,7 @@ namespace BUS
         public bool logIn(string username, string pass)
         {
             string Username = "";
-            DataTable dt = accountDAL.getLoginAccount(username, getHashMD5(pass).ToString());
+            DataTable dt = accountDAL.getLoginAccount(username, pass);
             if (dt != null)
             {
                 foreach (DataRow row in dt.Rows)
