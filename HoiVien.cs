@@ -22,7 +22,7 @@ namespace Gym_Management
             InitializeComponent();
             LoadHoiVienList();
             AddHoiVienBinding();
-            //LoadGoiTapIntoCombobox(cb_goitap);
+            
         }
 
         private void bt_Them_Click(object sender, EventArgs e)
@@ -53,10 +53,6 @@ namespace Gym_Management
             tb_maPT.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "nvquanli"));
         }
 
-        void LoadGoiTapIntoCombobox(ComboBox cb)
-        {
-            cb.DataSource = gtBus.GetGoiTapList();
-            cb.DisplayMember = "tengoi";
-        }
+     
     }
 }
