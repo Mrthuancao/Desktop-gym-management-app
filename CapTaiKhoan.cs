@@ -16,5 +16,25 @@ namespace Gym_Management
         {
             InitializeComponent();
         }
+        private void ClearTextBoxes()
+        {
+            Action<Control.ControlCollection> func = null;
+
+            func = (controls) =>
+            {
+                foreach (Control control in controls)
+                    if (control is TextBox)
+                    {
+                        (control as TextBox).Clear();
+                    }
+                    else
+                        func(control.Controls);
+            };
+            func(Controls);
+        }
+        private void bt_xoa_Click(object sender, EventArgs e)
+        {
+            ClearTextBoxes();
+        }
     }
 }
