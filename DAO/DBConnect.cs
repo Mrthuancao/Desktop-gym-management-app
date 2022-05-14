@@ -15,7 +15,7 @@ namespace DAO
         public DBConnect()
         {
             //DESKTOP-2PMMREO
-            connection = new SqlConnection("Data Source=DESKTOP-2PMMREO;Initial Catalog=Gym_Management;Integrated Security=True");
+            connection = new SqlConnection("Data Source=MAY01;Initial Catalog=Gym_Management;Integrated Security=True");
         }
 
         public DataTable ExecuteQuery(string query, object[] parameterValue = null)

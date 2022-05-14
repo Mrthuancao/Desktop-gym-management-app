@@ -215,6 +215,7 @@
             this.bt_xoahet.Text = "Xóa hết";
             this.bt_xoahet.TextColor = System.Drawing.Color.Transparent;
             this.bt_xoahet.UseVisualStyleBackColor = false;
+            this.bt_xoahet.Click += new System.EventHandler(this.bt_xoahet_Click);
             // 
             // gb_themhv
             // 
