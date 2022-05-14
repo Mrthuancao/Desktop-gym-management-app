@@ -7,19 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DTO;
 
 namespace Gym_Management
 {
     public partial class ThemHv : Form
     {
+        HoiVienBUS hvBUS = new HoiVienBUS();
+
         public ThemHv()
         {
             InitializeComponent();
         }
 
-        private void bt_Luu_Click(object sender, EventArgs e)
+        private void bt_Luu_Click_1(object sender, EventArgs e)
         {
-
+            if (tb_TenHV.Texts == "" || tb_cannang.Texts == "" || tb_chieucao.Texts.ToString() == "" || tb_Sdt.Texts == "" || tb_maPt.Texts == "")
+            {
+                MessageBox.Show("Điền đủ thông tin trước khi thêm món");
+            }
+            else
+            {
+                if (hvBUS.InsertHoiVien(tb_mahv.Texts, tb_TenHV.Texts, cb_gioitinh.SelectedItem.ToString(), float.Parse(tb_cannang.Texts), float.Parse(tb_chieucao.Texts), dt_ngsinh.Value.ToString(), dt_ngaydk.Value.ToString(), tb_Sdt.Texts, tb_maPt.Texts))
+                {
+                    MessageBox.Show("Đã thêm thành công");
+                }
+            }
         }
     }
 }

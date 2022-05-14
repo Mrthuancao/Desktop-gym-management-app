@@ -14,31 +14,31 @@ namespace BUS
         HoiVienDAO hvDAL = new HoiVienDAO();
         public List<HOIVIEN> GetHoiVienList()
         {
-            List<HOIVIEN> listDrink = new List<HOIVIEN>();
+            List<HOIVIEN> listHoiVien = new List<HOIVIEN>();
             DataTable dt = hvDAL.GetAllHoiVien();
             foreach (DataRow row in dt.Rows)
             {
-                HOIVIEN drink = new HOIVIEN(row);
-                listDrink.Add(drink);
+                HOIVIEN hoivien = new HOIVIEN(row);
+                listHoiVien.Add(hoivien);
             }
-            return listDrink;
+            return listHoiVien;
         }
-        public DataTable GetAllDrinksDetailed()
+        public DataTable GetAllHoivienDetailed()
         {
             return hvDAL.GetAllHoivienDetailed();
         }
 
-        public bool InsertDrink(string mahv, string hoten, string phai, float cannang, float chieucao, string ngsinh, string ngdangki, string sdt, string nvquanli)
+        public bool InsertHoiVien(string mahv, string hoten, string phai, float cannang, float chieucao, string ngsinh, string ngdangki, string sdt, string nvquanli)
         {
             return hvDAL.InsertHoivien(mahv, hoten, phai, cannang, chieucao, ngsinh, ngdangki, sdt, nvquanli);
         }
 
-        public bool DeleteDrink(string mahv)
+        public bool DeleteHoiVien(string mahv)
         {
             return hvDAL.DeleteHoivien(mahv);
         }
 
-        public bool UpdateDrink(string mahv, string hoten, string phai, float cannang, float chieucao, string ngsinh, string ngdangki, string sdt, string nvquanli)
+        public bool UpdateHoiVien(string mahv, string hoten, string phai, float cannang, float chieucao, string ngsinh, string ngdangki, string sdt, string nvquanli)
         {
             return hvDAL.UpdateHoivien(mahv, hoten, phai, cannang, chieucao, ngsinh, ngdangki, sdt, nvquanli);
         }

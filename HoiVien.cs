@@ -32,7 +32,7 @@ namespace Gym_Management
         }
         void LoadHoiVienList()
         {
-            dtg_HV.DataSource = hvBUS.GetHoiVienList();
+            dtg_HV.DataSource = hvBUS.GetHoiVienList(); 
             dtg_HV.Columns["phai"].Visible = false;
             dtg_HV.Columns["cannang"].Visible = false;
             dtg_HV.Columns["chieucao"].Visible = false;
@@ -49,6 +49,8 @@ namespace Gym_Management
             tb_gioitinh.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "phai"));
             tb_cannang.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "cannang"));
             tb_chieucao.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "chieucao"));
+            dt_ngsinh.DataBindings.Add(new Binding("Text", dtg_HV.DataSource, "ngsinh"));
+            dt_ngaydk.DataBindings.Add(new Binding("Text", dtg_HV.DataSource, "ngdangki"));
             tb_Sdt.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "sdt"));
             tb_maPT.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "nvquanli"));
         }
