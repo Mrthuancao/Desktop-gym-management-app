@@ -54,7 +54,7 @@ namespace Gym_Management
             tb_Sdt.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "sdt"));
             tb_maPT.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "nvquanli"));
         }
-
+        
      
     }
 }
