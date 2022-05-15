@@ -18,6 +18,7 @@ namespace Gym_Management
         private int borderSize = 2;
         private bool underlinedStyle = false;
         private Color borderFocusColor = Color.HotPink;
+        private bool ReadOnly = false;
         private bool isFocused = false;
 
         private int borderRadius = 0;
@@ -29,10 +30,12 @@ namespace Gym_Management
         public CustomTextBox()
         {
             InitializeComponent();
+            
         }
         //Default Event
         public event EventHandler _TextChanged;
         //Properties
+
         [Category("Neo Code Mode")]
         public Color BorderColor
         {
@@ -53,6 +56,8 @@ namespace Gym_Management
                 this.Invalidate();
             }
         }
+        
+       
         [Category("Neo Code Mode")]
         public bool UnderlinedStyle
         {
@@ -88,6 +93,7 @@ namespace Gym_Management
             {
                 base.BackColor = value;
                 textBox1.BackColor = value;
+
             }
         }
         [Category("Neo Code Mode")]
@@ -100,6 +106,7 @@ namespace Gym_Management
                 textBox1.ForeColor = value;
             }
         }
+        
         [Category("Neo Code Mode")]
         public override Font Font
         {
@@ -166,6 +173,13 @@ namespace Gym_Management
                 textBox1.Text = "";
                 SetPlaceholder();
             }
+        }
+       
+        [Category("Neo Code Mode")]
+        public bool ReadOnly1 
+        {
+            get { return textBox1.ReadOnly; }
+            set { textBox1.ReadOnly = value; } 
         }
 
         private void SetPlaceholder()
