@@ -46,15 +46,15 @@ namespace Gym_Management
 
         void AddNhanVienBinding()
         {
-            tb_mnv.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "mahv"));
+            tb_mnv.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "manv"));
             tb_TenNv.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "hoten"));
-            cb_gioitinh.DataBindings.Add(new Binding("ComboBox", dtg_NV.DataSource, "phai"));
-            tb_Luong.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "luong"));
-            tb_mlnv.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "malnv"));
+            tb_gioitinh.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "phai"));
             dt_ngsinh.DataBindings.Add(new Binding("Text", dtg_NV.DataSource, "ngsinh"));
             dt_ngayvaolam.DataBindings.Add(new Binding("Text", dtg_NV.DataSource, "ngvaolam"));
-            tb_Email.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "email"));
             tb_Sdt.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "sdt"));
+            tb_Email.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "email"));
+            tb_Luong.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "luong"));
+            tb_mlnv.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "malnv"));
         }
 
         private void bt_xoa_Click(object sender, EventArgs e)
