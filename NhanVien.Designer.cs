@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pn_NV = new System.Windows.Forms.Panel();
             this.bt_Luu = new Gym_Management.CustomButton();
             this.bt_search = new FontAwesome.Sharp.IconButton();
@@ -43,7 +43,6 @@
             this.helo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.wew = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_thongtin = new System.Windows.Forms.Panel();
-            this.cb_gioitinh = new System.Windows.Forms.ComboBox();
             this.dt_ngayvaolam = new System.Windows.Forms.DateTimePicker();
             this.dt_ngsinh = new System.Windows.Forms.DateTimePicker();
             this.lb_mlnv = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.tb_mnv = new Gym_Management.CustomTextBox();
             this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.lb_thongtin = new System.Windows.Forms.Label();
+            this.tb_gioitinh = new Gym_Management.CustomTextBox();
             this.pn_NV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_NV)).BeginInit();
             this.pn_thongtin.SuspendLayout();
@@ -83,7 +83,7 @@
             this.pn_NV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_NV.Location = new System.Drawing.Point(0, 0);
             this.pn_NV.Name = "pn_NV";
-            this.pn_NV.Size = new System.Drawing.Size(1055, 719);
+            this.pn_NV.Size = new System.Drawing.Size(1100, 700);
             this.pn_NV.TabIndex = 1;
             // 
             // bt_Luu
@@ -100,7 +100,7 @@
             this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Luu.Location = new System.Drawing.Point(417, 384);
+            this.bt_Luu.Location = new System.Drawing.Point(440, 375);
             this.bt_Luu.Name = "bt_Luu";
             this.bt_Luu.Size = new System.Drawing.Size(102, 34);
             this.bt_Luu.TabIndex = 10;
@@ -119,7 +119,7 @@
             this.bt_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_search.IconSize = 30;
             this.bt_search.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bt_search.Location = new System.Drawing.Point(363, 68);
+            this.bt_search.Location = new System.Drawing.Point(386, 59);
             this.bt_search.Name = "bt_search";
             this.bt_search.Size = new System.Drawing.Size(33, 33);
             this.bt_search.TabIndex = 13;
@@ -135,14 +135,15 @@
             this.tb_Search.Bordersize = 2;
             this.tb_Search.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Search.ForeColor = System.Drawing.Color.Black;
-            this.tb_Search.Location = new System.Drawing.Point(114, 68);
-            this.tb_Search.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Search.Location = new System.Drawing.Point(137, 59);
+            this.tb_Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Search.Multiline = false;
             this.tb_Search.Name = "tb_Search";
             this.tb_Search.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_Search.PasswordChar = false;
             this.tb_Search.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Search.PlaceholderText = "Search...";
+            this.tb_Search.ReadOnly1 = false;
             this.tb_Search.Size = new System.Drawing.Size(232, 33);
             this.tb_Search.TabIndex = 12;
             this.tb_Search.Texts = "";
@@ -162,7 +163,7 @@
             this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoa.Location = new System.Drawing.Point(417, 253);
+            this.bt_xoa.Location = new System.Drawing.Point(440, 244);
             this.bt_xoa.Name = "bt_xoa";
             this.bt_xoa.Size = new System.Drawing.Size(102, 34);
             this.bt_xoa.TabIndex = 11;
@@ -184,7 +185,7 @@
             this.bt_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_sua.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_sua.Location = new System.Drawing.Point(417, 320);
+            this.bt_sua.Location = new System.Drawing.Point(440, 311);
             this.bt_sua.Name = "bt_sua";
             this.bt_sua.Size = new System.Drawing.Size(102, 34);
             this.bt_sua.TabIndex = 10;
@@ -206,7 +207,7 @@
             this.bt_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Them.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Them.Location = new System.Drawing.Point(417, 180);
+            this.bt_Them.Location = new System.Drawing.Point(440, 171);
             this.bt_Them.Name = "bt_Them";
             this.bt_Them.Size = new System.Drawing.Size(102, 34);
             this.bt_Them.TabIndex = 7;
@@ -220,7 +221,7 @@
             this.lb_danhsach.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_danhsach.AutoSize = true;
             this.lb_danhsach.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.lb_danhsach.Location = new System.Drawing.Point(156, 24);
+            this.lb_danhsach.Location = new System.Drawing.Point(179, 15);
             this.lb_danhsach.Name = "lb_danhsach";
             this.lb_danhsach.Size = new System.Drawing.Size(209, 28);
             this.lb_danhsach.TabIndex = 9;
@@ -228,36 +229,37 @@
             // 
             // dtg_NV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
-            this.dtg_NV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dtg_NV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtg_NV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtg_NV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg_NV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.dtg_NV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_NV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_NV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtg_NV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_NV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.helo,
             this.wew});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg_NV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtg_NV.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtg_NV.EnableHeadersVisualStyles = false;
             this.dtg_NV.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dtg_NV.Location = new System.Drawing.Point(0, 171);
+            this.dtg_NV.Location = new System.Drawing.Point(23, 162);
             this.dtg_NV.Name = "dtg_NV";
+            this.dtg_NV.RowHeadersWidth = 51;
             this.dtg_NV.Size = new System.Drawing.Size(396, 548);
             this.dtg_NV.TabIndex = 0;
             // 
@@ -265,19 +267,21 @@
             // 
             this.helo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.helo.HeaderText = "Mã nhân viên";
+            this.helo.MinimumWidth = 6;
             this.helo.Name = "helo";
             // 
             // wew
             // 
             this.wew.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.wew.HeaderText = "Tên nhân viên";
+            this.wew.MinimumWidth = 6;
             this.wew.Name = "wew";
             // 
             // pn_thongtin
             // 
             this.pn_thongtin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_thongtin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pn_thongtin.Controls.Add(this.cb_gioitinh);
+            this.pn_thongtin.Controls.Add(this.tb_gioitinh);
             this.pn_thongtin.Controls.Add(this.dt_ngayvaolam);
             this.pn_thongtin.Controls.Add(this.dt_ngsinh);
             this.pn_thongtin.Controls.Add(this.lb_mlnv);
@@ -297,24 +301,10 @@
             this.pn_thongtin.Controls.Add(this.tb_mnv);
             this.pn_thongtin.Controls.Add(this.pb_anh);
             this.pn_thongtin.Controls.Add(this.lb_thongtin);
-            this.pn_thongtin.Location = new System.Drawing.Point(539, 5);
+            this.pn_thongtin.Location = new System.Drawing.Point(584, 5);
             this.pn_thongtin.Name = "pn_thongtin";
             this.pn_thongtin.Size = new System.Drawing.Size(504, 711);
             this.pn_thongtin.TabIndex = 8;
-            // 
-            // cb_gioitinh
-            // 
-            this.cb_gioitinh.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
-            this.cb_gioitinh.FormattingEnabled = true;
-            this.cb_gioitinh.IntegralHeight = false;
-            this.cb_gioitinh.ItemHeight = 18;
-            this.cb_gioitinh.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.cb_gioitinh.Location = new System.Drawing.Point(240, 343);
-            this.cb_gioitinh.Name = "cb_gioitinh";
-            this.cb_gioitinh.Size = new System.Drawing.Size(232, 26);
-            this.cb_gioitinh.TabIndex = 3;
             // 
             // dt_ngayvaolam
             // 
@@ -358,13 +348,14 @@
             this.tb_mlnv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_mlnv.ForeColor = System.Drawing.Color.Black;
             this.tb_mlnv.Location = new System.Drawing.Point(240, 644);
-            this.tb_mlnv.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_mlnv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_mlnv.Multiline = false;
             this.tb_mlnv.Name = "tb_mlnv";
             this.tb_mlnv.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_mlnv.PasswordChar = false;
             this.tb_mlnv.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_mlnv.PlaceholderText = "";
+            this.tb_mlnv.ReadOnly1 = false;
             this.tb_mlnv.Size = new System.Drawing.Size(232, 33);
             this.tb_mlnv.TabIndex = 9;
             this.tb_mlnv.Texts = "";
@@ -380,13 +371,14 @@
             this.tb_Luong.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Luong.ForeColor = System.Drawing.Color.Black;
             this.tb_Luong.Location = new System.Drawing.Point(240, 590);
-            this.tb_Luong.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Luong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Luong.Multiline = false;
             this.tb_Luong.Name = "tb_Luong";
             this.tb_Luong.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_Luong.PasswordChar = false;
             this.tb_Luong.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Luong.PlaceholderText = "";
+            this.tb_Luong.ReadOnly1 = false;
             this.tb_Luong.Size = new System.Drawing.Size(232, 33);
             this.tb_Luong.TabIndex = 8;
             this.tb_Luong.Texts = "";
@@ -422,13 +414,14 @@
             this.tb_Email.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Email.ForeColor = System.Drawing.Color.Black;
             this.tb_Email.Location = new System.Drawing.Point(240, 528);
-            this.tb_Email.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Email.Multiline = false;
             this.tb_Email.Name = "tb_Email";
             this.tb_Email.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_Email.PasswordChar = false;
             this.tb_Email.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Email.PlaceholderText = "";
+            this.tb_Email.ReadOnly1 = false;
             this.tb_Email.Size = new System.Drawing.Size(232, 33);
             this.tb_Email.TabIndex = 7;
             this.tb_Email.Texts = "";
@@ -504,13 +497,14 @@
             this.tb_Sdt.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Sdt.ForeColor = System.Drawing.Color.Black;
             this.tb_Sdt.Location = new System.Drawing.Point(240, 479);
-            this.tb_Sdt.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Sdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Sdt.Multiline = false;
             this.tb_Sdt.Name = "tb_Sdt";
             this.tb_Sdt.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_Sdt.PasswordChar = false;
             this.tb_Sdt.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Sdt.PlaceholderText = "";
+            this.tb_Sdt.ReadOnly1 = false;
             this.tb_Sdt.Size = new System.Drawing.Size(232, 33);
             this.tb_Sdt.TabIndex = 6;
             this.tb_Sdt.Texts = "";
@@ -526,13 +520,14 @@
             this.tb_TenNv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_TenNv.ForeColor = System.Drawing.Color.Black;
             this.tb_TenNv.Location = new System.Drawing.Point(240, 284);
-            this.tb_TenNv.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_TenNv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_TenNv.Multiline = false;
             this.tb_TenNv.Name = "tb_TenNv";
             this.tb_TenNv.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_TenNv.PasswordChar = false;
             this.tb_TenNv.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_TenNv.PlaceholderText = "";
+            this.tb_TenNv.ReadOnly1 = false;
             this.tb_TenNv.Size = new System.Drawing.Size(232, 33);
             this.tb_TenNv.TabIndex = 2;
             this.tb_TenNv.Texts = "";
@@ -548,13 +543,14 @@
             this.tb_mnv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_mnv.ForeColor = System.Drawing.Color.Black;
             this.tb_mnv.Location = new System.Drawing.Point(240, 229);
-            this.tb_mnv.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_mnv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_mnv.Multiline = false;
             this.tb_mnv.Name = "tb_mnv";
             this.tb_mnv.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_mnv.PasswordChar = false;
             this.tb_mnv.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_mnv.PlaceholderText = "";
+            this.tb_mnv.ReadOnly1 = false;
             this.tb_mnv.Size = new System.Drawing.Size(232, 33);
             this.tb_mnv.TabIndex = 1;
             this.tb_mnv.Texts = "";
@@ -586,11 +582,34 @@
             this.lb_thongtin.TabIndex = 10;
             this.lb_thongtin.Text = "Thông tin nhân viên";
             // 
+            // tb_gioitinh
+            // 
+            this.tb_gioitinh.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_gioitinh.BorderColor = System.Drawing.Color.Black;
+            this.tb_gioitinh.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_gioitinh.BorderRadius = 5;
+            this.tb_gioitinh.Bordersize = 2;
+            this.tb_gioitinh.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_gioitinh.ForeColor = System.Drawing.Color.Black;
+            this.tb_gioitinh.Location = new System.Drawing.Point(240, 336);
+            this.tb_gioitinh.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_gioitinh.Multiline = false;
+            this.tb_gioitinh.Name = "tb_gioitinh";
+            this.tb_gioitinh.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_gioitinh.PasswordChar = false;
+            this.tb_gioitinh.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_gioitinh.PlaceholderText = "";
+            this.tb_gioitinh.ReadOnly1 = false;
+            this.tb_gioitinh.Size = new System.Drawing.Size(232, 33);
+            this.tb_gioitinh.TabIndex = 29;
+            this.tb_gioitinh.Texts = "";
+            this.tb_gioitinh.UnderlinedStyle = false;
+            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1055, 719);
+            this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.pn_NV);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NhanVien";
@@ -637,7 +656,7 @@
         private System.Windows.Forms.Label lb_luong;
         public System.Windows.Forms.DateTimePicker dt_ngayvaolam;
         public System.Windows.Forms.DateTimePicker dt_ngsinh;
-        private System.Windows.Forms.ComboBox cb_gioitinh;
         private CustomButton bt_Luu;
+        private CustomTextBox tb_gioitinh;
     }
 }
