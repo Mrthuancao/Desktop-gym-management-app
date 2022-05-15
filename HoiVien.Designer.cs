@@ -43,13 +43,11 @@
             this.mahv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_thongtin = new System.Windows.Forms.Panel();
-            this.tb_maPT = new Gym_Management.CustomTextBox();
             this.tb_gioitinh = new Gym_Management.CustomTextBox();
             this.lb_chieucao = new System.Windows.Forms.Label();
             this.lb_cannang = new System.Windows.Forms.Label();
             this.tb_chieucao = new Gym_Management.CustomTextBox();
             this.tb_cannang = new Gym_Management.CustomTextBox();
-            this.lb_maPt = new System.Windows.Forms.Label();
             this.dt_ngaydk = new System.Windows.Forms.DateTimePicker();
             this.dt_ngsinh = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -144,6 +142,7 @@
             this.tb_Search.PasswordChar = false;
             this.tb_Search.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Search.PlaceholderText = "Search...";
+            this.tb_Search.ReadOnly1 = false;
             this.tb_Search.Size = new System.Drawing.Size(232, 33);
             this.tb_Search.TabIndex = 12;
             this.tb_Search.Texts = "";
@@ -285,13 +284,11 @@
             // 
             this.pn_thongtin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_thongtin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pn_thongtin.Controls.Add(this.tb_maPT);
             this.pn_thongtin.Controls.Add(this.tb_gioitinh);
             this.pn_thongtin.Controls.Add(this.lb_chieucao);
             this.pn_thongtin.Controls.Add(this.lb_cannang);
             this.pn_thongtin.Controls.Add(this.tb_chieucao);
             this.pn_thongtin.Controls.Add(this.tb_cannang);
-            this.pn_thongtin.Controls.Add(this.lb_maPt);
             this.pn_thongtin.Controls.Add(this.dt_ngaydk);
             this.pn_thongtin.Controls.Add(this.dt_ngsinh);
             this.pn_thongtin.Controls.Add(this.label1);
@@ -310,28 +307,6 @@
             this.pn_thongtin.Size = new System.Drawing.Size(504, 711);
             this.pn_thongtin.TabIndex = 8;
             // 
-            // tb_maPT
-            // 
-            this.tb_maPT.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_maPT.BorderColor = System.Drawing.Color.Black;
-            this.tb_maPT.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_maPT.BorderRadius = 5;
-            this.tb_maPT.Bordersize = 2;
-            this.tb_maPT.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_maPT.ForeColor = System.Drawing.Color.Black;
-            this.tb_maPT.Location = new System.Drawing.Point(216, 630);
-            this.tb_maPT.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_maPT.Multiline = false;
-            this.tb_maPT.Name = "tb_maPT";
-            this.tb_maPT.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_maPT.PasswordChar = false;
-            this.tb_maPT.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_maPT.PlaceholderText = "";
-            this.tb_maPT.Size = new System.Drawing.Size(232, 33);
-            this.tb_maPT.TabIndex = 39;
-            this.tb_maPT.Texts = "";
-            this.tb_maPT.UnderlinedStyle = false;
-            // 
             // tb_gioitinh
             // 
             this.tb_gioitinh.BackColor = System.Drawing.SystemColors.Window;
@@ -349,6 +324,7 @@
             this.tb_gioitinh.PasswordChar = false;
             this.tb_gioitinh.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_gioitinh.PlaceholderText = "";
+            this.tb_gioitinh.ReadOnly1 = false;
             this.tb_gioitinh.Size = new System.Drawing.Size(232, 33);
             this.tb_gioitinh.TabIndex = 38;
             this.tb_gioitinh.Texts = "";
@@ -391,6 +367,7 @@
             this.tb_chieucao.PasswordChar = false;
             this.tb_chieucao.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_chieucao.PlaceholderText = "";
+            this.tb_chieucao.ReadOnly1 = false;
             this.tb_chieucao.Size = new System.Drawing.Size(232, 33);
             this.tb_chieucao.TabIndex = 5;
             this.tb_chieucao.Texts = "";
@@ -413,20 +390,11 @@
             this.tb_cannang.PasswordChar = false;
             this.tb_cannang.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_cannang.PlaceholderText = "";
+            this.tb_cannang.ReadOnly1 = false;
             this.tb_cannang.Size = new System.Drawing.Size(232, 33);
             this.tb_cannang.TabIndex = 4;
             this.tb_cannang.Texts = "";
             this.tb_cannang.UnderlinedStyle = false;
-            // 
-            // lb_maPt
-            // 
-            this.lb_maPt.AutoSize = true;
-            this.lb_maPt.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_maPt.Location = new System.Drawing.Point(31, 643);
-            this.lb_maPt.Name = "lb_maPt";
-            this.lb_maPt.Size = new System.Drawing.Size(112, 16);
-            this.lb_maPt.TabIndex = 32;
-            this.lb_maPt.Text = "Mã PT(Nếu có):";
             // 
             // dt_ngaydk
             // 
@@ -529,6 +497,7 @@
             this.tb_Sdt.PasswordChar = false;
             this.tb_Sdt.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Sdt.PlaceholderText = "";
+            this.tb_Sdt.ReadOnly1 = false;
             this.tb_Sdt.Size = new System.Drawing.Size(232, 33);
             this.tb_Sdt.TabIndex = 8;
             this.tb_Sdt.Texts = "";
@@ -551,6 +520,7 @@
             this.tb_TenHV.PasswordChar = false;
             this.tb_TenHV.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_TenHV.PlaceholderText = "";
+            this.tb_TenHV.ReadOnly1 = false;
             this.tb_TenHV.Size = new System.Drawing.Size(232, 33);
             this.tb_TenHV.TabIndex = 2;
             this.tb_TenHV.Texts = "";
@@ -573,6 +543,7 @@
             this.tb_MaHV.PasswordChar = false;
             this.tb_MaHV.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_MaHV.PlaceholderText = "";
+            this.tb_MaHV.ReadOnly1 = false;
             this.tb_MaHV.Size = new System.Drawing.Size(232, 33);
             this.tb_MaHV.TabIndex = 1;
             this.tb_MaHV.Texts = "";
@@ -647,7 +618,6 @@
         private System.Windows.Forms.Label lb_mhv;
         public System.Windows.Forms.DateTimePicker dt_ngaydk;
         public System.Windows.Forms.DateTimePicker dt_ngsinh;
-        private System.Windows.Forms.Label lb_maPt;
         private CustomButton bt_Luu;
         private System.Windows.Forms.Label lb_chieucao;
         private System.Windows.Forms.Label lb_cannang;
@@ -656,7 +626,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mahv;
         private System.Windows.Forms.DataGridViewTextBoxColumn hoten;
         private CustomTextBox tb_MaHV;
-        private CustomTextBox tb_maPT;
         private CustomTextBox tb_gioitinh;
     }
 }
