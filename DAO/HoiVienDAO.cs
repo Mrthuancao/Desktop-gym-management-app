@@ -42,7 +42,7 @@ namespace DAO
 
         public DataTable GetAllHoivienDetailed()
         {
-            string query = "SELECT HOIVIEN.mahv as Mã Hội viên, HOIVIEN.hoten as Họ tên, HOIVIEN.phai as Giới tính, HOIVIEN.hoten as Họ tên,  HOIVIEN.cannang as Cân nặng, HOIVIEN.chieucao as Chiều cao, HOIVIEN.ngdangki as Ngày đăng kí, HOIVIEN.sdt as SDT, HOIVIEN.nvquanli as Mã nhân viên PT";
+            string query = "SELECT HOIVIEN.mahv as mahv, HOIVIEN.hoten as hoten, HOIVIEN.phai as phai, HOIVIEN.hoten as Họ tên,  HOIVIEN.cannang as cannang, HOIVIEN.chieucao as chieucao, HOIVIEN.ngdangki as ngdangki, HOIVIEN.sdt as sdt, HOIVIEN.nvquanli as nvquanli";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;

@@ -25,7 +25,7 @@ namespace Gym_Management
         {
             if (tb_TenHV.Texts == "" || tb_cannang.Texts == "" || tb_chieucao.Texts.ToString() == "" || tb_Sdt.Texts == "" || tb_maPt.Texts == "")
             {
-                MessageBox.Show("Điền đủ thông tin trước khi thêm món");
+                MessageBox.Show("Điền đủ thông tin trước khi thêm hội viên");
             }
             else
             {
@@ -33,6 +33,7 @@ namespace Gym_Management
                 {
                     MessageBox.Show("Đã thêm thành công");
                 }
+
             }
         }
         private void ClearTextBoxes()
