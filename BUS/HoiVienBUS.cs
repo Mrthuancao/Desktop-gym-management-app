@@ -42,5 +42,10 @@ namespace BUS
         {
             return hvDAL.UpdateHoivien(mahv, hoten, phai, cannang, chieucao, ngsinh, ngdangki, sdt);
         }
+
+        public List<HOIVIEN> SearchHoiVienByName(string name)
+        {
+            return hvDAL.SearchHoiVienByName(name);
+        }
     }
 }

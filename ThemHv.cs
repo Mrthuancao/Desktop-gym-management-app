@@ -35,6 +35,7 @@ namespace Gym_Management
                 }
 
             }
+            this.Close();
         }
         private void ClearTextBoxes()
         {
