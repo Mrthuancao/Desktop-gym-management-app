@@ -55,6 +55,29 @@ namespace Gym_Management
             tb_maPT.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "nvquanli"));
         }
 
-     
+        private void bt_xoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dtg_HV.SelectedRows.Count > 0)
+                {
+                    if (hvBUS.DeleteHoiVien(dtg_HV.SelectedRows[0].Cells["mahv"].Value.ToString()))
+                    {
+                        MessageBox.Show("Đã xóa thành công");
+                        //dtg_HV.DataSource = hvBUS.GetAllHoivienDetailed();
+                        LoadHoiVienList();
+                        AddHoiVienBinding();
+                    }
+                }
+                else
+                    MessageBox.Show("Chọn một hội viên để xóa");
+                
+
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Xóa THẤT BẠI!");
+            }
+        }
     }
 }
