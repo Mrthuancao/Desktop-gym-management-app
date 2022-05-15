@@ -29,6 +29,10 @@ namespace Gym_Management
         {
             ThemHv f = new ThemHv();
             f.ShowDialog();
+            InitializeComponent();
+            LoadHoiVienList();
+            AddHoiVienBinding();
+
         }
         void LoadHoiVienList()
         {
@@ -39,7 +43,6 @@ namespace Gym_Management
             dtg_HV.Columns["ngsinh"].Visible = false;
             dtg_HV.Columns["ngdangki"].Visible = false;
             dtg_HV.Columns["sdt"].Visible = false;
-            dtg_HV.Columns["nvquanli"].Visible = false;
         }
 
         void AddHoiVienBinding()
@@ -52,7 +55,6 @@ namespace Gym_Management
             dt_ngsinh.DataBindings.Add(new Binding("Text", dtg_HV.DataSource, "ngsinh"));
             dt_ngaydk.DataBindings.Add(new Binding("Text", dtg_HV.DataSource, "ngdangki"));
             tb_Sdt.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "sdt"));
-            tb_maPT.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "nvquanli"));
         }
 
         private void bt_xoa_Click(object sender, EventArgs e)
@@ -65,6 +67,7 @@ namespace Gym_Management
                     {
                         MessageBox.Show("Đã xóa thành công");
                         //dtg_HV.DataSource = hvBUS.GetAllHoivienDetailed();
+                        InitializeComponent();
                         LoadHoiVienList();
                         AddHoiVienBinding();
                     }
