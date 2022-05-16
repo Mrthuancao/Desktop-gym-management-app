@@ -57,9 +57,9 @@
             this.bt_search = new FontAwesome.Sharp.IconButton();
             this.pn_HV = new System.Windows.Forms.Panel();
             this.bt_Luu = new Gym_Management.CustomButton();
-            this.tb_Search = new Gym_Management.CustomTextBox();
             this.bt_xoa = new Gym_Management.CustomButton();
             this.bt_sua = new Gym_Management.CustomButton();
+            this.tb_Search = new Gym_Management.CustomTextBox();
             this.bt_Them = new Gym_Management.CustomButton();
             this.pn_thongtin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
@@ -92,7 +92,7 @@
             this.pn_thongtin.Location = new System.Drawing.Point(779, 6);
             this.pn_thongtin.Margin = new System.Windows.Forms.Padding(4);
             this.pn_thongtin.Name = "pn_thongtin";
-            this.pn_thongtin.Size = new System.Drawing.Size(671, 874);
+            this.pn_thongtin.Size = new System.Drawing.Size(671, 852);
             this.pn_thongtin.TabIndex = 8;
             // 
             // tb_gioitinh
@@ -229,7 +229,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(45, 649);
+            this.label4.Location = new System.Drawing.Point(45, 717);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 22);
@@ -240,7 +240,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 717);
+            this.label3.Location = new System.Drawing.Point(45, 649);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 22);
@@ -371,7 +371,7 @@
             this.lb_thongtin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_thongtin.AutoSize = true;
             this.lb_thongtin.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.lb_thongtin.Location = new System.Drawing.Point(253, 21);
+            this.lb_thongtin.Location = new System.Drawing.Point(253, 10);
             this.lb_thongtin.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lb_thongtin.Name = "lb_thongtin";
             this.lb_thongtin.Size = new System.Drawing.Size(230, 35);
@@ -395,7 +395,6 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtg_HV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtg_HV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-
             this.dtg_HV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mahv,
             this.hoten});
@@ -407,7 +406,6 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtg_HV.DefaultCellStyle = dataGridViewCellStyle6;
-
             this.dtg_HV.EnableHeadersVisualStyles = false;
             this.dtg_HV.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dtg_HV.Location = new System.Drawing.Point(31, 186);
@@ -510,32 +508,6 @@
             this.bt_Luu.UseVisualStyleBackColor = false;
             this.bt_Luu.Click += new System.EventHandler(this.bt_Luu_Click);
             // 
-            // tb_Search
-            // 
-            this.tb_Search.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tb_Search.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_Search.BorderColor = System.Drawing.Color.Black;
-            this.tb_Search.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_Search.BorderRadius = 5;
-            this.tb_Search.Bordersize = 2;
-            this.tb_Search.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Search.ForeColor = System.Drawing.Color.Black;
-            this.tb_Search.Location = new System.Drawing.Point(133, 84);
-            this.tb_Search.Margin = new System.Windows.Forms.Padding(5);
-            this.tb_Search.Multiline = false;
-            this.tb_Search.Name = "tb_Search";
-            this.tb_Search.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
-            this.tb_Search.PasswordChar = false;
-            this.tb_Search.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_Search.PlaceholderText = "Search...";
-            this.tb_Search.ReadOnly1 = false;
-            this.tb_Search.Size = new System.Drawing.Size(309, 41);
-            this.tb_Search.TabIndex = 12;
-            this.tb_Search.Texts = "";
-            this.tb_Search.UnderlinedStyle = false;
-            this.tb_Search.Enter += new System.EventHandler(this.HoiVienSearch_Enter);
-            this.tb_Search.Leave += new System.EventHandler(this.HoiVienSearch_Leave);
-            // 
             // bt_xoa
             // 
             this.bt_xoa.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -583,6 +555,32 @@
             this.bt_sua.TextColor = System.Drawing.Color.Transparent;
             this.bt_sua.UseVisualStyleBackColor = false;
             this.bt_sua.Click += new System.EventHandler(this.bt_sua_Click);
+            // 
+            // tb_Search
+            // 
+            this.tb_Search.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_Search.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_Search.BorderColor = System.Drawing.Color.Black;
+            this.tb_Search.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_Search.BorderRadius = 5;
+            this.tb_Search.Bordersize = 2;
+            this.tb_Search.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Search.ForeColor = System.Drawing.Color.Black;
+            this.tb_Search.Location = new System.Drawing.Point(133, 84);
+            this.tb_Search.Margin = new System.Windows.Forms.Padding(5);
+            this.tb_Search.Multiline = false;
+            this.tb_Search.Name = "tb_Search";
+            this.tb_Search.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.tb_Search.PasswordChar = false;
+            this.tb_Search.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_Search.PlaceholderText = "Search...";
+            this.tb_Search.ReadOnly1 = false;
+            this.tb_Search.Size = new System.Drawing.Size(309, 41);
+            this.tb_Search.TabIndex = 12;
+            this.tb_Search.Texts = "";
+            this.tb_Search.UnderlinedStyle = false;
+            this.tb_Search.Enter += new System.EventHandler(this.HoiVienSearch_Enter);
+            this.tb_Search.Leave += new System.EventHandler(this.HoiVienSearch_Leave);
             // 
             // bt_Them
             // 
