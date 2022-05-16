@@ -14,7 +14,7 @@ namespace DTO
         private string ngmua;
         private string ngsd;
         private string hanbaotri;
-        private int gia;
+        private decimal gia;
         private string mahang;
         private string maltb;
         private int soluong;
@@ -24,12 +24,12 @@ namespace DTO
         public string Ngmua { get => ngmua; set => ngmua = value; }
         public string Ngsd { get => ngsd; set => ngsd = value; }
         public string Hanbaotri { get => hanbaotri; set => hanbaotri = value; }
-        public int Gia { get => gia; set => gia = value; }
+        public decimal Gia { get => gia; set => gia = value; }
         public string Mahang { get => mahang; set => mahang = value; }
         public string Maltb { get => maltb; set => maltb = value; }
         public int Soluong { get => soluong; set => soluong = value; }
 
-        public THIETBI(string tenthietbi, string matb, string ngmua, string ngsd, string hanbaotri, int gia, string mahang, string maltb, int soluong)
+        public THIETBI(string tenthietbi, string matb, string ngmua, string ngsd, string hanbaotri, decimal gia, string mahang, string maltb, int soluong)
         {
             this.Tenthietbi = tenthietbi;
             this.Matb = matb;
@@ -48,7 +48,7 @@ namespace DTO
             this.Ngmua = row["ngmua"].ToString();
             this.Ngsd = row["ngsd"].ToString();
             this.Hanbaotri = row["hanbaotri"].ToString();
-            this.Gia = (int)row["gia"];
+            this.Gia = (decimal)row["gia"];
             this.Mahang = row["mahang"].ToString();
             this.Maltb = row["maltb"].ToString();
             this.Soluong = (int)row["soluong"];
