@@ -52,7 +52,7 @@ namespace Gym_Management
             dt_ngsinh.DataBindings.Add(new Binding("Text", dtg_HV.DataSource, "ngsinh"));
             dt_ngaydk.DataBindings.Add(new Binding("Text", dtg_HV.DataSource, "ngdangki"));
             tb_Sdt.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "sdt"));
-            tb_maPT.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "nvquanli"));
+            
         }
         
      
