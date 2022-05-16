@@ -395,6 +395,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtg_HV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtg_HV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+
             this.dtg_HV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mahv,
             this.hoten});
@@ -406,6 +407,7 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtg_HV.DefaultCellStyle = dataGridViewCellStyle6;
+
             this.dtg_HV.EnableHeadersVisualStyles = false;
             this.dtg_HV.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dtg_HV.Location = new System.Drawing.Point(31, 186);
