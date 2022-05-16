@@ -13,10 +13,10 @@ namespace BUS
     public class NhanVienBUS
     {
         NhanVienDAO NhanVienDAO = new NhanVienDAO();
-        public List<NHANVIEN> GetEmployeesList()
+        public List<NHANVIEN> GetNhanVienList()
         {
             List<NHANVIEN> listNhanVien = new List<NHANVIEN>();
-            DataTable dt = NhanVienDAO.getAllEmployees();
+            DataTable dt = NhanVienDAO.GetAllNhanVien();
             foreach (DataRow row in dt.Rows)
             {
                 NHANVIEN nhanVien = new NHANVIEN(row);
@@ -41,16 +41,16 @@ namespace BUS
         //    return false;
         //}
 
-        public NHANVIEN getEmployeeByName(string name)
+        public List<NHANVIEN> GetNhanVienByName(string name)
         {
-            NHANVIEN NhanVien = NhanVienDAO.getEmployeeByName(name);
+            List<NHANVIEN> NhanVien = NhanVienDAO.SearchNhanVienByName(name);
             return NhanVien;
         }
 
 
-        public NHANVIEN getEmployeeByID(string id)
+        public NHANVIEN GetNhanVienByID(string id)
         {
-            NHANVIEN NhanVien = NhanVienDAO.getEmployeeByID(id);
+            NHANVIEN NhanVien = NhanVienDAO.GetNhanVienByID(id);
             return NhanVien;
         }
 
@@ -68,11 +68,11 @@ namespace BUS
         //    }
         //}
 
-        public bool insertEmployee(string hoTen, string maNhanVien, bool phai, DateTime ngaySinh, DateTime ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
+        public bool InsertNhanVien(string hoTen, string maNhanVien, string phai, string ngaySinh, string ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
         {
             try
             {
-                NhanVienDAO.insertEmployee(hoTen, maNhanVien, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien);
+                NhanVienDAO.InsertNhanVien(hoTen, maNhanVien, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien);
                 return true;
             }
             catch (Exception)
@@ -82,11 +82,11 @@ namespace BUS
 
         }
 
-        public bool deleteEmployee(string username)
+        public bool DeleteNhanVien(string username)
         {
             try
             {
-                if (NhanVienDAO.deleteEmployee(username))
+                if (NhanVienDAO.DeleteNhanVien(username))
                     return true;
                 else
                     return false;
@@ -97,11 +97,11 @@ namespace BUS
             }
         }
 
-        public bool updateEmployee(string hoTen, string maNhanVien, bool phai, DateTime ngaySinh, DateTime ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
+        public bool UpdateNhanVien(string hoTen, string maNhanVien, string phai, string ngaySinh, string ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
         {
             try
             {
-                return (NhanVienDAO.updateEmployee(hoTen, maNhanVien, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien));
+                return (NhanVienDAO.UpdateNhanVien(hoTen, maNhanVien, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien));
 
             }
             catch (Exception)
