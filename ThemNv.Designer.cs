@@ -86,7 +86,7 @@
             this.gb_themhv.Size = new System.Drawing.Size(486, 660);
             this.gb_themhv.TabIndex = 2;
             this.gb_themhv.TabStop = false;
-            this.gb_themhv.Text = "THÊM HỘI VIÊN";
+            this.gb_themhv.Text = "THÊM NHÂN VIÊN";
             // 
             // tb_manv
             // 
@@ -105,6 +105,7 @@
             this.tb_manv.PasswordChar = false;
             this.tb_manv.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_manv.PlaceholderText = "";
+            this.tb_manv.ReadOnly1 = false;
             this.tb_manv.Size = new System.Drawing.Size(232, 33);
             this.tb_manv.TabIndex = 49;
             this.tb_manv.Texts = "";
@@ -228,6 +229,7 @@
             this.tb_mlnv.PasswordChar = false;
             this.tb_mlnv.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_mlnv.PlaceholderText = "";
+            this.tb_mlnv.ReadOnly1 = false;
             this.tb_mlnv.Size = new System.Drawing.Size(232, 33);
             this.tb_mlnv.TabIndex = 8;
             this.tb_mlnv.Texts = "";
@@ -250,6 +252,7 @@
             this.tb_Luong.PasswordChar = false;
             this.tb_Luong.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Luong.PlaceholderText = "";
+            this.tb_Luong.ReadOnly1 = false;
             this.tb_Luong.Size = new System.Drawing.Size(232, 33);
             this.tb_Luong.TabIndex = 7;
             this.tb_Luong.Texts = "";
@@ -294,6 +297,7 @@
             this.tb_Email.PasswordChar = false;
             this.tb_Email.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Email.PlaceholderText = "";
+            this.tb_Email.ReadOnly1 = false;
             this.tb_Email.Size = new System.Drawing.Size(232, 33);
             this.tb_Email.TabIndex = 6;
             this.tb_Email.Texts = "";
@@ -371,6 +375,7 @@
             this.tb_Sdt.PasswordChar = false;
             this.tb_Sdt.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Sdt.PlaceholderText = "";
+            this.tb_Sdt.ReadOnly1 = false;
             this.tb_Sdt.Size = new System.Drawing.Size(232, 33);
             this.tb_Sdt.TabIndex = 5;
             this.tb_Sdt.Texts = "";
@@ -393,6 +398,7 @@
             this.tb_TenNv.PasswordChar = false;
             this.tb_TenNv.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_TenNv.PlaceholderText = "";
+            this.tb_TenNv.ReadOnly1 = false;
             this.tb_TenNv.Size = new System.Drawing.Size(232, 33);
             this.tb_TenNv.TabIndex = 1;
             this.tb_TenNv.Texts = "";

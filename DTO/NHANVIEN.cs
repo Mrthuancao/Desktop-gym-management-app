@@ -16,7 +16,7 @@ namespace DTO
         private string ngvaolam;
         private string sdt;
         private string email;
-        private int luong;
+        private decimal luong;
         private string malnv;
 
 
@@ -24,7 +24,7 @@ namespace DTO
         public string Hoten { get => hoten; set => hoten = value; }
         public string Phai { get => phai; set => phai = value; }
         public string Ngsinh { get => ngsinh; set => ngsinh = value; }
-        public int Luong { get => luong; set => luong = value; }
+        public decimal Luong { get => luong; set => luong = value; }
         public string Ngvaolam { get => ngvaolam; set => ngvaolam = value; }
         public string Sdt { get => sdt; set => sdt = value; }
         public string Email { get => email; set => email = value; }
@@ -48,7 +48,7 @@ namespace DTO
             this.Hoten = row["hoten"].ToString();
             this.Phai = row["phai"].ToString();
             this.Ngsinh = row["ngsinh"].ToString();
-            this.Luong = (int)row["luong"];
+            this.Luong = (decimal)row["luong"];
             this.Ngvaolam = row["ngvaolam"].ToString();
             this.Sdt = row["sdt"].ToString();
             this.Email = row["email"].ToString();

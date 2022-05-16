@@ -98,6 +98,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Gym_ManagementDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Gym_ManagementDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gym_ManagementDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +249,17 @@
     </None>
     <None Include="Gym_ManagementDataSet.xss">
       <DependentUpon>Gym_ManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gym_ManagementDataSet1.xsc">
+      <DependentUpon>Gym_ManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Gym_ManagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gym_ManagementDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gym_ManagementDataSet1.xss">
+      <DependentUpon>Gym_ManagementDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

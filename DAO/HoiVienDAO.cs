@@ -18,40 +18,46 @@ namespace DAO
             return dt;
         }
 
-        public HOIVIEN GetHoivienByID(int idDrink)
+        public HOIVIEN GetHoivienByID(int idD)
         {
             string query = "SELECT * FROM HOIVIEN WHERE mahv = @mahv";
-            object[] value = new object[] { idDrink };
+            object[] value = new object[] { idD };
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query, value);
-            HOIVIEN drink = new HOIVIEN(dt.Rows[0]);
-            return drink;
+            HOIVIEN hv = new HOIVIEN(dt.Rows[0]);
+            return hv;
         }
 
-        public HOIVIEN GetHoivienByName(string name)
+        public List<HOIVIEN> SearchHoiVienByName(string hoten)
         {
-            string query = "SELECT * FROM HOIVIEN WHERE hoten = @hoten";
-            object[] value = new object[] { name };
+            List<HOIVIEN> list = new List<HOIVIEN>();
+            string query = string.Format("SELECT * FROM dbo.HOIVIEN WHERE dbo.fuConvertToUnsign1(hoten) LIKE N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", hoten);
+            object[] value = new object[] { hoten };
             DBConnect db = new DBConnect();
-            DataTable dt = db.ExecuteQuery(query, value);
-            HOIVIEN drink = new HOIVIEN(dt.Rows[0]);
-            return drink;
+            DataTable data = db.ExecuteQuery(query, value);
+            foreach (DataRow item in data.Rows)
+            {
+                HOIVIEN hv = new HOIVIEN(item);
+                list.Add(hv);
+            }
+
+            return list;
         }
 
-        
+
 
         public DataTable GetAllHoivienDetailed()
         {
-            string query = "SELECT HOIVIEN.mahv as Mã Hội viên, HOIVIEN.hoten as Họ tên, HOIVIEN.phai as Giới tính, HOIVIEN.hoten as Họ tên,  HOIVIEN.cannang as Cân nặng, HOIVIEN.chieucao as Chiều cao, HOIVIEN.ngdangki as Ngày đăng kí, HOIVIEN.sdt as SDT, HOIVIEN.nvquanli as Mã nhân viên PT";
+            string query = "SELECT HOIVIEN.mahv as mahv, HOIVIEN.hoten as hoten, HOIVIEN.phai as phai, HOIVIEN.hoten as hoten,  HOIVIEN.cannang as cannang, HOIVIEN.chieucao as chieucao, HOIVIEN.ngdangki as ngdangki, HOIVIEN.sdt as sdt from HOIVIEN";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;
         }
 
-        public bool InsertHoivien(string mahv, string hoten, string phai, float cannang, float chieucao, string ngsinh, string ngdangki, string sdt, string nvquanli)
+        public bool InsertHoivien(string mahv, string hoten, string phai, float cannang, float chieucao, string ngsinh, string ngdangki, string sdt)
         {
-            string query = "insert into HOIVIEN(mahv, hoten, phai, cannang, chieucao, ngsinh, ngdangki, sdt, nvquanli) values(@mahv, @hoten, @phai, @cannang, @chieucao, @ngsinh, @ngdangki, @sdt, @nvquanli)";
-            object[] value = new object[] { mahv, hoten, phai, cannang, chieucao, ngsinh, ngdangki, sdt, nvquanli };
+            string query = "insert into HOIVIEN(mahv, hoten, phai, cannang, chieucao, ngsinh, ngdangki, sdt) values(@mahv, @hoten, @phai, @cannang, @chieucao, @ngsinh, @ngdangki, @sdt)";
+            object[] value = new object[] { mahv, hoten, phai, cannang, chieucao, ngsinh, ngdangki, sdt };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
@@ -64,10 +70,10 @@ namespace DAO
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
 
-        public bool UpdateHoivien(string mahv, string hoten, string phai, float cannang, float chieucao, string ngsinh, string ngdangki, string sdt, string nvquanli)
+        public bool UpdateHoivien(string mahv, string hoten, string phai, float cannang, float chieucao, string ngsinh, string ngdangki, string sdt)
         {
-            string query = "update HOIVIEN set hoten = @hoten, phai = @phai, cannang = @cannang, chieucao = @chieucao, ngsinh = @ngsinh, ngdangki = @ngdangki, sdt = @sdt, nvquanli = @nvquanli where mahv = @mahv";
-            object[] value = new object[] { hoten, phai, cannang, chieucao, ngsinh, ngdangki, sdt, nvquanli, mahv};
+            string query = "update HOIVIEN set hoten = @hoten, phai = @phai, cannang = @cannang, chieucao = @chieucao, ngsinh = @ngsinh, ngdangki = @ngdangki, sdt = @sdt where mahv = @mahv";
+            object[] value = new object[] { hoten, phai, cannang, chieucao, ngsinh, ngdangki, sdt, mahv};
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
