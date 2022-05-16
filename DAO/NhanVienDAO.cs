@@ -36,7 +36,7 @@ namespace DAO
         {
             List<NHANVIEN> list = new List<NHANVIEN>();
             string query = string.Format("SELECT * FROM dbo.NHANVIEN WHERE dbo.fuConvertToUnsign1(hoten) LIKE N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", hoten);
-            object[] value = new object[] { hoten };
+            object[] value = new object[] {hoten};
             DBConnect db = new DBConnect();
             DataTable data = db.ExecuteQuery(query, value);
             foreach (DataRow item in data.Rows)
@@ -48,7 +48,7 @@ namespace DAO
             return list;
         }
 
-        public bool InsertNhanVien(string hoTen, string maNhanVien, string phai, string ngaySinh, string ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
+        public bool InsertNhanVien(string hoTen, string maNhanVien, string phai, string ngaySinh, string ngayVaoLam, string soDienThoai, string email, decimal luong, string maLoaiNhanVien)
         {
             string query = "insert into NHANVIEN( hoten, manv, phai, ngsinh, ngvaolam, sdt, email, luong, malnv ) values(@hoTen, @maNhanVien, @phai, @ngaySinh, @ngayVaoLam, @soDienThoai, @email, @luong, @maLoaiNhanVien )";
             object[] value = new object[] { hoTen, maNhanVien, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien };
@@ -64,10 +64,10 @@ namespace DAO
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
 
-        public bool UpdateNhanVien (string hoTen, string maNhanVien, string phai, string ngaySinh, string ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
+        public bool UpdateNhanVien (string maNhanVien, string hoTen, string phai, string ngaySinh, string ngayVaoLam, string soDienThoai, string email, decimal luong, string maLoaiNhanVien)
         {
             string query = "update NHANVIEN set hoten = @hoTen, phai = @phai, ngsinh = @ngaySinh, ngvaolam = @ngayVaoLam, sdt = @soDienThoai, email = @email, luong = @luong, malnv = @maLoaiNhanVien where manv = @maNhanVien";
-            object[] value = new object[] { hoTen, maNhanVien, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien };
+            object[] value = new object[] { hoTen, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien, maNhanVien };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }

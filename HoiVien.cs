@@ -154,7 +154,6 @@ namespace Gym_Management
         private void bt_search_Click(object sender, EventArgs e)
         {
             hvist.DataSource = SearchHoiVienByName(tb_Search.Texts);
-            
         }
     }
 }

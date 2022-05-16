@@ -11,15 +11,15 @@ namespace DTO
     {
         private string magoi;
         private string tengoi;
-        private string giamoithang;
+        private decimal giamoithang;
         private string coPT;
 
         public string Magoi { get => magoi; set => magoi = value; }
         public string Tengoi { get => tengoi; set => tengoi = value; }
-        public string Giamoithang { get => giamoithang; set => giamoithang = value; }
+        public decimal Giamoithang { get => giamoithang; set => giamoithang = value; }
         public string CoPT { get => coPT; set => coPT = value; }
 
-        public GOITAP(string magoi, string tengoi, string giamoithang, string coPT)
+        public GOITAP(string magoi, string tengoi, decimal giamoithang, string coPT)
         {
             this.Magoi = magoi; 
             this.Tengoi = tengoi;
@@ -30,7 +30,7 @@ namespace DTO
         {
             this.Magoi = row["magoi"].ToString();
             this.Tengoi = row["tengoi"].ToString();
-            this.Giamoithang = row["giamoithang"].ToString();
+            this.Giamoithang = (decimal)row["giamoithang"];
             this.CoPT = row["coPT"].ToString();
         }
 
