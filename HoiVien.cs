@@ -49,6 +49,7 @@ namespace Gym_Management
         
         void AddHoiVienBinding()
         {
+
             tb_MaHV.DataBindings.Add(new Binding("Texts",dtg_HV.DataSource, "mahv", true, DataSourceUpdateMode.Never));
             tb_TenHV.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "hoten", true, DataSourceUpdateMode.Never));
             tb_gioitinh.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "phai", true, DataSourceUpdateMode.Never));

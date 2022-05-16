@@ -67,6 +67,220 @@
             this.pn_HV.SuspendLayout();
             this.SuspendLayout();
             // 
+            // pn_HV
+            // 
+            this.pn_HV.Controls.Add(this.bt_Luu);
+            this.pn_HV.Controls.Add(this.bt_search);
+            this.pn_HV.Controls.Add(this.tb_Search);
+            this.pn_HV.Controls.Add(this.bt_xoa);
+            this.pn_HV.Controls.Add(this.bt_sua);
+            this.pn_HV.Controls.Add(this.bt_Them);
+            this.pn_HV.Controls.Add(this.lb_danhsach);
+            this.pn_HV.Controls.Add(this.dtg_HV);
+            this.pn_HV.Controls.Add(this.pn_thongtin);
+            this.pn_HV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pn_HV.Location = new System.Drawing.Point(0, 0);
+            this.pn_HV.Name = "pn_HV";
+            this.pn_HV.Size = new System.Drawing.Size(1055, 719);
+            this.pn_HV.TabIndex = 0;
+            // 
+            // bt_Luu
+            // 
+            this.bt_Luu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_Luu.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_Luu.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_Luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bt_Luu.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_Luu.BorderRadius = 15;
+            this.bt_Luu.BorderSize = 0;
+            this.bt_Luu.FlatAppearance.BorderSize = 0;
+            this.bt_Luu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_Luu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_Luu.Location = new System.Drawing.Point(417, 387);
+            this.bt_Luu.Name = "bt_Luu";
+            this.bt_Luu.Size = new System.Drawing.Size(102, 34);
+            this.bt_Luu.TabIndex = 9;
+            this.bt_Luu.Text = "Lưu";
+            this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
+            this.bt_Luu.UseVisualStyleBackColor = false;
+            // 
+            // bt_search
+            // 
+            this.bt_search.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_search.BackColor = System.Drawing.Color.Transparent;
+            this.bt_search.FlatAppearance.BorderSize = 0;
+            this.bt_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_search.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.bt_search.IconColor = System.Drawing.Color.Black;
+            this.bt_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_search.IconSize = 30;
+            this.bt_search.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bt_search.Location = new System.Drawing.Point(369, 68);
+            this.bt_search.Name = "bt_search";
+            this.bt_search.Size = new System.Drawing.Size(33, 33);
+            this.bt_search.TabIndex = 13;
+            this.bt_search.UseVisualStyleBackColor = false;
+            // 
+            // tb_Search
+            // 
+            this.tb_Search.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_Search.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_Search.BorderColor = System.Drawing.Color.Black;
+            this.tb_Search.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_Search.BorderRadius = 5;
+            this.tb_Search.Bordersize = 2;
+            this.tb_Search.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Search.ForeColor = System.Drawing.Color.Black;
+            this.tb_Search.Location = new System.Drawing.Point(116, 68);
+            this.tb_Search.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Search.Multiline = false;
+            this.tb_Search.Name = "tb_Search";
+            this.tb_Search.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_Search.PasswordChar = false;
+            this.tb_Search.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_Search.PlaceholderText = "Search...";
+            this.tb_Search.ReadOnly1 = false;
+            this.tb_Search.Size = new System.Drawing.Size(232, 33);
+            this.tb_Search.TabIndex = 12;
+            this.tb_Search.Texts = "";
+            this.tb_Search.UnderlinedStyle = false;
+            // 
+            // bt_xoa
+            // 
+            this.bt_xoa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_xoa.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoa.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_xoa.BorderRadius = 15;
+            this.bt_xoa.BorderSize = 0;
+            this.bt_xoa.FlatAppearance.BorderSize = 0;
+            this.bt_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_xoa.Location = new System.Drawing.Point(417, 249);
+            this.bt_xoa.Name = "bt_xoa";
+            this.bt_xoa.Size = new System.Drawing.Size(102, 34);
+            this.bt_xoa.TabIndex = 11;
+            this.bt_xoa.Text = "Xóa";
+            this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
+            this.bt_xoa.UseVisualStyleBackColor = false;
+            // 
+            // bt_sua
+            // 
+            this.bt_sua.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_sua.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_sua.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_sua.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_sua.BorderRadius = 15;
+            this.bt_sua.BorderSize = 0;
+            this.bt_sua.FlatAppearance.BorderSize = 0;
+            this.bt_sua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_sua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_sua.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_sua.Location = new System.Drawing.Point(417, 325);
+            this.bt_sua.Name = "bt_sua";
+            this.bt_sua.Size = new System.Drawing.Size(102, 34);
+            this.bt_sua.TabIndex = 10;
+            this.bt_sua.Text = "Sửa";
+            this.bt_sua.TextColor = System.Drawing.Color.Transparent;
+            this.bt_sua.UseVisualStyleBackColor = false;
+            // 
+            // bt_Them
+            // 
+            this.bt_Them.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bt_Them.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_Them.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_Them.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_Them.BorderRadius = 15;
+            this.bt_Them.BorderSize = 0;
+            this.bt_Them.FlatAppearance.BorderSize = 0;
+            this.bt_Them.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_Them.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Them.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_Them.Location = new System.Drawing.Point(417, 180);
+            this.bt_Them.Name = "bt_Them";
+            this.bt_Them.Size = new System.Drawing.Size(102, 34);
+            this.bt_Them.TabIndex = 7;
+            this.bt_Them.Text = "Thêm";
+            this.bt_Them.TextColor = System.Drawing.Color.Transparent;
+            this.bt_Them.UseVisualStyleBackColor = false;
+            this.bt_Them.Click += new System.EventHandler(this.bt_Them_Click);
+            // 
+            // lb_danhsach
+            // 
+            this.lb_danhsach.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_danhsach.AutoSize = true;
+            this.lb_danhsach.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.lb_danhsach.Location = new System.Drawing.Point(156, 24);
+            this.lb_danhsach.Name = "lb_danhsach";
+            this.lb_danhsach.Size = new System.Drawing.Size(192, 28);
+            this.lb_danhsach.TabIndex = 9;
+            this.lb_danhsach.Text = "Danh sách hội viên";
+            // 
+            // dtg_HV
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dtg_HV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtg_HV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtg_HV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtg_HV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
+            this.dtg_HV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_HV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtg_HV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_HV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mahv,
+            this.hoten});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtg_HV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dtg_HV.EnableHeadersVisualStyles = false;
+            this.dtg_HV.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dtg_HV.Location = new System.Drawing.Point(0, 171);
+            this.dtg_HV.Name = "dtg_HV";
+            this.dtg_HV.RowHeadersWidth = 51;
+            this.dtg_HV.Size = new System.Drawing.Size(396, 548);
+            this.dtg_HV.TabIndex = 0;
+            // 
+            // mahv
+            // 
+            this.mahv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.mahv.DataPropertyName = "mahv";
+            this.mahv.HeaderText = "Mã hội viên";
+            this.mahv.MinimumWidth = 6;
+            this.mahv.Name = "mahv";
+            this.mahv.ReadOnly = true;
+            // 
+            // hoten
+            // 
+            this.hoten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.hoten.DataPropertyName = "hoten";
+            this.hoten.HeaderText = "Họ và tên";
+            this.hoten.MinimumWidth = 6;
+            this.hoten.Name = "hoten";
+            this.hoten.ReadOnly = true;
+            // 
+
             // pn_thongtin
             // 
             this.pn_thongtin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -116,7 +330,7 @@
             this.tb_gioitinh.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_gioitinh.PlaceholderText = "";
             this.tb_gioitinh.ReadOnly1 = true;
-            this.tb_gioitinh.Size = new System.Drawing.Size(309, 41);
+            this.tb_gioitinh.Size = new System.Drawing.Size(232, 33);
 
             this.tb_gioitinh.TabIndex = 38;
             this.tb_gioitinh.Texts = "";
@@ -167,7 +381,7 @@
             this.tb_chieucao.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_chieucao.PlaceholderText = "";
             this.tb_chieucao.ReadOnly1 = true;
-            this.tb_chieucao.Size = new System.Drawing.Size(309, 41);
+            this.tb_chieucao.Size = new System.Drawing.Size(232, 33);
 
             this.tb_chieucao.TabIndex = 5;
             this.tb_chieucao.Texts = "";
@@ -192,8 +406,7 @@
             this.tb_cannang.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_cannang.PlaceholderText = "";
             this.tb_cannang.ReadOnly1 = true;
-            this.tb_cannang.Size = new System.Drawing.Size(309, 41);
-
+            this.tb_cannang.Size = new System.Drawing.Size(232, 33);
             this.tb_cannang.TabIndex = 4;
             this.tb_cannang.Texts = "";
             this.tb_cannang.UnderlinedStyle = false;
@@ -324,7 +537,7 @@
             this.tb_Sdt.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Sdt.PlaceholderText = "";
             this.tb_Sdt.ReadOnly1 = true;
-            this.tb_Sdt.Size = new System.Drawing.Size(309, 41);
+            this.tb_Sdt.Size = new System.Drawing.Size(232, 33);
 
             this.tb_Sdt.TabIndex = 8;
             this.tb_Sdt.Texts = "";
@@ -349,7 +562,7 @@
             this.tb_TenHV.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_TenHV.PlaceholderText = "";
             this.tb_TenHV.ReadOnly1 = true;
-            this.tb_TenHV.Size = new System.Drawing.Size(309, 41);
+            this.tb_TenHV.Size = new System.Drawing.Size(232, 33);
 
             this.tb_TenHV.TabIndex = 2;
             this.tb_TenHV.Texts = "";
@@ -374,7 +587,7 @@
             this.tb_MaHV.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_MaHV.PlaceholderText = "";
             this.tb_MaHV.ReadOnly1 = true;
-            this.tb_MaHV.Size = new System.Drawing.Size(309, 41);
+            this.tb_MaHV.Size = new System.Drawing.Size(232, 33);
 
             this.tb_MaHV.TabIndex = 1;
             this.tb_MaHV.Texts = "";
@@ -677,6 +890,7 @@
         private System.Windows.Forms.Label lb_phai;
         private System.Windows.Forms.Label lb_tenhv;
         private System.Windows.Forms.Label lb_mhv;
+
         private CustomTextBox tb_Sdt;
         private CustomTextBox tb_TenHV;
         private CustomTextBox tb_MaHV;

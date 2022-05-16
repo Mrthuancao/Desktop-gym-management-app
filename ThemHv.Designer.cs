@@ -80,8 +80,7 @@
             this.gb_themhv.Location = new System.Drawing.Point(0, 0);
             this.gb_themhv.Margin = new System.Windows.Forms.Padding(4);
             this.gb_themhv.Name = "gb_themhv";
-            this.gb_themhv.Padding = new System.Windows.Forms.Padding(4);
-            this.gb_themhv.Size = new System.Drawing.Size(648, 897);
+            this.gb_themhv.Size = new System.Drawing.Size(486, 684);
 
             this.gb_themhv.TabIndex = 3;
             this.gb_themhv.TabStop = false;
@@ -106,7 +105,7 @@
             this.tb_mahv.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_mahv.PlaceholderText = "";
             this.tb_mahv.ReadOnly1 = false;
-            this.tb_mahv.Size = new System.Drawing.Size(309, 41);
+            this.tb_mahv.Size = new System.Drawing.Size(232, 33);
             this.tb_mahv.TabIndex = 1;
 
             this.tb_mahv.Texts = "";
@@ -165,8 +164,7 @@
             this.tb_chieucao.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_chieucao.PlaceholderText = "";
             this.tb_chieucao.ReadOnly1 = false;
-
-            this.tb_chieucao.Size = new System.Drawing.Size(309, 41);
+            this.tb_chieucao.Size = new System.Drawing.Size(232, 33);
             this.tb_chieucao.TabIndex = 5;
 
             this.tb_chieucao.Texts = "";
@@ -192,8 +190,9 @@
             this.tb_cannang.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_cannang.PlaceholderText = "";
             this.tb_cannang.ReadOnly1 = false;
-            this.tb_cannang.Size = new System.Drawing.Size(309, 41);
+            this.tb_cannang.Size = new System.Drawing.Size(232, 33);
             this.tb_cannang.TabIndex = 4;
+
             this.tb_cannang.Texts = "";
             this.tb_cannang.UnderlinedStyle = false;
             // 
@@ -209,7 +208,7 @@
             this.cb_gioitinh.Location = new System.Drawing.Point(276, 448);
             this.cb_gioitinh.Margin = new System.Windows.Forms.Padding(4);
             this.cb_gioitinh.Name = "cb_gioitinh";
-            this.cb_gioitinh.Size = new System.Drawing.Size(308, 30);
+            this.cb_gioitinh.Size = new System.Drawing.Size(232, 26);
             this.cb_gioitinh.TabIndex = 3;
 
             // 
@@ -315,7 +314,7 @@
             this.tb_Sdt.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Sdt.PlaceholderText = "";
             this.tb_Sdt.ReadOnly1 = false;
-            this.tb_Sdt.Size = new System.Drawing.Size(309, 41);
+            this.tb_Sdt.Size = new System.Drawing.Size(232, 33);
             this.tb_Sdt.TabIndex = 8;
 
             this.tb_Sdt.Texts = "";
@@ -340,7 +339,7 @@
             this.tb_TenHV.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_TenHV.PlaceholderText = "";
             this.tb_TenHV.ReadOnly1 = false;
-            this.tb_TenHV.Size = new System.Drawing.Size(309, 41);
+            this.tb_TenHV.Size = new System.Drawing.Size(232, 33);
             this.tb_TenHV.TabIndex = 2;
 
             this.tb_TenHV.Texts = "";
@@ -377,8 +376,7 @@
             this.bt_xoahet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_xoahet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_xoahet.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoahet.Location = new System.Drawing.Point(472, 846);
-            this.bt_xoahet.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_xoahet.Location = new System.Drawing.Point(354, 646);
 
             this.bt_xoahet.Name = "bt_xoahet";
             this.bt_xoahet.Size = new System.Drawing.Size(70, 27);
@@ -401,9 +399,7 @@
             this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
-
-            this.bt_Luu.Location = new System.Drawing.Point(311, 846);
-            this.bt_Luu.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_Luu.Location = new System.Drawing.Point(241, 646);
 
             this.bt_Luu.Name = "bt_Luu";
             this.bt_Luu.Size = new System.Drawing.Size(70, 27);
@@ -418,7 +414,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(486, 712);
+            this.ClientSize = new System.Drawing.Size(486, 684);
+
             this.Controls.Add(this.gb_themhv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 
