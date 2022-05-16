@@ -106,7 +106,6 @@ namespace Gym_Management
                     if (hvBUS.UpdateHoiVien(tb_MaHV.Texts, tb_TenHV.Texts, tb_gioitinh.Texts, float.Parse(tb_cannang.Texts), float.Parse(tb_chieucao.Texts), dt_ngsinh.Value.ToString(), dt_ngaydk.Value.ToString(), tb_Sdt.Texts))
                     {
                         MessageBox.Show("Đã sửa thành công");
-                        this.Show();
                         LoadHoiVienList();
                     }
                 }
