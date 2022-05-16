@@ -57,6 +57,7 @@
             // gb_themhv
             // 
             this.gb_themhv.BackColor = System.Drawing.Color.Gainsboro;
+            this.gb_themhv.Controls.Add(this.pb_anh);
             this.gb_themhv.Controls.Add(this.tb_manv);
             this.gb_themhv.Controls.Add(this.lb_manv);
             this.gb_themhv.Controls.Add(this.cb_gioitinh);
@@ -77,7 +78,6 @@
             this.gb_themhv.Controls.Add(this.lb_tennv);
             this.gb_themhv.Controls.Add(this.tb_Sdt);
             this.gb_themhv.Controls.Add(this.tb_TenNv);
-            this.gb_themhv.Controls.Add(this.pb_anh);
             this.gb_themhv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gb_themhv.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_themhv.ForeColor = System.Drawing.Color.Red;
@@ -414,10 +414,11 @@
             this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.pb_anh.IconSize = 185;
             this.pb_anh.Location = new System.Drawing.Point(88, 39);
+            this.pb_anh.Margin = new System.Windows.Forms.Padding(4);
             this.pb_anh.Name = "pb_anh";
             this.pb_anh.Size = new System.Drawing.Size(330, 185);
             this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_anh.TabIndex = 31;
+            this.pb_anh.TabIndex = 53;
             this.pb_anh.TabStop = false;
             // 
             // ThemNv
@@ -459,8 +460,8 @@
         private System.Windows.Forms.Label lb_tennv;
         private CustomTextBox tb_Sdt;
         private CustomTextBox tb_TenNv;
-        private FontAwesome.Sharp.IconPictureBox pb_anh;
         private CustomTextBox tb_manv;
         private System.Windows.Forms.Label lb_manv;
+        private FontAwesome.Sharp.IconPictureBox pb_anh;
     }
 }
