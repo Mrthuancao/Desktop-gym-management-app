@@ -19,6 +19,10 @@ namespace DTO
         public string Pass { get => pass; set => pass = value; }
         public string Manv { get => manv; set => manv = value; }
 
+        public TAIKHOAN()
+        {
+
+        }
         public TAIKHOAN(string matk, string username, string pass, string manv)
         {
             this.Matk = matk;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,29 @@ namespace Gym_Management
 {
     public partial class ThongTinTk : Form
     {
-        public ThongTinTk()
+        private TAIKHOAN logAcc;
+        public TAIKHOAN LogAcc
         {
-            InitializeComponent();
+            get { return logAcc; }
+            set { logAcc = value; ChangeAccount(logAcc); }
         }
+
+        
+
+        public ThongTinTk(TAIKHOAN acc)
+        {
+            logAcc = acc;
+            InitializeComponent();
+            ChangeAccount(logAcc);
+        }
+        void ChangeAccount(TAIKHOAN logAcc)
+        {
+            tb_mtk.Texts = logAcc.Matk;
+            tb_username.Texts = logAcc.Username;
+            tb_pass.Texts = logAcc.Pass;
+            tb_mnv.Texts = logAcc.Manv;
+        }
+
         private void ClearTextBoxes()
         {
             Action<Control.ControlCollection> func = null;
