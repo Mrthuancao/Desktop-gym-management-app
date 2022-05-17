@@ -82,9 +82,8 @@
             this.pn_NV.Controls.Add(this.pn_thongtin);
             this.pn_NV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_NV.Location = new System.Drawing.Point(0, 0);
-            this.pn_NV.Margin = new System.Windows.Forms.Padding(4);
             this.pn_NV.Name = "pn_NV";
-            this.pn_NV.Size = new System.Drawing.Size(1467, 862);
+            this.pn_NV.Size = new System.Drawing.Size(1040, 640);
             this.pn_NV.TabIndex = 1;
             // 
             // bt_search
@@ -371,10 +370,9 @@
             this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Luu.Location = new System.Drawing.Point(587, 462);
-            this.bt_Luu.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_Luu.Location = new System.Drawing.Point(410, 345);
             this.bt_Luu.Name = "bt_Luu";
-            this.bt_Luu.Size = new System.Drawing.Size(136, 42);
+            this.bt_Luu.Size = new System.Drawing.Size(102, 34);
             this.bt_Luu.TabIndex = 10;
             this.bt_Luu.Text = "Lưu";
             this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
@@ -391,16 +389,16 @@
             this.tb_Search.Bordersize = 2;
             this.tb_Search.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Search.ForeColor = System.Drawing.Color.Black;
-            this.tb_Search.Location = new System.Drawing.Point(183, 73);
-            this.tb_Search.Margin = new System.Windows.Forms.Padding(5);
+            this.tb_Search.Location = new System.Drawing.Point(107, 29);
+            this.tb_Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Search.Multiline = false;
             this.tb_Search.Name = "tb_Search";
-            this.tb_Search.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.tb_Search.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_Search.PasswordChar = false;
             this.tb_Search.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Search.PlaceholderText = "Search...";
             this.tb_Search.ReadOnly1 = false;
-            this.tb_Search.Size = new System.Drawing.Size(309, 41);
+            this.tb_Search.Size = new System.Drawing.Size(232, 33);
             this.tb_Search.TabIndex = 12;
             this.tb_Search.Texts = "";
             this.tb_Search.UnderlinedStyle = false;
@@ -421,10 +419,9 @@
             this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoa.Location = new System.Drawing.Point(587, 300);
-            this.bt_xoa.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_xoa.Location = new System.Drawing.Point(410, 214);
             this.bt_xoa.Name = "bt_xoa";
-            this.bt_xoa.Size = new System.Drawing.Size(136, 42);
+            this.bt_xoa.Size = new System.Drawing.Size(102, 34);
             this.bt_xoa.TabIndex = 11;
             this.bt_xoa.Text = "Xóa";
             this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
@@ -445,10 +442,9 @@
             this.bt_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_sua.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_sua.Location = new System.Drawing.Point(587, 383);
-            this.bt_sua.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_sua.Location = new System.Drawing.Point(410, 281);
             this.bt_sua.Name = "bt_sua";
-            this.bt_sua.Size = new System.Drawing.Size(136, 42);
+            this.bt_sua.Size = new System.Drawing.Size(102, 34);
             this.bt_sua.TabIndex = 10;
             this.bt_sua.Text = "Sửa";
             this.bt_sua.TextColor = System.Drawing.Color.Transparent;
@@ -469,10 +465,9 @@
             this.bt_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Them.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Them.Location = new System.Drawing.Point(587, 210);
-            this.bt_Them.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_Them.Location = new System.Drawing.Point(410, 141);
             this.bt_Them.Name = "bt_Them";
-            this.bt_Them.Size = new System.Drawing.Size(136, 42);
+            this.bt_Them.Size = new System.Drawing.Size(102, 34);
             this.bt_Them.TabIndex = 7;
             this.bt_Them.Text = "Thêm";
             this.bt_Them.TextColor = System.Drawing.Color.Transparent;
@@ -488,11 +483,11 @@
             this.tb_gioitinh.Bordersize = 2;
             this.tb_gioitinh.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_gioitinh.ForeColor = System.Drawing.Color.Black;
-            this.tb_gioitinh.Location = new System.Drawing.Point(320, 414);
-            this.tb_gioitinh.Margin = new System.Windows.Forms.Padding(5);
+            this.tb_gioitinh.Location = new System.Drawing.Point(240, 336);
+            this.tb_gioitinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_gioitinh.Multiline = false;
             this.tb_gioitinh.Name = "tb_gioitinh";
-            this.tb_gioitinh.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.tb_gioitinh.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_gioitinh.PasswordChar = false;
             this.tb_gioitinh.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_gioitinh.PlaceholderText = "";
@@ -511,11 +506,11 @@
             this.tb_mlnv.Bordersize = 2;
             this.tb_mlnv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_mlnv.ForeColor = System.Drawing.Color.Black;
-            this.tb_mlnv.Location = new System.Drawing.Point(320, 793);
-            this.tb_mlnv.Margin = new System.Windows.Forms.Padding(5);
+            this.tb_mlnv.Location = new System.Drawing.Point(240, 644);
+            this.tb_mlnv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_mlnv.Multiline = false;
             this.tb_mlnv.Name = "tb_mlnv";
-            this.tb_mlnv.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.tb_mlnv.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_mlnv.PasswordChar = false;
             this.tb_mlnv.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_mlnv.PlaceholderText = "";
@@ -534,14 +529,15 @@
             this.tb_Luong.Bordersize = 2;
             this.tb_Luong.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Luong.ForeColor = System.Drawing.Color.Black;
-            this.tb_Luong.Location = new System.Drawing.Point(320, 726);
-            this.tb_Luong.Margin = new System.Windows.Forms.Padding(5);
+            this.tb_Luong.Location = new System.Drawing.Point(240, 590);
+            this.tb_Luong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Luong.Multiline = false;
             this.tb_Luong.Name = "tb_Luong";
-            this.tb_Luong.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.tb_Luong.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_Luong.PasswordChar = false;
             this.tb_Luong.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Luong.PlaceholderText = "";
+
             this.tb_Luong.ReadOnly1 = true;
             this.tb_Luong.Size = new System.Drawing.Size(309, 41);
             this.tb_Luong.TabIndex = 8;
@@ -557,16 +553,17 @@
             this.tb_Email.Bordersize = 2;
             this.tb_Email.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Email.ForeColor = System.Drawing.Color.Black;
-            this.tb_Email.Location = new System.Drawing.Point(320, 650);
-            this.tb_Email.Margin = new System.Windows.Forms.Padding(5);
+            this.tb_Email.Location = new System.Drawing.Point(240, 528);
+            this.tb_Email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Email.Multiline = false;
             this.tb_Email.Name = "tb_Email";
-            this.tb_Email.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.tb_Email.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_Email.PasswordChar = false;
             this.tb_Email.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Email.PlaceholderText = "";
             this.tb_Email.ReadOnly1 = true;
             this.tb_Email.Size = new System.Drawing.Size(309, 41);
+
             this.tb_Email.TabIndex = 7;
             this.tb_Email.Texts = "";
             this.tb_Email.UnderlinedStyle = false;
@@ -580,14 +577,15 @@
             this.tb_Sdt.Bordersize = 2;
             this.tb_Sdt.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Sdt.ForeColor = System.Drawing.Color.Black;
-            this.tb_Sdt.Location = new System.Drawing.Point(320, 590);
-            this.tb_Sdt.Margin = new System.Windows.Forms.Padding(5);
+            this.tb_Sdt.Location = new System.Drawing.Point(240, 479);
+            this.tb_Sdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_Sdt.Multiline = false;
             this.tb_Sdt.Name = "tb_Sdt";
-            this.tb_Sdt.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.tb_Sdt.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_Sdt.PasswordChar = false;
             this.tb_Sdt.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_Sdt.PlaceholderText = "";
+
             this.tb_Sdt.ReadOnly1 = true;
             this.tb_Sdt.Size = new System.Drawing.Size(309, 41);
             this.tb_Sdt.TabIndex = 6;
@@ -603,14 +601,15 @@
             this.tb_TenNv.Bordersize = 2;
             this.tb_TenNv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_TenNv.ForeColor = System.Drawing.Color.Black;
-            this.tb_TenNv.Location = new System.Drawing.Point(320, 350);
-            this.tb_TenNv.Margin = new System.Windows.Forms.Padding(5);
+            this.tb_TenNv.Location = new System.Drawing.Point(240, 284);
+            this.tb_TenNv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_TenNv.Multiline = false;
             this.tb_TenNv.Name = "tb_TenNv";
-            this.tb_TenNv.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.tb_TenNv.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_TenNv.PasswordChar = false;
             this.tb_TenNv.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_TenNv.PlaceholderText = "";
+
             this.tb_TenNv.ReadOnly1 = true;
             this.tb_TenNv.Size = new System.Drawing.Size(309, 41);
             this.tb_TenNv.TabIndex = 2;
@@ -626,14 +625,15 @@
             this.tb_mnv.Bordersize = 2;
             this.tb_mnv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_mnv.ForeColor = System.Drawing.Color.Black;
-            this.tb_mnv.Location = new System.Drawing.Point(320, 282);
-            this.tb_mnv.Margin = new System.Windows.Forms.Padding(5);
+            this.tb_mnv.Location = new System.Drawing.Point(240, 229);
+            this.tb_mnv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_mnv.Multiline = false;
             this.tb_mnv.Name = "tb_mnv";
-            this.tb_mnv.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.tb_mnv.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_mnv.PasswordChar = false;
             this.tb_mnv.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_mnv.PlaceholderText = "";
+
             this.tb_mnv.ReadOnly1 = true;
             this.tb_mnv.Size = new System.Drawing.Size(309, 41);
             this.tb_mnv.TabIndex = 1;
@@ -642,12 +642,11 @@
             // 
             // NhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1467, 862);
+            this.ClientSize = new System.Drawing.Size(1040, 640);
             this.Controls.Add(this.pn_NV);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NhanVien";
             this.Text = "Nhân viên";
             this.pn_NV.ResumeLayout(false);

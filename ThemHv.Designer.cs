@@ -48,6 +48,8 @@
             this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.bt_xoahet = new Gym_Management.CustomButton();
             this.bt_Luu = new Gym_Management.CustomButton();
+            this.lb_kg = new System.Windows.Forms.Label();
+            this.lb_cm = new System.Windows.Forms.Label();
             this.gb_themhv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +57,8 @@
             // gb_themhv
             // 
             this.gb_themhv.BackColor = System.Drawing.Color.Gainsboro;
+            this.gb_themhv.Controls.Add(this.lb_cm);
+            this.gb_themhv.Controls.Add(this.lb_kg);
             this.gb_themhv.Controls.Add(this.tb_mahv);
             this.gb_themhv.Controls.Add(this.lb_mahv);
             this.gb_themhv.Controls.Add(this.label5);
@@ -159,7 +163,7 @@
             this.tb_chieucao.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_chieucao.PlaceholderText = "";
             this.tb_chieucao.ReadOnly1 = false;
-            this.tb_chieucao.Size = new System.Drawing.Size(232, 33);
+            this.tb_chieucao.Size = new System.Drawing.Size(203, 33);
             this.tb_chieucao.TabIndex = 5;
             this.tb_chieucao.Texts = "";
             this.tb_chieucao.UnderlinedStyle = false;
@@ -182,7 +186,7 @@
             this.tb_cannang.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_cannang.PlaceholderText = "";
             this.tb_cannang.ReadOnly1 = false;
-            this.tb_cannang.Size = new System.Drawing.Size(232, 33);
+            this.tb_cannang.Size = new System.Drawing.Size(203, 33);
             this.tb_cannang.TabIndex = 4;
             this.tb_cannang.Texts = "";
             this.tb_cannang.UnderlinedStyle = false;
@@ -390,6 +394,28 @@
             this.bt_Luu.UseVisualStyleBackColor = false;
             this.bt_Luu.Click += new System.EventHandler(this.bt_Luu_Click_1);
             // 
+            // lb_kg
+            // 
+            this.lb_kg.AutoSize = true;
+            this.lb_kg.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_kg.ForeColor = System.Drawing.Color.Black;
+            this.lb_kg.Location = new System.Drawing.Point(414, 419);
+            this.lb_kg.Name = "lb_kg";
+            this.lb_kg.Size = new System.Drawing.Size(22, 16);
+            this.lb_kg.TabIndex = 76;
+            this.lb_kg.Text = "kg";
+            // 
+            // lb_cm
+            // 
+            this.lb_cm.AutoSize = true;
+            this.lb_cm.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_cm.ForeColor = System.Drawing.Color.Black;
+            this.lb_cm.Location = new System.Drawing.Point(414, 475);
+            this.lb_cm.Name = "lb_cm";
+            this.lb_cm.Size = new System.Drawing.Size(26, 16);
+            this.lb_cm.TabIndex = 77;
+            this.lb_cm.Text = "cm";
+            // 
             // ThemHv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -431,5 +457,7 @@
         private CustomButton bt_Luu;
         private CustomTextBox tb_mahv;
         private System.Windows.Forms.Label lb_mahv;
+        private System.Windows.Forms.Label lb_cm;
+        private System.Windows.Forms.Label lb_kg;
     }
 }
