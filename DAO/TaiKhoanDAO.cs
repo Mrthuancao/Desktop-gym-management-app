@@ -51,14 +51,14 @@ namespace DAO
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
 
-        /*public bool updateAccount(string username, string name, string phone, string email)
+        public bool updateAccount(string matk, string username, string pass)
         {
-            string query = "update Account set RealName = @name, PhoneNumber = @phone, Email = @email where Username = @username";
-            object[] value = new object[] { name, phone, email, username };
+            string query = "update TAIKHOAN set username = @username, pass = @pass where matk = @matk";
+            object[] value = new object[] { username, pass, matk };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
-        */
+        
         // truy van toi username trong table Accout
         public string getPasswordByUsername(string username)
         {

@@ -355,6 +355,7 @@ namespace Gym_Management
         {
             ThongTinTk f = new ThongTinTk(logAcc);
             f.ShowDialog();
+            this.Close();
         }
 
         private void bt_doanhthu_Click(object sender, EventArgs e)
