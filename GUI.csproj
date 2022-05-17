@@ -69,6 +69,7 @@
     <Compile Include="CustomTextBox.Designer.cs">
       <DependentUpon>CustomTextBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="DB\DbConnection.cs" />
     <Compile Include="DoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +104,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Gym_ManagementDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ModelDoanhThu\PTDoanhThu.cs" />
     <Compile Include="SanPham.cs">
       <SubType>Form</SubType>
     </Compile>

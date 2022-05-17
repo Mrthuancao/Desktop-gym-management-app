@@ -28,32 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title15 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend16 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title16 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pn_doanhthu = new System.Windows.Forms.Panel();
             this.pn_slhvm = new System.Windows.Forms.Panel();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lb_Slhvm = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.bt_custom = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.customButton3 = new Gym_Management.CustomButton();
-            this.customButton2 = new Gym_Management.CustomButton();
-            this.customButton1 = new Gym_Management.CustomButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dtg_Sptk = new System.Windows.Forms.DataGridView();
-            this.helo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wew = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rw = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label12 = new System.Windows.Forms.Label();
             this.bt_done = new System.Windows.Forms.Button();
             this.chart_Top5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -74,6 +68,10 @@
             this.lb_doanhthu = new System.Windows.Forms.Label();
             this.dt_ketthuc = new System.Windows.Forms.DateTimePicker();
             this.dt_batdau = new System.Windows.Forms.DateTimePicker();
+            this.customButton3 = new Gym_Management.CustomButton();
+            this.customButton2 = new Gym_Management.CustomButton();
+            this.customButton1 = new Gym_Management.CustomButton();
+            this.customButton4 = new Gym_Management.CustomButton();
             this.pn_doanhthu.SuspendLayout();
             this.pn_slhvm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
@@ -94,6 +92,7 @@
             // 
             this.pn_doanhthu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pn_doanhthu.BackColor = System.Drawing.SystemColors.Control;
+            this.pn_doanhthu.Controls.Add(this.customButton4);
             this.pn_doanhthu.Controls.Add(this.pn_slhvm);
             this.pn_doanhthu.Controls.Add(this.bt_custom);
             this.pn_doanhthu.Controls.Add(this.label2);
@@ -122,7 +121,7 @@
             this.pn_slhvm.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pn_slhvm.BackColor = System.Drawing.Color.DimGray;
             this.pn_slhvm.Controls.Add(this.iconPictureBox4);
-            this.pn_slhvm.Controls.Add(this.label4);
+            this.pn_slhvm.Controls.Add(this.lb_Slhvm);
             this.pn_slhvm.Controls.Add(this.label6);
             this.pn_slhvm.Location = new System.Drawing.Point(241, 86);
             this.pn_slhvm.Name = "pn_slhvm";
@@ -143,16 +142,16 @@
             this.iconPictureBox4.TabIndex = 45;
             this.iconPictureBox4.TabStop = false;
             // 
-            // label4
+            // lb_Slhvm
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(63, 27);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 25);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "100000";
+            this.lb_Slhvm.AutoSize = true;
+            this.lb_Slhvm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Slhvm.ForeColor = System.Drawing.Color.White;
+            this.lb_Slhvm.Location = new System.Drawing.Point(63, 27);
+            this.lb_Slhvm.Name = "lb_Slhvm";
+            this.lb_Slhvm.Size = new System.Drawing.Size(78, 25);
+            this.lb_Slhvm.TabIndex = 42;
+            this.lb_Slhvm.Text = "100000";
             // 
             // label6
             // 
@@ -180,6 +179,7 @@
             this.bt_custom.Size = new System.Drawing.Size(26, 26);
             this.bt_custom.TabIndex = 62;
             this.bt_custom.TabStop = false;
+            this.bt_custom.Click += new System.EventHandler(this.bt_custom_Click);
             // 
             // label2
             // 
@@ -191,72 +191,6 @@
             this.label2.Size = new System.Drawing.Size(10, 13);
             this.label2.TabIndex = 61;
             this.label2.Text = "-";
-            // 
-            // customButton3
-            // 
-            this.customButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.customButton3.BackColor = System.Drawing.Color.DarkOrange;
-            this.customButton3.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.customButton3.BorderColor = System.Drawing.Color.Black;
-            this.customButton3.BorderRadius = 0;
-            this.customButton3.BorderSize = 1;
-            this.customButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.customButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton3.ForeColor = System.Drawing.Color.White;
-            this.customButton3.Location = new System.Drawing.Point(825, 43);
-            this.customButton3.Name = "customButton3";
-            this.customButton3.Size = new System.Drawing.Size(105, 26);
-            this.customButton3.TabIndex = 60;
-            this.customButton3.Text = "Hôm nay";
-            this.customButton3.TextColor = System.Drawing.Color.White;
-            this.customButton3.UseVisualStyleBackColor = false;
-            this.customButton3.Click += new System.EventHandler(this.customButton3_Click);
-            // 
-            // customButton2
-            // 
-            this.customButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.customButton2.BackColor = System.Drawing.Color.DarkOrange;
-            this.customButton2.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.customButton2.BorderColor = System.Drawing.Color.Black;
-            this.customButton2.BorderRadius = 0;
-            this.customButton2.BorderSize = 1;
-            this.customButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.customButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton2.ForeColor = System.Drawing.Color.White;
-            this.customButton2.Location = new System.Drawing.Point(936, 43);
-            this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(105, 26);
-            this.customButton2.TabIndex = 59;
-            this.customButton2.Text = "Tháng này";
-            this.customButton2.TextColor = System.Drawing.Color.White;
-            this.customButton2.UseVisualStyleBackColor = false;
-            this.customButton2.Click += new System.EventHandler(this.customButton2_Click);
-            // 
-            // customButton1
-            // 
-            this.customButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.customButton1.BackColor = System.Drawing.Color.DarkOrange;
-            this.customButton1.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.customButton1.BorderColor = System.Drawing.Color.Black;
-            this.customButton1.BorderRadius = 0;
-            this.customButton1.BorderSize = 1;
-            this.customButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.customButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(714, 43);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(105, 26);
-            this.customButton1.TabIndex = 58;
-            this.customButton1.Text = "7 ngày gần đây";
-            this.customButton1.TextColor = System.Drawing.Color.White;
-            this.customButton1.UseVisualStyleBackColor = false;
-            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
             // panel6
             // 
@@ -272,57 +206,36 @@
             // 
             // dtg_Sptk
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
-            this.dtg_Sptk.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dtg_Sptk.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
             this.dtg_Sptk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtg_Sptk.BackgroundColor = System.Drawing.Color.DimGray;
             this.dtg_Sptk.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg_Sptk.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.dtg_Sptk.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_Sptk.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_Sptk.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dtg_Sptk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_Sptk.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.helo,
-            this.wew,
-            this.rw});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg_Sptk.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtg_Sptk.DefaultCellStyle = dataGridViewCellStyle24;
             this.dtg_Sptk.EnableHeadersVisualStyles = false;
             this.dtg_Sptk.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.dtg_Sptk.Location = new System.Drawing.Point(0, 41);
             this.dtg_Sptk.Name = "dtg_Sptk";
             this.dtg_Sptk.Size = new System.Drawing.Size(659, 116);
             this.dtg_Sptk.TabIndex = 47;
-            // 
-            // helo
-            // 
-            this.helo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.helo.HeaderText = "Mã ";
-            this.helo.Name = "helo";
-            // 
-            // wew
-            // 
-            this.wew.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.wew.HeaderText = "Tên sản phẩm";
-            this.wew.Name = "wew";
-            // 
-            // rw
-            // 
-            this.rw.HeaderText = "Số lượng";
-            this.rw.Name = "rw";
             // 
             // label12
             // 
@@ -351,93 +264,95 @@
             this.bt_done.Size = new System.Drawing.Size(32, 26);
             this.bt_done.TabIndex = 35;
             this.bt_done.UseVisualStyleBackColor = false;
+            this.bt_done.Visible = false;
+            this.bt_done.Click += new System.EventHandler(this.bt_done_Click);
             // 
             // chart_Top5
             // 
             this.chart_Top5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chart_Top5.BackColor = System.Drawing.Color.DimGray;
-            chartArea3.BackColor = System.Drawing.Color.DimGray;
-            chartArea3.BorderColor = System.Drawing.Color.DimGray;
-            chartArea3.Name = "ChartArea1";
-            this.chart_Top5.ChartAreas.Add(chartArea3);
-            legend3.BackColor = System.Drawing.Color.DimGray;
-            legend3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
-            legend3.ForeColor = System.Drawing.Color.Gainsboro;
-            legend3.Name = "Legend1";
-            this.chart_Top5.Legends.Add(legend3);
+            chartArea15.BackColor = System.Drawing.Color.DimGray;
+            chartArea15.BorderColor = System.Drawing.Color.DimGray;
+            chartArea15.Name = "ChartArea1";
+            this.chart_Top5.ChartAreas.Add(chartArea15);
+            legend15.BackColor = System.Drawing.Color.DimGray;
+            legend15.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            legend15.ForeColor = System.Drawing.Color.Gainsboro;
+            legend15.Name = "Legend1";
+            this.chart_Top5.Legends.Add(legend15);
             this.chart_Top5.Location = new System.Drawing.Point(680, 166);
             this.chart_Top5.Name = "chart_Top5";
-            series3.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            series3.BackSecondaryColor = System.Drawing.Color.Salmon;
-            series3.BorderColor = System.Drawing.Color.DimGray;
-            series3.BorderWidth = 8;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series3.Color = System.Drawing.Color.DodgerBlue;
-            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            series3.IsValueShownAsLabel = true;
-            series3.LabelForeColor = System.Drawing.Color.White;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            series3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
-            this.chart_Top5.Series.Add(series3);
+            series15.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            series15.BackSecondaryColor = System.Drawing.Color.Salmon;
+            series15.BorderColor = System.Drawing.Color.DimGray;
+            series15.BorderWidth = 8;
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series15.Color = System.Drawing.Color.DodgerBlue;
+            series15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            series15.IsValueShownAsLabel = true;
+            series15.LabelForeColor = System.Drawing.Color.White;
+            series15.Legend = "Legend1";
+            series15.Name = "Series1";
+            series15.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
+            this.chart_Top5.Series.Add(series15);
             this.chart_Top5.Size = new System.Drawing.Size(361, 541);
             this.chart_Top5.TabIndex = 44;
-            this.chart_Top5.Text = "chartTop5";
-            title3.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            title3.ForeColor = System.Drawing.Color.Yellow;
-            title3.Name = "Title1";
-            title3.Text = "Top 5 sản phẩm ";
-            this.chart_Top5.Titles.Add(title3);
+            this.chart_Top5.Text = "chart_Top5";
+            title15.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            title15.ForeColor = System.Drawing.Color.Yellow;
+            title15.Name = "Title1";
+            title15.Text = "Top 5 sản phẩm ";
+            this.chart_Top5.Titles.Add(title15);
             // 
             // chart_Doanhthu
             // 
             this.chart_Doanhthu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chart_Doanhthu.BackColor = System.Drawing.Color.DimGray;
-            chartArea4.AxisX.IsMarginVisible = false;
-            chartArea4.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Silver;
-            chartArea4.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea4.AxisX.LineWidth = 0;
-            chartArea4.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
-            chartArea4.AxisX.MajorGrid.LineWidth = 0;
-            chartArea4.AxisX.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));
-            chartArea4.AxisX.MajorTickMark.Size = 3F;
-            chartArea4.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Silver;
-            chartArea4.AxisY.LabelStyle.Format = "${0:0,}K";
-            chartArea4.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea4.AxisY.LineWidth = 0;
-            chartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));
-            chartArea4.AxisY.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));
-            chartArea4.AxisY.MajorTickMark.LineWidth = 0;
-            chartArea4.BackColor = System.Drawing.Color.DimGray;
-            chartArea4.Name = "ChartArea1";
-            this.chart_Doanhthu.ChartAreas.Add(chartArea4);
-            legend4.BackColor = System.Drawing.Color.DimGray;
-            legend4.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
-            legend4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            legend4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            legend4.IsTextAutoFit = false;
-            legend4.Name = "Legend1";
-            this.chart_Doanhthu.Legends.Add(legend4);
+            chartArea16.AxisX.IsMarginVisible = false;
+            chartArea16.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Silver;
+            chartArea16.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea16.AxisX.LineWidth = 0;
+            chartArea16.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea16.AxisX.MajorGrid.LineWidth = 0;
+            chartArea16.AxisX.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));
+            chartArea16.AxisX.MajorTickMark.Size = 3F;
+            chartArea16.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Silver;
+            chartArea16.AxisY.LabelStyle.Format = "${0:0,}K";
+            chartArea16.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea16.AxisY.LineWidth = 0;
+            chartArea16.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));
+            chartArea16.AxisY.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));
+            chartArea16.AxisY.MajorTickMark.LineWidth = 0;
+            chartArea16.BackColor = System.Drawing.Color.DimGray;
+            chartArea16.Name = "ChartArea1";
+            this.chart_Doanhthu.ChartAreas.Add(chartArea16);
+            legend16.BackColor = System.Drawing.Color.DimGray;
+            legend16.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
+            legend16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            legend16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            legend16.IsTextAutoFit = false;
+            legend16.Name = "Legend1";
+            this.chart_Doanhthu.Legends.Add(legend16);
             this.chart_Doanhthu.Location = new System.Drawing.Point(12, 166);
             this.chart_Doanhthu.Name = "chart_Doanhthu";
-            series4.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series4.BackSecondaryColor = System.Drawing.Color.LightCoral;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart_Doanhthu.Series.Add(series4);
+            series16.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
+            series16.BackSecondaryColor = System.Drawing.Color.LightCoral;
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series16.Legend = "Legend1";
+            series16.Name = "Series1";
+            this.chart_Doanhthu.Series.Add(series16);
             this.chart_Doanhthu.Size = new System.Drawing.Size(659, 378);
             this.chart_Doanhthu.TabIndex = 43;
-            this.chart_Doanhthu.Text = "chartDoanhThu";
-            title4.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            title4.ForeColor = System.Drawing.Color.Yellow;
-            title4.Name = "Title1";
-            title4.Text = "Tổng doanh thu";
-            this.chart_Doanhthu.Titles.Add(title4);
+            this.chart_Doanhthu.Text = "chart_Doanhthu";
+            title16.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            title16.ForeColor = System.Drawing.Color.Yellow;
+            title16.Name = "Title1";
+            title16.Text = "Tổng doanh thu";
+            this.chart_Doanhthu.Titles.Add(title16);
             // 
             // panel4
             // 
@@ -614,6 +529,7 @@
             this.dt_ketthuc.CalendarForeColor = System.Drawing.Color.Black;
             this.dt_ketthuc.CalendarTitleBackColor = System.Drawing.Color.Goldenrod;
             this.dt_ketthuc.CalendarTitleForeColor = System.Drawing.Color.Goldenrod;
+            this.dt_ketthuc.Enabled = false;
             this.dt_ketthuc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_ketthuc.Location = new System.Drawing.Point(321, 40);
             this.dt_ketthuc.Name = "dt_ketthuc";
@@ -627,11 +543,100 @@
             this.dt_batdau.CalendarForeColor = System.Drawing.Color.Black;
             this.dt_batdau.CalendarTitleBackColor = System.Drawing.Color.Goldenrod;
             this.dt_batdau.CalendarTitleForeColor = System.Drawing.Color.Goldenrod;
+            this.dt_batdau.Enabled = false;
             this.dt_batdau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_batdau.Location = new System.Drawing.Point(73, 40);
             this.dt_batdau.Name = "dt_batdau";
             this.dt_batdau.Size = new System.Drawing.Size(232, 26);
             this.dt_batdau.TabIndex = 30;
+            // 
+            // customButton3
+            // 
+            this.customButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.customButton3.BackColor = System.Drawing.Color.DarkOrange;
+            this.customButton3.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.customButton3.BorderColor = System.Drawing.Color.Black;
+            this.customButton3.BorderRadius = 0;
+            this.customButton3.BorderSize = 1;
+            this.customButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.customButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton3.ForeColor = System.Drawing.Color.White;
+            this.customButton3.Location = new System.Drawing.Point(624, 40);
+            this.customButton3.Name = "customButton3";
+            this.customButton3.Size = new System.Drawing.Size(105, 26);
+            this.customButton3.TabIndex = 60;
+            this.customButton3.Text = "Hôm nay";
+            this.customButton3.TextColor = System.Drawing.Color.White;
+            this.customButton3.UseVisualStyleBackColor = false;
+            this.customButton3.Click += new System.EventHandler(this.customButton3_Click);
+            // 
+            // customButton2
+            // 
+            this.customButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.customButton2.BackColor = System.Drawing.Color.DarkOrange;
+            this.customButton2.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.customButton2.BorderColor = System.Drawing.Color.Black;
+            this.customButton2.BorderRadius = 0;
+            this.customButton2.BorderSize = 1;
+            this.customButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.customButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton2.ForeColor = System.Drawing.Color.White;
+            this.customButton2.Location = new System.Drawing.Point(947, 40);
+            this.customButton2.Name = "customButton2";
+            this.customButton2.Size = new System.Drawing.Size(105, 26);
+            this.customButton2.TabIndex = 59;
+            this.customButton2.Text = "Tháng này";
+            this.customButton2.TextColor = System.Drawing.Color.White;
+            this.customButton2.UseVisualStyleBackColor = false;
+            this.customButton2.Click += new System.EventHandler(this.customButton2_Click);
+            // 
+            // customButton1
+            // 
+            this.customButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.customButton1.BackColor = System.Drawing.Color.DarkOrange;
+            this.customButton1.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.customButton1.BorderColor = System.Drawing.Color.Black;
+            this.customButton1.BorderRadius = 0;
+            this.customButton1.BorderSize = 1;
+            this.customButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.customButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton1.ForeColor = System.Drawing.Color.White;
+            this.customButton1.Location = new System.Drawing.Point(732, 40);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Size = new System.Drawing.Size(105, 26);
+            this.customButton1.TabIndex = 58;
+            this.customButton1.Text = "7 ngày gần đây";
+            this.customButton1.TextColor = System.Drawing.Color.White;
+            this.customButton1.UseVisualStyleBackColor = false;
+            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
+            // 
+            // customButton4
+            // 
+            this.customButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.customButton4.BackColor = System.Drawing.Color.DarkOrange;
+            this.customButton4.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.customButton4.BorderColor = System.Drawing.Color.Black;
+            this.customButton4.BorderRadius = 0;
+            this.customButton4.BorderSize = 1;
+            this.customButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.customButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.customButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton4.ForeColor = System.Drawing.Color.White;
+            this.customButton4.Location = new System.Drawing.Point(840, 40);
+            this.customButton4.Name = "customButton4";
+            this.customButton4.Size = new System.Drawing.Size(105, 26);
+            this.customButton4.TabIndex = 64;
+            this.customButton4.Text = "30 ngày gần đây";
+            this.customButton4.TextColor = System.Drawing.Color.White;
+            this.customButton4.UseVisualStyleBackColor = false;
+            this.customButton4.Click += new System.EventHandler(this.customButton4_Click);
             // 
             // DoanhThu
             // 
@@ -696,12 +701,10 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.DataGridView dtg_Sptk;
         private FontAwesome.Sharp.IconPictureBox bt_custom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn helo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn wew;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rw;
         private System.Windows.Forms.Panel pn_slhvm;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lb_Slhvm;
         private System.Windows.Forms.Label label6;
+        private CustomButton customButton4;
     }
 }
