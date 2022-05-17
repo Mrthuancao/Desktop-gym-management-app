@@ -8,11 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS;
 namespace Gym_Management
 {
     public partial class ThongTinTk : Form
     {
+        TaiKhoanBUS tkBUS = new TaiKhoanBUS();  
         private TAIKHOAN logAcc;
         public TAIKHOAN LogAcc
         {
@@ -55,6 +56,42 @@ namespace Gym_Management
         private void bt_xoahet_Click(object sender, EventArgs e)
         {
             ClearTextBoxes();
+        }
+
+        private void bt_sua_Click(object sender, EventArgs e)
+        {
+            tb_username.ReadOnly1 = false;
+            tb_pass.ReadOnly1 = false;
+            bt_Luu.Enabled = true;
+        }
+
+        private void bt_Luu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tb_username.Texts != "" && tb_pass.Texts != "")
+                {
+                    if (tkBUS.updateAccount(tb_mtk.Texts, tb_username.Texts, tb_pass.Texts))
+                    {
+                        MessageBox.Show("Đã sửa thành công");
+                        tb_username.ReadOnly1 = true;
+                        tb_pass.ReadOnly1 = true;
+                        bt_Luu.Enabled = false;
+                        this.Close();
+                        
+                    }
+                }
+                else
+                    MessageBox.Show("Nhập username và password cho tài khoản");
+
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Sửa THẤT BẠI!");
+            }
+            tb_username.ReadOnly1 = true;
+            tb_pass.ReadOnly1 = true;
+            bt_Luu.Enabled = false;
         }
     }
 }

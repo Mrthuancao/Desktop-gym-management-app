@@ -41,6 +41,7 @@ namespace Gym_Management
                 currentUser = accountBus.getAccountByUsername(tb_username.Texts);
                 fTableManager fTable = new fTableManager(currentUser);
                 fTable.ShowDialog();
+                fTable.Close();
                 this.Show();
                 
             }
