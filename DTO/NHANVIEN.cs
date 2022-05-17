@@ -30,7 +30,7 @@ namespace DTO
         public string Email { get => email; set => email = value; }
         public string Malnv { get => malnv; set => malnv = value; }
 
-        public NHANVIEN(string manv, string hoten, string phai, string ngsinh, int luong, string ngvaolam, string sdt, string email, string malnv)
+        public NHANVIEN(string manv, string hoten, string phai, string ngsinh,  string ngvaolam, string sdt, string email, decimal luong, string malnv)
         {
             this.Manv = manv;
             this.Hoten = hoten;
@@ -48,10 +48,10 @@ namespace DTO
             this.Hoten = row["hoten"].ToString();
             this.Phai = row["phai"].ToString();
             this.Ngsinh = row["ngsinh"].ToString();
-            this.Luong = (decimal)row["luong"];
             this.Ngvaolam = row["ngvaolam"].ToString();
             this.Sdt = row["sdt"].ToString();
             this.Email = row["email"].ToString();
+            this.Luong = (decimal)row["luong"];
             this.Malnv = row["malnv"].ToString();
         }
     }

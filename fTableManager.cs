@@ -1,4 +1,5 @@
-﻿using FontAwesome.Sharp;
+﻿using DTO;
+using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,18 @@ namespace Gym_Management
 {
     public partial class fTableManager : Form
     {
+        private TAIKHOAN logAcc;
+        public TAIKHOAN LogAcc
+        {
+            get { return logAcc; }
+            set { logAcc = value; ChangeAccount(logAcc); }
+        }
+
+        void ChangeAccount(TAIKHOAN logAcc)
+        {
+            throw new NotImplementedException();
+        }
+
         //Fields
         private int borderSize = 2;
         private Size formSize;
@@ -21,11 +34,14 @@ namespace Gym_Management
         private Panel leftBorderBtn;
         private Form currentChildForm;
 
+        
+
         //Constructor
-        public fTableManager()
+        public fTableManager(TAIKHOAN acc)
         {
             InitializeComponent();
             CollapseMenu();
+            logAcc = acc;
             //this.Padding = new Padding(borderSize);//Border size
             //this.BackColor = Color.FromArgb(98, 102, 244);//Border color
             leftBorderBtn = new Panel();
@@ -337,8 +353,9 @@ namespace Gym_Management
 
         private void bt_thongtin_Click(object sender, EventArgs e)
         {
-            ThongTinTk f = new ThongTinTk();
+            ThongTinTk f = new ThongTinTk(logAcc);
             f.ShowDialog();
+            this.Close();
         }
 
         private void bt_doanhthu_Click(object sender, EventArgs e)

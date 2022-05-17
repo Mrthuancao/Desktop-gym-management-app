@@ -20,22 +20,7 @@ namespace Gym_Management
             InitializeComponent();
         }
 
-        private void bt_Luu_Click_1(object sender, EventArgs e)
-        {
-            if (tb_TenNv.Texts == "" || tb_Sdt.Texts == "" || tb_Email.Texts.ToString() == "" || tb_Luong.Texts == "")
-            {
-                MessageBox.Show("Điền đủ thông tin trước khi thêm hội viên");
-            }
-            else
-            {
-                if (nvBUS.InsertNhanVien(tb_manv.Texts, tb_TenNv.Texts, cb_gioitinh.SelectedItem.ToString(), dt_ngsinh.Value.ToString(), dt_ngayvaolam.Value.ToString(), tb_Sdt.Texts, tb_Email.Texts, int.Parse(tb_Luong.Texts), tb_mlnv.Texts))
-                {
-                    MessageBox.Show("Đã thêm thành công");
-                }
-
-            }
-            this.Close();
-        }
+        
 
         private void ClearTextBoxes()
         {
@@ -56,6 +41,24 @@ namespace Gym_Management
         private void bt_xoahet_Click(object sender, EventArgs e)
         {
             ClearTextBoxes();
+        }
+
+        private void bt_Luu_Click(object sender, EventArgs e)
+        {
+            
+                if (tb_TenNv.Texts == "" || tb_Sdt.Texts == "" || tb_Email.Texts.ToString() == "" || tb_Luong.Texts == ""|| tb_mlnv.Texts == "")
+                {
+                    MessageBox.Show("Điền đủ thông tin trước khi thêm nhân viên");
+                }
+                else
+                {
+                    if (nvBUS.InsertNhanVien(tb_TenNv.Texts, tb_manv.Texts, cb_gioitinh.SelectedItem.ToString(), dt_ngsinh.Value.ToString(), dt_ngayvaolam.Value.ToString(), tb_Sdt.Texts, tb_Email.Texts, decimal.Parse(tb_Luong.Texts), tb_mlnv.Texts))
+                    {
+                        MessageBox.Show("Đã thêm thành công");
+                    }
+
+                }
+                this.Close();
         }
     }
 }

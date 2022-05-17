@@ -64,7 +64,7 @@ namespace BUS
         {
             try
             {
-                accountDAL.insertAccount(matk, username, getHashMD5(pass).ToString(), manv);
+                accountDAL.insertAccount(matk, username, pass, manv);
                 return true;
             }
             catch (Exception)
@@ -90,18 +90,18 @@ namespace BUS
             }
         }
 
-        /*public bool updateAccount(string username, string name, string phone, string email)
+        public bool updateAccount(string matk, string username, string pass)
         {
             try
             {
-                return (accountDAL.updateAccount(username, name, phone, email));
+                return (accountDAL.updateAccount(matk, username, pass));
 
             }
             catch (Exception)
             {
                 return false;
             }
-        }*/
+        }
 
         public string getPasswordByUsername(string username)
         {

@@ -43,8 +43,7 @@ namespace BUS
 
         public List<NHANVIEN> GetNhanVienByName(string name)
         {
-            List<NHANVIEN> NhanVien = NhanVienDAO.SearchNhanVienByName(name);
-            return NhanVien;
+            return NhanVienDAO.SearchNhanVienByName(name);
         }
 
 
@@ -68,7 +67,7 @@ namespace BUS
         //    }
         //}
 
-        public bool InsertNhanVien(string hoTen, string maNhanVien, string phai, string ngaySinh, string ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
+        public bool InsertNhanVien(string hoTen, string maNhanVien, string phai, string ngaySinh, string ngayVaoLam, string soDienThoai, string email, decimal luong, string maLoaiNhanVien)
         {
             try
             {
@@ -97,17 +96,10 @@ namespace BUS
             }
         }
 
-        public bool UpdateNhanVien(string hoTen, string maNhanVien, string phai, string ngaySinh, string ngayVaoLam, string soDienThoai, string email, int luong, string maLoaiNhanVien)
+        public bool UpdateNhanVien(string maNhanVien, string hoTen, string phai, string ngaySinh, string ngayVaoLam, 
+            string soDienThoai, string email, decimal luong, string maLoaiNhanVien)
         {
-            try
-            {
-                return (NhanVienDAO.UpdateNhanVien(hoTen, maNhanVien, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien));
-
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            return (NhanVienDAO.UpdateNhanVien(maNhanVien, hoTen, phai, ngaySinh, ngayVaoLam, soDienThoai, email, luong, maLoaiNhanVien));
         }
 
         //public StringBuilder getHashMD5(string pass)

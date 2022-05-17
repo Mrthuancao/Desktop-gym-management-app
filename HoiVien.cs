@@ -87,7 +87,6 @@ namespace Gym_Management
         private void bt_sua_Click(object sender, EventArgs e)
         {
 
-            tb_MaHV.ReadOnly1 = false;
             tb_TenHV.ReadOnly1 = false;
             tb_gioitinh.ReadOnly1 = false;
             tb_cannang.ReadOnly1 = false;
@@ -117,7 +116,6 @@ namespace Gym_Management
             {
                 MessageBox.Show("Sửa THẤT BẠI!");
             }
-            tb_MaHV.ReadOnly1 = true;
             tb_TenHV.ReadOnly1 = true;
             tb_gioitinh.ReadOnly1 = true;  
             tb_cannang.ReadOnly1 = true;
@@ -156,7 +154,6 @@ namespace Gym_Management
         private void bt_search_Click(object sender, EventArgs e)
         {
             hvist.DataSource = SearchHoiVienByName(tb_Search.Texts);
-            
         }
     }
 }
