@@ -33,15 +33,12 @@ namespace BUS
         {
             return GoiTapDAO.ShowCombox();
         }
-        /*public bool DeleteGoiTap(int magoi)
+        public bool DeleteDKGoiTap(string madk)
         {
-            return GoiTapDAO.DeleteGoiTap(magoi);
+            return GoiTapDAO.DeleteDKGoiTap(madk);
         }
 
-        public bool UpdateGoiTap(int magoi, string tengoi, int giamoithang, char coPT)
-        {
-            return GoiTapDAO.UpdateGoiTap(magoi, tengoi, giamoithang, coPT);
-        }*/
+       
     }
 }
 
