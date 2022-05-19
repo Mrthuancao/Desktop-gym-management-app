@@ -69,5 +69,10 @@ namespace Gym_Management
             string a= cb_goitap.Text;
             dtg_GT.DataSource = gtBUS.GetAllGoiTap(a);
         }
+
+        private void tb_Bo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

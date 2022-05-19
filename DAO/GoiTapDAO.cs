@@ -12,7 +12,7 @@ namespace DAO
     {
         public DataTable GetAllGoiTap(string a)
         {   
-            string query = "SELECT HOIVIEN.mahv, HOIVIEN.hoten, DANGKY.thoigiankt, DANGKY.manv, giamoithang FROM HOIVIEN, GOITAP, DANGKY WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.magoi = GOITAP.magoi and tengoi=N'" + a + "'";
+            string query = "SELECT madk, HOIVIEN.mahv, HOIVIEN.hoten, DANGKY.thoigiankt, DANGKY.manv, giamoithang FROM HOIVIEN, GOITAP, DANGKY WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.magoi = GOITAP.magoi and tengoi=N'" + a + "'";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;
@@ -45,15 +45,22 @@ namespace DAO
             return dt;
         }
 
-        public bool InsertGoiTap(string madk, string magoi, string mahv,string manv, string thoigiandk, string thoigiankt)
+        public bool InsertGoiTap(string madk, string magoi, string mahv, string manv, string thoigiandk, string thoigiankt)
         {
             string query = "insert into DANGKY(madk, magoi, mahv, manv, thoigiandk, thoigiankt) values(@madk, @magoi, @mahv,@manv, @thoigiandk, @thoigiankt)";
-            object[] value = new object[] { madk, magoi, mahv, manv, thoigiandk, thoigiankt};
+            object[] value = new object[] { madk, magoi, mahv, manv, thoigiandk, thoigiankt };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
-       
+        public bool DeleteDKGoiTap(string madk)
+        {
+            string query = "delete from DANGKY where madk = @madk";
+            object[] value = new object[] { madk };
+            DBConnect db = new DBConnect();
+            return ((db.ExecuteNonQuery(query, value)) > 0);
+        }
 
-        
+
+
     }
 }
