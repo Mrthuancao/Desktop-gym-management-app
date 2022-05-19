@@ -11,27 +11,29 @@ namespace BUS
     public class GoiTapBus
     {
         GoiTapDAO GoiTapDAO = new GoiTapDAO();
-        public List<GOITAP> GetGoiTapList()
+        
+        public DataTable GetAllGoiTap(string a)
         {
-            List<GOITAP> listGoiTap = new List<GOITAP>();
-            DataTable dt = GoiTapDAO.GetAllGoiTap();
-            foreach (DataRow row in dt.Rows)
-            {
-                GOITAP goitap = new GOITAP(row);
-                listGoiTap.Add(goitap);
-            }
-            return listGoiTap;
+            return GoiTapDAO.GetAllGoiTap(a);
         }
         public DataTable GetAllGoiTapDetail()
         {
             return GoiTapDAO.GetAllGoiTapDetail();
         }
-        public bool InsertGoiTap(int magoi, string tengoi, int giamoithang, char coPT)
+        public bool InsertGoiTap(string madk, string magoi, string mahv, string manv, string thoigiandk, string thoigiankt)
         {
-            return GoiTapDAO.InsertGoiTap(magoi, tengoi, giamoithang, coPT);
+            return GoiTapDAO.InsertGoiTap(madk,magoi, mahv,manv, thoigiandk, thoigiankt);
         }
-
-        public bool DeleteGoiTap(int magoi)
+        public DataTable ShowDaTaGriWiew()
+        {
+            return GoiTapDAO.ShowDaTaGriWiew();
+        }
+        
+        public DataTable ShowCombox()
+        {
+            return GoiTapDAO.ShowCombox();
+        }
+        /*public bool DeleteGoiTap(int magoi)
         {
             return GoiTapDAO.DeleteGoiTap(magoi);
         }
@@ -39,7 +41,7 @@ namespace BUS
         public bool UpdateGoiTap(int magoi, string tengoi, int giamoithang, char coPT)
         {
             return GoiTapDAO.UpdateGoiTap(magoi, tengoi, giamoithang, coPT);
-        }
+        }*/
     }
 }
 

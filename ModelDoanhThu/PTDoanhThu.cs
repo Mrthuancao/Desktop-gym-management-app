@@ -24,11 +24,14 @@ namespace Gym_Management.ModelDoanhThu
 
         public int NumCustomers { get; private set; }
         public int NumOrders { get; private set; }
+        // public decimal TotalTb { get; private set; }
         public List<KeyValuePair<string, decimal>> TopProductsList { get; private set; }
         public List<KeyValuePair<string, int>> UnderstockList { get; private set; }
         public List<RevenueByDate> GrossRevenueList { get; private set; }
         public decimal TotalRevenue { get; set; }
         public decimal TotalProfit { get; set; }
+        
+        
 
         //Constructor
         public PTDoanhThu()
@@ -75,12 +78,12 @@ namespace Gym_Management.ModelDoanhThu
                     SqlDataReader reader;
                     command.Connection = connection;
                     //Get Top 5 products
-                    command.CommandText = @"SELECT TOP 5 WITH TIES SP.masp, SUM(SP.dongia * CT.soluong)
+                    command.CommandText = @"SELECT TOP 5 WITH TIES SP.tensp, SUM(SP.dongia * CT.soluong)
                                             FROM SANPHAM SP, HOADON HD, CHITIETHOADON CT
                                             WHERE SP.masp = CT.masp
                                             AND HD.mahd = CT.mahd
                                             AND HD.ngaymua between @fromDate and @toDate
-                                            GROUP BY SP.masp
+                                            GROUP BY SP.tensp
                                             ORDER BY SUM(SP.dongia * CT.soluong) DESC";
                     command.Parameters.Add("@fromDate", System.Data.SqlDbType.DateTime).Value = startDate;
                     command.Parameters.Add("@toDate", System.Data.SqlDbType.DateTime).Value = endDate;
@@ -111,6 +114,7 @@ namespace Gym_Management.ModelDoanhThu
             GrossRevenueList = new List<RevenueByDate>();
             TotalProfit = 0;
             TotalRevenue = 0;
+            
             using (var connection = GetConnection())
             {
                 connection.Open();
@@ -127,6 +131,7 @@ namespace Gym_Management.ModelDoanhThu
                     command.Parameters.Add("@toDate", System.Data.SqlDbType.DateTime).Value = endDate;
                     var reader = command.ExecuteReader();
                     var resultTable = new List<KeyValuePair<DateTime, decimal>>();
+                                        
                     while (reader.Read())
                     {
                         resultTable.Add(
@@ -134,8 +139,18 @@ namespace Gym_Management.ModelDoanhThu
                             );
                         TotalRevenue += (decimal)reader[1];
                     }
-                    TotalProfit = TotalRevenue * 0.2m;//20%
+                    TotalProfit = TotalRevenue * 0.3m;//30%
                     reader.Close();
+                    /*--Tính doanh thu từ đăng kí gói tập
+                    command.CommandText = @"SELECT SUM(GT.giamoithang)
+                                            FROM GOITAP AS GT, DANGKY AS DK
+                                            WHERE GT.magoi = DK.magoi
+                                            AND DK.thoigiandk between @fromDate and @toDate";
+                    TotalTb = (decimal)command.ExecuteScalar();
+                    TotalRevenue += TotalTb; */
+                    
+                    
+                    
                     //Group by Days
                     if (numberDays <= 30)
                     {
