@@ -50,8 +50,10 @@ namespace Gym_Management
                 chart_Top5.DataBind();
 
                 dtg_Sptk.DataSource = model.UnderstockList;
-                dtg_Sptk.Columns[0].HeaderText = "Mã";
-                dtg_Sptk.Columns[1].HeaderText = "Tên sản phẩm";
+                dtg_Sptk.Columns[0].HeaderText = "Tên sản phẩm";
+                dtg_Sptk.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dtg_Sptk.Columns[1].HeaderText = "Số lượng";
+                dtg_Sptk.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 Console.WriteLine("Loaded view :)");
             }
             else Console.WriteLine("View not loaded, same query");

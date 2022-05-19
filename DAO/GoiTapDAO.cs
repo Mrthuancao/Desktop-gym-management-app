@@ -10,63 +10,50 @@ namespace DAO
 {
     public class GoiTapDAO
     {
-        public DataTable GetAllGoiTap()
+        public DataTable GetAllGoiTap(string a)
+        {   
+            string query = "SELECT HOIVIEN.mahv, HOIVIEN.hoten, DANGKY.thoigiankt, DANGKY.manv, giamoithang FROM HOIVIEN, GOITAP, DANGKY WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.magoi = GOITAP.magoi and tengoi=N'" + a + "'";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
+        
+
+        public DataTable ShowCombox()
         {
             string query = "SELECT * FROM GOITAP";
+            object[] value = new object[] {};
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;
         }
 
-        public GOITAP GetGoiTapByID(int IDmagoi)
+        public DataTable ShowDaTaGriWiew()
         {
-            string query = "SELECT * FROM GOITAP WHERE magoi = @IDmagoi";
-            object[] value = new object[] { IDmagoi };
+            string query = "SELECT HOIVIEN.mahv, HOIVIEN.hoten, DANGKY.thoigiankt, DANGKY.manv, giamoithang FROM HOIVIEN, GOITAP, DANGKY WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.magoi = GOITAP.magoi";
+            object[] value = new object[] {};
             DBConnect db = new DBConnect();
-            DataTable dt = db.ExecuteQuery(query, value);
-            GOITAP magoi = new GOITAP(dt.Rows[0]);
-            return magoi;
-        }
-
-        public GOITAP GetGoiTapByName(string Ntengoi)
-        {
-            string query = "SELECT * FROM GOITAP WHERE tengoi = @Ntengoi";
-            object[] value = new object[] { Ntengoi };
-            DBConnect db = new DBConnect();
-            DataTable dt = db.ExecuteQuery(query, value);
-            GOITAP tengoi = new GOITAP(dt.Rows[0]);
-            return tengoi;
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
         }
 
         public DataTable GetAllGoiTapDetail()
         {
-            string query = "SELECT GOITAP.magoi as Mã gói , GOITAP.tengoi as Tên, GOITAP.giamoithang as Giá, GOITAP.coPT as Có Personal Trainer";
+            string query = "SELECT DANGKY.madk as Mã đăng kí , DANGKY.magoi as Mã gói, DANGKY.mahv as Mã hội viên, DANGKY.manv as Mã nhân viên, DANGKY.thoigiandk as Thời gian đăng kí, DANGKY.as Thời gian kết thúc FROM DANGKY";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;
         }
 
-        public bool InsertGoiTap(int magoi, string tengoi, int giamoithang, char coPT)
+        public bool InsertGoiTap(string madk, string magoi, string mahv,string manv, string thoigiandk, string thoigiankt)
         {
-            string query = "insert into GOITAP(magoi, tengoi, giamoithang, coPT) values(@magoi, @tengoi, @giamoithang, @coPT)";
-            object[] value = new object[] { magoi, tengoi, giamoithang, coPT };
+            string query = "insert into DANGKY(madk, magoi, mahv, manv, thoigiandk, thoigiankt) values(@madk, @magoi, @mahv,@manv, @thoigiandk, @thoigiankt)";
+            object[] value = new object[] { madk, magoi, mahv, manv, thoigiandk, thoigiankt};
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
-        public bool DeleteGoiTap(int magoi)
-        {
-            string query = "delete from GOITAP where magoi = @magoi";
-            object[] value = new object[] { magoi };
-            DBConnect db = new DBConnect();
-            return ((db.ExecuteNonQuery(query, value)) > 0);
-        }
+       
 
-        public bool UpdateGoiTap(int magoi, string tengoi, int giamoithang, char coPT)
-        {
-            string query = "update GOITAP set tengoi = @tengoi, giamoithang = @giamoithang, coPT = @coPT where magoi = @magoi";
-            object[] value = new object[] { tengoi, giamoithang, coPT, tengoi };
-            DBConnect db = new DBConnect();
-            return ((db.ExecuteNonQuery(query, value)) > 0);
-        }
+        
     }
 }
