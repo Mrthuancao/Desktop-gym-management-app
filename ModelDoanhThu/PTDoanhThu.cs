@@ -24,9 +24,10 @@ namespace Gym_Management.ModelDoanhThu
 
         public int NumCustomers { get; private set; }
         public int NumOrders { get; private set; }
-        // public decimal TotalTb { get; private set; }
+        public decimal TotalTb { get; private set; }
         public List<KeyValuePair<string, decimal>> TopProductsList { get; private set; }
         public List<KeyValuePair<string, int>> UnderstockList { get; private set; }
+        public List<KeyValuePair<string, decimal>> TotalTbList { get; private set; }
         public List<RevenueByDate> GrossRevenueList { get; private set; }
         public decimal TotalRevenue { get; set; }
         public decimal TotalProfit { get; set; }
@@ -97,7 +98,7 @@ namespace Gym_Management.ModelDoanhThu
                     //Get Understock
                     command.CommandText = @"SELECT tensp, soluong
                                             FROM SANPHAM
-                                            WHERE soluong <= 100";
+                                            WHERE soluong <= 10";
                     reader = command.ExecuteReader();
                     while (reader.Read())
                     {
@@ -112,9 +113,11 @@ namespace Gym_Management.ModelDoanhThu
         private void GetOrderAnalisys()
         {
             GrossRevenueList = new List<RevenueByDate>();
+            TotalTbList = new List<KeyValuePair<string, decimal>>();
             TotalProfit = 0;
             TotalRevenue = 0;
-            
+            TotalTb = 0;
+
             using (var connection = GetConnection())
             {
                 connection.Open();
@@ -139,18 +142,25 @@ namespace Gym_Management.ModelDoanhThu
                             );
                         TotalRevenue += (decimal)reader[1];
                     }
-                    TotalProfit = TotalRevenue * 0.3m;//30%
+                    //TotalProfit = TotalRevenue * 0.3m;//30%
                     reader.Close();
-                    /*--Tính doanh thu từ đăng kí gói tập
-                    command.CommandText = @"SELECT SUM(GT.giamoithang)
+                    //Tính doanh thu từ đăng kí gói tập
+                    command.CommandText = @"SELECT DK.thoigiandk, SUM(GT.giamoithang)
                                             FROM GOITAP AS GT, DANGKY AS DK
                                             WHERE GT.magoi = DK.magoi
-                                            AND DK.thoigiandk between @fromDate and @toDate";
-                    TotalTb = (decimal)command.ExecuteScalar();
-                    TotalRevenue += TotalTb; */
-                    
-                    
-                    
+                                            AND DK.thoigiandk between @fromDate and @toDate
+                                            group by DK.thoigiandk";
+                    reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        TotalTbList.Add(
+                            new KeyValuePair<string, decimal>(reader[0].ToString(), (decimal)reader[1]));
+                        TotalTb += (decimal)reader[1];
+                    }
+                    TotalRevenue += TotalTb;
+                    TotalProfit = TotalRevenue * 0.3m;//30%
+
+
                     //Group by Days
                     if (numberDays <= 30)
                     {
