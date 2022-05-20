@@ -12,7 +12,7 @@ namespace Gym_Management.DB
         private readonly string connectionString;
         public DbConnection()
         {
-            connectionString = "Data Source=MAY01;Initial Catalog=Gym_Management;Integrated Security=True";
+            connectionString = "Data Source=DESKTOP-2PMMREO;Initial Catalog=Gym_Management;Integrated Security=True";
         }
         protected SqlConnection GetConnection()
         {

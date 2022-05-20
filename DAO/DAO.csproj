@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="GoiTapDAO.cs" />
     <Compile Include="NhanVienDAO.cs" />
+    <Compile Include="SanPhamDAO.cs" />
     <Compile Include="TaiKhoanDAO.cs" />
     <Compile Include="ThietBiDAO.cs" />
     <Compile Include="DBConnect.cs" />
