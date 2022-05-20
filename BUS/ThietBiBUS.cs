@@ -25,21 +25,7 @@ namespace BUS
             return listThietBi;
         }
 
-        //public bool logIn(string username, string password)
-        //{
-        //    string Username = "";
-        //    DataTable dt = ThietBiDAO.getLoginThietBi(username, getHashMD5(password).ToString());
-        //    if (dt != null)
-        //    {
-        //        foreach (DataRow row in dt.Rows)
-        //        {
-        //            Username = row["Username"].ToString();
-        //        }
-        //    }
-        //    if (Username != "")
-        //        return true;
-        //    return false;
-        //}
+        
 
         public THIETBI getEquipmentByName(string username)
         {
@@ -55,24 +41,12 @@ namespace BUS
         }
 
 
-        //public bool updatePassword(string username, string new_password)
-        //{
-        //    try
-        //    {
-        //        ThietBiDAO.updatePassword(username, getHashMD5(new_password).ToString());
-        //        return true;
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return false;
-        //    }
-        //}
 
-        public bool insertEquipment(string tenThietBi, string maThietBi, DateTime ngayMua, DateTime ngaySuDung, DateTime hanBaoTri, int money, string maHang, string maLoaiThietBi, int soLuong)
+        public bool insertEquipment(string maThietBi , string tenThietBi, string ngayMua, string ngaySuDung, string hanBaoTri, decimal money, string maLoaiThietBi, int soLuong)
         {
             try
             {
-                ThietBiDAO.insertEquipment(tenThietBi, maThietBi, ngayMua, ngaySuDung, hanBaoTri, money, maHang, maLoaiThietBi, soLuong);
+                ThietBiDAO.insertEquipment(maThietBi, tenThietBi, ngayMua, ngaySuDung, hanBaoTri, money, maLoaiThietBi, soLuong);
                 return true;
             }
             catch (Exception)
@@ -82,11 +56,11 @@ namespace BUS
 
         }
 
-        public bool deleteEquipment(string username)
+        public bool deleteEquipment(string matb)
         {
             try
             {
-                if (ThietBiDAO.deleteEquipment(username))
+                if (ThietBiDAO.deleteEquipment(matb))
                     return true;
                 else
                     return false;
@@ -97,11 +71,11 @@ namespace BUS
             }
         }
 
-        public bool updateEquipment(string tenThietBi, string maThietBi, DateTime ngayMua, DateTime ngaySuDung, DateTime hanBaoTri, int money, string maHang, string maLoaiThietBi, int soLuong)
+        public bool updateEquipment(string maThietBi, string tenThietBi, string ngayMua, string ngaySuDung, string hanBaoTri, decimal money, string maLoaiThietBi, int soLuong)
         {
             try
             {
-                return (ThietBiDAO.updateEquipment(tenThietBi, maThietBi, ngayMua, ngaySuDung, hanBaoTri, money, maHang, maLoaiThietBi, soLuong));
+                return (ThietBiDAO.updateEquipment(maThietBi, tenThietBi, ngayMua, ngaySuDung, hanBaoTri, money, maLoaiThietBi, soLuong));
 
             }
             catch (Exception)
@@ -109,18 +83,11 @@ namespace BUS
                 return false;
             }
         }
+        public List<THIETBI> SearchThietBiByName(string tenthietbi)
+        {
+            return ThietBiDAO.SearchThietBiByName(tenthietbi);
+        }
 
-        //public StringBuilder getHashMD5(string pass)
-        //{
-        //    MD5 hash = MD5.Create();
-        //    byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(pass);
-        //    byte[] outputBytes = hash.ComputeHash(inputBytes);
-        //    StringBuilder hash_str = new StringBuilder();
-        //    for (int i = 0; i < outputBytes.Length; i++)
-        //    {
-        //        hash_str.Append(outputBytes[i].ToString("x2"));
-        //    }
-        //    return hash_str;
-        //}
+
     }
 }
