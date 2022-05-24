@@ -82,6 +82,30 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPT\CheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPT\CheckIn.Designer.cs">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPT\DanhSachHoiVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPT\DanhSachHoiVien.Designer.cs">
+      <DependentUpon>DanhSachHoiVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPT\LichTap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPT\LichTap.Designer.cs">
+      <DependentUpon>LichTap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTableForPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTableForPT.Designer.cs">
+      <DependentUpon>fTableForPT.cs</DependentUpon>
+    </Compile>
     <Compile Include="fTableManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +215,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPT\CheckIn.resx">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPT\DanhSachHoiVien.resx">
+      <DependentUpon>DanhSachHoiVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPT\LichTap.resx">
+      <DependentUpon>LichTap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTableForPT.resx">
+      <DependentUpon>fTableForPT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTableManager.resx">
       <DependentUpon>fTableManager.cs</DependentUpon>

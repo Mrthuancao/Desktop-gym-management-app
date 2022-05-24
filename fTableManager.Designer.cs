@@ -137,10 +137,11 @@
             // 
             // pb_solgan
             // 
+            this.pb_solgan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pb_solgan.Image = global::Gym_Management.Properties.Resources.welcome1;
-            this.pb_solgan.Location = new System.Drawing.Point(262, 212);
+            this.pb_solgan.Location = new System.Drawing.Point(174, 246);
             this.pb_solgan.Name = "pb_solgan";
-            this.pb_solgan.Size = new System.Drawing.Size(583, 236);
+            this.pb_solgan.Size = new System.Drawing.Size(767, 274);
             this.pb_solgan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_solgan.TabIndex = 0;
             this.pb_solgan.TabStop = false;
