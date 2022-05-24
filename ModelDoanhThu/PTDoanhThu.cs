@@ -124,6 +124,7 @@ namespace Gym_Management.ModelDoanhThu
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
+                    //Tính doanh thu từ bán sản phẩm
                     command.CommandText = @"SELECT HD.ngaymua,SUM(dongia * CT.soluong) as Sum
                                             FROM CHITIETHOADON AS CT, SANPHAM SP, HOADON AS HD
                                             WHERE CT.masp = SP.masp
@@ -157,8 +158,10 @@ namespace Gym_Management.ModelDoanhThu
                             new KeyValuePair<string, decimal>(reader[0].ToString(), (decimal)reader[1]));
                         TotalTb += (decimal)reader[1];
                     }
-                    TotalRevenue += TotalTb;
                     TotalProfit = TotalRevenue * 0.3m;//30%
+                    TotalRevenue += TotalTb;
+                    TotalProfit += TotalTb;
+
 
 
                     //Group by Days

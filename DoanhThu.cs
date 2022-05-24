@@ -36,8 +36,8 @@ namespace Gym_Management
             {
                 lb_Sldon.Text = model.NumOrders.ToString();
                 lb_Slhvm.Text = model.NumCustomers.ToString();
-                lb_Tongdt.Text = "$" + model.TotalRevenue.ToString();
-                lb_Tongln.Text = "$" + model.TotalProfit.ToString();
+                lb_Tongdt.Text = "VND " + model.TotalRevenue.ToString();
+                lb_Tongln.Text = "VND " + model.TotalProfit.ToString();
 
                 chart_Doanhthu.DataSource = model.GrossRevenueList;
                 chart_Doanhthu.Series[0].XValueMember = "Date";
