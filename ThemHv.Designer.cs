@@ -31,10 +31,6 @@
             this.gb_themhv = new System.Windows.Forms.GroupBox();
             this.tb_mahv = new Gym_Management.CustomTextBox();
             this.lb_mahv = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lb_cannang = new System.Windows.Forms.Label();
-            this.tb_chieucao = new Gym_Management.CustomTextBox();
-            this.tb_cannang = new Gym_Management.CustomTextBox();
             this.cb_gioitinh = new System.Windows.Forms.ComboBox();
             this.dt_ngaydk = new System.Windows.Forms.DateTimePicker();
             this.dt_ngsinh = new System.Windows.Forms.DateTimePicker();
@@ -48,8 +44,6 @@
             this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.bt_xoahet = new Gym_Management.CustomButton();
             this.bt_Luu = new Gym_Management.CustomButton();
-            this.lb_kg = new System.Windows.Forms.Label();
-            this.lb_cm = new System.Windows.Forms.Label();
             this.gb_themhv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_anh)).BeginInit();
             this.SuspendLayout();
@@ -57,14 +51,8 @@
             // gb_themhv
             // 
             this.gb_themhv.BackColor = System.Drawing.Color.Gainsboro;
-            this.gb_themhv.Controls.Add(this.lb_cm);
-            this.gb_themhv.Controls.Add(this.lb_kg);
             this.gb_themhv.Controls.Add(this.tb_mahv);
             this.gb_themhv.Controls.Add(this.lb_mahv);
-            this.gb_themhv.Controls.Add(this.label5);
-            this.gb_themhv.Controls.Add(this.lb_cannang);
-            this.gb_themhv.Controls.Add(this.tb_chieucao);
-            this.gb_themhv.Controls.Add(this.tb_cannang);
             this.gb_themhv.Controls.Add(this.cb_gioitinh);
             this.gb_themhv.Controls.Add(this.dt_ngaydk);
             this.gb_themhv.Controls.Add(this.dt_ngsinh);
@@ -84,7 +72,7 @@
             this.gb_themhv.Location = new System.Drawing.Point(0, 0);
             this.gb_themhv.Margin = new System.Windows.Forms.Padding(4);
             this.gb_themhv.Name = "gb_themhv";
-            this.gb_themhv.Size = new System.Drawing.Size(486, 702);
+            this.gb_themhv.Size = new System.Drawing.Size(486, 595);
             this.gb_themhv.TabIndex = 3;
             this.gb_themhv.TabStop = false;
             this.gb_themhv.Text = "THÊM HỘI VIÊN";
@@ -123,74 +111,6 @@
             this.lb_mahv.TabIndex = 75;
             this.lb_mahv.Text = "Mã hội viên:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(38, 475);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 16);
-            this.label5.TabIndex = 73;
-            this.label5.Text = "Chiều cao:";
-            // 
-            // lb_cannang
-            // 
-            this.lb_cannang.AutoSize = true;
-            this.lb_cannang.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cannang.ForeColor = System.Drawing.Color.Black;
-            this.lb_cannang.Location = new System.Drawing.Point(38, 419);
-            this.lb_cannang.Name = "lb_cannang";
-            this.lb_cannang.Size = new System.Drawing.Size(75, 16);
-            this.lb_cannang.TabIndex = 72;
-            this.lb_cannang.Text = "Cân nặng:";
-            // 
-            // tb_chieucao
-            // 
-            this.tb_chieucao.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_chieucao.BorderColor = System.Drawing.Color.Black;
-            this.tb_chieucao.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_chieucao.BorderRadius = 5;
-            this.tb_chieucao.Bordersize = 2;
-            this.tb_chieucao.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_chieucao.ForeColor = System.Drawing.Color.Black;
-            this.tb_chieucao.Location = new System.Drawing.Point(199, 458);
-            this.tb_chieucao.Margin = new System.Windows.Forms.Padding(5);
-            this.tb_chieucao.Multiline = false;
-            this.tb_chieucao.Name = "tb_chieucao";
-            this.tb_chieucao.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_chieucao.PasswordChar = false;
-            this.tb_chieucao.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_chieucao.PlaceholderText = "";
-            this.tb_chieucao.ReadOnly1 = false;
-            this.tb_chieucao.Size = new System.Drawing.Size(203, 33);
-            this.tb_chieucao.TabIndex = 5;
-            this.tb_chieucao.Texts = "";
-            this.tb_chieucao.UnderlinedStyle = false;
-            // 
-            // tb_cannang
-            // 
-            this.tb_cannang.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_cannang.BorderColor = System.Drawing.Color.Black;
-            this.tb_cannang.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_cannang.BorderRadius = 5;
-            this.tb_cannang.Bordersize = 2;
-            this.tb_cannang.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_cannang.ForeColor = System.Drawing.Color.Black;
-            this.tb_cannang.Location = new System.Drawing.Point(199, 402);
-            this.tb_cannang.Margin = new System.Windows.Forms.Padding(5);
-            this.tb_cannang.Multiline = false;
-            this.tb_cannang.Name = "tb_cannang";
-            this.tb_cannang.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_cannang.PasswordChar = false;
-            this.tb_cannang.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_cannang.PlaceholderText = "";
-            this.tb_cannang.ReadOnly1 = false;
-            this.tb_cannang.Size = new System.Drawing.Size(203, 33);
-            this.tb_cannang.TabIndex = 4;
-            this.tb_cannang.Texts = "";
-            this.tb_cannang.UnderlinedStyle = false;
-            // 
             // cb_gioitinh
             // 
             this.cb_gioitinh.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
@@ -213,7 +133,7 @@
             this.dt_ngaydk.CalendarTitleBackColor = System.Drawing.Color.Goldenrod;
             this.dt_ngaydk.CalendarTitleForeColor = System.Drawing.Color.Goldenrod;
             this.dt_ngaydk.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_ngaydk.Location = new System.Drawing.Point(199, 562);
+            this.dt_ngaydk.Location = new System.Drawing.Point(199, 458);
             this.dt_ngaydk.Margin = new System.Windows.Forms.Padding(4);
             this.dt_ngaydk.Name = "dt_ngaydk";
             this.dt_ngaydk.Size = new System.Drawing.Size(232, 26);
@@ -226,7 +146,7 @@
             this.dt_ngsinh.CalendarTitleBackColor = System.Drawing.Color.Goldenrod;
             this.dt_ngsinh.CalendarTitleForeColor = System.Drawing.Color.Goldenrod;
             this.dt_ngsinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_ngsinh.Location = new System.Drawing.Point(199, 511);
+            this.dt_ngsinh.Location = new System.Drawing.Point(199, 407);
             this.dt_ngsinh.Margin = new System.Windows.Forms.Padding(4);
             this.dt_ngsinh.Name = "dt_ngsinh";
             this.dt_ngsinh.Size = new System.Drawing.Size(232, 26);
@@ -237,7 +157,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(38, 626);
+            this.label1.Location = new System.Drawing.Point(38, 522);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 16);
             this.label1.TabIndex = 64;
@@ -248,7 +168,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(38, 572);
+            this.label4.Location = new System.Drawing.Point(38, 468);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 16);
             this.label4.TabIndex = 61;
@@ -259,7 +179,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(39, 521);
+            this.label3.Location = new System.Drawing.Point(39, 417);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 16);
             this.label3.TabIndex = 60;
@@ -296,7 +216,7 @@
             this.tb_Sdt.Bordersize = 2;
             this.tb_Sdt.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Sdt.ForeColor = System.Drawing.Color.Black;
-            this.tb_Sdt.Location = new System.Drawing.Point(199, 609);
+            this.tb_Sdt.Location = new System.Drawing.Point(199, 505);
             this.tb_Sdt.Margin = new System.Windows.Forms.Padding(5);
             this.tb_Sdt.Multiline = false;
             this.tb_Sdt.Name = "tb_Sdt";
@@ -363,7 +283,7 @@
             this.bt_xoahet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_xoahet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_xoahet.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoahet.Location = new System.Drawing.Point(343, 663);
+            this.bt_xoahet.Location = new System.Drawing.Point(343, 559);
             this.bt_xoahet.Name = "bt_xoahet";
             this.bt_xoahet.Size = new System.Drawing.Size(70, 27);
             this.bt_xoahet.TabIndex = 11;
@@ -385,7 +305,7 @@
             this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Luu.Location = new System.Drawing.Point(209, 663);
+            this.bt_Luu.Location = new System.Drawing.Point(209, 559);
             this.bt_Luu.Name = "bt_Luu";
             this.bt_Luu.Size = new System.Drawing.Size(70, 27);
             this.bt_Luu.TabIndex = 10;
@@ -394,34 +314,12 @@
             this.bt_Luu.UseVisualStyleBackColor = false;
             this.bt_Luu.Click += new System.EventHandler(this.bt_Luu_Click_1);
             // 
-            // lb_kg
-            // 
-            this.lb_kg.AutoSize = true;
-            this.lb_kg.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_kg.ForeColor = System.Drawing.Color.Black;
-            this.lb_kg.Location = new System.Drawing.Point(414, 419);
-            this.lb_kg.Name = "lb_kg";
-            this.lb_kg.Size = new System.Drawing.Size(22, 16);
-            this.lb_kg.TabIndex = 76;
-            this.lb_kg.Text = "kg";
-            // 
-            // lb_cm
-            // 
-            this.lb_cm.AutoSize = true;
-            this.lb_cm.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cm.ForeColor = System.Drawing.Color.Black;
-            this.lb_cm.Location = new System.Drawing.Point(414, 475);
-            this.lb_cm.Name = "lb_cm";
-            this.lb_cm.Size = new System.Drawing.Size(26, 16);
-            this.lb_cm.TabIndex = 77;
-            this.lb_cm.Text = "cm";
-            // 
             // ThemHv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(486, 702);
+            this.ClientSize = new System.Drawing.Size(486, 595);
             this.Controls.Add(this.gb_themhv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -438,10 +336,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gb_themhv;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lb_cannang;
-        private CustomTextBox tb_chieucao;
-        private CustomTextBox tb_cannang;
         private System.Windows.Forms.ComboBox cb_gioitinh;
         public System.Windows.Forms.DateTimePicker dt_ngaydk;
         public System.Windows.Forms.DateTimePicker dt_ngsinh;
@@ -457,7 +351,5 @@
         private CustomButton bt_Luu;
         private CustomTextBox tb_mahv;
         private System.Windows.Forms.Label lb_mahv;
-        private System.Windows.Forms.Label lb_cm;
-        private System.Windows.Forms.Label lb_kg;
     }
 }

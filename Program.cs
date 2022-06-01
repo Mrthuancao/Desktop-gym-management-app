@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gym_Management.FormPT;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Gym_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fTableForPT());
+            Application.Run(new fLogin());
         }
     }
 }

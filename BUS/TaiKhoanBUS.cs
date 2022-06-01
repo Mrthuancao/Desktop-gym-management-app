@@ -25,20 +25,25 @@ namespace BUS
             return listAccount;
         }
 
-        public bool logIn(string username, string pass)
+        public int logIn(string username, string pass)
         {
             string Username = "";
+            String Type = "0";
             DataTable dt = accountDAL.getLoginAccount(username, pass);
             if (dt != null)
             {
                 foreach (DataRow row in dt.Rows)
                 {
                     Username = row["username"].ToString();
+                    Type =  row["Type"].ToString();
                 }
             }
-            if (Username != "")
-                return true;
-            return false;
+            if (Username != "" & Type == "1")
+                return 1;
+            else if (Username != "" & Type == "0")
+                return 2;
+            else
+                return 0;
         }
 
         public TAIKHOAN getAccountByUsername(string username)
