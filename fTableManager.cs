@@ -42,8 +42,7 @@ namespace Gym_Management
             InitializeComponent();
             CollapseMenu();
             logAcc = acc;
-            //this.Padding = new Padding(borderSize);//Border size
-            //this.BackColor = Color.FromArgb(98, 102, 244);//Border color
+           
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 50);
             pn_menu.Controls.Add(leftBorderBtn);
@@ -119,21 +118,6 @@ namespace Gym_Management
             childForm.Show();
             lb_titleCharform.Text = childForm.Text;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         //Drag Form

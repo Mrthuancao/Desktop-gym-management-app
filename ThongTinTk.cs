@@ -21,8 +21,6 @@ namespace Gym_Management
             set { logAcc = value; ChangeAccount(logAcc); }
         }
 
-        
-
         public ThongTinTk(TAIKHOAN acc)
         {
             logAcc = acc;

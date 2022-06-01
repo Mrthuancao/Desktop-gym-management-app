@@ -40,8 +40,7 @@ namespace Gym_Management
         {
             hvist.DataSource = hvBUS.GetHoiVienList(); 
             dtg_HV.Columns["phai"].Visible = false;
-            dtg_HV.Columns["cannang"].Visible = false;
-            dtg_HV.Columns["chieucao"].Visible = false;
+  
             dtg_HV.Columns["ngsinh"].Visible = false;
             dtg_HV.Columns["ngdangki"].Visible = false;
             dtg_HV.Columns["sdt"].Visible = false;
@@ -53,8 +52,6 @@ namespace Gym_Management
             tb_MaHV.DataBindings.Add(new Binding("Texts",dtg_HV.DataSource, "mahv", true, DataSourceUpdateMode.Never));
             tb_TenHV.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "hoten", true, DataSourceUpdateMode.Never));
             tb_gioitinh.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "phai", true, DataSourceUpdateMode.Never));
-            tb_cannang.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "cannang", true, DataSourceUpdateMode.Never));
-            tb_chieucao.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "chieucao", true, DataSourceUpdateMode.Never));
             dt_ngsinh.DataBindings.Add(new Binding("Text", dtg_HV.DataSource, "ngsinh", true, DataSourceUpdateMode.Never));
             dt_ngaydk.DataBindings.Add(new Binding("Text", dtg_HV.DataSource, "ngdangki", true, DataSourceUpdateMode.Never));
             tb_Sdt.DataBindings.Add(new Binding("Texts", dtg_HV.DataSource, "sdt", true, DataSourceUpdateMode.Never));
@@ -89,8 +86,6 @@ namespace Gym_Management
 
             tb_TenHV.ReadOnly1 = false;
             tb_gioitinh.ReadOnly1 = false;
-            tb_cannang.ReadOnly1 = false;
-            tb_chieucao.ReadOnly1 = false;
             tb_Sdt.ReadOnly1 = false;
             dt_ngsinh.Enabled = true;
             bt_Luu.Enabled = true;
@@ -102,7 +97,7 @@ namespace Gym_Management
             {
                 if (dtg_HV.SelectedRows.Count > 0)
                 {
-                    if (hvBUS.UpdateHoiVien(tb_MaHV.Texts, tb_TenHV.Texts, tb_gioitinh.Texts, float.Parse(tb_cannang.Texts), float.Parse(tb_chieucao.Texts), dt_ngsinh.Value.ToString(), dt_ngaydk.Value.ToString(), tb_Sdt.Texts))
+                    if (hvBUS.UpdateHoiVien(tb_MaHV.Texts, tb_TenHV.Texts, tb_gioitinh.Texts, dt_ngsinh.Value.ToString(), dt_ngaydk.Value.ToString(), tb_Sdt.Texts))
                     {
                         MessageBox.Show("Đã sửa thành công");
                         LoadHoiVienList();
@@ -118,8 +113,6 @@ namespace Gym_Management
             }
             tb_TenHV.ReadOnly1 = true;
             tb_gioitinh.ReadOnly1 = true;  
-            tb_cannang.ReadOnly1 = true;
-            tb_chieucao.ReadOnly1 = true;
             tb_Sdt.ReadOnly1 = true;
             dt_ngsinh.Enabled = false;
             bt_Luu.Enabled = false;

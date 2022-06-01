@@ -23,13 +23,13 @@ namespace Gym_Management
 
         private void bt_Luu_Click_1(object sender, EventArgs e)
         {
-            if (tb_TenHV.Texts == "" || tb_cannang.Texts == "" || tb_chieucao.Texts.ToString() == "" || tb_Sdt.Texts == "" )
+            if (tb_TenHV.Texts == "" || tb_Sdt.Texts == "" )
             {
                 MessageBox.Show("Điền đủ thông tin trước khi thêm hội viên");
             }
             else
             {
-                if (hvBUS.InsertHoiVien(tb_mahv.Texts, tb_TenHV.Texts, cb_gioitinh.SelectedItem.ToString(), float.Parse(tb_cannang.Texts), float.Parse(tb_chieucao.Texts), dt_ngsinh.Value.ToString(), dt_ngaydk.Value.ToString(), tb_Sdt.Texts))
+                if (hvBUS.InsertHoiVien(tb_mahv.Texts, tb_TenHV.Texts, cb_gioitinh.SelectedItem.ToString(), dt_ngsinh.Value.ToString(), dt_ngaydk.Value.ToString(), tb_Sdt.Texts))
                 {
                     MessageBox.Show("Đã thêm thành công");
                 }

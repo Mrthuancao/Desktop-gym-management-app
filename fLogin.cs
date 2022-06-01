@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using DTO;
+using Gym_Management.FormPT;
 
 namespace Gym_Management
 {
@@ -35,7 +36,7 @@ namespace Gym_Management
         }
 
         private void bt_login_Click(object sender, EventArgs e)
-        {   if (accountBus.logIn(tb_username.Texts, tb_password.Texts))
+        {   if (accountBus.logIn(tb_username.Texts, tb_password.Texts)==1)
             {
                 this.Hide();
                 currentUser = accountBus.getAccountByUsername(tb_username.Texts);
@@ -44,6 +45,15 @@ namespace Gym_Management
                 fTable.Close();
                 this.Show();
                 
+            }
+            else if (accountBus.logIn(tb_username.Texts, tb_password.Texts) == 2)
+            {
+                this.Hide();
+                currentUser = accountBus.getAccountByUsername(tb_username.Texts);
+                fTablePT fTable = new fTablePT(currentUser);
+                fTable.ShowDialog();
+                fTable.Close();
+                this.Show();
             }
             else
             {
