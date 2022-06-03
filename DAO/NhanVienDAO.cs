@@ -71,7 +71,13 @@ namespace DAO
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
-
+        public DataTable GetManvPT()
+        {
+            string query = "SELECT manv FROM NHANVIEN WHERE malnv='PT'";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
     }
 
 }

@@ -271,6 +271,7 @@
             // 
             this.chart_Top5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chart_Top5.BackColor = System.Drawing.Color.DimGray;
+            chartArea1.AxisY.LabelStyle.Format = "{#,#}";
             chartArea1.BackColor = System.Drawing.Color.DimGray;
             chartArea1.BorderColor = System.Drawing.Color.DimGray;
             chartArea1.Name = "ChartArea1";
@@ -319,7 +320,7 @@
             chartArea2.AxisX.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));
             chartArea2.AxisX.MajorTickMark.Size = 3F;
             chartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Silver;
-            chartArea2.AxisY.LabelStyle.Format = "VND {0:0,} K ";
+            chartArea2.AxisY.LabelStyle.Format = "VND {#,#,0}  ";
             chartArea2.AxisY.LineColor = System.Drawing.Color.White;
             chartArea2.AxisY.LineWidth = 0;
             chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));

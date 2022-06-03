@@ -14,10 +14,13 @@ namespace Gym_Management
     public partial class CapTaiKhoan : Form
     {
         TaiKhoanBUS tkBUS = new TaiKhoanBUS();
-
+        NhanVienBUS NvBUS = new NhanVienBUS();
         public CapTaiKhoan()
         {
             InitializeComponent();
+            cb_manv.DataSource = NvBUS.GetManvPT();
+            cb_manv.DisplayMember = "manv";
+
         }
         private void ClearTextBoxes()
         {
@@ -44,9 +47,9 @@ namespace Gym_Management
         {
             try
             {
-                if (tb_matk.Texts != "" && tb_manv.Texts != "" && tb_username.Texts != "" )
+                if (tb_matk.Texts != "" && tb_username.Texts != "" )
                 {
-                    if (tkBUS.insertAccount(tb_matk.Texts, tb_username.Texts, tb_matkhau.Texts, tb_manv.Texts))
+                    if (tkBUS.insertAccount(tb_matk.Texts, tb_username.Texts, tb_matkhau.Texts, cb_manv.Text))
                     {
                         MessageBox.Show("Đã thêm thành công");
                         this.Close();

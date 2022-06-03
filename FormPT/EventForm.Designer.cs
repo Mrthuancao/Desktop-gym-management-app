@@ -43,9 +43,11 @@
             this.bt_them = new Gym_Management.CustomButton();
             this.tb_ngay = new Gym_Management.CustomTextBox();
             this.dtg_bt = new System.Windows.Forms.DataGridView();
+            this.madk = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thoigian = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_bt)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,6 +154,7 @@
             this.bt_xoa.Text = "Xóa";
             this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
             this.bt_xoa.UseVisualStyleBackColor = false;
+            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
             // tb_tenhv
             // 
@@ -240,9 +243,11 @@
             this.dtg_bt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtg_bt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_bt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.madk,
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.buoi});
+            this.buoi,
+            this.thoigian});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -259,6 +264,15 @@
             this.dtg_bt.RowHeadersWidth = 51;
             this.dtg_bt.Size = new System.Drawing.Size(443, 260);
             this.dtg_bt.TabIndex = 94;
+            // 
+            // madk
+            // 
+            this.madk.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.madk.DataPropertyName = "madk";
+            this.madk.HeaderText = "Mã đăng ký";
+            this.madk.Name = "madk";
+            this.madk.ReadOnly = true;
+            this.madk.Visible = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -285,6 +299,15 @@
             this.buoi.HeaderText = "Buổi";
             this.buoi.Name = "buoi";
             this.buoi.ReadOnly = true;
+            // 
+            // thoigian
+            // 
+            this.thoigian.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.thoigian.DataPropertyName = "thoigian";
+            this.thoigian.HeaderText = "Thời gian";
+            this.thoigian.Name = "thoigian";
+            this.thoigian.ReadOnly = true;
+            this.thoigian.Visible = false;
             // 
             // EventForm
             // 
@@ -328,8 +351,10 @@
         private System.Windows.Forms.Label lb_madk;
         private CustomButton bt_them;
         private System.Windows.Forms.DataGridView dtg_bt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn madk;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn buoi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thoigian;
     }
 }

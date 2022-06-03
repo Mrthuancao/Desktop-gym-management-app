@@ -136,5 +136,9 @@ namespace BUS
         {
             return accountDAL.GetAccountPT();
         }
+        public bool DeleteAccount(string matk)
+        {
+            return accountDAL.deleteAccount(matk);
+        }
     }
 }
