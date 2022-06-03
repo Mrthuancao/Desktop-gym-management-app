@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fTablePT));
             this.pn_menu = new System.Windows.Forms.Panel();
             this.bt_dangxuat = new FontAwesome.Sharp.IconButton();
-            this.bt_checkin = new FontAwesome.Sharp.IconButton();
             this.bt_lichtap = new FontAwesome.Sharp.IconButton();
             this.bt_hoivien = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -55,7 +54,6 @@
             // 
             this.pn_menu.BackColor = System.Drawing.Color.Gainsboro;
             this.pn_menu.Controls.Add(this.bt_dangxuat);
-            this.pn_menu.Controls.Add(this.bt_checkin);
             this.pn_menu.Controls.Add(this.bt_lichtap);
             this.pn_menu.Controls.Add(this.bt_hoivien);
             this.pn_menu.Controls.Add(this.panel1);
@@ -85,27 +83,6 @@
             this.bt_dangxuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bt_dangxuat.UseVisualStyleBackColor = true;
             this.bt_dangxuat.Click += new System.EventHandler(this.bt_dangxuat_Click);
-            // 
-            // bt_checkin
-            // 
-            this.bt_checkin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bt_checkin.FlatAppearance.BorderSize = 0;
-            this.bt_checkin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_checkin.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_checkin.IconChar = FontAwesome.Sharp.IconChar.Table;
-            this.bt_checkin.IconColor = System.Drawing.Color.Black;
-            this.bt_checkin.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.bt_checkin.Location = new System.Drawing.Point(0, 280);
-            this.bt_checkin.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_checkin.Name = "bt_checkin";
-            this.bt_checkin.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.bt_checkin.Size = new System.Drawing.Size(250, 83);
-            this.bt_checkin.TabIndex = 5;
-            this.bt_checkin.Tag = "Check-in";
-            this.bt_checkin.Text = "   Check-in";
-            this.bt_checkin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bt_checkin.UseVisualStyleBackColor = true;
-            this.bt_checkin.Click += new System.EventHandler(this.bt_checkin_Click);
             // 
             // bt_lichtap
             // 
@@ -328,7 +305,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private FontAwesome.Sharp.IconButton bt_hoivien;
         private FontAwesome.Sharp.IconButton bt_dangxuat;
-        private FontAwesome.Sharp.IconButton bt_checkin;
         private FontAwesome.Sharp.IconButton bt_lichtap;
         private System.Windows.Forms.Panel pn_destop;
         private FontAwesome.Sharp.IconPictureBox ic_currentChildform;

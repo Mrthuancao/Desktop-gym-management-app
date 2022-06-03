@@ -380,5 +380,12 @@ namespace Gym_Management
             CapTaiKhoan f = new CapTaiKhoan();
             f.ShowDialog();
         }
+
+        private void bt_DstkPT_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            DanhSachPT f = new DanhSachPT();
+            f.ShowDialog();
+        }
     }
 }

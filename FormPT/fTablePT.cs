@@ -107,7 +107,7 @@ namespace Gym_Management.FormPT
         private void bt_hoivien_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new DanhSachHoiVien());
+            OpenChildForm(new DanhSachHoiVien(logAcc));
         }
 
         private void bt_lichtap_Click(object sender, EventArgs e)
@@ -116,11 +116,6 @@ namespace Gym_Management.FormPT
             OpenChildForm(new LichTap(logAcc));
         }
 
-        private void bt_checkin_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new DanhSachHoiVien());
-        }
 
         private void bt_dangxuat_Click(object sender, EventArgs e)
         {

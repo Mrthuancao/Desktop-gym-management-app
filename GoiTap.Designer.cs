@@ -32,8 +32,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gb_goitap = new System.Windows.Forms.GroupBox();
+            this.bt_xoa = new Gym_Management.CustomButton();
             this.dtg_GT = new System.Windows.Forms.DataGridView();
+            this.madk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayhethan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giatien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gb_DkGoiTap = new System.Windows.Forms.GroupBox();
+            this.tb_Xoa = new Gym_Management.CustomButton();
+            this.tb_madk = new Gym_Management.CustomTextBox();
             this.lb_madk = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lb_mhv = new System.Windows.Forms.Label();
@@ -43,21 +52,12 @@
             this.dt_ngdk = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cb_goitap = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.bt_xoa = new Gym_Management.CustomButton();
-            this.tb_Xoa = new Gym_Management.CustomButton();
-            this.tb_madk = new Gym_Management.CustomTextBox();
             this.bt_Dk = new Gym_Management.CustomButton();
             this.tb_MaHV = new Gym_Management.CustomTextBox();
             this.tb_maPt = new Gym_Management.CustomTextBox();
-            this.madk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayhethan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.giatien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cb_goitap = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.gb_goitap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_GT)).BeginInit();
             this.gb_DkGoiTap.SuspendLayout();
@@ -80,6 +80,28 @@
             this.gb_goitap.TabIndex = 0;
             this.gb_goitap.TabStop = false;
             this.gb_goitap.Text = "Gói tập";
+            // 
+            // bt_xoa
+            // 
+            this.bt_xoa.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoa.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_xoa.BorderRadius = 15;
+            this.bt_xoa.BorderSize = 0;
+            this.bt_xoa.FlatAppearance.BorderSize = 0;
+            this.bt_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_xoa.Location = new System.Drawing.Point(177, 229);
+            this.bt_xoa.Name = "bt_xoa";
+            this.bt_xoa.Size = new System.Drawing.Size(135, 34);
+            this.bt_xoa.TabIndex = 70;
+            this.bt_xoa.Text = "Xóa";
+            this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
+            this.bt_xoa.UseVisualStyleBackColor = false;
+            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
             // dtg_GT
             // 
@@ -122,6 +144,57 @@
             this.dtg_GT.Size = new System.Drawing.Size(1017, 329);
             this.dtg_GT.TabIndex = 69;
             // 
+            // madk
+            // 
+            this.madk.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.madk.DataPropertyName = "madk";
+            this.madk.HeaderText = "Mã đăng kí";
+            this.madk.Name = "madk";
+            this.madk.ReadOnly = true;
+            this.madk.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "mahv";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Mã hội viên";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "hoten";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Tên hội viên";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // ngayhethan
+            // 
+            this.ngayhethan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ngayhethan.DataPropertyName = "thoigiankt";
+            this.ngayhethan.HeaderText = "Ngày hết hạn";
+            this.ngayhethan.Name = "ngayhethan";
+            this.ngayhethan.ReadOnly = true;
+            // 
+            // maPT
+            // 
+            this.maPT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.maPT.DataPropertyName = "manv";
+            this.maPT.HeaderText = "Mã PT";
+            this.maPT.Name = "maPT";
+            this.maPT.ReadOnly = true;
+            // 
+            // giatien
+            // 
+            this.giatien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.giatien.DataPropertyName = "giamoithang";
+            this.giatien.HeaderText = "Giá tiền";
+            this.giatien.Name = "giatien";
+            this.giatien.ReadOnly = true;
+            // 
             // gb_DkGoiTap
             // 
             this.gb_DkGoiTap.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -148,6 +221,51 @@
             this.gb_DkGoiTap.TabIndex = 68;
             this.gb_DkGoiTap.TabStop = false;
             this.gb_DkGoiTap.Text = "Đăng kí gói tập";
+            // 
+            // tb_Xoa
+            // 
+            this.tb_Xoa.BackColor = System.Drawing.Color.DarkOrange;
+            this.tb_Xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.tb_Xoa.BorderColor = System.Drawing.SystemColors.Control;
+            this.tb_Xoa.BorderRadius = 15;
+            this.tb_Xoa.BorderSize = 0;
+            this.tb_Xoa.FlatAppearance.BorderSize = 0;
+            this.tb_Xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.tb_Xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.tb_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tb_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Xoa.ForeColor = System.Drawing.Color.Transparent;
+            this.tb_Xoa.Location = new System.Drawing.Point(299, 301);
+            this.tb_Xoa.Name = "tb_Xoa";
+            this.tb_Xoa.Size = new System.Drawing.Size(135, 34);
+            this.tb_Xoa.TabIndex = 71;
+            this.tb_Xoa.Text = "Xóa hết";
+            this.tb_Xoa.TextColor = System.Drawing.Color.Transparent;
+            this.tb_Xoa.UseVisualStyleBackColor = false;
+            this.tb_Xoa.Click += new System.EventHandler(this.tb_Xoa_Click);
+            // 
+            // tb_madk
+            // 
+            this.tb_madk.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_madk.BorderColor = System.Drawing.Color.Black;
+            this.tb_madk.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_madk.BorderRadius = 5;
+            this.tb_madk.Bordersize = 2;
+            this.tb_madk.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_madk.ForeColor = System.Drawing.Color.Black;
+            this.tb_madk.Location = new System.Drawing.Point(184, 59);
+            this.tb_madk.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_madk.Multiline = false;
+            this.tb_madk.Name = "tb_madk";
+            this.tb_madk.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_madk.PasswordChar = false;
+            this.tb_madk.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_madk.PlaceholderText = "DK...";
+            this.tb_madk.ReadOnly1 = false;
+            this.tb_madk.Size = new System.Drawing.Size(232, 33);
+            this.tb_madk.TabIndex = 2;
+            this.tb_madk.Texts = "";
+            this.tb_madk.UnderlinedStyle = false;
             // 
             // lb_madk
             // 
@@ -210,6 +328,7 @@
             this.dt_ngHetHan.Name = "dt_ngHetHan";
             this.dt_ngHetHan.Size = new System.Drawing.Size(232, 26);
             this.dt_ngHetHan.TabIndex = 6;
+            this.dt_ngHetHan.Value = new System.DateTime(2022, 6, 2, 0, 0, 0, 0);
             // 
             // label4
             // 
@@ -232,6 +351,7 @@
             this.dt_ngdk.Name = "dt_ngdk";
             this.dt_ngdk.Size = new System.Drawing.Size(232, 26);
             this.dt_ngdk.TabIndex = 5;
+            this.dt_ngdk.Value = new System.DateTime(2022, 6, 2, 0, 0, 0, 0);
             // 
             // label3
             // 
@@ -252,108 +372,6 @@
             this.label2.Size = new System.Drawing.Size(102, 16);
             this.label2.TabIndex = 26;
             this.label2.Text = "Ngày hết hạn:";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(171, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 28);
-            this.label5.TabIndex = 66;
-            this.label5.Text = "Check gói tập";
-            // 
-            // cb_goitap
-            // 
-            this.cb_goitap.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cb_goitap.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
-            this.cb_goitap.FormattingEnabled = true;
-            this.cb_goitap.IntegralHeight = false;
-            this.cb_goitap.ItemHeight = 18;
-            this.cb_goitap.Location = new System.Drawing.Point(176, 156);
-            this.cb_goitap.Name = "cb_goitap";
-            this.cb_goitap.Size = new System.Drawing.Size(232, 26);
-            this.cb_goitap.TabIndex = 25;
-            this.cb_goitap.SelectedIndexChanged += new System.EventHandler(this.cb_goitap_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 166);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 16);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Gói tập:";
-            // 
-            // bt_xoa
-            // 
-            this.bt_xoa.BackColor = System.Drawing.Color.DarkOrange;
-            this.bt_xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.bt_xoa.BorderColor = System.Drawing.SystemColors.Control;
-            this.bt_xoa.BorderRadius = 15;
-            this.bt_xoa.BorderSize = 0;
-            this.bt_xoa.FlatAppearance.BorderSize = 0;
-            this.bt_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoa.Location = new System.Drawing.Point(177, 229);
-            this.bt_xoa.Name = "bt_xoa";
-            this.bt_xoa.Size = new System.Drawing.Size(135, 34);
-            this.bt_xoa.TabIndex = 70;
-            this.bt_xoa.Text = "Xóa";
-            this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
-            this.bt_xoa.UseVisualStyleBackColor = false;
-            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
-            // 
-            // tb_Xoa
-            // 
-            this.tb_Xoa.BackColor = System.Drawing.Color.DarkOrange;
-            this.tb_Xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.tb_Xoa.BorderColor = System.Drawing.SystemColors.Control;
-            this.tb_Xoa.BorderRadius = 15;
-            this.tb_Xoa.BorderSize = 0;
-            this.tb_Xoa.FlatAppearance.BorderSize = 0;
-            this.tb_Xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.tb_Xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.tb_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tb_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Xoa.ForeColor = System.Drawing.Color.Transparent;
-            this.tb_Xoa.Location = new System.Drawing.Point(299, 301);
-            this.tb_Xoa.Name = "tb_Xoa";
-            this.tb_Xoa.Size = new System.Drawing.Size(135, 34);
-            this.tb_Xoa.TabIndex = 71;
-            this.tb_Xoa.Text = "Xóa hết";
-            this.tb_Xoa.TextColor = System.Drawing.Color.Transparent;
-            this.tb_Xoa.UseVisualStyleBackColor = false;
-            this.tb_Xoa.Click += new System.EventHandler(this.tb_Xoa_Click);
-            // 
-            // tb_madk
-            // 
-            this.tb_madk.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_madk.BorderColor = System.Drawing.Color.Black;
-            this.tb_madk.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_madk.BorderRadius = 5;
-            this.tb_madk.Bordersize = 2;
-            this.tb_madk.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_madk.ForeColor = System.Drawing.Color.Black;
-            this.tb_madk.Location = new System.Drawing.Point(184, 59);
-            this.tb_madk.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_madk.Multiline = false;
-            this.tb_madk.Name = "tb_madk";
-            this.tb_madk.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_madk.PasswordChar = false;
-            this.tb_madk.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_madk.PlaceholderText = "DK...";
-            this.tb_madk.ReadOnly1 = false;
-            this.tb_madk.Size = new System.Drawing.Size(232, 33);
-            this.tb_madk.TabIndex = 2;
-            this.tb_madk.Texts = "";
-            this.tb_madk.UnderlinedStyle = false;
             // 
             // bt_Dk
             // 
@@ -423,56 +441,40 @@
             this.tb_maPt.Texts = "";
             this.tb_maPt.UnderlinedStyle = false;
             // 
-            // madk
+            // label5
             // 
-            this.madk.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.madk.DataPropertyName = "madk";
-            this.madk.HeaderText = "Mã đăng kí";
-            this.madk.Name = "madk";
-            this.madk.ReadOnly = true;
-            this.madk.Visible = false;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(171, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(141, 28);
+            this.label5.TabIndex = 66;
+            this.label5.Text = "Check gói tập";
             // 
-            // dataGridViewTextBoxColumn1
+            // cb_goitap
             // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "mahv";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Mã hội viên";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.cb_goitap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cb_goitap.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
+            this.cb_goitap.FormattingEnabled = true;
+            this.cb_goitap.IntegralHeight = false;
+            this.cb_goitap.ItemHeight = 18;
+            this.cb_goitap.Location = new System.Drawing.Point(176, 156);
+            this.cb_goitap.Name = "cb_goitap";
+            this.cb_goitap.Size = new System.Drawing.Size(232, 26);
+            this.cb_goitap.TabIndex = 25;
+            this.cb_goitap.SelectedIndexChanged += new System.EventHandler(this.cb_goitap_SelectedIndexChanged);
             // 
-            // dataGridViewTextBoxColumn2
+            // label1
             // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "hoten";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Tên hội viên";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // ngayhethan
-            // 
-            this.ngayhethan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ngayhethan.DataPropertyName = "thoigiankt";
-            this.ngayhethan.HeaderText = "Ngày hết hạn";
-            this.ngayhethan.Name = "ngayhethan";
-            this.ngayhethan.ReadOnly = true;
-            // 
-            // maPT
-            // 
-            this.maPT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.maPT.DataPropertyName = "manv";
-            this.maPT.HeaderText = "Mã PT";
-            this.maPT.Name = "maPT";
-            this.maPT.ReadOnly = true;
-            // 
-            // giatien
-            // 
-            this.giatien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.giatien.DataPropertyName = "giamoithang";
-            this.giatien.HeaderText = "Giá tiền";
-            this.giatien.Name = "giatien";
-            this.giatien.ReadOnly = true;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(36, 166);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 16);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Gói tập:";
             // 
             // GoiTap
             // 

@@ -51,6 +51,7 @@
             this.bt_sanpham = new FontAwesome.Sharp.IconButton();
             this.bt_nhanvien = new FontAwesome.Sharp.IconButton();
             this.bt_khachhang = new FontAwesome.Sharp.IconButton();
+            this.bt_DstkPT = new FontAwesome.Sharp.IconButton();
             this.pn_titlebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ic_currentChildform)).BeginInit();
             this.pn_destop.SuspendLayout();
@@ -248,6 +249,7 @@
             // 
             // pn_menu
             // 
+            this.pn_menu.Controls.Add(this.bt_DstkPT);
             this.pn_menu.Controls.Add(this.bt_Captaikhoan);
             this.pn_menu.Controls.Add(this.bt_exit);
             this.pn_menu.Controls.Add(this.bt_doanhthu);
@@ -440,6 +442,28 @@
             this.bt_khachhang.UseVisualStyleBackColor = true;
             this.bt_khachhang.Click += new System.EventHandler(this.bt_khachhang_Click);
             // 
+            // bt_DstkPT
+            // 
+            this.bt_DstkPT.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bt_DstkPT.FlatAppearance.BorderSize = 0;
+            this.bt_DstkPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_DstkPT.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_DstkPT.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            this.bt_DstkPT.IconColor = System.Drawing.Color.Black;
+            this.bt_DstkPT.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.bt_DstkPT.IconSize = 30;
+            this.bt_DstkPT.Location = new System.Drawing.Point(0, 424);
+            this.bt_DstkPT.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_DstkPT.Name = "bt_DstkPT";
+            this.bt_DstkPT.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bt_DstkPT.Size = new System.Drawing.Size(250, 50);
+            this.bt_DstkPT.TabIndex = 9;
+            this.bt_DstkPT.Tag = "Danh sách tài khoản PT";
+            this.bt_DstkPT.Text = "   Danh sách tài khoản PT";
+            this.bt_DstkPT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bt_DstkPT.UseVisualStyleBackColor = true;
+            this.bt_DstkPT.Click += new System.EventHandler(this.bt_DstkPT_Click);
+            // 
             // fTableManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -493,5 +517,6 @@
         private System.Windows.Forms.Label lb_titleCharform;
         private FontAwesome.Sharp.IconButton bt_Captaikhoan;
         private System.Windows.Forms.PictureBox pb_solgan;
+        private FontAwesome.Sharp.IconButton bt_DstkPT;
     }
 }

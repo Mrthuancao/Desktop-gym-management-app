@@ -50,6 +50,7 @@
     <Compile Include="SANPHAM.cs" />
     <Compile Include="TAIKHOAN.cs" />
     <Compile Include="THIETBI.cs" />
+    <Compile Include="TIENTRINH.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
