@@ -12,9 +12,10 @@ namespace DAO
     {
         public DataTable GetName(string a)
         {
-            string query = "SELECT HOIVIEN.hoten FROM HOIVIEN, BUOITAP, DANGKY WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.madk = BUOITAP.madk and DANGKY.madk=N'" + a + "'";
+            string query = "SELECT DANGKY.mahv, hoten, sdt FROM HOIVIEN, DANGKY WHERE HOIVIEN.mahv = DANGKY.mahv  AND manv=@a";
+            object[] value = new object[] { a };
             DBConnect db = new DBConnect();
-            DataTable dt = db.ExecuteQuery(query);
+            DataTable dt = db.ExecuteQuery(query, value);
             return dt;
         }
         public DataTable ShowCombox(string manv)

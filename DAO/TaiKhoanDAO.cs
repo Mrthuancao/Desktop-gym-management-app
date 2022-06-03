@@ -79,5 +79,12 @@ namespace DAO
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
+        public DataTable GetAccountPT()
+        {
+            string query = "SELECT matk,username,pass,manv FROM TAIKHOAN WHERE Type =0";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
     }
 }

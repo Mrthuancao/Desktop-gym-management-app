@@ -132,5 +132,9 @@ namespace BUS
             }
             return hash_str;
         }
+        public DataTable GetAccountPT()
+        {
+            return accountDAL.GetAccountPT();
+        }
     }
 }

@@ -78,16 +78,16 @@
             this.tb_matk.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_matk.ForeColor = System.Drawing.Color.Black;
             this.tb_matk.Location = new System.Drawing.Point(199, 172);
-            this.tb_matk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_matk.Margin = new System.Windows.Forms.Padding(4);
             this.tb_matk.Multiline = false;
             this.tb_matk.Name = "tb_matk";
             this.tb_matk.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_matk.PasswordChar = false;
             this.tb_matk.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_matk.PlaceholderText = "";
+            this.tb_matk.PlaceholderText = "TK..";
             this.tb_matk.ReadOnly1 = false;
             this.tb_matk.Size = new System.Drawing.Size(232, 33);
-            this.tb_matk.TabIndex = 72;
+            this.tb_matk.TabIndex = 1;
             this.tb_matk.Texts = "";
             this.tb_matk.UnderlinedStyle = false;
             // 
@@ -118,7 +118,7 @@
             this.bt_xoa.Location = new System.Drawing.Point(328, 433);
             this.bt_xoa.Name = "bt_xoa";
             this.bt_xoa.Size = new System.Drawing.Size(102, 37);
-            this.bt_xoa.TabIndex = 70;
+            this.bt_xoa.TabIndex = 5;
             this.bt_xoa.Text = "Xóa hết";
             this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
             this.bt_xoa.UseVisualStyleBackColor = false;
@@ -182,7 +182,7 @@
             this.tb_username.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_username.ForeColor = System.Drawing.Color.Black;
             this.tb_username.Location = new System.Drawing.Point(199, 287);
-            this.tb_username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_username.Margin = new System.Windows.Forms.Padding(4);
             this.tb_username.Multiline = false;
             this.tb_username.Name = "tb_username";
             this.tb_username.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -191,7 +191,7 @@
             this.tb_username.PlaceholderText = "";
             this.tb_username.ReadOnly1 = false;
             this.tb_username.Size = new System.Drawing.Size(232, 33);
-            this.tb_username.TabIndex = 55;
+            this.tb_username.TabIndex = 3;
             this.tb_username.Texts = "";
             this.tb_username.UnderlinedStyle = false;
             // 
@@ -205,7 +205,7 @@
             this.tb_matkhau.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_matkhau.ForeColor = System.Drawing.Color.Black;
             this.tb_matkhau.Location = new System.Drawing.Point(199, 347);
-            this.tb_matkhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_matkhau.Margin = new System.Windows.Forms.Padding(4);
             this.tb_matkhau.Multiline = false;
             this.tb_matkhau.Name = "tb_matkhau";
             this.tb_matkhau.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -228,7 +228,7 @@
             this.tb_manv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_manv.ForeColor = System.Drawing.Color.Black;
             this.tb_manv.Location = new System.Drawing.Point(199, 231);
-            this.tb_manv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_manv.Margin = new System.Windows.Forms.Padding(4);
             this.tb_manv.Multiline = false;
             this.tb_manv.Name = "tb_manv";
             this.tb_manv.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -237,7 +237,7 @@
             this.tb_manv.PlaceholderText = "";
             this.tb_manv.ReadOnly1 = false;
             this.tb_manv.Size = new System.Drawing.Size(232, 33);
-            this.tb_manv.TabIndex = 1;
+            this.tb_manv.TabIndex = 2;
             this.tb_manv.Texts = "";
             this.tb_manv.UnderlinedStyle = false;
             // 
@@ -257,7 +257,7 @@
             this.bt_Tao.Location = new System.Drawing.Point(201, 433);
             this.bt_Tao.Name = "bt_Tao";
             this.bt_Tao.Size = new System.Drawing.Size(124, 37);
-            this.bt_Tao.TabIndex = 50;
+            this.bt_Tao.TabIndex = 4;
             this.bt_Tao.Text = "Tạo tài khoản";
             this.bt_Tao.TextColor = System.Drawing.Color.Transparent;
             this.bt_Tao.UseVisualStyleBackColor = false;
