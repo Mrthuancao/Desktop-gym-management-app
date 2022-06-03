@@ -15,6 +15,7 @@ namespace Gym_Management
     public partial class GoiTap : Form
     {
         GoiTapBus gtBUS = new GoiTapBus();
+        HoiVienBUS hvBUS = new HoiVienBUS();
         public GoiTap()
         {
             InitializeComponent();
@@ -25,18 +26,21 @@ namespace Gym_Management
             cb_Magoi.DataSource = gtBUS.ShowCombox();
             cb_Magoi.DisplayMember = "tengoi";
             cb_Magoi.ValueMember = "magoi";
+            cb_mahv.DataSource = hvBUS.GetAllHoiVien();
+            cb_mahv.DisplayMember = "mahv";
+            cb_mahv.ValueMember = "hoten";
         }
 
         private void bt_Dk_Click(object sender, EventArgs e)
         {
             
-            if (tb_madk.Texts == "" || tb_MaHV.Texts == "" || cb_Magoi.SelectedItem.ToString() == "" || tb_maPt.Texts == "" || dt_ngdk.Value.ToString()=="" || dt_ngHetHan.Value.ToString()=="")
+            if (tb_madk.Texts == "" || cb_Magoi.SelectedItem.ToString() == "" || tb_maPt.Texts == "" || dt_ngdk.Value.ToString()=="" || dt_ngHetHan.Value.ToString()=="")
             {
                 MessageBox.Show("Điền đủ thông tin trước khi thêm hội viên");
             }
             else
             {
-                if (gtBUS.InsertGoiTap(tb_madk.Texts, cb_Magoi.SelectedValue.ToString(), tb_MaHV.Texts, tb_maPt.Texts, dt_ngdk.Value.ToString(), dt_ngHetHan.Value.ToString()))
+                if (gtBUS.InsertGoiTap(tb_madk.Texts, cb_Magoi.SelectedValue.ToString(), cb_mahv.Text, tb_maPt.Texts, dt_ngdk.Value.ToString(), dt_ngHetHan.Value.ToString()))
                 {
                     MessageBox.Show("Đã thêm thành công");
                 }

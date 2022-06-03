@@ -41,6 +41,7 @@
             this.maPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giatien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gb_DkGoiTap = new System.Windows.Forms.GroupBox();
+            this.cb_mahv = new System.Windows.Forms.ComboBox();
             this.tb_Xoa = new Gym_Management.CustomButton();
             this.tb_madk = new Gym_Management.CustomTextBox();
             this.lb_madk = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bt_Dk = new Gym_Management.CustomButton();
-            this.tb_MaHV = new Gym_Management.CustomTextBox();
             this.tb_maPt = new Gym_Management.CustomTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cb_goitap = new System.Windows.Forms.ComboBox();
@@ -128,7 +128,7 @@
             this.giatien});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -198,6 +198,7 @@
             // gb_DkGoiTap
             // 
             this.gb_DkGoiTap.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gb_DkGoiTap.Controls.Add(this.cb_mahv);
             this.gb_DkGoiTap.Controls.Add(this.tb_Xoa);
             this.gb_DkGoiTap.Controls.Add(this.tb_madk);
             this.gb_DkGoiTap.Controls.Add(this.lb_madk);
@@ -210,7 +211,6 @@
             this.gb_DkGoiTap.Controls.Add(this.label3);
             this.gb_DkGoiTap.Controls.Add(this.label2);
             this.gb_DkGoiTap.Controls.Add(this.bt_Dk);
-            this.gb_DkGoiTap.Controls.Add(this.tb_MaHV);
             this.gb_DkGoiTap.Controls.Add(this.tb_maPt);
             this.gb_DkGoiTap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.gb_DkGoiTap.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
@@ -221,6 +221,26 @@
             this.gb_DkGoiTap.TabIndex = 68;
             this.gb_DkGoiTap.TabStop = false;
             this.gb_DkGoiTap.Text = "Đăng kí gói tập";
+            // 
+            // cb_mahv
+            // 
+            this.cb_mahv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cb_mahv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
+            this.cb_mahv.FormattingEnabled = true;
+            this.cb_mahv.IntegralHeight = false;
+            this.cb_mahv.ItemHeight = 18;
+            this.cb_mahv.Items.AddRange(new object[] {
+            "G001",
+            "G002",
+            "G003",
+            "G004",
+            "G005",
+            "G006",
+            "G007"});
+            this.cb_mahv.Location = new System.Drawing.Point(184, 110);
+            this.cb_mahv.Name = "cb_mahv";
+            this.cb_mahv.Size = new System.Drawing.Size(232, 26);
+            this.cb_mahv.TabIndex = 71;
             // 
             // tb_Xoa
             // 
@@ -281,7 +301,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(11, 265);
+            this.label6.Location = new System.Drawing.Point(11, 260);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 16);
             this.label6.TabIndex = 68;
@@ -291,7 +311,7 @@
             // 
             this.lb_mhv.AutoSize = true;
             this.lb_mhv.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_mhv.Location = new System.Drawing.Point(11, 124);
+            this.lb_mhv.Location = new System.Drawing.Point(11, 119);
             this.lb_mhv.Name = "lb_mhv";
             this.lb_mhv.Size = new System.Drawing.Size(88, 16);
             this.lb_mhv.TabIndex = 18;
@@ -334,7 +354,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(11, 161);
+            this.label4.Location = new System.Drawing.Point(11, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 16);
             this.label4.TabIndex = 63;
@@ -357,7 +377,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 193);
+            this.label3.Location = new System.Drawing.Point(11, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 16);
             this.label3.TabIndex = 62;
@@ -367,7 +387,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 225);
+            this.label2.Location = new System.Drawing.Point(11, 223);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 16);
             this.label2.TabIndex = 26;
@@ -394,29 +414,6 @@
             this.bt_Dk.TextColor = System.Drawing.Color.Transparent;
             this.bt_Dk.UseVisualStyleBackColor = false;
             this.bt_Dk.Click += new System.EventHandler(this.bt_Dk_Click);
-            // 
-            // tb_MaHV
-            // 
-            this.tb_MaHV.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_MaHV.BorderColor = System.Drawing.Color.Black;
-            this.tb_MaHV.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_MaHV.BorderRadius = 5;
-            this.tb_MaHV.Bordersize = 2;
-            this.tb_MaHV.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_MaHV.ForeColor = System.Drawing.Color.Black;
-            this.tb_MaHV.Location = new System.Drawing.Point(184, 107);
-            this.tb_MaHV.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_MaHV.Multiline = false;
-            this.tb_MaHV.Name = "tb_MaHV";
-            this.tb_MaHV.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_MaHV.PasswordChar = false;
-            this.tb_MaHV.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_MaHV.PlaceholderText = "";
-            this.tb_MaHV.ReadOnly1 = false;
-            this.tb_MaHV.Size = new System.Drawing.Size(232, 33);
-            this.tb_MaHV.TabIndex = 3;
-            this.tb_MaHV.Texts = "";
-            this.tb_MaHV.UnderlinedStyle = false;
             // 
             // tb_maPt
             // 
@@ -501,7 +498,6 @@
         private CustomButton bt_Dk;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cb_goitap;
-        private CustomTextBox tb_MaHV;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lb_mhv;
         public System.Windows.Forms.DateTimePicker dt_ngHetHan;
@@ -523,5 +519,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayhethan;
         private System.Windows.Forms.DataGridViewTextBoxColumn maPT;
         private System.Windows.Forms.DataGridViewTextBoxColumn giatien;
+        private System.Windows.Forms.ComboBox cb_mahv;
     }
 }

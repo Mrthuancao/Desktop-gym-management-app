@@ -47,5 +47,9 @@ namespace BUS
         {
             return hvDAL.SearchHoiVienByName(name);
         }
+        public DataTable GetAllHoiVien()
+        {
+            return hvDAL.GetAllHoiVien();
+        }
     }
 }

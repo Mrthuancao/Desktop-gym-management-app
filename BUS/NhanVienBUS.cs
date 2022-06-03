@@ -114,5 +114,9 @@ namespace BUS
         //    }
         //    return hash_str;
         //}
+        public DataTable GetManvPT()
+        {
+            return NhanVienDAO.GetManvPT();
+        }
     }
 }

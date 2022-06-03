@@ -73,5 +73,30 @@ namespace Gym_Management.FormPT
 
             }
         }
+
+        private void bt_xoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dtg_bt.SelectedRows.Count > 0)
+                {
+                    if (btBus.DeleteDKBuoiTap(dtg_bt.SelectedRows[0].Cells["madk"].Value.ToString(),dtg_bt.SelectedRows[0].Cells["thoigian"].Value.ToString()))
+                    {
+                        MessageBox.Show("Đã xóa thành công");
+                        this.Show();
+                        loadbtlist();
+
+                    }
+                }
+                else
+                    MessageBox.Show("Chọn một hội viên để xóa");
+
+
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Xóa THẤT BẠI!");
+            }
+        }
     }
 }

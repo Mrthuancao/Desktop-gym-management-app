@@ -37,7 +37,7 @@ namespace DAO
         }
         public DataTable ShowDaTaGriWiew(string manv, string thoigian)
         {
-            string query = "SELECT HOIVIEN.mahv, HOIVIEN.hoten, buoi FROM HOIVIEN, BUOITAP, DANGKY WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.madk = BUOITAP.madk AND manv=@manv AND thoigian=@thoigian";
+            string query = "SELECT BUOITAP.madk, HOIVIEN.mahv, HOIVIEN.hoten, buoi, thoigian FROM HOIVIEN, BUOITAP, DANGKY WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.madk = BUOITAP.madk AND manv=@manv AND thoigian=@thoigian";
             object[] value = new object[] { manv, thoigian };
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query, value);
@@ -50,10 +50,10 @@ namespace DAO
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
-        public bool DeleteDKBuoiTap(string madk)
+        public bool DeleteDKBuoiTap(string madk, string thoigian)
         {
-            string query = "delete from BUOITAP where madk = @madk";
-            object[] value = new object[] { madk };
+            string query = "delete from BUOITAP where BUOITAP.madk = @madk and thoigian=@thoigian";
+            object[] value = new object[] { madk, thoigian };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }

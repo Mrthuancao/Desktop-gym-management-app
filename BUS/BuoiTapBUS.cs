@@ -27,9 +27,9 @@ namespace BUS
         {
             return BuoiTapDAO.InsertBuoiTap(madk, buoi, thoigian);
         }
-        public bool DeleteDKBuoiTap(string madk)
+        public bool DeleteDKBuoiTap(string madk, string thoigian)
         {
-            return BuoiTapDAO.DeleteDKBuoiTap(madk);
+            return BuoiTapDAO.DeleteDKBuoiTap(madk, thoigian);
         }
         public string GetNameByMaDK(string a)
         {

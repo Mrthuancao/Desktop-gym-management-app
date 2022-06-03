@@ -43,10 +43,10 @@ namespace DAO
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
 
-        public bool deleteAccount(string username)
+        public bool deleteAccount(string matk)
         {
-            string query = "delete from TAIKHOAN where username = @username";
-            object[] value = new object[] { username };
+            string query = "delete from TAIKHOAN where matk = @matk";
+            object[] value = new object[] { matk };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
@@ -86,5 +86,6 @@ namespace DAO
             DataTable dt = db.ExecuteQuery(query);
             return dt;
         }
+
     }
 }
