@@ -41,11 +41,11 @@ namespace BUS
             {
                 return null;
             }
-            
+
         }
         public int CountHV(string manv, string thoigian)
         {
-            int dem= 0;
+            int dem = 0;
             DataTable dt = BuoiTapDAO.CountHV(manv, thoigian);
             if (dt != null)
             {
@@ -56,6 +56,7 @@ namespace BUS
             }
             return dem;
         }
+        
     }
 
 

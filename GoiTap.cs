@@ -29,14 +29,18 @@ namespace Gym_Management
             cb_mahv.DataSource = hvBUS.GetAllHoiVien();
             cb_mahv.DisplayMember = "mahv";
             cb_mahv.ValueMember = "hoten";
+            tb_tenhv.Texts = "";
         }
 
         private void bt_Dk_Click(object sender, EventArgs e)
         {
-            
             if (tb_madk.Texts == "" || cb_Magoi.SelectedItem.ToString() == "" || tb_maPt.Texts == "" || dt_ngdk.Value.ToString()=="" || dt_ngHetHan.Value.ToString()=="")
             {
                 MessageBox.Show("Điền đủ thông tin trước khi thêm hội viên");
+            }
+            else if (gtBUS.KiemTra(tb_madk.Texts)==1)
+            {
+                MessageBox.Show("Mã đăng ký đã có! Vui lòng nhập mã khác");
             }
             else
             {
@@ -103,6 +107,11 @@ namespace Gym_Management
             {
                 MessageBox.Show("Xóa THẤT BẠI!");
             }
+        }
+
+        private void cb_mahv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tb_tenhv.Texts = cb_mahv.SelectedValue.ToString();
         }
     }
 }

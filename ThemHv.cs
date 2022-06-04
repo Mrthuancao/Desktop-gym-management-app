@@ -16,13 +16,26 @@ namespace Gym_Management
     {
         HoiVienBUS hvBUS = new HoiVienBUS();
 
-        public ThemHv()
+        public ThemHv(DataGridView dtg_HV)
         {
             InitializeComponent();
+            int count = 0;
+            count = dtg_HV.Rows.Count;
+            string chuoi = "";
+            int chuoi2 = 0;
+            chuoi = Convert.ToString(dtg_HV.Rows[count - 1].Cells[0].Value);
+            chuoi2 = Convert.ToInt32((chuoi.Remove(0, 0)));
+            if (chuoi2 + 1 < 10)
+                tb_mahv.Texts = "00" + (chuoi2 + 1).ToString();
+            else if (chuoi2 + 1 < 100)
+                tb_mahv.Texts = "0" + (chuoi2 + 1).ToString();
         }
 
         private void bt_Luu_Click_1(object sender, EventArgs e)
         {
+            
+             
+
             if (tb_TenHV.Texts == "" || tb_Sdt.Texts == "" )
             {
                 MessageBox.Show("Điền đủ thông tin trước khi thêm hội viên");

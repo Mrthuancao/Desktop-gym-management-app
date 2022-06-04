@@ -37,8 +37,14 @@ namespace BUS
         {
             return GoiTapDAO.DeleteDKGoiTap(madk);
         }
+        public int KiemTra(string madk)
+        {
+            if (GoiTapDAO.KiemTra(madk) == "1")
+                return 1;
+            else
+                return 0;
+        }
 
-       
     }
 }
 

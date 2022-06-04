@@ -15,9 +15,19 @@ namespace Gym_Management
     public partial class ThemNv : Form
     {
         NhanVienBUS nvBUS = new NhanVienBUS();
-        public ThemNv()
+        public ThemNv(DataGridView dtg_NV)
         {
             InitializeComponent();
+            int count = 0;
+            count = dtg_NV.Rows.Count;
+            string chuoi = "";
+            int chuoi2 = 0;
+            chuoi = Convert.ToString(dtg_NV.Rows[count - 1].Cells[0].Value);
+            chuoi2 = Convert.ToInt32((chuoi.Remove(0, 2)));
+            if (chuoi2 + 1 < 10)
+                tb_manv.Texts = "NV00" + (chuoi2 + 1).ToString();
+            else if (chuoi2 + 1 < 100)
+                tb_manv.Texts = "NV0" + (chuoi2 + 1).ToString();
         }
 
         

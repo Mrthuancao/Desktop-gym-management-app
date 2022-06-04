@@ -112,6 +112,7 @@
             this.tb_manv.BorderFocusColor = System.Drawing.Color.Goldenrod;
             this.tb_manv.BorderRadius = 5;
             this.tb_manv.Bordersize = 2;
+            this.tb_manv.Enabled = false;
             this.tb_manv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_manv.ForeColor = System.Drawing.Color.Black;
             this.tb_manv.Location = new System.Drawing.Point(209, 254);
@@ -121,7 +122,7 @@
             this.tb_manv.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.tb_manv.PasswordChar = false;
             this.tb_manv.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_manv.PlaceholderText = "NV...";
+            this.tb_manv.PlaceholderText = "";
             this.tb_manv.ReadOnly1 = false;
             this.tb_manv.Size = new System.Drawing.Size(232, 33);
             this.tb_manv.TabIndex = 1;

@@ -32,15 +32,14 @@ namespace Gym_Management
 
         private void bt_Them_Click(object sender, EventArgs e)
         {
-            ThemHv f = new ThemHv();
+            ThemHv f = new ThemHv(dtg_HV);
             f.ShowDialog();
             LoadHoiVienList();
         }
         void LoadHoiVienList()
         {
             hvist.DataSource = hvBUS.GetHoiVienList(); 
-            dtg_HV.Columns["phai"].Visible = false;
-  
+            dtg_HV.Columns["phai"].Visible = false;  
             dtg_HV.Columns["ngsinh"].Visible = false;
             dtg_HV.Columns["ngdangki"].Visible = false;
             dtg_HV.Columns["sdt"].Visible = false;
