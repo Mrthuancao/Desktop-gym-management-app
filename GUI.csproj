@@ -235,12 +235,6 @@
     <Compile Include="ThongTinTk.Designer.cs">
       <DependentUpon>ThongTinTk.cs</DependentUpon>
     </Compile>
-    <Compile Include="TreEm\AnTrua.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TreEm\AnTrua.Designer.cs">
-      <DependentUpon>AnTrua.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="CapTaiKhoan.resx">
       <DependentUpon>CapTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,9 +322,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinTk.resx">
       <DependentUpon>ThongTinTk.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TreEm\AnTrua.resx">
-      <DependentUpon>AnTrua.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Gym_ManagementDataSet.xsc">
       <DependentUpon>Gym_ManagementDataSet.xsd</DependentUpon>

@@ -11,13 +11,22 @@ namespace DAO
     public class GoiTapDAO
     {
         public DataTable GetAllGoiTap(string a)
-        {   
+        {
             string query = "SELECT madk, HOIVIEN.mahv, HOIVIEN.hoten, DANGKY.thoigiankt, DANGKY.manv, giamoithang FROM HOIVIEN, GOITAP, DANGKY WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.magoi = GOITAP.magoi and tengoi=N'" + a + "'";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;
         }
-        
+        public string KiemTra(string madk)
+        {
+            string query = "SELECT madk FROM DANGKY where madk=@madk ";
+            object[] value = new object[] { madk };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            string a = dt.Rows.Count.ToString();
+            return a;
+        }
+
 
         public DataTable ShowCombox()
         {

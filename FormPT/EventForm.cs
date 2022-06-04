@@ -40,8 +40,12 @@ namespace Gym_Management.FormPT
         }
         void loadbtlist()
         {
-            
+            bt_them.Visible = true;
             buoitap.DataSource = btBus.ShowDaTaGriWiew(LogAcc.Manv, LichTap.static_month + "/" + UserControlDays.static_day + "/" + LichTap.static_year);
+            if (dtg_bt.RowCount == 4)
+            {
+                bt_them.Visible = false;
+            }
         }
 
         private void EventForm_Load(object sender, EventArgs e)

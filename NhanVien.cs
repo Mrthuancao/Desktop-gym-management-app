@@ -33,7 +33,7 @@ namespace Gym_Management
 
         private void bt_Them_Click(object sender, EventArgs e)
         {
-            ThemNv f = new ThemNv();
+            ThemNv f = new ThemNv(dtg_NV);
             f.ShowDialog();
             LoadNhanVienList();
 
