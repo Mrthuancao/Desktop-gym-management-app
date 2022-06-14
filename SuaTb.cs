@@ -21,7 +21,11 @@ namespace Gym_Management
         {
             tb = currenttb;
             InitializeComponent();
+            cb_loai.DataSource = tbBUS.GetTenltb();
+            cb_loai.DisplayMember = "tenltb";
+            cb_loai.ValueMember = "maltb";
             Changetb(tb);
+
 
         }
         void Changetb(THIETBI tb)
@@ -32,7 +36,8 @@ namespace Gym_Management
             dt_ngsd.Text = tb.Ngsd;
             dt_hanbt.Text = tb.Hanbaotri;
             tb_dongia.Texts = tb.Gia.ToString();
-            tb_loaitb.Texts = tb.Maltb;
+            //tb_loaitb.Texts = tb.Maltb;
+            cb_loai.Text = tbBUS.Tentb(tb.Maltb);
             tb_Sl.Texts = tb.Soluong.ToString();
         }
         private void ClearTextBoxes()
@@ -54,6 +59,7 @@ namespace Gym_Management
         private void bt_xoahet_Click(object sender, EventArgs e)
         {
             ClearTextBoxes();
+            cb_loai.Text = "";
         }
 
         private void bt_Luu_Click(object sender, EventArgs e)
@@ -61,11 +67,11 @@ namespace Gym_Management
             try
             {
                 if (tb_matb.Texts != "" && tb_tentb.Texts != "" && tb_Sl.Texts != ""
-                    && tb_dongia.Texts != "" &&  tb_loaitb.Texts != "")
+                    && tb_dongia.Texts != "" )
                 {
                     if (tbBUS.updateEquipment(tb_matb.Texts, tb_tentb.Texts, dt_ngnhap.Value.ToString(),
                         dt_ngsd.Value.ToString(), dt_hanbt.Value.ToString(), decimal.Parse(tb_dongia.Texts),
-                        tb_loaitb.Texts, int.Parse(tb_Sl.Texts)))
+                        cb_loai.SelectedValue.ToString(), int.Parse(tb_Sl.Texts)))
                     {
                         MessageBox.Show("Đã sửa thành công");
                         this.Close();

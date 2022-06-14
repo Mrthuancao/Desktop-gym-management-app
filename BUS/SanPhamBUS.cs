@@ -22,6 +22,18 @@ namespace BUS
             }
             return listThietBi;
         }
+        public DataTable GetSP()
+        {
+            return spDAO.getAllSanPham();
+        }
+        public DataTable GetTenlsp()
+        {
+            return spDAO.GetTenlsp();
+        }
+        public string Tenlsp(string malsp)
+        {
+            return spDAO.Tenlsp(malsp);
+        }
 
 
 

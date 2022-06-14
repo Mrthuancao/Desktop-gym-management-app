@@ -56,7 +56,18 @@ namespace BUS
             }
             return dem;
         }
-        
+        public DataTable MaDKRest(string manv, string thoigian)
+        {
+            return BuoiTapDAO.MaDKRest(manv, thoigian);
+        }
+        public int KiemTra(string madk, string thoigian)
+        {
+            if (BuoiTapDAO.KiemTra(madk, thoigian) == "1")
+                return 1;
+            else
+                return 0;
+        }
+
     }
 
 

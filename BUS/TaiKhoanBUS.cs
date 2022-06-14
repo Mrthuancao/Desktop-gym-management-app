@@ -140,5 +140,23 @@ namespace BUS
         {
             return accountDAL.deleteAccount(matk);
         }
+        public DataTable GetALLACC()
+        {
+            return accountDAL.getAllAccounts();
+        }
+        public int KiemTra(string manv)
+        {
+            if (accountDAL.KiemTra(manv) == "1")
+                return 1;
+            else
+                return 0;
+        }
+        public int CheckUser(string username)
+        {
+            if (accountDAL.CheckUser(username) == "1")
+                return 1;
+            else
+                return 0;
+        }
     }
 }

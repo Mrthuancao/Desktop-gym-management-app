@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gb_themhv = new System.Windows.Forms.GroupBox();
+            this.tb_mahv = new Gym_Management.CustomTextBox();
             this.lb_mahv = new System.Windows.Forms.Label();
             this.cb_gioitinh = new System.Windows.Forms.ComboBox();
             this.dt_ngaydk = new System.Windows.Forms.DateTimePicker();
@@ -38,10 +39,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lb_phai = new System.Windows.Forms.Label();
             this.lb_tenhv = new System.Windows.Forms.Label();
-            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
-            this.tb_mahv = new Gym_Management.CustomTextBox();
             this.tb_Sdt = new Gym_Management.CustomTextBox();
             this.tb_TenHV = new Gym_Management.CustomTextBox();
+            this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.bt_xoahet = new Gym_Management.CustomButton();
             this.bt_Luu = new Gym_Management.CustomButton();
             this.gb_themhv.SuspendLayout();
@@ -76,6 +76,30 @@
             this.gb_themhv.TabIndex = 3;
             this.gb_themhv.TabStop = false;
             this.gb_themhv.Text = "THÊM HỘI VIÊN";
+            // 
+            // tb_mahv
+            // 
+            this.tb_mahv.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_mahv.BorderColor = System.Drawing.Color.Black;
+            this.tb_mahv.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_mahv.BorderRadius = 5;
+            this.tb_mahv.Bordersize = 2;
+            this.tb_mahv.Enabled = false;
+            this.tb_mahv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_mahv.ForeColor = System.Drawing.Color.Black;
+            this.tb_mahv.Location = new System.Drawing.Point(199, 247);
+            this.tb_mahv.Margin = new System.Windows.Forms.Padding(5);
+            this.tb_mahv.Multiline = false;
+            this.tb_mahv.Name = "tb_mahv";
+            this.tb_mahv.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_mahv.PasswordChar = false;
+            this.tb_mahv.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_mahv.PlaceholderText = "";
+            this.tb_mahv.ReadOnly1 = false;
+            this.tb_mahv.Size = new System.Drawing.Size(232, 33);
+            this.tb_mahv.TabIndex = 1;
+            this.tb_mahv.Texts = "";
+            this.tb_mahv.UnderlinedStyle = false;
             // 
             // lb_mahv
             // 
@@ -114,7 +138,7 @@
             this.dt_ngaydk.Margin = new System.Windows.Forms.Padding(4);
             this.dt_ngaydk.Name = "dt_ngaydk";
             this.dt_ngaydk.Size = new System.Drawing.Size(232, 26);
-            this.dt_ngaydk.TabIndex = 7;
+            this.dt_ngaydk.TabIndex = 5;
             // 
             // dt_ngsinh
             // 
@@ -127,7 +151,7 @@
             this.dt_ngsinh.Margin = new System.Windows.Forms.Padding(4);
             this.dt_ngsinh.Name = "dt_ngsinh";
             this.dt_ngsinh.Size = new System.Drawing.Size(232, 26);
-            this.dt_ngsinh.TabIndex = 6;
+            this.dt_ngsinh.TabIndex = 4;
             // 
             // label1
             // 
@@ -184,47 +208,6 @@
             this.lb_tenhv.TabIndex = 58;
             this.lb_tenhv.Text = "Tên hội viên:";
             // 
-            // pb_anh
-            // 
-            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pb_anh.ForeColor = System.Drawing.Color.Red;
-            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.pb_anh.IconColor = System.Drawing.Color.Red;
-            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pb_anh.IconSize = 185;
-            this.pb_anh.Location = new System.Drawing.Point(88, 39);
-            this.pb_anh.Margin = new System.Windows.Forms.Padding(4);
-            this.pb_anh.Name = "pb_anh";
-            this.pb_anh.Size = new System.Drawing.Size(330, 185);
-            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_anh.TabIndex = 52;
-            this.pb_anh.TabStop = false;
-            // 
-            // tb_mahv
-            // 
-            this.tb_mahv.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_mahv.BorderColor = System.Drawing.Color.Black;
-            this.tb_mahv.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_mahv.BorderRadius = 5;
-            this.tb_mahv.Bordersize = 2;
-            this.tb_mahv.Enabled = false;
-            this.tb_mahv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_mahv.ForeColor = System.Drawing.Color.Black;
-            this.tb_mahv.Location = new System.Drawing.Point(199, 247);
-            this.tb_mahv.Margin = new System.Windows.Forms.Padding(5);
-            this.tb_mahv.Multiline = false;
-            this.tb_mahv.Name = "tb_mahv";
-            this.tb_mahv.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_mahv.PasswordChar = false;
-            this.tb_mahv.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_mahv.PlaceholderText = "";
-            this.tb_mahv.ReadOnly1 = false;
-            this.tb_mahv.Size = new System.Drawing.Size(232, 33);
-            this.tb_mahv.TabIndex = 1;
-            this.tb_mahv.Texts = "";
-            this.tb_mahv.UnderlinedStyle = false;
-            // 
             // tb_Sdt
             // 
             this.tb_Sdt.BackColor = System.Drawing.SystemColors.Window;
@@ -244,7 +227,7 @@
             this.tb_Sdt.PlaceholderText = "";
             this.tb_Sdt.ReadOnly1 = false;
             this.tb_Sdt.Size = new System.Drawing.Size(232, 33);
-            this.tb_Sdt.TabIndex = 8;
+            this.tb_Sdt.TabIndex = 6;
             this.tb_Sdt.Texts = "";
             this.tb_Sdt.UnderlinedStyle = false;
             // 
@@ -271,6 +254,23 @@
             this.tb_TenHV.Texts = "";
             this.tb_TenHV.UnderlinedStyle = false;
             // 
+            // pb_anh
+            // 
+            this.pb_anh.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pb_anh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pb_anh.ForeColor = System.Drawing.Color.Red;
+            this.pb_anh.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.pb_anh.IconColor = System.Drawing.Color.Red;
+            this.pb_anh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pb_anh.IconSize = 185;
+            this.pb_anh.Location = new System.Drawing.Point(88, 39);
+            this.pb_anh.Margin = new System.Windows.Forms.Padding(4);
+            this.pb_anh.Name = "pb_anh";
+            this.pb_anh.Size = new System.Drawing.Size(330, 185);
+            this.pb_anh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_anh.TabIndex = 52;
+            this.pb_anh.TabStop = false;
+            // 
             // bt_xoahet
             // 
             this.bt_xoahet.BackColor = System.Drawing.Color.DarkOrange;
@@ -287,7 +287,7 @@
             this.bt_xoahet.Location = new System.Drawing.Point(343, 559);
             this.bt_xoahet.Name = "bt_xoahet";
             this.bt_xoahet.Size = new System.Drawing.Size(70, 27);
-            this.bt_xoahet.TabIndex = 11;
+            this.bt_xoahet.TabIndex = 8;
             this.bt_xoahet.Text = "Xóa hết";
             this.bt_xoahet.TextColor = System.Drawing.Color.Transparent;
             this.bt_xoahet.UseVisualStyleBackColor = false;
@@ -309,7 +309,7 @@
             this.bt_Luu.Location = new System.Drawing.Point(209, 559);
             this.bt_Luu.Name = "bt_Luu";
             this.bt_Luu.Size = new System.Drawing.Size(70, 27);
-            this.bt_Luu.TabIndex = 10;
+            this.bt_Luu.TabIndex = 7;
             this.bt_Luu.Text = "Lưu";
             this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
             this.bt_Luu.UseVisualStyleBackColor = false;

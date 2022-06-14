@@ -51,5 +51,13 @@ namespace BUS
         {
             return hvDAL.GetAllHoiVien();
         }
+        public DataTable GetAllHVNotNull()
+        {
+            return hvDAL.GetAllHVNotNull();
+        }
+        public DataTable GetAllRest()
+        {
+            return hvDAL.GeTAllRest();
+        }
     }
 }

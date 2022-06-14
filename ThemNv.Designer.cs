@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gb_themhv = new System.Windows.Forms.GroupBox();
+            this.cb_mlnv = new System.Windows.Forms.ComboBox();
             this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.tb_manv = new Gym_Management.CustomTextBox();
             this.lb_manv = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.dt_ngayvaolam = new System.Windows.Forms.DateTimePicker();
             this.dt_ngsinh = new System.Windows.Forms.DateTimePicker();
             this.lb_mlnv = new System.Windows.Forms.Label();
-            this.tb_mlnv = new Gym_Management.CustomTextBox();
             this.tb_Luong = new Gym_Management.CustomTextBox();
             this.lb_luong = new System.Windows.Forms.Label();
             this.lb_Sdt = new System.Windows.Forms.Label();
@@ -57,6 +57,7 @@
             // gb_themhv
             // 
             this.gb_themhv.BackColor = System.Drawing.Color.Gainsboro;
+            this.gb_themhv.Controls.Add(this.cb_mlnv);
             this.gb_themhv.Controls.Add(this.pb_anh);
             this.gb_themhv.Controls.Add(this.tb_manv);
             this.gb_themhv.Controls.Add(this.lb_manv);
@@ -66,7 +67,6 @@
             this.gb_themhv.Controls.Add(this.dt_ngayvaolam);
             this.gb_themhv.Controls.Add(this.dt_ngsinh);
             this.gb_themhv.Controls.Add(this.lb_mlnv);
-            this.gb_themhv.Controls.Add(this.tb_mlnv);
             this.gb_themhv.Controls.Add(this.tb_Luong);
             this.gb_themhv.Controls.Add(this.lb_luong);
             this.gb_themhv.Controls.Add(this.lb_Sdt);
@@ -87,6 +87,20 @@
             this.gb_themhv.TabIndex = 51;
             this.gb_themhv.TabStop = false;
             this.gb_themhv.Text = "THÊM NHÂN VIÊN";
+            // 
+            // cb_mlnv
+            // 
+            this.cb_mlnv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
+            this.cb_mlnv.FormattingEnabled = true;
+            this.cb_mlnv.IntegralHeight = false;
+            this.cb_mlnv.ItemHeight = 18;
+            this.cb_mlnv.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cb_mlnv.Location = new System.Drawing.Point(209, 591);
+            this.cb_mlnv.Name = "cb_mlnv";
+            this.cb_mlnv.Size = new System.Drawing.Size(232, 26);
+            this.cb_mlnv.TabIndex = 9;
             // 
             // pb_anh
             // 
@@ -227,32 +241,9 @@
             this.lb_mlnv.ForeColor = System.Drawing.Color.Black;
             this.lb_mlnv.Location = new System.Drawing.Point(30, 600);
             this.lb_mlnv.Name = "lb_mlnv";
-            this.lb_mlnv.Size = new System.Drawing.Size(128, 16);
+            this.lb_mlnv.Size = new System.Drawing.Size(108, 16);
             this.lb_mlnv.TabIndex = 47;
-            this.lb_mlnv.Text = "Mã loại nhân viên:";
-            // 
-            // tb_mlnv
-            // 
-            this.tb_mlnv.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_mlnv.BorderColor = System.Drawing.Color.Black;
-            this.tb_mlnv.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_mlnv.BorderRadius = 5;
-            this.tb_mlnv.Bordersize = 2;
-            this.tb_mlnv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_mlnv.ForeColor = System.Drawing.Color.Black;
-            this.tb_mlnv.Location = new System.Drawing.Point(209, 583);
-            this.tb_mlnv.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_mlnv.Multiline = false;
-            this.tb_mlnv.Name = "tb_mlnv";
-            this.tb_mlnv.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_mlnv.PasswordChar = false;
-            this.tb_mlnv.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_mlnv.PlaceholderText = "";
-            this.tb_mlnv.ReadOnly1 = false;
-            this.tb_mlnv.Size = new System.Drawing.Size(232, 33);
-            this.tb_mlnv.TabIndex = 9;
-            this.tb_mlnv.Texts = "";
-            this.tb_mlnv.UnderlinedStyle = false;
+            this.lb_mlnv.Text = "Loại nhân viên:";
             // 
             // tb_Luong
             // 
@@ -450,7 +441,6 @@
         public System.Windows.Forms.DateTimePicker dt_ngayvaolam;
         public System.Windows.Forms.DateTimePicker dt_ngsinh;
         private System.Windows.Forms.Label lb_mlnv;
-        private CustomTextBox tb_mlnv;
         private CustomTextBox tb_Luong;
         private System.Windows.Forms.Label lb_luong;
         private System.Windows.Forms.Label lb_Sdt;
@@ -465,5 +455,6 @@
         private CustomTextBox tb_manv;
         private System.Windows.Forms.Label lb_manv;
         private FontAwesome.Sharp.IconPictureBox pb_anh;
+        private System.Windows.Forms.ComboBox cb_mlnv;
     }
 }

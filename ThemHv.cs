@@ -23,7 +23,7 @@ namespace Gym_Management
             count = dtg_HV.Rows.Count;
             string chuoi = "";
             int chuoi2 = 0;
-            chuoi = Convert.ToString(dtg_HV.Rows[count - 1].Cells[0].Value);
+            chuoi = Convert.ToString(dtg_HV.Rows[count - 2].Cells[0].Value);
             chuoi2 = Convert.ToInt32((chuoi.Remove(0, 0)));
             if (chuoi2 + 1 < 10)
                 tb_mahv.Texts = "00" + (chuoi2 + 1).ToString();
@@ -50,26 +50,13 @@ namespace Gym_Management
             }
             this.Close();
         }
-        private void ClearTextBoxes()
-        {
-            Action<Control.ControlCollection> func = null;
-
-            func = (controls) =>
-            {
-                foreach (Control control in controls)
-                    if (control is TextBox) 
-                    {
-                        (control as TextBox).Clear();
-                    }
-                    else
-                        func(control.Controls);
-            };
-            func(Controls);
-        }
-
+        
         private void bt_xoahet_Click(object sender, EventArgs e)
         {
-            ClearTextBoxes();
+            //ClearTextBoxes();
+            tb_TenHV.Texts = "";
+            tb_Sdt.Texts = "";
+            cb_gioitinh.Text = "";
         }
     }
 }

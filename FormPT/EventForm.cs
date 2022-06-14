@@ -33,10 +33,12 @@ namespace Gym_Management.FormPT
         {
             
             dtg_bt.DataSource = buoitap;
-            loadbtlist();
             cb_mdk.DataSource = btBus.ShowCombox(LogAcc.Manv);
+            //cb_mdk.DataSource = btBus.MaDKRest(LogAcc.Manv, LichTap.static_month + "/" + UserControlDays.static_day + "/" + LichTap.static_year);
             cb_mdk.DisplayMember = "madk";
-            
+            loadbtlist();
+
+
         }
         void loadbtlist()
         {
@@ -50,7 +52,6 @@ namespace Gym_Management.FormPT
 
         private void EventForm_Load(object sender, EventArgs e)
         {
-            // lets call the static variables we declare
             
             
         }
@@ -63,13 +64,15 @@ namespace Gym_Management.FormPT
 
         private void bt_them_Click(object sender, EventArgs e)
         {
-            if (cb_buoi.SelectedItem == null|| cb_mdk.SelectedItem == null)
+            if (cb_buoi.SelectedItem == null || cb_mdk.SelectedItem == null)
             {
                 MessageBox.Show("Điền đủ thông tin trước khi thêm buổi tập");
             }
+            else if (btBus.KiemTra(cb_mdk.Text, dt_ngay.Value.ToString())==1)
+                MessageBox.Show("Hội viên đã đăng kí hôm nay! Vui lòng chọn hội viên khác!");
             else
             {
-                if (btBus.InsertBuoiTap(cb_mdk.Text.ToString() ,cb_buoi.SelectedItem.ToString(), dt_ngay.Value.ToString()))
+                if (btBus.InsertBuoiTap(cb_mdk.Text.ToString(), cb_buoi.SelectedItem.ToString(), dt_ngay.Value.ToString()))
                 {
                     MessageBox.Show("Đã thêm thành công");
                     loadbtlist();

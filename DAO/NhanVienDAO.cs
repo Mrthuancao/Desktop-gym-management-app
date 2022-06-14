@@ -15,7 +15,14 @@ namespace DAO
     {
         public DataTable GetAllNhanVien()
         {
-            string query = "SELECT * FROM NHANVIEN";
+            string query = "SELECT manv, hoten, phai, ngsinh,ngvaolam,sdt,email,luong,NHANVIEN.malnv,tenlnv FROM NHANVIEN, LOAINHANVIEN WHERE NHANVIEN.malnv=LOAINHANVIEN.malnv";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
+        public DataTable GetLNV()
+        {
+            string query = "SELECT * FROM LOAINHANVIEN";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;
@@ -73,7 +80,21 @@ namespace DAO
         }
         public DataTable GetManvPT()
         {
-            string query = "SELECT manv FROM NHANVIEN WHERE malnv='PT'";
+            string query = "SELECT manv,hoten FROM NHANVIEN WHERE malnv='PT'";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
+        public DataTable GetManvPTORNull()
+        {
+            string query = "SELECT manv,hoten FROM NHANVIEN WHERE malnv='PT' OR malnv is null";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
+        public DataTable GetManvHVDK()
+        {
+            string query = "SELECT NV.manv, NV.hoten FROM NHANVIEN NV, DANGKY DK WHERE NV.manv = DK.manv AND NV.manv <> 'NV000' AND NV.malnv = 'PT' GROUP BY NV.Manv, NV.hoten HAVING COUNT(*) <6";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;

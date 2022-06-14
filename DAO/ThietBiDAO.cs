@@ -15,10 +15,35 @@ namespace DAO
     {
         public DataTable getAllEquipments()
         {
-            string query = "SELECT * FROM THIETBI";
+            string query = "SELECT matb, tenthietbi, THIETBI.maltb, ngmua, ngsd, hanbaotri, gia, soluong, tenltb FROM THIETBI, LOAITHIETBI WHERE THIETBI.maltb=LOAITHIETBI.maltb";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;
+        }
+        public DataTable GetTenltb()
+        {
+            string query = "SELECT * FROM LOAITHIETBI";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
+        public string Tenltb(string maltb)
+        {
+            string query = "SELECT tenltb FROM LOAITHIETBI WHERE maltb=@maltb";
+            object[] value = new object[] { maltb };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            string ten = dt.Rows[0]["tenltb"].ToString();
+            return ten;
+        }
+        public string KiemTra(string matb)
+        {
+            string query = "SELECT matb FROM THIETBI where matb=@matb";
+            object[] value = new object[] { matb };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            string a = dt.Rows.Count.ToString();
+            return a;
         }
 
         public THIETBI getEquipmentByName(string name)

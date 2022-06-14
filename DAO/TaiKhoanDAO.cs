@@ -86,6 +86,24 @@ namespace DAO
             DataTable dt = db.ExecuteQuery(query);
             return dt;
         }
+        public string KiemTra(string manv)
+        {
+            string query = "SELECT matk FROM TAIKHOAN where manv=@manv";
+            object[] value = new object[] { manv };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            string a = dt.Rows.Count.ToString();
+            return a;
+        }
+        public string CheckUser(string username)
+        {
+            string query = "SELECT matk FROM TAIKHOAN where username=@username";
+            object[] value = new object[] { username };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            string a = dt.Rows.Count.ToString();
+            return a;
+        }
 
     }
 }

@@ -17,7 +17,20 @@ namespace DAO
             DataTable dt = db.ExecuteQuery(query);
             return dt;
         }
-
+        public DataTable GetAllHVNotNull()
+        {
+            string query = "SELECT * FROM HOIVIEN WHERE mahv<>'000'";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
+        public DataTable GeTAllRest()
+        {
+            string query = "SELECT mahv, hoten FROM HOIVIEN WHERE mahv in (SELECT mahv FROM HOIVIEN WHERE mahv <> '000' EXCEPT SELECT mahv FROM DANGKY)";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
         public HOIVIEN GetHoivienByID(int idD)
         {
             string query = "SELECT * FROM HOIVIEN WHERE mahv = @mahv";

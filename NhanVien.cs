@@ -20,13 +20,19 @@ namespace Gym_Management
         public NhanVien()
         {
             InitializeComponent();
+            cb_mlnv.DataSource = nvBUS.GetLNV();
+            cb_mlnv.DisplayMember = "tenlnv";
+            cb_mlnv.ValueMember = "malnv";
+            cb_mlnv.Text = "";
             Load();
+            
 
         }
 
         void Load()
         {
             dtg_NV.DataSource = nvlist;
+            
             LoadNhanVienList();
             AddNhanVienBinding();
         }
@@ -40,14 +46,9 @@ namespace Gym_Management
         }
         void LoadNhanVienList()
         {
-            nvlist.DataSource = nvBUS.GetNhanVienList();
-            dtg_NV.Columns["phai"].Visible = false;
-            dtg_NV.Columns["email"].Visible = false;
-            dtg_NV.Columns["luong"].Visible = false;
-            dtg_NV.Columns["ngsinh"].Visible = false;
-            dtg_NV.Columns["ngvaolam"].Visible = false;
-            dtg_NV.Columns["sdt"].Visible = false;
-            dtg_NV.Columns["malnv"].Visible = false;
+            nvlist.DataSource = nvBUS.GetAllNV();
+           
+
         }
 
         void AddNhanVienBinding()
@@ -60,7 +61,8 @@ namespace Gym_Management
             tb_Sdt.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "sdt"));
             tb_Email.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "email"));
             tb_Luong.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "luong"));
-            tb_mlnv.DataBindings.Add(new Binding("Texts", dtg_NV.DataSource, "malnv"));
+            
+            cb_mlnv.DataBindings.Add(new Binding("Text", dtg_NV.DataSource, "tenlnv"));
         }
 
         private void bt_xoa_Click_1(object sender, EventArgs e)
@@ -90,16 +92,17 @@ namespace Gym_Management
         private void bt_sua_Click(object sender, EventArgs e)
         {
             
-                tb_mnv.ReadOnly1 = false;
+                //tb_mnv.ReadOnly1 = false;
                 tb_TenNv.ReadOnly1 = false;
                 tb_gioitinh.ReadOnly1 = false;
                 tb_Sdt.ReadOnly1 = false;
                 tb_Email.ReadOnly1 = false;
                 tb_Luong.ReadOnly1 = false;
-                tb_mlnv.ReadOnly1 = false;
+                //tb_mlnv.ReadOnly1 = false;
                 dt_ngayvaolam.Enabled = true;
                 dt_ngsinh.Enabled = true;
                 bt_Luu.Enabled = true;
+                cb_mlnv.Enabled = true;
         }
 
         private void bt_Luu_Click(object sender, EventArgs e)
@@ -110,7 +113,7 @@ namespace Gym_Management
                 {
                     if (nvBUS.UpdateNhanVien(tb_mnv.Texts, tb_TenNv.Texts, tb_gioitinh.Texts, dt_ngsinh.Value.ToString(),
                         dt_ngayvaolam.Value.ToString(), tb_Sdt.Texts, tb_Email.Texts, decimal.Parse(tb_Luong.Texts),
-                        tb_mlnv.Texts))
+                        cb_mlnv.SelectedValue.ToString()))
                     {
                         MessageBox.Show("Đã sửa thành công!");
                         LoadNhanVienList();
@@ -130,10 +133,12 @@ namespace Gym_Management
             tb_Sdt.ReadOnly1 = true;
             tb_Email.ReadOnly1 = true;
             tb_Luong.ReadOnly1 = true;
-            tb_mlnv.ReadOnly1 = true;
+            //tb_mlnv.ReadOnly1 = true;
             dt_ngayvaolam.Enabled = false;
             dt_ngsinh.Enabled = false;
             bt_Luu.Enabled = false;
+            cb_mlnv.Enabled = false;
+            
 
         }
 

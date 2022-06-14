@@ -16,6 +16,7 @@ namespace Gym_Management
     {
         GoiTapBus gtBUS = new GoiTapBus();
         HoiVienBUS hvBUS = new HoiVienBUS();
+        NhanVienBUS NvBUS = new NhanVienBUS();
         public GoiTap()
         {
             InitializeComponent();
@@ -26,15 +27,21 @@ namespace Gym_Management
             cb_Magoi.DataSource = gtBUS.ShowCombox();
             cb_Magoi.DisplayMember = "tengoi";
             cb_Magoi.ValueMember = "magoi";
-            cb_mahv.DataSource = hvBUS.GetAllHoiVien();
+            cb_mahv.DataSource = hvBUS.GetAllRest();
             cb_mahv.DisplayMember = "mahv";
             cb_mahv.ValueMember = "hoten";
+            cb_manv.DataSource = NvBUS.GetManvHVDK();
+            cb_manv.DisplayMember = "manv";
+            cb_manv.ValueMember = "hoten";
+            tb_tenpt.Texts = "";
             tb_tenhv.Texts = "";
+            
+
         }
 
         private void bt_Dk_Click(object sender, EventArgs e)
         {
-            if (tb_madk.Texts == "" || cb_Magoi.SelectedItem.ToString() == "" || tb_maPt.Texts == "" || dt_ngdk.Value.ToString()=="" || dt_ngHetHan.Value.ToString()=="")
+            if (tb_madk.Texts == "" || cb_Magoi.SelectedItem.ToString() == "" || cb_manv.Text == "" || dt_ngdk.Value.ToString()=="" || dt_ngHetHan.Value.ToString()=="")
             {
                 MessageBox.Show("Điền đủ thông tin trước khi thêm hội viên");
             }
@@ -44,7 +51,7 @@ namespace Gym_Management
             }
             else
             {
-                if (gtBUS.InsertGoiTap(tb_madk.Texts, cb_Magoi.SelectedValue.ToString(), cb_mahv.Text, tb_maPt.Texts, dt_ngdk.Value.ToString(), dt_ngHetHan.Value.ToString()))
+                if (gtBUS.InsertGoiTap(tb_madk.Texts, cb_Magoi.SelectedValue.ToString(), cb_mahv.Text, cb_manv.Text, dt_ngdk.Value.ToString(), dt_ngHetHan.Value.ToString()))
                 {
                     MessageBox.Show("Đã thêm thành công");
                 }
@@ -71,6 +78,9 @@ namespace Gym_Management
         private void tb_Xoa_Click(object sender, EventArgs e)
         {
             ClearTextBoxes();
+            cb_manv.Text = "";
+            cb_Magoi.Text = "";
+            cb_mahv.Text = "";
         }
 
 
@@ -82,6 +92,7 @@ namespace Gym_Management
         void load()
         {
             dtg_GT.DataSource = gtBUS.GetAllGoiTap(cb_goitap.Text);
+            dtg_GT.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void bt_xoa_Click(object sender, EventArgs e)
@@ -112,6 +123,20 @@ namespace Gym_Management
         private void cb_mahv_SelectedIndexChanged(object sender, EventArgs e)
         {
             tb_tenhv.Texts = cb_mahv.SelectedValue.ToString();
+        }
+
+        private void cb_manv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tb_tenpt.Texts = cb_manv.SelectedValue.ToString();
+        }
+
+        private void cb_Magoi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_Magoi.Text == "Regular")
+            {
+                cb_manv.Text = "NV000";
+                tb_tenpt.Texts = "Không PT";
+            }
         }
     }
 }
