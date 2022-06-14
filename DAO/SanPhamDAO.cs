@@ -12,12 +12,27 @@ namespace DAO
     {
         public DataTable getAllSanPham()
         {
-            string query = "SELECT * FROM SANPHAM";
+            string query = "SELECT masp, tensp, gianhap, dongia, soluong, ngaymua, SANPHAM.malsp, tenlsp FROM SANPHAM, LOAISANPHAM WHERE SANPHAM.malsp = LOAISANPHAM.malsp ";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;
         }
-
+        public DataTable GetTenlsp()
+        {
+            string query = "SELECT * FROM LOAISANPHAM";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
+        public string Tenlsp(string malsp)
+        {
+            string query = "SELECT tenlsp FROM LOAISANPHAM WHERE malsp=@malsp";
+            object[] value = new object[] { malsp };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            string ten = dt.Rows[0]["tenlsp"].ToString();
+            return ten;
+        }
         public SANPHAM getSanPhamByName(string name)
         {
             string query = "select * from SANPHAM where tensp = @name";

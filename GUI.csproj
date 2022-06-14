@@ -124,7 +124,6 @@
     <Compile Include="FormPT\LichTap.Designer.cs">
       <DependentUpon>LichTap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPT\ModelCountHv\SoLuongHV.cs" />
     <Compile Include="FormPT\UserControlBlank.cs">
       <SubType>UserControl</SubType>
     </Compile>

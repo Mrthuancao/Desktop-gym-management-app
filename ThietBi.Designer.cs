@@ -57,6 +57,7 @@
             this.ngmua = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenltb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lb_danhsach = new System.Windows.Forms.Label();
             this.pn_thietbi.SuspendLayout();
             this.pn_tttb.SuspendLayout();
@@ -125,7 +126,7 @@
             this.tb_tentb.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_tentb.ForeColor = System.Drawing.Color.Black;
             this.tb_tentb.Location = new System.Drawing.Point(459, 82);
-            this.tb_tentb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_tentb.Margin = new System.Windows.Forms.Padding(4);
             this.tb_tentb.Multiline = false;
             this.tb_tentb.Name = "tb_tentb";
             this.tb_tentb.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -149,7 +150,7 @@
             this.tb_loaitb.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_loaitb.ForeColor = System.Drawing.Color.Black;
             this.tb_loaitb.Location = new System.Drawing.Point(459, 136);
-            this.tb_loaitb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_loaitb.Margin = new System.Windows.Forms.Padding(4);
             this.tb_loaitb.Multiline = false;
             this.tb_loaitb.Name = "tb_loaitb";
             this.tb_loaitb.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -194,8 +195,8 @@
             this.tb_giatb.Bordersize = 2;
             this.tb_giatb.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_giatb.ForeColor = System.Drawing.Color.Black;
-            this.tb_giatb.Location = new System.Drawing.Point(459, 248);
-            this.tb_giatb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_giatb.Location = new System.Drawing.Point(459, 231);
+            this.tb_giatb.Margin = new System.Windows.Forms.Padding(4);
             this.tb_giatb.Multiline = false;
             this.tb_giatb.Name = "tb_giatb";
             this.tb_giatb.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -215,9 +216,9 @@
             this.lb_loaitb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_loaitb.Location = new System.Drawing.Point(321, 153);
             this.lb_loaitb.Name = "lb_loaitb";
-            this.lb_loaitb.Size = new System.Drawing.Size(39, 16);
+            this.lb_loaitb.Size = new System.Drawing.Size(122, 16);
             this.lb_loaitb.TabIndex = 24;
-            this.lb_loaitb.Text = "Loại:";
+            this.lb_loaitb.Text = "Tên loại thiết bị: ";
             // 
             // tb_soluongtb
             // 
@@ -230,7 +231,7 @@
             this.tb_soluongtb.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_soluongtb.ForeColor = System.Drawing.Color.Black;
             this.tb_soluongtb.Location = new System.Drawing.Point(459, 185);
-            this.tb_soluongtb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_soluongtb.Margin = new System.Windows.Forms.Padding(4);
             this.tb_soluongtb.Multiline = false;
             this.tb_soluongtb.Name = "tb_soluongtb";
             this.tb_soluongtb.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -259,7 +260,7 @@
             this.lb_giatb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_giatb.AutoSize = true;
             this.lb_giatb.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_giatb.Location = new System.Drawing.Point(321, 265);
+            this.lb_giatb.Location = new System.Drawing.Point(321, 248);
             this.lb_giatb.Name = "lb_giatb";
             this.lb_giatb.Size = new System.Drawing.Size(33, 16);
             this.lb_giatb.TabIndex = 57;
@@ -357,7 +358,7 @@
             this.tb_Search.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Search.ForeColor = System.Drawing.Color.Black;
             this.tb_Search.Location = new System.Drawing.Point(794, 45);
-            this.tb_Search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Search.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Search.Multiline = false;
             this.tb_Search.Name = "tb_Search";
             this.tb_Search.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -422,7 +423,8 @@
             this.maltb,
             this.ngmua,
             this.gia,
-            this.soluong});
+            this.soluong,
+            this.tenltb});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -466,6 +468,7 @@
             this.maltb.MinimumWidth = 6;
             this.maltb.Name = "maltb";
             this.maltb.ReadOnly = true;
+            this.maltb.Visible = false;
             // 
             // ngmua
             // 
@@ -493,6 +496,13 @@
             this.soluong.MinimumWidth = 6;
             this.soluong.Name = "soluong";
             this.soluong.ReadOnly = true;
+            // 
+            // tenltb
+            // 
+            this.tenltb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tenltb.DataPropertyName = "tenltb";
+            this.tenltb.HeaderText = "Tên loại thiết ";
+            this.tenltb.Name = "tenltb";
             // 
             // lb_danhsach
             // 
@@ -555,5 +565,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ngmua;
         private System.Windows.Forms.DataGridViewTextBoxColumn gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenltb;
     }
 }

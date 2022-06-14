@@ -105,7 +105,7 @@
             this.tb_gioitinh.PlaceholderText = "";
             this.tb_gioitinh.ReadOnly1 = true;
             this.tb_gioitinh.Size = new System.Drawing.Size(232, 33);
-            this.tb_gioitinh.TabIndex = 38;
+            this.tb_gioitinh.TabIndex = 3;
             this.tb_gioitinh.Texts = "";
             this.tb_gioitinh.UnderlinedStyle = false;
             // 
@@ -115,12 +115,13 @@
             this.dt_ngaydk.CalendarForeColor = System.Drawing.Color.Black;
             this.dt_ngaydk.CalendarTitleBackColor = System.Drawing.Color.Goldenrod;
             this.dt_ngaydk.CalendarTitleForeColor = System.Drawing.Color.Goldenrod;
+            this.dt_ngaydk.Enabled = false;
             this.dt_ngaydk.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_ngaydk.Location = new System.Drawing.Point(240, 469);
             this.dt_ngaydk.Margin = new System.Windows.Forms.Padding(4);
             this.dt_ngaydk.Name = "dt_ngaydk";
             this.dt_ngaydk.Size = new System.Drawing.Size(232, 26);
-            this.dt_ngaydk.TabIndex = 7;
+            this.dt_ngaydk.TabIndex = 5;
             // 
             // dt_ngsinh
             // 
@@ -135,7 +136,8 @@
             this.dt_ngsinh.Name = "dt_ngsinh";
             this.dt_ngsinh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dt_ngsinh.Size = new System.Drawing.Size(232, 26);
-            this.dt_ngsinh.TabIndex = 6;
+            this.dt_ngsinh.TabIndex = 4;
+            this.dt_ngsinh.Value = new System.DateTime(2022, 6, 11, 0, 0, 0, 0);
             // 
             // label1
             // 
@@ -221,7 +223,7 @@
             this.tb_Sdt.PlaceholderText = "";
             this.tb_Sdt.ReadOnly1 = true;
             this.tb_Sdt.Size = new System.Drawing.Size(232, 33);
-            this.tb_Sdt.TabIndex = 8;
+            this.tb_Sdt.TabIndex = 6;
             this.tb_Sdt.Texts = "";
             this.tb_Sdt.UnderlinedStyle = false;
             // 
@@ -421,7 +423,7 @@
             this.bt_Luu.Location = new System.Drawing.Point(411, 410);
             this.bt_Luu.Name = "bt_Luu";
             this.bt_Luu.Size = new System.Drawing.Size(102, 34);
-            this.bt_Luu.TabIndex = 9;
+            this.bt_Luu.TabIndex = 7;
             this.bt_Luu.Text = "Lưu";
             this.bt_Luu.TextColor = System.Drawing.Color.Transparent;
             this.bt_Luu.UseVisualStyleBackColor = false;
@@ -444,7 +446,7 @@
             this.bt_xoa.Location = new System.Drawing.Point(411, 268);
             this.bt_xoa.Name = "bt_xoa";
             this.bt_xoa.Size = new System.Drawing.Size(102, 34);
-            this.bt_xoa.TabIndex = 11;
+            this.bt_xoa.TabIndex = 9;
             this.bt_xoa.Text = "Xóa";
             this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
             this.bt_xoa.UseVisualStyleBackColor = false;
@@ -516,7 +518,7 @@
             this.bt_Them.Location = new System.Drawing.Point(411, 195);
             this.bt_Them.Name = "bt_Them";
             this.bt_Them.Size = new System.Drawing.Size(102, 34);
-            this.bt_Them.TabIndex = 7;
+            this.bt_Them.TabIndex = 8;
             this.bt_Them.Text = "Thêm";
             this.bt_Them.TextColor = System.Drawing.Color.Transparent;
             this.bt_Them.UseVisualStyleBackColor = false;

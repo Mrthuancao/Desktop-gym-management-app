@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.gb_themhv = new System.Windows.Forms.GroupBox();
+            this.cb_manv = new System.Windows.Forms.ComboBox();
+            this.tb_matk = new Gym_Management.CustomTextBox();
             this.lb_matk = new System.Windows.Forms.Label();
+            this.bt_xoa = new Gym_Management.CustomButton();
             this.pb_ctk = new FontAwesome.Sharp.IconPictureBox();
             this.lb_phai = new System.Windows.Forms.Label();
             this.lb_username = new System.Windows.Forms.Label();
             this.lb_tennv = new System.Windows.Forms.Label();
-            this.cb_manv = new System.Windows.Forms.ComboBox();
-            this.tb_matk = new Gym_Management.CustomTextBox();
-            this.bt_xoa = new Gym_Management.CustomButton();
             this.tb_username = new Gym_Management.CustomTextBox();
             this.tb_matkhau = new Gym_Management.CustomTextBox();
             this.bt_Tao = new Gym_Management.CustomButton();
@@ -68,6 +68,41 @@
             this.gb_themhv.TabStop = false;
             this.gb_themhv.Text = "CẤP TÀI KHOẢN";
             // 
+            // cb_manv
+            // 
+            this.cb_manv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cb_manv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
+            this.cb_manv.FormattingEnabled = true;
+            this.cb_manv.IntegralHeight = false;
+            this.cb_manv.ItemHeight = 18;
+            this.cb_manv.Location = new System.Drawing.Point(201, 238);
+            this.cb_manv.Name = "cb_manv";
+            this.cb_manv.Size = new System.Drawing.Size(229, 26);
+            this.cb_manv.TabIndex = 2;
+            // 
+            // tb_matk
+            // 
+            this.tb_matk.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_matk.BorderColor = System.Drawing.Color.Black;
+            this.tb_matk.BorderFocusColor = System.Drawing.Color.Goldenrod;
+            this.tb_matk.BorderRadius = 5;
+            this.tb_matk.Bordersize = 2;
+            this.tb_matk.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_matk.ForeColor = System.Drawing.Color.Black;
+            this.tb_matk.Location = new System.Drawing.Point(201, 172);
+            this.tb_matk.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_matk.Multiline = false;
+            this.tb_matk.Name = "tb_matk";
+            this.tb_matk.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_matk.PasswordChar = false;
+            this.tb_matk.PlaceholderColor = System.Drawing.Color.Brown;
+            this.tb_matk.PlaceholderText = "";
+            this.tb_matk.ReadOnly1 = false;
+            this.tb_matk.Size = new System.Drawing.Size(229, 33);
+            this.tb_matk.TabIndex = 1;
+            this.tb_matk.Texts = "";
+            this.tb_matk.UnderlinedStyle = false;
+            // 
             // lb_matk
             // 
             this.lb_matk.AutoSize = true;
@@ -78,6 +113,28 @@
             this.lb_matk.Size = new System.Drawing.Size(98, 16);
             this.lb_matk.TabIndex = 71;
             this.lb_matk.Text = "Mã tài khoản:";
+            // 
+            // bt_xoa
+            // 
+            this.bt_xoa.BackColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.bt_xoa.BorderColor = System.Drawing.SystemColors.Control;
+            this.bt_xoa.BorderRadius = 15;
+            this.bt_xoa.BorderSize = 0;
+            this.bt_xoa.FlatAppearance.BorderSize = 0;
+            this.bt_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
+            this.bt_xoa.Location = new System.Drawing.Point(328, 433);
+            this.bt_xoa.Name = "bt_xoa";
+            this.bt_xoa.Size = new System.Drawing.Size(102, 37);
+            this.bt_xoa.TabIndex = 6;
+            this.bt_xoa.Text = "Xóa hết";
+            this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
+            this.bt_xoa.UseVisualStyleBackColor = false;
+            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
             // pb_ctk
             // 
@@ -127,63 +184,6 @@
             this.lb_tennv.TabIndex = 57;
             this.lb_tennv.Text = "Mã nhân viên:";
             // 
-            // cb_manv
-            // 
-            this.cb_manv.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cb_manv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold);
-            this.cb_manv.FormattingEnabled = true;
-            this.cb_manv.IntegralHeight = false;
-            this.cb_manv.ItemHeight = 18;
-            this.cb_manv.Location = new System.Drawing.Point(201, 238);
-            this.cb_manv.Name = "cb_manv";
-            this.cb_manv.Size = new System.Drawing.Size(229, 26);
-            this.cb_manv.TabIndex = 72;
-            // 
-            // tb_matk
-            // 
-            this.tb_matk.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_matk.BorderColor = System.Drawing.Color.Black;
-            this.tb_matk.BorderFocusColor = System.Drawing.Color.Goldenrod;
-            this.tb_matk.BorderRadius = 5;
-            this.tb_matk.Bordersize = 2;
-            this.tb_matk.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_matk.ForeColor = System.Drawing.Color.Black;
-            this.tb_matk.Location = new System.Drawing.Point(201, 172);
-            this.tb_matk.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_matk.Multiline = false;
-            this.tb_matk.Name = "tb_matk";
-            this.tb_matk.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_matk.PasswordChar = false;
-            this.tb_matk.PlaceholderColor = System.Drawing.Color.Brown;
-            this.tb_matk.PlaceholderText = "TK..";
-            this.tb_matk.ReadOnly1 = false;
-            this.tb_matk.Size = new System.Drawing.Size(229, 33);
-            this.tb_matk.TabIndex = 1;
-            this.tb_matk.Texts = "";
-            this.tb_matk.UnderlinedStyle = false;
-            // 
-            // bt_xoa
-            // 
-            this.bt_xoa.BackColor = System.Drawing.Color.DarkOrange;
-            this.bt_xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.bt_xoa.BorderColor = System.Drawing.SystemColors.Control;
-            this.bt_xoa.BorderRadius = 15;
-            this.bt_xoa.BorderSize = 0;
-            this.bt_xoa.FlatAppearance.BorderSize = 0;
-            this.bt_xoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_xoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoa.Location = new System.Drawing.Point(328, 433);
-            this.bt_xoa.Name = "bt_xoa";
-            this.bt_xoa.Size = new System.Drawing.Size(102, 37);
-            this.bt_xoa.TabIndex = 5;
-            this.bt_xoa.Text = "Xóa hết";
-            this.bt_xoa.TextColor = System.Drawing.Color.Transparent;
-            this.bt_xoa.UseVisualStyleBackColor = false;
-            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
-            // 
             // tb_username
             // 
             this.tb_username.BackColor = System.Drawing.SystemColors.Window;
@@ -226,7 +226,7 @@
             this.tb_matkhau.PlaceholderText = "";
             this.tb_matkhau.ReadOnly1 = false;
             this.tb_matkhau.Size = new System.Drawing.Size(232, 33);
-            this.tb_matkhau.TabIndex = 54;
+            this.tb_matkhau.TabIndex = 4;
             this.tb_matkhau.Texts = "123456";
             this.tb_matkhau.UnderlinedStyle = false;
             // 
@@ -246,7 +246,7 @@
             this.bt_Tao.Location = new System.Drawing.Point(201, 433);
             this.bt_Tao.Name = "bt_Tao";
             this.bt_Tao.Size = new System.Drawing.Size(124, 37);
-            this.bt_Tao.TabIndex = 4;
+            this.bt_Tao.TabIndex = 5;
             this.bt_Tao.Text = "Tạo tài khoản";
             this.bt_Tao.TextColor = System.Drawing.Color.Transparent;
             this.bt_Tao.UseVisualStyleBackColor = false;

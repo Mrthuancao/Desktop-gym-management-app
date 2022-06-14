@@ -163,6 +163,7 @@
             this.tb_tenhv.BorderFocusColor = System.Drawing.Color.Goldenrod;
             this.tb_tenhv.BorderRadius = 5;
             this.tb_tenhv.Bordersize = 2;
+            this.tb_tenhv.Enabled = false;
             this.tb_tenhv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_tenhv.ForeColor = System.Drawing.Color.Black;
             this.tb_tenhv.Location = new System.Drawing.Point(594, 134);

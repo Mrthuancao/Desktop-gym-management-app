@@ -28,19 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pn_sanpham = new System.Windows.Forms.Panel();
             this.pn_dtgsp = new System.Windows.Forms.Panel();
             this.dtg_SP = new System.Windows.Forms.DataGridView();
-            this.masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tensp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gianhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaymua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.malsp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lb_danhsachsp = new System.Windows.Forms.Label();
             this.pn_ttsp = new System.Windows.Forms.Panel();
             this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
@@ -51,6 +44,14 @@
             this.lb_sl = new System.Windows.Forms.Label();
             this.bt_search = new FontAwesome.Sharp.IconButton();
             this.gb_chucnang = new System.Windows.Forms.GroupBox();
+            this.masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tensp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gianhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaymua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.malsp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenlsp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tb_tensp = new Gym_Management.CustomTextBox();
             this.tb_hang = new Gym_Management.CustomTextBox();
             this.tb_loaisp = new Gym_Management.CustomTextBox();
@@ -89,19 +90,19 @@
             // 
             // dtg_SP
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
-            this.dtg_SP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(249)))));
+            this.dtg_SP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtg_SP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg_SP.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.dtg_SP.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_SP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_SP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtg_SP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_SP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.masp,
@@ -110,15 +111,16 @@
             this.dongia,
             this.soluong,
             this.ngaymua,
-            this.malsp});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg_SP.DefaultCellStyle = dataGridViewCellStyle9;
+            this.malsp,
+            this.tenlsp});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtg_SP.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtg_SP.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dtg_SP.EnableHeadersVisualStyles = false;
             this.dtg_SP.GridColor = System.Drawing.SystemColors.ActiveBorder;
@@ -127,69 +129,6 @@
             this.dtg_SP.RowHeadersWidth = 51;
             this.dtg_SP.Size = new System.Drawing.Size(1023, 326);
             this.dtg_SP.TabIndex = 1;
-            // 
-            // masp
-            // 
-            this.masp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.masp.DataPropertyName = "masp";
-            this.masp.HeaderText = "Mã sản phẩm";
-            this.masp.MinimumWidth = 6;
-            this.masp.Name = "masp";
-            this.masp.ReadOnly = true;
-            // 
-            // tensp
-            // 
-            this.tensp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tensp.DataPropertyName = "tensp";
-            this.tensp.HeaderText = "Tên sản phẩm";
-            this.tensp.MinimumWidth = 6;
-            this.tensp.Name = "tensp";
-            this.tensp.ReadOnly = true;
-            // 
-            // gianhap
-            // 
-            this.gianhap.DataPropertyName = "gianhap";
-            this.gianhap.HeaderText = "Giá nhập";
-            this.gianhap.MinimumWidth = 6;
-            this.gianhap.Name = "gianhap";
-            this.gianhap.ReadOnly = true;
-            this.gianhap.Width = 125;
-            // 
-            // dongia
-            // 
-            this.dongia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dongia.DataPropertyName = "dongia";
-            this.dongia.HeaderText = "Đơn giá";
-            this.dongia.MinimumWidth = 6;
-            this.dongia.Name = "dongia";
-            this.dongia.ReadOnly = true;
-            // 
-            // soluong
-            // 
-            this.soluong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.soluong.DataPropertyName = "soluong";
-            this.soluong.HeaderText = "Số lượng";
-            this.soluong.MinimumWidth = 6;
-            this.soluong.Name = "soluong";
-            this.soluong.ReadOnly = true;
-            // 
-            // ngaymua
-            // 
-            this.ngaymua.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ngaymua.DataPropertyName = "ngaymua";
-            this.ngaymua.HeaderText = "Ngày nhập";
-            this.ngaymua.MinimumWidth = 6;
-            this.ngaymua.Name = "ngaymua";
-            this.ngaymua.ReadOnly = true;
-            // 
-            // malsp
-            // 
-            this.malsp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.malsp.DataPropertyName = "malsp";
-            this.malsp.HeaderText = "Loại sản phẩm";
-            this.malsp.MinimumWidth = 6;
-            this.malsp.Name = "malsp";
-            this.malsp.ReadOnly = true;
             // 
             // lb_danhsachsp
             // 
@@ -269,9 +208,9 @@
             this.lb_loaisp.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_loaisp.Location = new System.Drawing.Point(338, 139);
             this.lb_loaisp.Name = "lb_loaisp";
-            this.lb_loaisp.Size = new System.Drawing.Size(39, 16);
+            this.lb_loaisp.Size = new System.Drawing.Size(133, 16);
             this.lb_loaisp.TabIndex = 24;
-            this.lb_loaisp.Text = "Loại:";
+            this.lb_loaisp.Text = "Tên loại sản phẩm:";
             // 
             // lb_gia
             // 
@@ -327,6 +266,77 @@
             this.gb_chucnang.TabIndex = 53;
             this.gb_chucnang.TabStop = false;
             this.gb_chucnang.Text = "Chức năng";
+            // 
+            // masp
+            // 
+            this.masp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.masp.DataPropertyName = "masp";
+            this.masp.HeaderText = "Mã sản phẩm";
+            this.masp.MinimumWidth = 6;
+            this.masp.Name = "masp";
+            this.masp.ReadOnly = true;
+            // 
+            // tensp
+            // 
+            this.tensp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tensp.DataPropertyName = "tensp";
+            this.tensp.HeaderText = "Tên sản phẩm";
+            this.tensp.MinimumWidth = 6;
+            this.tensp.Name = "tensp";
+            this.tensp.ReadOnly = true;
+            // 
+            // gianhap
+            // 
+            this.gianhap.DataPropertyName = "gianhap";
+            this.gianhap.HeaderText = "Giá nhập";
+            this.gianhap.MinimumWidth = 6;
+            this.gianhap.Name = "gianhap";
+            this.gianhap.ReadOnly = true;
+            this.gianhap.Width = 125;
+            // 
+            // dongia
+            // 
+            this.dongia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dongia.DataPropertyName = "dongia";
+            this.dongia.HeaderText = "Đơn giá";
+            this.dongia.MinimumWidth = 6;
+            this.dongia.Name = "dongia";
+            this.dongia.ReadOnly = true;
+            // 
+            // soluong
+            // 
+            this.soluong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.soluong.DataPropertyName = "soluong";
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.MinimumWidth = 6;
+            this.soluong.Name = "soluong";
+            this.soluong.ReadOnly = true;
+            // 
+            // ngaymua
+            // 
+            this.ngaymua.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ngaymua.DataPropertyName = "ngaymua";
+            this.ngaymua.HeaderText = "Ngày nhập";
+            this.ngaymua.MinimumWidth = 6;
+            this.ngaymua.Name = "ngaymua";
+            this.ngaymua.ReadOnly = true;
+            // 
+            // malsp
+            // 
+            this.malsp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.malsp.DataPropertyName = "malsp";
+            this.malsp.HeaderText = "Loại sản phẩm";
+            this.malsp.MinimumWidth = 6;
+            this.malsp.Name = "malsp";
+            this.malsp.ReadOnly = true;
+            this.malsp.Visible = false;
+            // 
+            // tenlsp
+            // 
+            this.tenlsp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tenlsp.DataPropertyName = "tenlsp";
+            this.tenlsp.HeaderText = "Tên loại sản phẩm";
+            this.tenlsp.Name = "tenlsp";
             // 
             // tb_tensp
             // 
@@ -567,5 +577,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaymua;
         private System.Windows.Forms.DataGridViewTextBoxColumn malsp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenlsp;
     }
 }

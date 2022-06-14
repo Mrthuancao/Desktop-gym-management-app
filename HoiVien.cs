@@ -38,7 +38,7 @@ namespace Gym_Management
         }
         void LoadHoiVienList()
         {
-            hvist.DataSource = hvBUS.GetHoiVienList(); 
+            hvist.DataSource = hvBUS.GetAllHVNotNull(); 
             dtg_HV.Columns["phai"].Visible = false;  
             dtg_HV.Columns["ngsinh"].Visible = false;
             dtg_HV.Columns["ngdangki"].Visible = false;
@@ -87,6 +87,7 @@ namespace Gym_Management
             tb_gioitinh.ReadOnly1 = false;
             tb_Sdt.ReadOnly1 = false;
             dt_ngsinh.Enabled = true;
+            dt_ngaydk.Enabled = true;
             bt_Luu.Enabled = true;
         }
 
@@ -114,6 +115,7 @@ namespace Gym_Management
             tb_gioitinh.ReadOnly1 = true;  
             tb_Sdt.ReadOnly1 = true;
             dt_ngsinh.Enabled = false;
+            dt_ngaydk.Enabled=false;
             bt_Luu.Enabled = false;
 
         }

@@ -32,7 +32,7 @@ namespace Gym_Management
         void AddSanPhamBinding()
         {
             tb_tensp.DataBindings.Add(new Binding("Texts", dtg_SP.DataSource, "tensp", true, DataSourceUpdateMode.Never));
-            tb_loaisp.DataBindings.Add(new Binding("Texts", dtg_SP.DataSource, "malsp", true, DataSourceUpdateMode.Never));
+            tb_loaisp.DataBindings.Add(new Binding("Texts", dtg_SP.DataSource, "tenlsp", true, DataSourceUpdateMode.Never));
             tb_soluongsp.DataBindings.Add(new Binding("Texts", dtg_SP.DataSource, "soluong", true, DataSourceUpdateMode.Never));
             tb_hang.DataBindings.Add(new Binding("Texts", dtg_SP.DataSource, "dongia", true, DataSourceUpdateMode.Never));
 
@@ -40,13 +40,13 @@ namespace Gym_Management
 
         void LoadSanPhamList()
         {
-            splist.DataSource = spBUS.GetSanPhamList();
+            splist.DataSource = spBUS.GetSP();
             
         }
 
         private void bt_Them_Click(object sender, EventArgs e)
         {
-            ThemSp f = new ThemSp();
+            ThemSp f = new ThemSp(dtg_SP);
             f.ShowDialog();
             LoadSanPhamList();
         }

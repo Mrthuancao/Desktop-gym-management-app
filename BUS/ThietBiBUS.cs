@@ -24,8 +24,27 @@ namespace BUS
             }
             return listThietBi;
         }
+        public DataTable GetTb()
+        {
+            return ThietBiDAO.getAllEquipments();
+        }
+        public DataTable GetTenltb()
+        {
+            return ThietBiDAO.GetTenltb();
+        }
+        public string Tentb(string maltb)
+        {
+            return ThietBiDAO.Tenltb(maltb);
+        }
+        public int KiemTra(string madk)
+        {
+            if (ThietBiDAO.KiemTra(madk) == "1")
+                return 1;
+            else
+                return 0;
+        }
 
-        
+
 
         public THIETBI getEquipmentByName(string username)
         {

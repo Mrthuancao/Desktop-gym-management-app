@@ -12,7 +12,7 @@ namespace DAO
     {
         public DataTable GetAllGoiTap(string a)
         {
-            string query = "SELECT madk, HOIVIEN.mahv, HOIVIEN.hoten, DANGKY.thoigiankt, DANGKY.manv, giamoithang FROM HOIVIEN, GOITAP, DANGKY WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.magoi = GOITAP.magoi and tengoi=N'" + a + "'";
+            string query = "SELECT madk, HOIVIEN.mahv, HOIVIEN.hoten, DANGKY.thoigiankt, NHANVIEN.hoten as PT, giamoithang FROM HOIVIEN, GOITAP, DANGKY, NHANVIEN WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.magoi = GOITAP.magoi and DANGKY.manv = NHANVIEN.manv  and tengoi=N'" + a + "'";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;

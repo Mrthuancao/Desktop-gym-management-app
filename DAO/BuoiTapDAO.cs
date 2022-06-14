@@ -65,6 +65,22 @@ namespace DAO
             DataTable dt = db.ExecuteQuery(query, value);
             return dt;
         }
-
+        public DataTable MaDKRest(string manv, string thoigian)
+        {
+            string query = "Select madk from DANGKY WHERE manv=@manv except SELECT BUOITAP.madk FROM BUOITAP, DANGKY WHERE DANGKY.madk = BUOITAP.madk AND manv=@manv AND thoigian=@thoigian";
+            object[] value = new object[] { manv, thoigian };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            return dt;
+        }
+        public string KiemTra(string madk, string thoigian)
+        {
+            string query = "SELECT madk FROM BUOITAP where madk=@madk and thoigian=@thoigian";
+            object[] value = new object[] { madk, thoigian};
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            string a = dt.Rows.Count.ToString();
+            return a;
+        }
     }
 }

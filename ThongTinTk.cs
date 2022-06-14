@@ -35,25 +35,12 @@ namespace Gym_Management
             tb_mnv.Texts = logAcc.Manv;
         }
 
-        private void ClearTextBoxes()
-        {
-            Action<Control.ControlCollection> func = null;
-
-            func = (controls) =>
-            {
-                foreach (Control control in controls)
-                    if (control is TextBox)
-                    {
-                        (control as TextBox).Clear();
-                    }
-                    else
-                        func(control.Controls);
-            };
-            func(Controls);
-        }
+       
         private void bt_xoahet_Click(object sender, EventArgs e)
         {
-            ClearTextBoxes();
+            
+            tb_username.Texts = "";
+            tb_pass.Texts = "";
         }
 
         private void bt_sua_Click(object sender, EventArgs e)
@@ -69,7 +56,9 @@ namespace Gym_Management
             {
                 if (tb_username.Texts != "" && tb_pass.Texts != "")
                 {
-                    if (tkBUS.updateAccount(tb_mtk.Texts, tb_username.Texts, tb_pass.Texts))
+                    if (tkBUS.CheckUser(tb_username.Texts)==1)
+                        MessageBox.Show("Tài khoản đã có người dùng! Vui vòng nhập tài khoản khác!");
+                    else if (tkBUS.updateAccount(tb_mtk.Texts, tb_username.Texts, tb_pass.Texts))
                     {
                         MessageBox.Show("Đã sửa thành công");
                         tb_username.ReadOnly1 = true;

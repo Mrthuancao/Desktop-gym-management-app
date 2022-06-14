@@ -33,7 +33,7 @@ namespace Gym_Management
         }
         void LoadThietBiList()
         {
-            tblist.DataSource = tbBUS.GetThietBiList();
+            tblist.DataSource = tbBUS.GetTb();
             dtg_TB.Columns["ngsd"].Visible = false;
             dtg_TB.Columns["hanbaotri"].Visible = false;
         }
@@ -41,7 +41,7 @@ namespace Gym_Management
         void AddThietBiBinding()
         {
             tb_tentb.DataBindings.Add(new Binding("Texts", dtg_TB.DataSource, "tenthietbi", true, DataSourceUpdateMode.Never));
-            tb_loaitb.DataBindings.Add(new Binding("Texts", dtg_TB.DataSource, "maltb", true, DataSourceUpdateMode.Never));
+            tb_loaitb.DataBindings.Add(new Binding("Texts", dtg_TB.DataSource, "tenltb", true, DataSourceUpdateMode.Never));
             tb_soluongtb.DataBindings.Add(new Binding("Texts", dtg_TB.DataSource, "soluong", true, DataSourceUpdateMode.Never));
             tb_giatb.DataBindings.Add(new Binding("Texts", dtg_TB.DataSource, "gia", true, DataSourceUpdateMode.Never));
         }

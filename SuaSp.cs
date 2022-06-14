@@ -20,7 +20,11 @@ namespace Gym_Management
         {
             sp = currentsp;
             InitializeComponent();
+            cb_loai.DataSource = spBUS.GetTenlsp();
+            cb_loai.DisplayMember = "tenlsp";
+            cb_loai.ValueMember = "malsp";
             ChangeSP(sp);
+            
         }
 
         void ChangeSP(SANPHAM sp)
@@ -31,28 +35,18 @@ namespace Gym_Management
             tb_dongia.Texts = sp.Dongia.ToString();
             tb_Sl.Texts = sp.Soluong.ToString();
             dt_ngnhap.Text = sp.Ngaymua;
-            tb_loaisp.Texts = sp.Malsp;
+            //tb_loaisp.Texts = sp.Malsp;
+            cb_loai.Text = spBUS.Tenlsp(sp.Malsp);
         }
 
-        private void ClearTextBoxes()
-        {
-            Action<Control.ControlCollection> func = null;
-
-            func = (controls) =>
-            {
-                foreach (Control control in controls)
-                    if (control is TextBox)
-                    {
-                        (control as TextBox).Clear();
-                    }
-                    else
-                        func(control.Controls);
-            };
-            func(Controls);
-        }
+       
         private void bt_xoahet_Click(object sender, EventArgs e)
         {
-            ClearTextBoxes();
+            tb_tensp.Texts = "";
+            tb_gianhap.Texts = "";
+            tb_dongia.Texts = "";
+            tb_Sl.Texts = "";
+            cb_loai.Text = "";
         }
 
         private void bt_Luu_Click(object sender, EventArgs e)
@@ -64,7 +58,7 @@ namespace Gym_Management
                 {
                     if (spBUS.updateSanPham(tb_masp.Texts, tb_tensp.Texts,
                         decimal.Parse(tb_gianhap.Texts), decimal.Parse(tb_dongia.Texts),
-                        int.Parse(tb_Sl.Texts), dt_ngnhap.Value.ToString(), tb_loaisp.Texts))
+                        int.Parse(tb_Sl.Texts), dt_ngnhap.Value.ToString(), cb_loai.SelectedValue.ToString()))
                     {
                         MessageBox.Show("Đã sửa thành công");
                         this.Close();

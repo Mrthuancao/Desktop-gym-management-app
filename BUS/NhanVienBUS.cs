@@ -25,21 +25,7 @@ namespace BUS
             return listNhanVien;
         }
 
-        //public bool logIn(string username, string password)
-        //{
-        //    string Username = "";
-        //    DataTable dt = NhanVienDAO.getLoginNhanVien(username, getHashMD5(password).ToString());
-        //    if (dt != null)
-        //    {
-        //        foreach (DataRow row in dt.Rows)
-        //        {
-        //            Username = row["Username"].ToString();
-        //        }
-        //    }
-        //    if (Username != "")
-        //        return true;
-        //    return false;
-        //}
+        
 
         public List<NHANVIEN> GetNhanVienByName(string name)
         {
@@ -52,20 +38,12 @@ namespace BUS
             NHANVIEN NhanVien = NhanVienDAO.GetNhanVienByID(id);
             return NhanVien;
         }
+        public DataTable GetAllNV()
+        {
+            return NhanVienDAO.GetAllNhanVien();
+        }
 
-
-        //public bool updatePassword(string username, string new_password)
-        //{
-        //    try
-        //    {
-        //        NhanVienDAO.updatePassword(username, getHashMD5(new_password).ToString());
-        //        return true;
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return false;
-        //    }
-        //}
+       
 
         public bool InsertNhanVien(string hoTen, string maNhanVien, string phai, string ngaySinh, string ngayVaoLam, string soDienThoai, string email, decimal luong, string maLoaiNhanVien)
         {
@@ -117,6 +95,18 @@ namespace BUS
         public DataTable GetManvPT()
         {
             return NhanVienDAO.GetManvPT();
+        }
+        public DataTable GetLNV()
+        {
+            return NhanVienDAO.GetLNV();
+        }
+        public DataTable GetManvPTORNull()
+        {
+            return NhanVienDAO.GetManvPTORNull();
+        }
+        public DataTable GetManvHVDK()
+        {
+            return NhanVienDAO.GetManvHVDK();
         }
     }
 }
