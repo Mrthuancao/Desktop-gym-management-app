@@ -90,7 +90,7 @@
             this.pn_dshvL.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_dshvL.Location = new System.Drawing.Point(0, 0);
             this.pn_dshvL.Name = "pn_dshvL";
-            this.pn_dshvL.Size = new System.Drawing.Size(493, 719);
+            this.pn_dshvL.Size = new System.Drawing.Size(504, 719);
             this.pn_dshvL.TabIndex = 83;
             // 
             // dtg_DSHV
@@ -128,7 +128,7 @@
             this.dtg_DSHV.Name = "dtg_DSHV";
             this.dtg_DSHV.ReadOnly = true;
             this.dtg_DSHV.RowHeadersWidth = 51;
-            this.dtg_DSHV.Size = new System.Drawing.Size(493, 580);
+            this.dtg_DSHV.Size = new System.Drawing.Size(504, 580);
             this.dtg_DSHV.TabIndex = 82;
             // 
             // mahv
