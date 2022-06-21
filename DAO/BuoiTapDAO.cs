@@ -37,16 +37,16 @@ namespace DAO
         }
         public DataTable ShowDaTaGriWiew(string manv, string thoigian)
         {
-            string query = "SELECT BUOITAP.madk, HOIVIEN.mahv, HOIVIEN.hoten, buoi, thoigian FROM HOIVIEN, BUOITAP, DANGKY WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.madk = BUOITAP.madk AND manv=@manv AND thoigian=@thoigian";
+            string query = "SELECT BUOITAP.madk, HOIVIEN.mahv, HOIVIEN.hoten, buoi, thoigian, tenbt FROM HOIVIEN, BUOITAP, DANGKY, BAITAP WHERE HOIVIEN.mahv = DANGKY.mahv AND DANGKY.madk = BUOITAP.madk AND BUOITAP.mabt = BAITAP.mabt AND manv=@manv AND thoigian=@thoigian";
             object[] value = new object[] { manv, thoigian };
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query, value);
             return dt;
         }
-        public bool InsertBuoiTap(string madk, string buoi, string thoigian)
+        public bool InsertBuoiTap(string madk, string buoi, string thoigian, string mabt)
         {
-            string query = "insert into BUOITAP(madk, buoi, thoigian) values(@madk, @buoi, @thoigian)";
-            object[] value = new object[] { madk, buoi, thoigian };
+            string query = "insert into BUOITAP(madk, buoi, thoigian, mabt) values(@madk, @buoi, @thoigian, @mabt)";
+            object[] value = new object[] { madk, buoi, thoigian, mabt};
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
@@ -81,6 +81,13 @@ namespace DAO
             DataTable dt = db.ExecuteQuery(query, value);
             string a = dt.Rows.Count.ToString();
             return a;
+        }
+        public DataTable TenBaiTap()
+        {
+            string query = "SELECT mabt,tenbt from BAITAP";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
         }
     }
 }

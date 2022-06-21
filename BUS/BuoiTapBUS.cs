@@ -23,9 +23,9 @@ namespace BUS
         {   
             return BuoiTapDAO.ShowDaTaGriWiew(manv, thoigian);
         }
-        public bool InsertBuoiTap(string madk, string buoi, string thoigian)
+        public bool InsertBuoiTap(string madk, string buoi, string thoigian, string mabt)
         {
-            return BuoiTapDAO.InsertBuoiTap(madk, buoi, thoigian);
+            return BuoiTapDAO.InsertBuoiTap(madk, buoi, thoigian, mabt);
         }
         public bool DeleteDKBuoiTap(string madk, string thoigian)
         {
@@ -66,6 +66,10 @@ namespace BUS
                 return 1;
             else
                 return 0;
+        }
+        public DataTable TenBaiTap()
+        {
+            return BuoiTapDAO.TenBaiTap();
         }
 
     }

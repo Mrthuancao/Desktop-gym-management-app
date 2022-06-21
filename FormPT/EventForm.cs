@@ -27,6 +27,9 @@ namespace Gym_Management.FormPT
             InitializeComponent();
             tb_ngay.Texts = LichTap.static_month + "/" + UserControlDays.static_day + "/" + LichTap.static_year;
             dt_ngay.Text = tb_ngay.Texts;
+            cb_baitap.DataSource = btBus.TenBaiTap();
+            cb_baitap.DisplayMember = "tenbt";
+            cb_baitap.ValueMember = "mabt";
             load();
         }
         void load()
@@ -72,7 +75,7 @@ namespace Gym_Management.FormPT
                 MessageBox.Show("Hội viên đã đăng kí hôm nay! Vui lòng chọn hội viên khác!");
             else
             {
-                if (btBus.InsertBuoiTap(cb_mdk.Text.ToString(), cb_buoi.SelectedItem.ToString(), dt_ngay.Value.ToString()))
+                if (btBus.InsertBuoiTap(cb_mdk.Text.ToString(), cb_buoi.SelectedItem.ToString(), dt_ngay.Value.ToString(), cb_baitap.SelectedValue.ToString()))
                 {
                     MessageBox.Show("Đã thêm thành công");
                     loadbtlist();
