@@ -46,6 +46,7 @@ namespace Gym_Management.FormPT
                     case 2:
                         DataGridViewRow row = dtg_test.Rows[0];
                         Row0(row);
+
                         break;
                     case 3:
                         DataGridViewRow a = dtg_test.Rows[0];
@@ -62,11 +63,9 @@ namespace Gym_Management.FormPT
                         Row2(z);
                         break;
                     
-                }
-
-
-              
+                }            
             }
+
         }
         void Row0(DataGridViewRow row0)
         {
@@ -78,6 +77,40 @@ namespace Gym_Management.FormPT
             {
                 bmi1.Text = Math.Round((a / (b * 2)), 2).ToString();
             }
+            decimal so = Math.Round((a / (b * 2)), 2);
+            if ((double)so < 18.5)
+            {
+                lb_phanloai1.Text = "Gầy";
+                lb_phanloai1.ForeColor = Color.Cyan;
+            }
+            else if ((double)so >= 18.5 && ((double)so < 23))
+            {
+                lb_phanloai1.Text = "Bình thường";
+                lb_phanloai1.ForeColor = Color.Black;
+            }
+            else if ((double)so >= 23 && ((double)so < 25))
+            {
+                lb_phanloai1.Text = "Tiền béo phì";
+                lb_phanloai1.ForeColor = Color.Brown;
+            }
+            else if ((double)so >= 25 && ((double)so < 30))
+            {
+                lb_phanloai1.Text = "Béo phì loại I";
+                lb_phanloai1.ForeColor = Color.DarkOliveGreen;
+            }
+            else if ((double)so >= 30 && ((double)so < 40))
+            {
+                lb_phanloai1.Text = "Béo phì loại II";
+                lb_phanloai1.ForeColor = Color.ForestGreen;
+            }
+            else
+            {
+                lb_phanloai1.Text = "Béo phì loại III";
+                lb_phanloai1.ForeColor = Color.DarkRed;
+            }
+
+
+
         }
         void Row1(DataGridViewRow row1)
         {
@@ -88,6 +121,37 @@ namespace Gym_Management.FormPT
             if (b != 0)
             {
                 bmi2.Text = Math.Round((a / (b * 2)), 2).ToString();
+            }
+            decimal so = Math.Round((a / (b * 2)), 2);
+            if ((double)so < 18.5)
+            {
+                lb_phanloai2.Text = "Gầy";
+                lb_phanloai2.ForeColor = Color.Cyan;
+            }
+            else if ((double)so >= 18.5 && ((double)so < 23))
+            {
+                lb_phanloai2.Text = "Bình thường";
+                lb_phanloai2.ForeColor = Color.Black;
+            }
+            else if ((double)so >= 23 && ((double)so < 25))
+            {
+                lb_phanloai2.Text = "Tiền béo phì";
+                lb_phanloai2.ForeColor = Color.Brown;
+            }
+            else if ((double)so >= 25 && ((double)so < 30))
+            {
+                lb_phanloai2.Text = "Béo phì loại I";
+                lb_phanloai2.ForeColor = Color.DarkOliveGreen;
+            }
+            else if ((double)so >= 30 && ((double)so < 40))
+            {
+                lb_phanloai2.Text = "Béo phì loại II";
+                lb_phanloai2.ForeColor = Color.ForestGreen;
+            }
+            else
+            {
+                lb_phanloai2.Text = "Béo phì loại III";
+                lb_phanloai2.ForeColor = Color.DarkRed;
             }
         }
         void Row2(DataGridViewRow row2)
@@ -100,7 +164,39 @@ namespace Gym_Management.FormPT
             {
                 bmi3.Text = Math.Round((a / (b * 2)), 2).ToString();
             }
+            decimal so = Math.Round((a / (b * 2)), 2);
+            if ((double)so < 18.5)
+            {
+                lb_phanloai3.Text = "Gầy";
+                lb_phanloai3.ForeColor = Color.Cyan;
+            }
+            else if ((double)so >= 18.5 && ((double)so < 23))
+            {
+                lb_phanloai3.Text = "Bình thường";
+                lb_phanloai3.ForeColor = Color.Black;
+            }
+            else if ((double)so >= 23 && ((double)so < 25))
+            {
+                lb_phanloai3.Text = "Tiền béo phì";
+                lb_phanloai3.ForeColor = Color.Brown;
+            }
+            else if ((double)so >= 25 && ((double)so < 30))
+            {
+                lb_phanloai3.Text = "Béo phì loại I";
+                lb_phanloai3.ForeColor = Color.DarkOliveGreen;
+            }
+            else if ((double)so >= 30 && ((double)so < 40))
+            {
+                lb_phanloai3.Text = "Béo phì loại II";
+                lb_phanloai3.ForeColor = Color.ForestGreen;
+            }
+            else
+            {
+                lb_phanloai3.Text = "Béo phì loại III";
+                lb_phanloai3.ForeColor = Color.DarkRed;
+            }
         }
+       
         private void cb_HoTen_SelectedIndexChanged(object sender, EventArgs e)
         {
             Load();

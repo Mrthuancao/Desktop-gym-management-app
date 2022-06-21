@@ -40,12 +40,16 @@
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pn_doanhthu = new System.Windows.Forms.Panel();
+            this.customButton4 = new Gym_Management.CustomButton();
             this.pn_slhvm = new System.Windows.Forms.Panel();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.lb_Slhvm = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.bt_custom = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.customButton3 = new Gym_Management.CustomButton();
+            this.customButton2 = new Gym_Management.CustomButton();
+            this.customButton1 = new Gym_Management.CustomButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dtg_Sptk = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
@@ -68,10 +72,6 @@
             this.lb_doanhthu = new System.Windows.Forms.Label();
             this.dt_ketthuc = new System.Windows.Forms.DateTimePicker();
             this.dt_batdau = new System.Windows.Forms.DateTimePicker();
-            this.customButton4 = new Gym_Management.CustomButton();
-            this.customButton3 = new Gym_Management.CustomButton();
-            this.customButton2 = new Gym_Management.CustomButton();
-            this.customButton1 = new Gym_Management.CustomButton();
             this.pn_doanhthu.SuspendLayout();
             this.pn_slhvm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
@@ -115,6 +115,28 @@
             this.pn_doanhthu.Name = "pn_doanhthu";
             this.pn_doanhthu.Size = new System.Drawing.Size(1055, 719);
             this.pn_doanhthu.TabIndex = 0;
+            // 
+            // customButton4
+            // 
+            this.customButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.customButton4.BackColor = System.Drawing.Color.DarkOrange;
+            this.customButton4.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.customButton4.BorderColor = System.Drawing.Color.Black;
+            this.customButton4.BorderRadius = 0;
+            this.customButton4.BorderSize = 1;
+            this.customButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.customButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.customButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton4.ForeColor = System.Drawing.Color.White;
+            this.customButton4.Location = new System.Drawing.Point(840, 40);
+            this.customButton4.Name = "customButton4";
+            this.customButton4.Size = new System.Drawing.Size(105, 26);
+            this.customButton4.TabIndex = 64;
+            this.customButton4.Text = "30 ngày gần đây";
+            this.customButton4.TextColor = System.Drawing.Color.White;
+            this.customButton4.UseVisualStyleBackColor = false;
+            this.customButton4.Click += new System.EventHandler(this.customButton4_Click);
             // 
             // pn_slhvm
             // 
@@ -192,6 +214,72 @@
             this.label2.TabIndex = 61;
             this.label2.Text = "-";
             // 
+            // customButton3
+            // 
+            this.customButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.customButton3.BackColor = System.Drawing.Color.DarkOrange;
+            this.customButton3.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.customButton3.BorderColor = System.Drawing.Color.Black;
+            this.customButton3.BorderRadius = 0;
+            this.customButton3.BorderSize = 1;
+            this.customButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.customButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton3.ForeColor = System.Drawing.Color.White;
+            this.customButton3.Location = new System.Drawing.Point(624, 40);
+            this.customButton3.Name = "customButton3";
+            this.customButton3.Size = new System.Drawing.Size(105, 26);
+            this.customButton3.TabIndex = 60;
+            this.customButton3.Text = "Hôm nay";
+            this.customButton3.TextColor = System.Drawing.Color.White;
+            this.customButton3.UseVisualStyleBackColor = false;
+            this.customButton3.Click += new System.EventHandler(this.customButton3_Click);
+            // 
+            // customButton2
+            // 
+            this.customButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.customButton2.BackColor = System.Drawing.Color.DarkOrange;
+            this.customButton2.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.customButton2.BorderColor = System.Drawing.Color.Black;
+            this.customButton2.BorderRadius = 0;
+            this.customButton2.BorderSize = 1;
+            this.customButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.customButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton2.ForeColor = System.Drawing.Color.White;
+            this.customButton2.Location = new System.Drawing.Point(947, 40);
+            this.customButton2.Name = "customButton2";
+            this.customButton2.Size = new System.Drawing.Size(105, 26);
+            this.customButton2.TabIndex = 59;
+            this.customButton2.Text = "Tháng này";
+            this.customButton2.TextColor = System.Drawing.Color.White;
+            this.customButton2.UseVisualStyleBackColor = false;
+            this.customButton2.Click += new System.EventHandler(this.customButton2_Click);
+            // 
+            // customButton1
+            // 
+            this.customButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.customButton1.BackColor = System.Drawing.Color.DarkOrange;
+            this.customButton1.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.customButton1.BorderColor = System.Drawing.Color.Black;
+            this.customButton1.BorderRadius = 0;
+            this.customButton1.BorderSize = 1;
+            this.customButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.customButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customButton1.ForeColor = System.Drawing.Color.White;
+            this.customButton1.Location = new System.Drawing.Point(732, 40);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Size = new System.Drawing.Size(105, 26);
+            this.customButton1.TabIndex = 58;
+            this.customButton1.Text = "7 ngày gần đây";
+            this.customButton1.TextColor = System.Drawing.Color.White;
+            this.customButton1.UseVisualStyleBackColor = false;
+            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
+            // 
             // panel6
             // 
             this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -215,7 +303,7 @@
             this.dtg_Sptk.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -224,7 +312,7 @@
             this.dtg_Sptk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -550,94 +638,6 @@
             this.dt_batdau.Name = "dt_batdau";
             this.dt_batdau.Size = new System.Drawing.Size(232, 26);
             this.dt_batdau.TabIndex = 30;
-            // 
-            // customButton4
-            // 
-            this.customButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.customButton4.BackColor = System.Drawing.Color.DarkOrange;
-            this.customButton4.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.customButton4.BorderColor = System.Drawing.Color.Black;
-            this.customButton4.BorderRadius = 0;
-            this.customButton4.BorderSize = 1;
-            this.customButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.customButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.customButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton4.ForeColor = System.Drawing.Color.White;
-            this.customButton4.Location = new System.Drawing.Point(840, 40);
-            this.customButton4.Name = "customButton4";
-            this.customButton4.Size = new System.Drawing.Size(105, 26);
-            this.customButton4.TabIndex = 64;
-            this.customButton4.Text = "30 ngày gần đây";
-            this.customButton4.TextColor = System.Drawing.Color.White;
-            this.customButton4.UseVisualStyleBackColor = false;
-            this.customButton4.Click += new System.EventHandler(this.customButton4_Click);
-            // 
-            // customButton3
-            // 
-            this.customButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.customButton3.BackColor = System.Drawing.Color.DarkOrange;
-            this.customButton3.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.customButton3.BorderColor = System.Drawing.Color.Black;
-            this.customButton3.BorderRadius = 0;
-            this.customButton3.BorderSize = 1;
-            this.customButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.customButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.customButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton3.ForeColor = System.Drawing.Color.White;
-            this.customButton3.Location = new System.Drawing.Point(624, 40);
-            this.customButton3.Name = "customButton3";
-            this.customButton3.Size = new System.Drawing.Size(105, 26);
-            this.customButton3.TabIndex = 60;
-            this.customButton3.Text = "Hôm nay";
-            this.customButton3.TextColor = System.Drawing.Color.White;
-            this.customButton3.UseVisualStyleBackColor = false;
-            this.customButton3.Click += new System.EventHandler(this.customButton3_Click);
-            // 
-            // customButton2
-            // 
-            this.customButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.customButton2.BackColor = System.Drawing.Color.DarkOrange;
-            this.customButton2.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.customButton2.BorderColor = System.Drawing.Color.Black;
-            this.customButton2.BorderRadius = 0;
-            this.customButton2.BorderSize = 1;
-            this.customButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.customButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton2.ForeColor = System.Drawing.Color.White;
-            this.customButton2.Location = new System.Drawing.Point(947, 40);
-            this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(105, 26);
-            this.customButton2.TabIndex = 59;
-            this.customButton2.Text = "Tháng này";
-            this.customButton2.TextColor = System.Drawing.Color.White;
-            this.customButton2.UseVisualStyleBackColor = false;
-            this.customButton2.Click += new System.EventHandler(this.customButton2_Click);
-            // 
-            // customButton1
-            // 
-            this.customButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.customButton1.BackColor = System.Drawing.Color.DarkOrange;
-            this.customButton1.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.customButton1.BorderColor = System.Drawing.Color.Black;
-            this.customButton1.BorderRadius = 0;
-            this.customButton1.BorderSize = 1;
-            this.customButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.customButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(732, 40);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(105, 26);
-            this.customButton1.TabIndex = 58;
-            this.customButton1.Text = "7 ngày gần đây";
-            this.customButton1.TextColor = System.Drawing.Color.White;
-            this.customButton1.UseVisualStyleBackColor = false;
-            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
             // 
             // DoanhThu
             // 

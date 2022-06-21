@@ -97,7 +97,7 @@
             this.tb_matk.PasswordChar = false;
             this.tb_matk.PlaceholderColor = System.Drawing.Color.Brown;
             this.tb_matk.PlaceholderText = "";
-            this.tb_matk.ReadOnly1 = false;
+            this.tb_matk.ReadOnly1 = true;
             this.tb_matk.Size = new System.Drawing.Size(229, 33);
             this.tb_matk.TabIndex = 1;
             this.tb_matk.Texts = "";

@@ -40,6 +40,16 @@
             this.bt_Them = new Gym_Management.CustomButton();
             this.lb_danhsach = new System.Windows.Forms.Label();
             this.dtg_NV = new System.Windows.Forms.DataGridView();
+            this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngsinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngvaolam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.malnv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenlnv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_thongtin = new System.Windows.Forms.Panel();
             this.cb_mlnv = new System.Windows.Forms.ComboBox();
             this.tb_gioitinh = new Gym_Management.CustomTextBox();
@@ -61,16 +71,6 @@
             this.tb_mnv = new Gym_Management.CustomTextBox();
             this.pb_anh = new FontAwesome.Sharp.IconPictureBox();
             this.lb_thongtin = new System.Windows.Forms.Label();
-            this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngsinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngvaolam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.malnv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenlnv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_NV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_NV)).BeginInit();
             this.pn_thongtin.SuspendLayout();
@@ -109,7 +109,7 @@
             this.bt_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Luu.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Luu.Location = new System.Drawing.Point(408, 392);
+            this.bt_Luu.Location = new System.Drawing.Point(410, 122);
             this.bt_Luu.Name = "bt_Luu";
             this.bt_Luu.Size = new System.Drawing.Size(102, 34);
             this.bt_Luu.TabIndex = 10;
@@ -129,7 +129,7 @@
             this.bt_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.bt_search.IconSize = 30;
             this.bt_search.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bt_search.Location = new System.Drawing.Point(322, 87);
+            this.bt_search.Location = new System.Drawing.Point(363, 59);
             this.bt_search.Margin = new System.Windows.Forms.Padding(4);
             this.bt_search.Name = "bt_search";
             this.bt_search.Size = new System.Drawing.Size(44, 41);
@@ -147,7 +147,7 @@
             this.tb_Search.Bordersize = 2;
             this.tb_Search.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Search.ForeColor = System.Drawing.Color.Black;
-            this.tb_Search.Location = new System.Drawing.Point(71, 87);
+            this.tb_Search.Location = new System.Drawing.Point(112, 59);
             this.tb_Search.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Search.Multiline = false;
             this.tb_Search.Name = "tb_Search";
@@ -177,7 +177,7 @@
             this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_xoa.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_xoa.Location = new System.Drawing.Point(408, 253);
+            this.bt_xoa.Location = new System.Drawing.Point(139, 122);
             this.bt_xoa.Name = "bt_xoa";
             this.bt_xoa.Size = new System.Drawing.Size(102, 34);
             this.bt_xoa.TabIndex = 12;
@@ -200,7 +200,7 @@
             this.bt_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_sua.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_sua.Location = new System.Drawing.Point(408, 320);
+            this.bt_sua.Location = new System.Drawing.Point(275, 122);
             this.bt_sua.Name = "bt_sua";
             this.bt_sua.Size = new System.Drawing.Size(102, 34);
             this.bt_sua.TabIndex = 13;
@@ -223,7 +223,7 @@
             this.bt_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Them.ForeColor = System.Drawing.Color.Transparent;
-            this.bt_Them.Location = new System.Drawing.Point(408, 180);
+            this.bt_Them.Location = new System.Drawing.Point(12, 122);
             this.bt_Them.Name = "bt_Them";
             this.bt_Them.Size = new System.Drawing.Size(102, 34);
             this.bt_Them.TabIndex = 11;
@@ -237,7 +237,7 @@
             this.lb_danhsach.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_danhsach.AutoSize = true;
             this.lb_danhsach.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.lb_danhsach.Location = new System.Drawing.Point(111, 40);
+            this.lb_danhsach.Location = new System.Drawing.Point(152, 12);
             this.lb_danhsach.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_danhsach.Name = "lb_danhsach";
             this.lb_danhsach.Size = new System.Drawing.Size(209, 28);
@@ -254,7 +254,7 @@
             this.dtg_NV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkOrange;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -274,7 +274,7 @@
             this.tenlnv});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GrayText;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -286,8 +286,82 @@
             this.dtg_NV.Margin = new System.Windows.Forms.Padding(4);
             this.dtg_NV.Name = "dtg_NV";
             this.dtg_NV.RowHeadersWidth = 51;
-            this.dtg_NV.Size = new System.Drawing.Size(396, 556);
+            this.dtg_NV.Size = new System.Drawing.Size(522, 556);
             this.dtg_NV.TabIndex = 0;
+            // 
+            // manv
+            // 
+            this.manv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.manv.DataPropertyName = "manv";
+            this.manv.HeaderText = "Mã nhân viên";
+            this.manv.MinimumWidth = 6;
+            this.manv.Name = "manv";
+            this.manv.ReadOnly = true;
+            // 
+            // hoten
+            // 
+            this.hoten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.hoten.DataPropertyName = "hoten";
+            this.hoten.HeaderText = "Tên nhân viên";
+            this.hoten.MinimumWidth = 6;
+            this.hoten.Name = "hoten";
+            this.hoten.ReadOnly = true;
+            // 
+            // phai
+            // 
+            this.phai.DataPropertyName = "phai";
+            this.phai.HeaderText = "Giới tính";
+            this.phai.Name = "phai";
+            this.phai.Visible = false;
+            // 
+            // ngsinh
+            // 
+            this.ngsinh.DataPropertyName = "ngsinh";
+            this.ngsinh.HeaderText = "Ngày sinh";
+            this.ngsinh.Name = "ngsinh";
+            this.ngsinh.Visible = false;
+            // 
+            // ngvaolam
+            // 
+            this.ngvaolam.DataPropertyName = "ngvaolam";
+            this.ngvaolam.HeaderText = "Ngày vào làm";
+            this.ngvaolam.Name = "ngvaolam";
+            this.ngvaolam.Visible = false;
+            // 
+            // sdt
+            // 
+            this.sdt.DataPropertyName = "sdt";
+            this.sdt.HeaderText = "sdt";
+            this.sdt.Name = "sdt";
+            this.sdt.Visible = false;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "Email";
+            this.email.Name = "email";
+            this.email.Visible = false;
+            // 
+            // luong
+            // 
+            this.luong.DataPropertyName = "luong";
+            this.luong.HeaderText = "Lương";
+            this.luong.Name = "luong";
+            this.luong.Visible = false;
+            // 
+            // malnv
+            // 
+            this.malnv.DataPropertyName = "malnv";
+            this.malnv.HeaderText = "Mã loại nhân viên";
+            this.malnv.Name = "malnv";
+            this.malnv.Visible = false;
+            // 
+            // tenlnv
+            // 
+            this.tenlnv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tenlnv.DataPropertyName = "tenlnv";
+            this.tenlnv.HeaderText = "Loại nhân viên";
+            this.tenlnv.Name = "tenlnv";
             // 
             // pn_thongtin
             // 
@@ -624,80 +698,6 @@
             this.lb_thongtin.Size = new System.Drawing.Size(203, 28);
             this.lb_thongtin.TabIndex = 10;
             this.lb_thongtin.Text = "Thông tin nhân viên";
-            // 
-            // manv
-            // 
-            this.manv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.manv.DataPropertyName = "manv";
-            this.manv.HeaderText = "Mã nhân viên";
-            this.manv.MinimumWidth = 6;
-            this.manv.Name = "manv";
-            this.manv.ReadOnly = true;
-            // 
-            // hoten
-            // 
-            this.hoten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.hoten.DataPropertyName = "hoten";
-            this.hoten.HeaderText = "Tên nhân viên";
-            this.hoten.MinimumWidth = 6;
-            this.hoten.Name = "hoten";
-            this.hoten.ReadOnly = true;
-            // 
-            // phai
-            // 
-            this.phai.DataPropertyName = "phai";
-            this.phai.HeaderText = "Giới tính";
-            this.phai.Name = "phai";
-            this.phai.Visible = false;
-            // 
-            // ngsinh
-            // 
-            this.ngsinh.DataPropertyName = "ngsinh";
-            this.ngsinh.HeaderText = "Ngày sinh";
-            this.ngsinh.Name = "ngsinh";
-            this.ngsinh.Visible = false;
-            // 
-            // ngvaolam
-            // 
-            this.ngvaolam.DataPropertyName = "ngvaolam";
-            this.ngvaolam.HeaderText = "Ngày vào làm";
-            this.ngvaolam.Name = "ngvaolam";
-            this.ngvaolam.Visible = false;
-            // 
-            // sdt
-            // 
-            this.sdt.DataPropertyName = "sdt";
-            this.sdt.HeaderText = "sdt";
-            this.sdt.Name = "sdt";
-            this.sdt.Visible = false;
-            // 
-            // email
-            // 
-            this.email.DataPropertyName = "email";
-            this.email.HeaderText = "Email";
-            this.email.Name = "email";
-            this.email.Visible = false;
-            // 
-            // luong
-            // 
-            this.luong.DataPropertyName = "luong";
-            this.luong.HeaderText = "Lương";
-            this.luong.Name = "luong";
-            this.luong.Visible = false;
-            // 
-            // malnv
-            // 
-            this.malnv.DataPropertyName = "malnv";
-            this.malnv.HeaderText = "Mã loại nhân viên";
-            this.malnv.Name = "malnv";
-            this.malnv.Visible = false;
-            // 
-            // tenlnv
-            // 
-            this.tenlnv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tenlnv.DataPropertyName = "tenlnv";
-            this.tenlnv.HeaderText = "Loại nhân viên";
-            this.tenlnv.Name = "tenlnv";
             // 
             // NhanVien
             // 
