@@ -33,6 +33,7 @@ namespace Gym_Management.FormPT
             bmi1.Text =""; bmi2.Text = ""; bmi3.Text = "";
             kg1.Text = ""; kg2.Text = ""; kg3.Text = "";
             cc1.Text = ""; cc2.Text = ""; cc3.Text = "";
+            lb_phanloai1.Text = ""; lb_phanloai2.Text = ""; lb_phanloai3.Text = "";
             dtg_test.DataSource = ltBUS.GetAllLt(LogAcc.Manv, cb_HoTen.SelectedValue.ToString());
             HienThi();
             
